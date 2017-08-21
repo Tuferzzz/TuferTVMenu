@@ -29,7 +29,7 @@ public class SystemInfoActivity extends Activity {
         system_info_model.setText(android.os.Build.MODEL);
         system_info_version.setText(getAppVersionName(this));
         system_info_system_version.setText("Android "+android.os.Build.VERSION.RELEASE+"(API:"+android.os.Build.VERSION.SDK_INT+")");
-        system_info_memory_info.setText(getRomAvailableSize()+" / "+getRomTotalSize());
+        system_info_memory_info.setText(getRomAvailableSize()+"/"+getRomTotalSize());
 
     }
 
