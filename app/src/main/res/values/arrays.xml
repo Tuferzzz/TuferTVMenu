@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_arr_oad_view_prompt_value">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_mainmenu_switch_vals">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_general_powerinput_vals">
+        <item>Memory Mode</item>
+        <item>VGA</item>
+        <item>ATV</item>
+        <item>CVBS1</item>
+        <item>CVBS2</item>
+        <item>YPBPR</item>
+        <item>PreVGA</item>
+        <item>OPS</item>
+        <item>PreHDMI</item>
+        <item>HDMI</item>
+        <item>DP</item>
+        <item>DTV</item>
+    </string-array>
+
+    <string-array name="date_format_values" translatable="false">
+        <item>month-day-year</item>
+        <item>day-month-year</item>
+        <item>year-month-day</item>
+    </string-array>
+    <string-array name="str_arr_pic_imgnoisereduction_vals">
+        <item>Off</item>
+        <item>Weak</item>
+        <item>Middle</item>
+        <item>Strong</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="str_arr_pic_mpegnoisereduction_vals">
+        <item>Off</item>
+        <item>Weak</item>
+        <item>Middle</item>
+        <item>Strong</item>
+    </string-array>
+    <string-array name="str_arr_picture_colortemperature_vals">
+        <item>Cold</item>
+        <item>Standard</item>
+        <item>Warm</item>
+        <item>User</item>
+    </string-array>
+    <string-array name="str_arr_picture_picturemode_vals">
+        <item>Lightness</item>
+        <item>Standard</item>
+        <item>Soft</item>
+        <item>User</item>
+        <item>Game</item>
+        <item>Auto</item>
+        <item>PC</item>
+        <item>VIVID</item>
+        <item>Natural</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="str_arr_picture_zoommode_vals">
+        <item>Default</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>Auto</item>
+        <item>Panorama Mode</item>
+        <item>Just Scan</item>
+        <item>Zoom1</item>
+        <item>Zoom2</item>
+        <item>14:9</item>
+        <item>DotByDot</item>
+        <!--<item>Subtitle</item>-->
+        <!--<item>Movie</item>-->
+        <!--<item>Personal</item>
+        <item>4x3_PanScan</item>
+        <item>4x3_LetterBox</item>
+        <item>16x9_PillarBox</item>
+        <item>16x9_PanScan</item>
+        <item>4x3_Combind</item>
+        <item>16x9_Combind</item>
+        <item>Zoom_2x</item>
+        <item>Zoom_3x</item>
+        <item>Zoom_4x</item>-->
+    </string-array>
+    <string-array name="str_arr_sound_soundmode_vals">
+        <item>Standard</item>
+        <item>Music</item>
+        <item>Movie</item>
+        <item>Sports</item>
+        <item>User</item>
+    </string-array>
+    <string-array name="str_arr_sound_track_vals">
+        <item>Track-1</item>
+        <item>Track-2</item>
+        <item>Track-3</item>
+    </string-array>
+    <string-array name="str_arr_sound_channelselect_vals">
+        <item>Mono</item>
+        <item>Stereo</item>
+    </string-array>
+    <string-array name="str_arr_network_networkselection_vals">
+        <item>Wireless</item>
+        <item>Ethernet</item>
+        <item>Not connected</item>
+    </string-array>
+    <string-array name="str_arr_network_wifidirect_vals">
+        <item>Close</item>
+        <item>Open</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_menu_display_time_vals">
+        <item>OFF</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>25s</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_sleeptime_vals">
+        <item>OFF</item>
+        <item>10 Minute</item>
+        <item>20 Minute</item>
+        <item>30 Minute</item>
+        <item>60 Minute</item>
+        <item>90 Minute</item>
+        <item>120 Minute</item>
+        <item>180 Minute</item>
+        <item>240 Minute</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_power_on_time_vals">
+        <item>OFF</item>
+        <item>15 Minute</item>
+        <item>30 Minute</item>
+        <item>1 Hours</item>
+        <item>2 Hours</item>
+        <item>4 Hours</item>
+        <item>6 Hours</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+    </string-array>
+    <string-array name="str_arr_system_language_vals">
+        <item>Chinese</item>
+        <item>Chinese(Tra)</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="str_arr_about_upgradeStatus">
+        <item>Fail!</item>
+        <item>Success!</item>
+        <item>File Not Found!</item>
+        <item>Please Plug USB!</item>
+    </string-array>
+    <string-array name="str_arr_network_status">
+        <item>Ethernet</item>
+        <item>WIFI</item>
+        <item>Not connected</item>
+    </string-array>
+    <string-array name="str_arr_time_switch">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_type_switch">
+        <item>OFF</item>
+        <item>Once</item>
+        <item>Every Day</item>
+        <item>Mon2Fri</item>
+        <item>Mon2Sat</item>
+        <item>Sat2Sun</item>
+        <item>Only Sun</item>
+    </string-array>
+
+    <style name="cha_dtvautotuning_sty_menu">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">350dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">69dip</item>
+        <item name="android:background">@drawable/picture_mode_img_bg</item>
+    </style>
+    <!-- combo button -->
+    <style name="cha_dtvautotuning_sty_combo_btn">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_combo_name">
+        <item name="android:layout_width">124dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">27dip</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_combo_indicator">
+        <item name="android:layout_width">97dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- arrows -->
+    <style name="cha_dtvautotuning_sty_leftarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/common_img_arrow_l</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_rightarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/common_img_arrow_r</item>
+    </style>
+    <!-- Text view -->
+    <style name="cha_dtvautotuning_sty_text_view">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_text_view_id">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_text_view_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_span">3</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_text_view_band">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_text_view_startscan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- Spinner -->
+    <style name="cha_dtvautotuning_sty_spinner_tranponder">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+    <!-- Dvbc tips -->
+    <style name="cha_dtvautotuning_sty_imageview_button_tips">
+        <item name="android:layout_width">11dip</item>
+        <item name="android:layout_height">11dip</item>
+        <item name="android:layout_marginTop">3dip</item>
+    </style>
+    <style name="cha_dtvautotuning_sty_textview_button_tips">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <!-- for dtv auto tune option -->
+    <string-array name="strs_cha_dtvautotuning_dvbc_tuning_mode">
+        <item>Full Scan</item>
+        <item>Quick Scan</item>
+    </string-array>
+
+    <string-array name="strs_cha_dtvautotuning_demodulation_tbl">
+        <item>16 QAM</item>
+        <item>32 QAM</item>
+        <item>64 QAM</item>
+        <item>128 QAM</item>
+        <item>256 QAM</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_polarization_vals">
+        <item>Vertical Position</item>
+        <item>Horizontal Position</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_network_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_scan_mode_vals">
+        <item>Free</item>
+        <item>Free+Scramble</item>
+        <item>Scramble</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_service_type_vals">
+        <item>DTV</item>
+        <item>DTV+Radio</item>
+        <item>Radio</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_lnbtype_vals">
+        <item>C</item>
+        <item>Ku</item>
+    </string-array>
+    <string-array name="str_arr_mwe_text">
+        <item>Off</item>
+        <item>Opti</item>
+        <item>enhence</item>
+        <item>side</item>
+        <item>dym.</item>
+        <item>cent</item>
+        <item>squ.</item>
+    </string-array>
+    <string-array name="str_arr_demo_onoff">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+
+    <string-array name="str_arr_xvycc_vals">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <string-array name="str_arr_autotuning_country">
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Bulgaria</item>
+        <item>Croatia</item>
+        <item>Czech</item>
+        <item>Denmark</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hungary</item>
+        <item>Italy</item>
+        <item>Luxembourg</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Rumania</item>
+        <item>Russia</item>
+        <item>Serbia</item>
+        <item>Slovenia</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>UK</item>
+        <item>New Zealand</item>
+        <item>Arab</item>
+        <item>Estonia</item>
+        <item>Hebrew</item>
+        <item>Latvia</item>
+        <item>Slovakia</item>
+        <item>Turkey</item>
+        <item>Ireland</item>
+        <item>Japan</item>
+        <item>Philippines</item>
+        <item>Thailand</item>
+        <item>Maldives</item>
+        <item>Uruguay</item>
+        <item>Peru</item>
+        <item>Argentina</item>
+        <item>Chile</item>
+        <item>Venezuela</item>
+        <item>Ecuador</item>
+        <item>Costarica</item>
+        <item>Paraguay</item>
+        <item>Bolivia</item>
+        <item>Belize</item>
+        <item>Nicaragua</item>
+        <item>Guatemala</item>
+        <item>China</item>
+        <item>Taiwan</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>Mexico</item>
+        <item>United States</item>
+        <item>South Korea</item>
+        <item>Fiji</item>
+        <item>Uzbek</item>
+        <item>Tajikistan</item>
+        <item>Ethiopia</item>
+        <item>Azerbaijan</item>
+        <item>South Africa</item>
+        <item>Algeria</item>
+        <item>Egypt</item>
+        <item>Saudi Arabia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Namibia</item>
+        <item>Jordan</item>
+        <item>Kuwait</item>
+        <item>Indonesia</item>
+        <item>Israel</item>
+        <item>Qatar</item>
+        <item>Nigeria</item>
+        <item>Zimbabwe</item>
+        <item>Lithuania</item>
+        <item>Morocco</item>
+        <item>Tunis</item>
+        <item>India</item>
+        <item>VieTnam</item>
+        <item>Hongkong</item>
+        <item>Colombia</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="str_arr_signalinfo_qam_cab">
+        <item>16QAM</item>
+        <item>32QAM</item>
+        <item>64QAM</item>
+        <item>128QAM</item>
+        <item>256QAM</item>
+    </string-array>
+
+    <string-array name="str_arr_signalinfo_qam_dvbt">
+        <item>QPSK</item>
+        <item>16QAM</item>
+        <item>64QAM</item>
+        <item>256QAM</item>
+    </string-array>
+
+    <!-- For scan type -->
+    <string-array name="str_arr_tuning_type">
+        <item>ATV</item>
+        <item>DTV</item>
+        <item>ATV+DTV</item>
+    </string-array>
+    <string-array name="str_arr_dvbc_tuning_type">
+        <item>ATV</item>
+        <item>CADTV</item>
+        <item>ATV+CADTV</item>
+    </string-array>
+
+    <!-- For dvbc operator -->
+    <string-array name="str_arr_dvbc_operator">
+        <item>Others</item>
+        <item>Cdsmatv</item>
+        <item>Cdcable</item>
+        <item>Comhem</item>
+        <item>Upc</item>
+        <item>Yousee</item>
+        <item>Cableready</item>
+        <item>Ziggo</item>
+        <item>Stofa</item>
+    </string-array>
+
+    <string-array name="str_arr_hdmi_edid_version">
+        <item>Default</item>
+        <item>EDID 1.4</item>
+        <item>EDID 2.0</item>
+    </string-array>
+    <string-array name="str_arr_software_update_oad_value">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <!-- For UHF 7 MHz Option -->
+    <string-array name="str_arr_uhf_7mhz_option">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <!-- For bandwidth switch -->
+    <string-array name="str_arr_bandwidth_option">
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <!--
+     * PVR Error Code Do not change these values without updating their counterparts
+     * in device/mstar/common/libraries/tvapi/java/com/mstar/android/tvapi/common/vo/EnumPvrStatus.java
+     * in device/mstar/common/libraries/tv2/java/com/mstar/android/tv2/TvPvrManager.java
+     * Pvr Status, the return status of Playback/Record
+    -->
+    <string-array name="str_arr_pvr_error_code">
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_no_usb</item>
+        <item>@string/str_pvr_unsurpt_flsystem</item>
+        <item>@string/str_pvr_disk_read_only</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_ciplus_copy_protection</item>
+        <item>@string/str_pvr_scrambled_program</item>
+        <item>@string/str_pvr_ciplus_unsupport</item>
+        <item>@string/str_pvr_data_only</item>
+        <item>@string/str_no_sinal</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_ginga_running</item>
+        <item>@string/str_pvr_bad_video_audio</item>
+        <item>@string/str_pvr_retention_expired</item>
+        <item>@string/str_pvr_ch_blocked</item>
+        <item>@string/str_pvr_rating_blocked</item>
+        <item>@string/str_pvr_max_recording_reached</item>
+        <item>@string/str_pvr_mehg5_data_only</item>
+        <item>@string/str_pvr_vod_not_allow</item>
+        <item>@string/str_pvr_error</item>
+        <item>@string/str_pvr_still_check_disk</item>
+    </string-array>
+    <string-array name="str_arr_setting_cc_mode_vals">
+        <item>On</item>
+        <item>Off</item>
+        <item>On When Mute</item>
+    </string-array>
+    <string-array name="str_arr_setting_cc_basic_selection_vals">
+        <item>Off</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>Text1</item>
+        <item>Text2</item>
+        <item>Text3</item>
+        <item>Text4</item>
+    </string-array>
+    <string-array name="str_arr_option_caption">
+        <item>OFF</item>
+        <item>ON</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>TEXT1</item>
+        <item>TEXT2</item>
+        <item>TEXT3</item>
+        <item>TEXT4</item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_uk">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_education_uk</item>
+        <item>@string/str_genre_life_uk</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_drama</item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_nz">
+        <item>@string/str_genre_undefined</item>
+        <item>@string/str_genre_movie_drama_general</item>
+        <item>@string/str_genre_news_current_general</item>
+        <item>@string/str_genre_show_general</item>
+        <item>@string/str_genre_sports_general</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music_general</item>
+        <item>@string/str_genre_art_general</item>
+        <item>@string/str_genre_social_general</item>
+        <item>@string/str_genre_education_others_general</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_original_language</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_au">
+        <item></item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_news</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_music_default</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_news_current_default</item>
+        <item>@string/str_genre_education_default</item>
+        <item>@string/str_genre_infotainment</item>
+        <item>@string/str_genre_special</item>
+        <item>@string/str_genre_comedy</item>
+        <item>@string/str_genre_drama</item>
+        <item>@string/str_genre_documentary</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_default">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie_drama</item>
+        <item>@string/str_genre_news_current</item>
+        <item>@string/str_genre_show</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_social</item>
+        <item>@string/str_genre_education_others</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_special_characteristics</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+    <string-array name="str_arr_epg_time_check_display_info">
+        <item>None</item>
+        <item>Success</item>
+        <item>Past</item>
+        <item>Overlay</item>
+        <item>Endtime before start</item>
+        <item>Endtime exceed period</item>
+        <item>Full</item>
+        <item>New reminder conflict</item>
+        <item>DB reminder conflict</item>
+    </string-array>
+    <string-array name="guidance_list_default_string">
+        <item>OFF</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="guidance_list_singapore_string">
+        <item>OFF</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>PG13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+
+    <string-array name="guidance_list_australian_string">
+        <item>OFF</item>
+        <item>Block All</item>
+        <item>P</item>
+        <item>C</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>M</item>
+        <item>MA15+</item>
+        <item>AV15+</item>
+        <item>R</item>
+    </string-array>
+
+    <string-array name="contentlock_list">
+        <item>None</item>
+        <item>Drugs</item>
+        <item>Violence</item>
+        <item>Violence and Drugs</item>
+        <item>Sex</item>
+        <item>Sex and Drugs</item>
+        <item>Violence and Sex</item>
+        <item>Violence, Sex and Drugs</item>
+    </string-array>
+    <string-array name="str_sort_type">
+    <item>Default</item>
+    <item>Satellite</item>
+    <item>Channel name</item>
+    <item>Scrambled</item>
+    <item>LCN</item>
+    <item>Frequency</item>
+    </string-array>
+    <string-array name="str_arr_video_type">
+        <item></item>
+        <item>MPEG</item>
+        <item>H.264</item>
+        <item>AVS</item>
+        <item>VC1</item>
+        <item>HEVC</item>
+    </string-array>
+    <string-array name="str_arr_lnbpower_option">
+        <item>Off</item>
+        <item>13/18V</item>
+        <item>13V</item>
+        <item>18V</item>
+        <item>14/19V</item>
+        <item>14V</item>
+        <item>19V</item>
+    </string-array>
+    <string-array name="str_arr_compensation_option">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_option">
+        <item>UNIVERSAL</item>
+        <item>MDU_1</item>
+        <item>MDU_2</item>
+        <item>MDU_3</item>
+        <item>MDU_4</item>
+        <item>5150_MHZ</item>
+        <item>5750_MHZ</item>
+        <item>5150_5750_MHZ</item>
+        <item>9750_MHZ</item>
+        <item>10600_MHZ</item>
+        <item>10750_MHZ</item>
+        <item>11250_MHZ</item>
+        <item>11300_MHZ</item>
+        <item>11475_MHZ</item>
+        <item>9750_10700_MHZ</item>
+        <item>9750_10750_MHZ</item>
+        <item>10000_10450_MHZ</item>
+        <item>USER_MODE</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_low">
+        <item>9750</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>5150</item>
+        <item>5750</item>
+        <item>5150</item>
+        <item>9750</item>
+        <item>10600</item>
+        <item>10750</item>
+        <item>11250</item>
+        <item>11300</item>
+        <item>11475</item>
+        <item>9750</item>
+        <item>9750</item>
+        <item>10000</item>
+        <item>9750</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_high">
+        <item>10600</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>5150</item>
+        <item>5750</item>
+        <item>5750</item>
+        <item>9750</item>
+        <item>10600</item>
+        <item>10750</item>
+        <item>11250</item>
+        <item>11300</item>
+        <item>11475</item>
+        <item>10700</item>
+        <item>10750</item>
+        <item>10450</item>
+        <item>10600</item>
+    </string-array>
+    <string-array name="str_arr_22knz_tone_option">
+        <item>Auto</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="str_arr_toneburst_option">
+        <item>None</item>
+        <item>Burst A</item>
+        <item>Burst B</item>
+    </string-array>
+    <string-array name="str_arr_diseqc_1_0_option">
+        <item>None</item>
+        <item>LNB 1</item>
+        <item>LNB 2</item>
+        <item>LNB 3</item>
+        <item>LNB 4</item>
+    </string-array>
+    <string-array name="str_arr_diseqc_1_1_option">
+        <item>None</item>
+        <item>LNB 1</item>
+        <item>LNB 2</item>
+        <item>LNB 3</item>
+        <item>LNB 4</item>
+        <item>LNB 5</item>
+        <item>LNB 6</item>
+        <item>LNB 7</item>
+        <item>LNB 8</item>
+        <item>LNB 9</item>
+        <item>LNB 10</item>
+        <item>LNB 11</item>
+        <item>LNB 12</item>
+        <item>LNB 13</item>
+        <item>LNB 14</item>
+        <item>LNB 15</item>
+        <item>LNB 16</item>
+    </string-array>
+    <string-array name="str_arr_motor_diseqc_version">
+        <item>None</item>
+        <item>DiSEqC 1.2</item>
+        <item>DiSEqC 1.3</item>
+    </string-array>
+    <string-array name="str_arr_single_cable_slot_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="str_arr_single_cable_lnb_option">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="str_arr_longitude_direction_option">
+        <item>East</item>
+        <item>West</item>
+    </string-array>
+    <string-array name="str_arr_latitude_direction_option">
+        <item>North</item>
+        <item>South</item>
+    </string-array>
+    <string-array name="str_arr_satellite_band_option">
+        <item>C</item>
+        <item>Ku</item>
+    </string-array>
+    <string-array name="str_arr_transponder_polarization_option">
+        <item>V</item>
+        <item>H</item>
+    </string-array>
+    <!-- <item>中文 (繁體)</item> -->
+    <string-array name="Nordic" translatable="false">
+        <item>FI</item>
+        <item>DK</item>
+        <item>NO</item>
+        <item>SE</item>
+    </string-array>
+
+    <string-array name="Nordic_language" translatable="false">
+        <item>fi_FI</item>
+        <item>da_DK</item>
+        <item>nb_NO</item>
+        <item>sv_SE</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="south_america" translatable="false">
+        <item>BR</item>
+    </string-array>
+
+    <string-array name="south_america_language" translatable="false">
+        <item>pt_BR</item>
+        <item>es_ES</item>
+        <item>fr_FR</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="southeast_asia" translatable="false">
+        <item>IN</item>
+        <item>PK</item>
+        <item>SG</item>
+        <item>PH</item>
+        <item>BN</item>
+        <item>ID</item>
+        <item>MY</item>
+        <item>TH</item>
+        <item>VN</item>
+        <item>LA</item>
+        <item>MM</item>
+    </string-array>
+
+    <string-array name="southeast_asia_language" translatable="false">
+        <item>in_ID</item>
+        <item>ms_MY</item>
+        <item>th_TH</item>
+        <item>vi_VN</item>
+        <item>zh_CN</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="russia" translatable="false">
+        <item>RU</item>
+        <item>BY</item>
+        <item>KZ</item>
+        <item>KG</item>
+        <item>UA</item>
+        <item>BY</item>
+    </string-array>
+
+    <string-array name="russia_language" translatable="false">
+        <item>ru_RU</item>
+        <item>uk_UA</item>
+        <item>be_BY</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="middle_east" translatable="false">
+        <item>IQ</item>
+        <item>IR</item>
+        <item>SA</item>
+    </string-array>
+
+    <string-array name="middle_east_language" translatable="false">
+        <item>ar_EG</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="east_asia" translatable="false">
+        <item>CN</item>
+        <item>HK</item>
+        <item>TW</item>
+    </string-array>
+
+    <string-array name="east_asia_language" translatable="false">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="japan" translatable="false">
+        <item>JP</item>
+    </string-array>
+
+    <string-array name="japan_language" translatable="false">
+        <item>ja_JP</item>
+        <item>en_US</item>
+    </string-array>
+
+    <string-array name="language_names" translatable="false">
+        <item>Chinese (Simplified)</item>
+        <item>Chinese (Traditional)</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="str_arr_input_source_vals">
+        <item>VGA</item>
+        <item>ATV</item>
+        <item>CVBS</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>CVBS4</item>
+        <item>CVBS5</item>
+        <item>CVBS6</item>
+        <item>CVBS7</item>
+        <item>CVBS8</item>
+        <item>CVBS_MAX</item>
+        <item>SVIDEO</item>
+        <item>SVIDEO2</item>
+        <item>SVIDEO3</item>
+        <item>SVIDEO4</item>
+        <item>SVIDEO_MAX</item>
+        <item>YPBPR</item>
+        <item>YPBPR2</item>
+        <item>YPBPR3</item>
+        <item>YPBPR_MAX</item>
+        <item>SCART</item>
+        <item>SCART2</item>
+        <item>SCART_MAX</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>HDMI_MAX</item>
+        <item>DTV</item>
+        <item>DVI</item>
+        <item>DVI2</item>
+        <item>DVI3</item>
+        <item>DVI4</item>
+        <item>DVI_MAX</item>
+        <item>STORAGE</item>
+        <item>KTV</item>
+        <item>JPEG</item>
+        <item>DTV2</item>
+        <item>STORAGE2</item>
+        <item>DIV3</item>
+        <item>SCALER_OP</item>
+        <item>RUV</item>
+        <item>VGA2</item>
+        <item>VGA3</item>
+    </string-array>
+    <string-array name="str_arr_atsc_input_source_vals">
+        <item>VGA</item>
+        <item></item>
+        <item>CVBS</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>CVBS4</item>
+        <item>CVBS5</item>
+        <item>CVBS6</item>
+        <item>CVBS7</item>
+        <item>CVBS8</item>
+        <item>CVBS_MAX</item>
+        <item>SVIDEO</item>
+        <item>SVIDEO2</item>
+        <item>SVIDEO3</item>
+        <item>SVIDEO4</item>
+        <item>SVIDEO_MAX</item>
+        <item>YPBPR1</item>
+        <item>YPBPR2</item>
+        <item>YPBPR3</item>
+        <item>YPBPR_MAX</item>
+        <item>SCART</item>
+        <item>SCART2</item>
+        <item>SCART_MAX</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>HDMI_MAX</item>
+        <item>TV</item>
+        <item>DVI</item>
+        <item>DVI2</item>
+        <item>DVI3</item>
+        <item>DVI4</item>
+        <item>DVI_MAX</item>
+        <item>STORAGE</item>
+        <item>KTV</item>
+        <item>JPEG</item>
+        <item>DTV2</item>
+        <item>STORAGE2</item>
+        <item>DIV3</item>
+        <item>SCALER_OP</item>
+        <item>RUV</item>
+        <item>VGA2</item>
+        <item>VGA3</item>
+    </string-array>
+    <string-array name="str_arr_idsb_input_source_vals">
+        <item>VGA</item>
+        <item>CABLE</item>
+        <item>CVBS</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>CVBS4</item>
+        <item>CVBS5</item>
+        <item>CVBS6</item>
+        <item>CVBS7</item>
+        <item>CVBS8</item>
+        <item>CVBS_MAX</item>
+        <item>SVIDEO</item>
+        <item>SVIDEO2</item>
+        <item>SVIDEO3</item>
+        <item>SVIDEO4</item>
+        <item>SVIDEO_MAX</item>
+        <item>YPBPR1</item>
+        <item>YPBPR2</item>
+        <item>YPBPR3</item>
+        <item>YPBPR_MAX</item>
+        <item>SCART</item>
+        <item>SCART2</item>
+        <item>SCART_MAX</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>HDMI_MAX</item>
+        <item>AIR</item>
+        <item>DVI</item>
+        <item>DVI2</item>
+        <item>DVI3</item>
+        <item>DVI4</item>
+        <item>DVI_MAX</item>
+        <item>STORAGE</item>
+        <item>KTV</item>
+        <item>JPEG</item>
+        <item>DTV2</item>
+        <item>STORAGE2</item>
+        <item>DIV3</item>
+        <item>SCALER_OP</item>
+        <item>RUV</item>
+        <item>VGA2</item>
+        <item>VGA3</item>
+    </string-array>
+    <string-array name="weather">
+        <item>暴雪</item>
+        <item>暴雨</item>
+        <item>暴雨到大暴雨</item>
+        <item>大暴雨</item>
+        <item>大暴雨转特大暴雨</item>
+        <item>大雪</item>
+        <item>大雪转暴雪</item>
+        <item>大雨</item>
+        <item>大雨转暴雨</item>
+        <item>冻雨</item>
+        <item>多云</item>
+        <item>浮尘</item>
+        <item>雷阵雨</item>
+        <item>雷阵雨伴有冰雹</item>
+        <item>霾</item>
+        <item>毛毛雨/细雨</item>
+        <item>强沙尘暴</item>
+        <item>晴</item>
+        <item>沙尘暴</item>
+        <item>特大暴雨</item>
+        <item>雾</item>
+        <item>小雪</item>
+        <item>小雪转中雪</item>
+        <item>小雨</item>
+        <item>小到中雨</item>
+        <item>扬沙</item>
+        <item>阴</item>
+        <item>雨夹雪</item>
+        <item>阵雪</item>
+        <item>阵雨</item>
+        <item>中雪</item>
+        <item>中雪转大雪</item>
+        <item>中雨</item>
+        <item>中雨转大雨</item>
+    </string-array>
+
+    <string-array name="wifi_p2p_status">
+        <item msgid="1701505390737218306">"已连接"</item>
+        <item msgid="3189211552661432651">"已邀请"</item>
+        <item msgid="3206450250360237549">"失败"</item>
+        <item msgid="7785896708926971207">"可用"</item>
+        <item msgid="2330782789550628803">"超出范围"</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 分钟"</item>
+        <item>"5 分钟"</item>
+        <item>"1 小时"</item>
+        <item>"永不超时"</item>
+    </string-array>
+</resources>

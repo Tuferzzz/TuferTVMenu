@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/mainlinear_picture_equalizer" style="@style/third_main_layout2_style2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/third_layout2_title_style">
+        <TextView android:text="@string/str_mainmenu_sound_equalizer" style="@style/third_layout_title_text_style" />
+    </LinearLayout>
+    <ScrollView style="@style/third_layout2_scrollview_style1">
+        <LinearLayout style="@style/third_layout2_scrollview_style">
+            <LinearLayout android:id="@+id/linearlayout_sound_equalizer_120hz" style="@style/third_layout2_item_style">
+                <TextView android:text="@string/str_mainmenu_sound_equalizer_120hz" style="@style/third_layout2_text_style" />
+                <SeekBar android:id="@+id/seekbar1" style="@style/third_layout2_seekbar_style" />
+                <TextView android:id="@+id/textview1" style="@style/third_layout2_text_val_style" />
+            </LinearLayout>
+            <LinearLayout style="@style/third_layout_segmentation_style" />
+            <LinearLayout android:id="@+id/linearlayout_sound_equalizer_500hz" style="@style/third_layout2_item_style">
+                <TextView android:text="@string/str_mainmenu_sound_equalizer_500hz" style="@style/third_layout2_text_style" />
+                <SeekBar android:id="@+id/seekbar2" style="@style/third_layout2_seekbar_style" />
+                <TextView android:id="@+id/textview2" style="@style/third_layout2_text_val_style" />
+            </LinearLayout>
+            <LinearLayout style="@style/third_layout_segmentation_style" />
+            <LinearLayout android:id="@+id/linearlayout_sound_equalizer_1_5khz" style="@style/third_layout2_item_style">
+                <TextView android:text="@string/str_mainmenu_sound_equalizer_1.5khz" style="@style/third_layout2_text_style" />
+                <SeekBar android:id="@+id/seekbar3" style="@style/third_layout2_seekbar_style" />
+                <TextView android:id="@+id/textview3" style="@style/third_layout2_text_val_style" />
+            </LinearLayout>
+            <LinearLayout style="@style/third_layout_segmentation_style" />
+            <LinearLayout android:id="@+id/linearlayout_sound_equalizer_5khz" style="@style/third_layout2_item_style">
+                <TextView android:text="@string/str_mainmenu_sound_equalizer_5khz" style="@style/third_layout2_text_style" />
+                <SeekBar android:id="@+id/seekbar4" style="@style/third_layout2_seekbar_style" />
+                <TextView android:id="@+id/textview4" style="@style/third_layout2_text_val_style" />
+            </LinearLayout>
+            <LinearLayout style="@style/third_layout_segmentation_style" />
+            <LinearLayout android:id="@+id/linearlayout_sound_equalizer_10khz"  style="@style/third_layout2_item_style">
+                <TextView android:text="@string/str_mainmenu_sound_equalizer_10khz" style="@style/third_layout2_text_style" />
+                <SeekBar android:id="@+id/seekbar5" style="@style/third_layout2_seekbar_style" />
+                <TextView android:id="@+id/textview5" style="@style/third_layout2_text_val_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

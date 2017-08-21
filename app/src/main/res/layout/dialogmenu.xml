@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/upgrade_frame" android:layout_width="303.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/textview_mainmenu_dialogmenu_title" android:layout_width="300.0dip" android:layout_height="45.0dip" android:text="@string/str_mainmenu_about_dialogmenu_title" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearlayout_mainmenu_dialogmenu_select" android:background="@color/dark_gray" android:layout_width="301.0dip" android:layout_height="55.0dip" android:layout_marginBottom="1.0dip">
+        <Button android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@+id/textview_mainmenu_dialogmenu_confirm" android:background="@drawable/button_state" android:focusable="true" android:layout_width="142.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:text="@string/str_mainmenu_about_dialogmenu_confirm" />
+        <Button android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@+id/textview_mainmenu_dialogmenu_cancel" android:background="@drawable/button_state" android:focusable="true" android:layout_width="142.0dip" android:layout_height="40.0dip" android:layout_marginLeft="9.0dip" android:text="@string/str_mainmenu_about_dialogmenu_cancel" />
+    </LinearLayout>
+</LinearLayout>

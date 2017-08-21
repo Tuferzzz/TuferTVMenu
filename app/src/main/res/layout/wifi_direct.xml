@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifi_direct_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/wifi_direct_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/x40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/wifi_direct_toggle_txt"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <CheckBox
+            android:id="@+id/wifi_diect_checkbox"
+            android:layout_width="@dimen/x120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x40dp"
+            android:button="@drawable/custom_checkbox"
+            android:gravity="center"
+            android:nextFocusDown="@+id/device_discover_btn" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wifi_diect_deviceinfo"
+        android:layout_width="@dimen/x700dp"
+        android:layout_height="@dimen/x60dp"
+        android:layout_marginLeft="@dimen/x30dp"
+        android:layout_marginTop="@dimen/x5dp"
+        android:background="@drawable/net_state_bg"
+        android:paddingLeft="@dimen/x10dp"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp18" />
+
+    <RelativeLayout
+        android:id="@+id/wifi_direct_discover"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10dp"
+        android:minHeight="@dimen/x40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/wlan_direct_device"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <Button
+            android:id="@+id/device_discover_btn"
+            android:layout_width="@dimen/x80dp"
+            android:layout_height="@dimen/x35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x70dp"
+           android:textColor="#ffffffff"
+        android:background="@drawable/edit_text"
+            android:nextFocusDown="@+id/direct_device_list"
+            android:nextFocusUp="@+id/wifi_diect_checkbox"
+            android:text="@string/device_discover"
+            android:textSize="@dimen/sp18" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wifi_direct_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x35dp"
+        android:layout_marginTop="@dimen/x10dp"
+        android:paddingLeft="@dimen/x10dp"
+        android:text="@string/device_list"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp18" />
+
+    <ListView
+        android:id="@+id/direct_device_list"
+        android:layout_width="@dimen/x700dp"
+        android:layout_height="@dimen/x180dp"
+        android:layout_marginLeft="@dimen/x30dp"
+        android:background="@drawable/net_state_bg"
+        android:listSelector="@drawable/select_item"
+        android:minHeight="@dimen/x50dp"
+        android:nextFocusUp="@+id/device_discover_btn"
+        android:paddingTop="@dimen/x10dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

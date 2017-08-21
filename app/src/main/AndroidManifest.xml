@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="tufer.com.menutest">
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.mstar.android.permissionn.ACCESS_TV_DATA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--获取Wifi权限-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"></uses-permission>
+
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_TV_DATA" />
+
+
+
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <application
+        android:name=".Util.TVRootApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyDialogStyle"
+        >
+
+        <activity
+            android:name=".UIActivity.MainActivity"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/app_name"
+			android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+			<intent-filter>
+                <action android:name="com.mstar.tv.tvplayer.ui.intent.action.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+			
+        </activity>
+
+        <activity android:name=".UIActivity.general.appinfo.AppManagerActivity"
+            />
+        <activity android:name=".UIActivity.general.applications.AppDetailInfoActivity"
+            />
+        <activity android:name=".UIActivity.general.weather.WeaterActivity"
+            />
+        <activity android:name=".UIActivity.general.weather.WeatherCityActivity"
+            />
+        <activity android:name=".UIActivity.general.datetime.DateTimeSettings"
+            >
+            <intent-filter>
+                <action android:name="android.settings.DATE_SETTINGS" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UIActivity.pictrue.SetLightActivity"
+           />
+        <activity android:name=".UIActivity.sound.EqualizerActivity"
+        />
+
+        <activity android:name=".UIActivity.intelligence.SetTimeOffDialogActivity"
+            />
+        <activity android:name=".UIActivity.intelligence.SetTimeOnDialogActivity"
+           />
+        <activity android:name=".UIActivity.system.InputMethodAndLanguageSettingsActivity"
+         />
+        <activity android:name=".UIActivity.system.city.CitySettingActivity"
+      />
+        <activity android:name=".UIActivity.about.SystemInfoActivity"
+           />
+        <activity android:name=".UIActivity.about.SystemRestoreFactoryActivity"
+          />
+        <activity android:name=".UIActivity.update.SystemLocalUpdateActivity"
+          >
+        </activity>
+        <activity android:name=".UIActivity.update.SystemNetUpdateActivity"
+          >
+        </activity>
+
+
+        <!--tuning-->
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.AutoTuneOptionActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.AUTOTUNING_OPTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.DvbsDTVAutoTuneOptionActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.DVBSDTV_AUTOTUNING_OPTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.ChannelTuning"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_TUNING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.DTVManualTuning"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.DTV_MANUAL_TUNING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.NTSCATVManualTuning"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.NTSC_ATV_MANUAL_TUNING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.PALATVManualTuning"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.PAL_ATV_MANUAL_TUNING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.ChooseCityForAutoTuneActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.DTVAutoTuneOptionActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.OadScan"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.tuning.SignalInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!--ca-->
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaCardInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.ippv.IppvProgramInfo"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaCardFeedActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaInformationActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaManagementActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaInfoModifyPinActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaWorkTimeActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaWatchLevelActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaOperatorListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaVersionInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaEntitleInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaDetitleInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.ca.CaPurseInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!--channel-->
+        <activity
+            android:name=".UIActivity.channel.ChannelActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNELMENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.ProgramListViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.SourceInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.SOURCE_INFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mstar.tvsetting.hotkey.intent.action.SourceInFoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.TV_TIME_ZONE_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.ChannelListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mstar.tvsetting.ui.intent.action.ChannelActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.AdaChannelListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.mstar.tvsetting.ui.intent.action.AdaChannelListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.LNBSettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.channel.ChannelControlActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_CONTROL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ChannelControlActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--dtv-->
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.AtscEPGActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.AudioLanguageActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.CimmiActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.EPGActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.EPG_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.LnbMotorEditorActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbMotorEditor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.LnbOptionActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbOption" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.LnbOptionEditorActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbOptionEditor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.MTSInfoActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.RecordActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.ReminderActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.EPG_REMINDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.ScheduleListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.SubtitleLanguageActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="tufer.com.menutest.UIActivity.dtv.TeletextActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!--pvr-->
+        <activity
+            android:name="tufer.com.menutest.UIActivity.pvr.PVRActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/PVRMenuTheme" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.PVR_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tufer.com.menutest.UIActivity.pvr.PVRFullPageBrowserActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/PVRMenuTheme" >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.PVR_BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".UIActivity.update.UpdateService"
+            android:enabled="true" />
+        <activity android:name=".UIActivity.bluetooth.BluetoothActivity"></activity>
+        <activity android:name=".UIActivity.bluetooth.DevicePickerActivity"></activity>
+
+        <activity
+            android:name=".UIActivity.network.NetworkSettingsActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.settings.WIFI_SETTINGS" />
+                <action android:name="android.net.wifi.PICK_WIFI_NETWORK" />
+                <action android:name="android.settings.WIRELESS_SETTINGS" />
+                <action android:name="android.settings.ETHERNET_SETTINGS" />
+                <action android:name="android.settings.AIRPLANE_MODE_SETTINGS" />
+                <action android:name="android.settings.WIFI_IP_SETTINGS" />
+                <action android:name="android.settings.LOCALE_SETTINGS" />
+                <action android:name="android.credentials.UNLOCK" />
+                <action android:name="android.settings.LOCATION_SOURCE_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.settings.NFC_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+
+
+
+    </application>
+
+
+
+</manifest>

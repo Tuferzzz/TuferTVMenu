@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_system_inputmethod" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_system_inputmethod" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/language_input_setting" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_system_location" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_system_location" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_system_location" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_system_location_val" android:text="@string/str_mainmenu_system_location_default_val" style="@style/second_text_val" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearlayout_system_powermusic" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_system_poweron_music" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_system_powermusic" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_system_powermusic_val" android:text="@string/str_mainmenu_default_switch_on" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

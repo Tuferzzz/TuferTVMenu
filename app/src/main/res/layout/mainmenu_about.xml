@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_about_systeminfo" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_about_system_information" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_about_systeminfo" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_about_instructions" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_about_instructions" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_about_instructions" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_about_localname" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_about_local_name" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_about_localname" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_local_name" android:text="@string/str_mainmenu_about_localname_default_val" style="@style/second_text_val" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearlayout_about_restore" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_about_restore_to_factory" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_about_restore" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_about_local_upgrade" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_about_systeminfo" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/local_update" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/local_update" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_about_network_upgrade" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_about_instructions" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/network_update" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/net_update" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

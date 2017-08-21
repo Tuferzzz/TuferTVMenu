@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/open_app"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:background="@drawable/one_px"
+        android:text="@string/open_app"
+        android:textColor="#CCCCCCCC"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/force_stop_btn"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:background="@drawable/one_px"
+        android:text="@string/force_stop"
+        android:textColor="#CCCCCCCC"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/uninstall_btn"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:background="@drawable/one_px"
+        android:paddingTop="5dip"
+        android:text="@string/uninstall_app"
+        android:textColor="#CCCCCCCC"
+        android:textSize="24sp"
+       />
+
+    <Button
+        android:id="@+id/clear_data_btn"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:background="@drawable/one_px"
+        android:paddingTop="5dip"
+        android:text="@string/clear_data"
+        android:textColor="#CCCCCCCC"
+        android:textSize="24sp"
+       />
+
+    <Button
+        android:id="@+id/move_app_btn"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:background="@drawable/one_px"
+        android:paddingTop="5dip"
+        android:text="@string/move_sd"
+        android:textColor="#CCCCCCCC"
+        android:textSize="24sp"
+        android:nextFocusDown="@id/open_app"/>
+
+</LinearLayout>

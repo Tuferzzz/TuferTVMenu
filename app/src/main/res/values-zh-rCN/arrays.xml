@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_arr_mainmenu_switch_vals">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="date_format_values" translatable="false">
+        <item>月-日-年</item>
+        <item>日-月-年</item>
+        <item>年-月-日</item>
+    </string-array>
+    <string-array name="str_arr_general_powerinput_vals">
+        <item>记忆信号源</item>
+        <item>VGA</item>
+        <item>ATV</item>
+        <item>视频1</item>
+        <item>视频2</item>
+        <item>分量</item>
+        <item>前置电脑</item>
+        <item>内置电脑</item>
+        <item>前置高清</item>
+        <item>HDMI</item>
+        <item>DP</item>
+        <item>DTV</item>
+    </string-array>
+    <string-array name="str_arr_pic_imgnoisereduction_vals">
+        <item>关</item>
+        <item>弱</item>
+        <item>中</item>
+        <item>强</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="str_arr_picture_colortemperature_vals">
+        <item>冷</item>
+        <item>标准</item>
+        <item>暖</item>
+        <item>用户</item>
+    </string-array>
+    <string-array name="str_arr_picture_picturemode_vals">
+        <item>明亮</item>
+        <item>标准</item>
+        <item>柔和</item>
+        <item>用户</item>
+        <item>游戏</item>
+        <item>自动</item>
+        <item>电脑</item>
+        <item>艳丽</item>
+        <item>自然</item>
+        <item>运动</item>
+    </string-array>
+    <string-array name="str_arr_picture_zoommode_vals">
+        <item>默认</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>自动</item>
+        <item>全景</item>
+        <item>Just Scan</item>
+        <item>缩放1</item>
+        <item>缩放2</item>
+        <item>14:9</item>
+        <item>点对点</item>
+        <!--<item>字幕</item>&ndash;&gt;-->
+        <!--<item>影视</item>-->
+        <!--<item>用户</item>
+        <item>全景(4x3)</item>
+        <item>宽银幕(4x3)</item>
+        <item>垂直黑边(16x9)</item>
+        <item>扫描(16x9)</item>
+        <item>合并(4x3)</item>
+        <item>合并(16x9)</item>
+        <item>缩放2x</item>
+        <item>缩放3x</item>
+        <item>缩放4x</item>-->
+    </string-array>
+    <string-array name="str_arr_sound_soundmode_vals">
+        <item>标准</item>
+        <item>音乐</item>
+        <item>影院</item>
+        <item>运动</item>
+        <item>用户</item>
+    </string-array>
+    <string-array name="str_arr_sound_track_vals">
+        <item>音轨-1</item>
+        <item>音轨-2</item>
+        <item>音轨-3</item>
+    </string-array>
+    <string-array name="str_arr_sound_channelselect_vals">
+        <item>单声道</item>
+        <item>立体声</item>
+    </string-array>
+    <string-array name="str_arr_network_networkselection_vals">
+        <item>无线网络</item>
+        <item>有线网络</item>
+        <item>未连接网络</item>
+    </string-array>
+    <string-array name="str_arr_network_wifidirect_vals">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_menu_display_time_vals">
+        <item>关</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>25s</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_sleeptime_vals">
+        <item>关</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>90分钟</item>
+        <item>120分钟</item>
+        <item>180分钟</item>
+        <item>240分钟</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_power_on_time_vals">
+        <item>关</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>4小时</item>
+        <item>6小时</item>
+        <item>12小时</item>
+        <item>24小时</item>
+    </string-array>
+    <string-array name="str_arr_system_language_vals">
+        <item>简体中文</item>
+        <item>繁体中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_names" translatable="false">
+        <item>中文 (简体)</item>
+        <item>中文 (繁体)</item>
+        <item>英文</item>
+    </string-array>
+    <string-array name="str_arr_about_upgradeStatus">
+        <item>失败!</item>
+        <item>成功!</item>
+        <item>找不到文件!</item>
+        <item>请插入USB!</item>
+    </string-array>
+    <string-array name="str_arr_network_status">
+        <item>有线网络</item>
+        <item>WIFI</item>
+        <item>网络未连接</item>
+    </string-array>
+    <string-array name="str_arr_time_switch">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="str_arr_type_switch">
+        <item>关闭</item>
+        <item>仅一次</item>
+        <item>每天</item>
+        <item>周一至周五</item>
+        <item>周一至周六</item>
+        <item>周六至周日</item>
+        <item>仅周日</item>
+    </string-array>
+
+
+    <string-array name="str_arr_pic_picturemode_vals">
+        <item>明亮</item>
+        <item>标准</item>
+        <item>柔和</item>
+        <item>用户</item>
+        <item>游戏</item>
+        <item>自动</item>
+        <item>电脑</item>
+        <item>艳丽</item>
+        <item>自然</item>
+        <item>运动</item>
+    </string-array>
+    <string-array name="str_arr_pic_colortemperature_vals">
+        <item>冷</item>
+        <item>标准</item>
+        <item>暖</item>
+        <item>用户</item>
+    </string-array>
+    <string-array name="str_arr_pic_zoommode_vals">
+        <item>默认</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>自动</item>
+        <item>全景</item>
+        <item>Just Scan</item>
+        <item>缩放1</item>
+        <item>缩放2</item>
+        <item>14:9</item>
+        <item>点对点</item>
+        <item>字幕</item>
+        <item>影视</item>
+        <item>用户</item>
+        <item>全景(4x3)</item>
+        <item>宽银幕(4x3)</item>
+        <item>垂直黑边(16x9)</item>
+        <item>扫描(16x9)</item>
+        <item>合并(4x3)</item>
+        <item>合并(16x9)</item>
+        <item>缩放2x</item>
+        <item>缩放3x</item>
+        <item>缩放4x</item>
+    </string-array>
+    <string-array name="str_arr_pic_mpegnoisereduction_vals">
+        <item>关 </item>
+        <item>弱</item>
+        <item>中</item>
+        <item>强 </item>
+    </string-array>
+    <string-array name="str_arr_sleep_mode_vals">
+        <item>关 </item>
+        <item> 10分钟 </item>
+        <item> 20分钟 </item>
+        <item> 30分钟 </item>
+        <item> 60分钟 </item>
+        <item> 90分钟 </item>
+        <item> 120分钟 </item>
+        <item> 180分钟 </item>
+        <item> 240分钟 </item>
+    </string-array>
+    <string-array name="str_arr_pvr_mode_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_sound_avc_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_sound_surround_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_sound_spdifoutput_vals">
+        <item>PCM </item>
+        <item>关</item>
+        <item>RAW </item>
+    </string-array>
+    <string-array name="str_arr_sound_separatehear_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_3d_self_adaptive_detecttriple_vals">
+        <item>关闭</item>
+        <item>现在</item>
+        <item>当扫描更改</item>
+        <item>实时</item>
+    </string-array>
+    <string-array name="str_arr_3dto2d_self_adaptive_detecttriple_vals">
+        <item>关闭</item>
+        <item>现在</item>
+    </string-array>
+    <string-array name="str_arr_3d_self_adaptive_detectlevel_vals">
+        <item>弱</item>
+        <item>中</item>
+        <item>强</item>
+    </string-array>
+    <string-array name="str_arr_3d_3dconversion_vals">
+        <item>关闭</item>
+        <item>左右</item>
+        <item>上下</item>
+        <item>双高清</item>
+        <item>行交织</item>
+        <item>2D转3D</item>
+        <item>自动</item>
+        <item>棋盘格</item>
+        <item>列交错</item>
+        <item>帧交替</item>
+    </string-array>
+    <string-array name="str_arr_3d_3dto2d_vals">
+        <item>关闭</item>
+        <item>左右</item>
+        <item>上下</item>
+        <item>双高清</item>
+        <item>行交织</item>
+        <item>帧交替</item>
+        <item>自动</item>
+        <item>棋盘格</item>
+        <item>列交错</item>
+    </string-array>
+    <string-array name="str_arr_3d_3ddepth_vals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="str_arr_3d_3doffset_vals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="str_arr_3d_autostart_vals">
+        <item>关闭</item>
+        <item>2D</item>
+        <item>3D</item>
+    </string-array>
+    <string-array name="str_arr_3d_3doutputaspect_vals">
+        <item>全屏</item>
+        <item>4:3</item>
+    </string-array>
+    <string-array name="str_arr_3d_lrswitch_vals">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <!-- FIXME: Remove element if useless -->
+    <string-array name="str_arr_cha_antannatype">
+        <item>DTMB</item>
+        <item>DVB-C</item>
+        <item>DVB-T</item>
+        <item>MAX</item>
+    </string-array>
+
+    <!-- FIXME: Remove element if useless -->
+    <string-array name="str_arr_cha_atsc_antannatype">
+        <item>None</item>
+        <item>Air</item>
+        <item>Cable</item>
+    </string-array>
+    <string-array name="str_arr_autotuning_country">
+        <item>澳大利亚</item>
+        <item>奥地利</item>
+        <item>比利时</item>
+        <item>保加利亚</item>
+        <item>克罗地亚</item>
+        <item>捷克</item>
+        <item>丹麦</item>
+        <item>芬兰</item>
+        <item>法国</item>
+        <item>德国</item>
+        <item>希腊</item>
+        <item>匈牙利 </item>
+        <item>意大利</item>
+        <item>卢森堡</item>
+        <item>荷兰</item>
+        <item>挪威</item>
+        <item>波兰</item>
+        <item>葡萄牙</item>
+        <item>罗马尼亚</item>
+        <item>俄国</item>
+        <item>塞尔维亚</item>
+        <item>斯洛文尼亚</item>
+        <item>西班牙</item>
+        <item>瑞典</item>
+        <item>瑞士</item>
+        <item>英国</item>
+        <item>新西兰</item>
+        <item>阿拉伯</item>
+        <item>爱沙尼亚</item>
+        <item>希伯来</item>
+        <item>拉脱维亚</item>
+        <item>斯洛伐克</item>
+        <item>土耳其</item>
+        <item>爱尔兰</item>
+        <item>日本</item>
+        <item>菲律宾</item>
+        <item>泰国</item>
+        <item>马尔代夫</item>
+        <item>乌拉圭</item>
+        <item>秘魯</item>
+        <item>阿根廷</item>
+        <item>智利</item>
+        <item>委内瑞拉</item>
+        <item>厄瓜多尔</item>
+        <item>哥斯达黎加</item>
+        <item>巴拉圭</item>
+        <item>玻利维亚</item>
+        <item>伯利兹</item>
+        <item>尼加拉瓜</item>
+        <item>危地马拉</item>
+        <item>中国</item>
+        <item>台湾</item>
+        <item>巴西</item>
+        <item>加拿大</item>
+        <item>墨西哥</item>
+        <item>美国</item>
+        <item>韩国</item>
+        <item>斐济</item>
+        <item>乌兹别克</item>
+        <item>塔吉克斯坦</item>
+        <item>埃塞俄比亚</item>
+        <item>阿塞拜疆</item>
+        <item>南非</item>
+        <item>阿尔及利亚</item>
+        <item>埃及</item>
+        <item>沙特阿拉伯</item>
+        <item>伊朗</item>
+        <item>伊拉克</item>
+        <item>纳米比亚</item>
+        <item>乔丹</item>
+        <item>科威特</item>
+        <item>印尼</item>
+        <item>以色列</item>
+        <item>卡塔尔</item>
+        <item>尼日利亚</item>
+        <item>津巴布韦</item>
+        <item>立陶宛</item>
+        <item>摩洛哥</item>
+        <item>突尼斯</item>
+        <item>印度</item>
+        <item>越南</item>
+        <item>香港</item>
+        <item>哥倫比亞</item>
+        <item>馬來西亞</item>
+        <item>新加坡</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="str_arr_signalinfo_qam_cab">
+        <item>16QAM</item>
+        <item>32QAM</item>
+        <item>64QAM</item>
+        <item>128QAM</item>
+        <item>256QAM</item>
+    </string-array>
+
+    <string-array name="str_arr_signalinfo_qam_dvbt">
+        <item>QPSK</item>
+        <item>16QAM</item>
+        <item>64QAM</item>
+        <item>256QAM</item>
+    </string-array>
+    <!-- for dtv auto tune option -->
+    <string-array name="strs_cha_dtvautotuning_dvbc_tuning_mode">
+        <item>全频点搜台</item>
+        <item>快速搜台</item>
+    </string-array>
+    <string-array name="strs_cha_dtvautotuning_demodulation_tbl">
+        <item>16 QAM</item>
+        <item>32 QAM</item>
+        <item>64 QAM</item>
+        <item>128 QAM</item>
+        <item>256 QAM</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_polarization_vals">
+        <item>Vertical Position</item>
+        <item>Horizontal Position</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_network_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_scan_mode_vals">
+        <item>Free</item>
+        <item>Free+Scramble</item>
+        <item>Scramble</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_service_type_vals">
+        <item>DTV</item>
+        <item>DTV+Radio</item>
+        <item>Radio</item>
+    </string-array>
+    <string-array name="str_arr_dtvmanualtuning_lnbtype_vals">
+        <item>C</item>
+        <item>Ku</item>
+    </string-array>
+    <string-array name="str_arr_mwe_text">
+        <item>关</item>
+        <item>优化</item>
+        <item>争强</item>
+        <item>分屏</item>
+        <item>动态</item>
+        <item>效果</item>
+        <item>方块移动</item>
+    </string-array>
+    <string-array name="str_arr_demo_onoff">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <!--
+     * PVR Error Code Do not change these values without updating their counterparts
+     * in device/mstar/common/libraries/tvapi/java/com/mstar/android/tvapi/common/vo/EnumPvrStatus.java
+     * in device/mstar/common/libraries/tv2/java/com/mstar/android/tv2/TvPvrManager.java
+     * Pvr Status, the return status of Playback/Record
+    -->
+    <string-array name="str_arr_pvr_error_code">
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_no_usb</item>
+        <item>@string/str_pvr_unsurpt_flsystem</item>
+        <item>@string/str_pvr_disk_read_only</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_ciplus_copy_protection</item>
+        <item>@string/str_pvr_scrambled_program</item>
+        <item>@string/str_pvr_ciplus_unsupport</item>
+        <item>@string/str_pvr_data_only</item>
+        <item>@string/str_no_sinal</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_ginga_running</item>
+        <item>@string/str_pvr_bad_video_audio</item>
+        <item>@string/str_pvr_retention_expired</item>
+        <item>@string/str_pvr_ch_blocked</item>
+        <item>@string/str_pvr_rating_blocked</item>
+        <item>@string/str_pvr_max_recording_reached</item>
+        <item>@string/str_pvr_mehg5_data_only</item>
+        <item>@string/str_pvr_vod_not_allow</item>
+        <item>@string/str_pvr_error</item>
+        <item>@string/str_pvr_still_check_disk</item>
+    </string-array>
+    <string-array name="str_arr_setting_audio_type_iso_text">
+        <item></item>
+        <item>C.E</item>
+        <item>H.I.</item>
+        <item>V.I.</item>
+    </string-array>
+    <string-array name="str_arr_time_autotimetype">
+        <item>关闭 </item>
+        <item>数字电视 </item>
+        <item>网络 </item>
+        <item>自动 </item>
+    </string-array>
+    <string-array name="str_arr_time_source">
+        <item>记忆</item>
+        <item>主页</item>
+        <item>多媒体</item>
+        <item>DLNA</item>
+    </string-array>
+
+    <string-array name="str_arr_subtitle_switch">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_set_audio_language">
+        <item>@string/str_set_language_czech</item>
+        <item>@string/str_set_language_danish</item>
+        <item>@string/str_set_language_german</item>
+        <item>@string/str_set_language_english</item>
+        <item>@string/str_set_language_spanish</item>
+        <item>@string/str_set_language_greek</item>
+        <item>@string/str_set_language_french</item>
+        <item>@string/str_set_language_croatian</item>
+        <item>@string/str_set_language_italian</item>
+        <item>@string/str_set_language_hungarian</item>
+        <item>@string/str_set_language_dutch</item>
+        <item>@string/str_set_language_norwegian</item>
+        <item>@string/str_set_language_polish</item>
+        <item>@string/str_set_language_portuguese</item>
+        <item>@string/str_set_language_russian</item>
+        <item>@string/str_set_language_romanian</item>
+        <item>@string/str_set_language_slovenian</item>
+        <item>@string/str_set_language_serbian</item>
+        <item>@string/str_set_language_finnish</item>
+        <item>@string/str_set_language_swedish</item>
+        <item>@string/str_set_language_bulgarian</item>
+        <item>@string/str_set_language_slovak</item>
+        <item>@string/str_set_language_chinese</item>
+        <item>@string/str_set_language_gaelic</item>
+        <item>@string/str_set_language_welsh</item>
+        <item>@string/str_set_language_irish</item>
+        <item>@string/str_set_language_arabic</item>
+        <item>@string/str_set_language_latvian</item>
+        <item>@string/str_set_language_hebrew</item>
+        <item>@string/str_set_language_turkish</item>
+        <item>@string/str_set_language_estonian</item>
+        <item>@string/str_set_language_gallegan</item>
+        <item>@string/str_set_language_basque</item>
+        <item>@string/str_set_language_catalan</item>
+        <item>@string/str_set_language_icelandic</item>
+        <item>@string/str_set_language_letzeburgesch</item>
+        <item>@string/str_set_language_lithuanian</item>
+        <item>@string/str_set_language_ukrainian</item>
+        <item>@string/str_set_language_byelorussian</item>
+        <item>@string/str_set_language_maori</item>
+        <item>@string/str_set_language_mandarin</item>
+        <item>@string/str_set_language_cantonese</item>
+        <item>@string/str_set_language_korean</item>
+        <item>@string/str_set_language_japanese</item>
+        <item>@string/str_set_language_hindi</item>
+        <item>@string/str_set_language_thai</item>
+        <item>@string/str_set_language_vietnamese</item>
+        <item>@string/str_set_language_malay</item>
+        <item>@string/str_set_language_qab</item>
+        <item>@string/str_set_language_qac</item>
+    </string-array>
+
+    <string-array name="str_arr_set_subtitle_language">
+        <item>@string/str_set_language_czech</item>
+        <item>@string/str_set_language_danish</item>
+        <item>@string/str_set_language_german</item>
+        <item>@string/str_set_language_english</item>
+        <item>@string/str_set_language_spanish</item>
+        <item>@string/str_set_language_greek</item>
+        <item>@string/str_set_language_french</item>
+        <item>@string/str_set_language_croatian</item>
+        <item>@string/str_set_language_italian</item>
+        <item>@string/str_set_language_hungarian</item>
+        <item>@string/str_set_language_dutch</item>
+        <item>@string/str_set_language_norwegian</item>
+        <item>@string/str_set_language_polish</item>
+        <item>@string/str_set_language_portuguese</item>
+        <item>@string/str_set_language_russian</item>
+        <item>@string/str_set_language_romanian</item>
+        <item>@string/str_set_language_slovenian</item>
+        <item>@string/str_set_language_serbian</item>
+        <item>@string/str_set_language_finnish</item>
+        <item>@string/str_set_language_swedish</item>
+        <item>@string/str_set_language_bulgarian</item>
+        <item>@string/str_set_language_slovak</item>
+        <item>@string/str_set_language_chinese</item>
+        <item>@string/str_set_language_gaelic</item>
+        <item>@string/str_set_language_welsh</item>
+        <item>@string/str_set_language_irish</item>
+        <item>@string/str_set_language_arabic</item>
+        <item>@string/str_set_language_latvian</item>
+        <item>@string/str_set_language_hebrew</item>
+        <item>@string/str_set_language_turkish</item>
+        <item>@string/str_set_language_estonian</item>
+        <item>@string/str_set_language_gallegan</item>
+        <item>@string/str_set_language_basque</item>
+        <item>@string/str_set_language_catalan</item>
+        <item>@string/str_set_language_icelandic</item>
+        <item>@string/str_set_language_letzeburgesch</item>
+        <item>@string/str_set_language_lithuanian</item>
+        <item>@string/str_set_language_ukrainian</item>
+        <item>@string/str_set_language_byelorussian</item>
+        <item>@string/str_set_language_maori</item>
+        <item>@string/str_set_language_mandarin</item>
+        <item>@string/str_set_language_cantonese</item>
+        <item>@string/str_set_language_korean</item>
+        <item>@string/str_set_language_japanese</item>
+        <item>@string/str_set_language_hindi</item>
+        <item>@string/str_set_language_thai</item>
+        <item>@string/str_set_language_vietnamese</item>
+        <item>@string/str_set_language_malay</item>
+        <item>@string/str_set_language_multiple</item>
+    </string-array>
+
+    <string-array name="str_arr_set_menutimetype">
+        <item>5 秒</item>
+        <item>10 秒</item>
+        <item>15 秒</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="str_arr_set_switchmodetype">
+        <item>黑屏</item>
+        <item>镜像</item>
+    </string-array>
+    <string-array name="str_arr_set_sourceidenttype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_sourcepreviewtype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_hdmiarctype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_sourceswittype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+
+
+
+    <string-array name="str_arr_set_moviemodetype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_mhlautoswitch_onoff">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_bluescreenswitchtype">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="str_arr_set_colorrangetype">
+        <item>0~255</item>
+        <item>16~235</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="str_arr_set_hdmicectype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_standyontype">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_hdmicec_onoff">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <string-array name="str_arr_set_powersetting_onoff">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="str_sort_type">
+        <item>预设</item>
+        <item>卫星</item>
+        <item>名称</item>
+        <item>加密</item>
+        <item>LCN</item>
+        <item>频率</item>
+    </string-array>
+    <string-array name="str_arr_epg_time_check_display_info">
+        <item>None</item>
+        <item>Success</item>
+        <item>Past</item>
+        <item>Overlay</item>
+        <item>Endtime before start</item>
+        <item>Endtime exceed period</item>
+        <item>Full</item>
+        <item>New reminder conflict</item>
+        <item>DB reminder conflict</item>
+    </string-array>
+    <string-array name="str_arr_video_type">
+        <item></item>
+        <item>MPEG</item>
+        <item>H.264</item>
+        <item>AVS</item>
+        <item>VC1</item>
+        <item>HEVC</item>
+    </string-array>
+    <string-array name="str_arr_epg_genre_uk">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_education_uk</item>
+        <item>@string/str_genre_life_uk</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_drama</item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_nz">
+        <item>@string/str_genre_undefined</item>
+        <item>@string/str_genre_movie_drama_general</item>
+        <item>@string/str_genre_news_current_general</item>
+        <item>@string/str_genre_show_general</item>
+        <item>@string/str_genre_sports_general</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music_general</item>
+        <item>@string/str_genre_art_general</item>
+        <item>@string/str_genre_social_general</item>
+        <item>@string/str_genre_education_others_general</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_original_language</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_au">
+        <item></item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_news</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_music_default</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_news_current_default</item>
+        <item>@string/str_genre_education_default</item>
+        <item>@string/str_genre_infotainment</item>
+        <item>@string/str_genre_special</item>
+        <item>@string/str_genre_comedy</item>
+        <item>@string/str_genre_drama</item>
+        <item>@string/str_genre_documentary</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="str_arr_epg_genre_default">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie_drama</item>
+        <item>@string/str_genre_news_current</item>
+        <item>@string/str_genre_show</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_social</item>
+        <item>@string/str_genre_education_others</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_special_characteristics</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+    <string-array name="cities_option_array">
+        <item>其它</item>
+        <item>北京</item>
+        <item>安徽</item>
+        <item>合肥</item>
+        <item>安庆</item>
+        <item>蚌埠</item>
+        <item>厦门</item>
+        <item>泉州</item>
+        <item>洛阳</item>
+        <item>漳州</item>
+        <item>广州</item>
+        <item>广东</item>
+        <item>东莞</item>
+        <item>贵阳</item>
+        <item>海口</item>
+        <item>石家庄</item>
+        <item>秦皇岛</item>
+        <item>唐山</item>
+        <item>哈尔滨</item>
+        <item>郑州</item>
+        <item>洛阳</item>
+        <item>南阳</item>
+        <item>湖北</item>
+        <item>武汉</item>
+        <item>黄冈</item>
+        <item>荆州</item>
+        <item>宜昌</item>
+        <item>长沙广达</item>
+        <item>长沙国安</item>
+        <item>南通</item>
+        <item>南昌</item>
+        <item>吉林</item>
+        <item>大连</item>
+        <item>呼和浩特</item>
+        <item>西安</item>
+        <item>成都</item>
+        <item>乌鲁木齐</item>
+        <item>金华</item>
+        <item>宁波</item>
+        <item>绍兴</item>
+    </string-array>
+    <string-array name="guidance_list_default_string">
+        <item>关闭</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="guidance_list_singapore_string">
+        <item>关闭</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>PG13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+
+    <string-array name="guidance_list_australian_string">
+        <item>关闭</item>
+        <item>Block All</item>
+        <item>P</item>
+        <item>C</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>M</item>
+        <item>MA15+</item>
+        <item>AV15+</item>
+        <item>R</item>
+    </string-array>
+
+    <string-array name="contentlock_list">
+        <item>None</item>
+        <item>Drugs</item>
+        <item>Violence</item>
+        <item>Violence and Drugs</item>
+        <item>Sex</item>
+        <item>Sex and Drugs</item>
+        <item>Violence and Sex</item>
+        <item>Violence, Sex and Drugs</item>
+    </string-array>
+    <string-array name="str_arr_option_caption">
+        <item>OFF</item>
+        <item>ON</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>TEXT1</item>
+        <item>TEXT2</item>
+        <item>TEXT3</item>
+        <item>TEXT4</item>
+    </string-array>
+    <string-array name="str_arr_option_closed_caption">
+        <item>OFF</item>
+        <item>ON</item>
+        <item>ON When Muted</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>TEXT1</item>
+        <item>TEXT2</item>
+        <item>TEXT3</item>
+        <item>TEXT4</item>
+    </string-array>
+    <string-array name="str_arr_option_store_cookies">
+        <item>@string/str_option_store_cookies_off</item>
+        <item>@string/str_option_store_cookies_on</item>
+    </string-array>
+    <string-array name="str_arr_xvycc_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_vchip_button_lock_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="str_arr_vchip_block_unrated_tv_vals">
+        <item>关 </item>
+        <item>开 </item>
+    </string-array>
+    <string-array name="setting_canadian_parental_locks_titles">
+        <item>Canadian English</item>
+        <item>Canadian French</item>
+    </string-array>
+    <string-array name="canadian_english_titles">
+        <item>E</item>
+        <item>C</item>
+        <item>C8+</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>14+</item>
+        <item>18+</item>
+    </string-array>
+    <string-array name="canadian_french_titles">
+        <item>E</item>
+        <item>G</item>
+        <item>8 ans+</item>
+        <item>13 ans+</item>
+        <item>16 ans+</item>
+        <item>18 ans+</item>
+    </string-array>
+    <string-array name="setting_canadian_parental_locks_values">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="rrt5_value">
+        <item>UNLock</item>
+        <item>Lock</item>
+    </string-array>
+    <string-array name="vchip_setting_titles">
+        <item>Button Lock</item>
+        <item>Block Unrated TV</item>
+        <item>USA Parental Locks</item>
+        <item>Canadian Parental Locks</item>
+        <item>RRT5 Setting</item>
+        <item>Reset RRT5</item>
+        <item>Change Password</item>
+    </string-array>
+    <string-array name="setting_closed_caption">
+        <item>CC Mode</item>
+        <item>Basic Selection</item>
+        <item>Advanced Selection</item>
+        <item>Advanced Setting</item>
+    </string-array>
+    <string-array name="str_arr_setting_cc_mode_vals">
+        <item>On</item>
+        <item>Off</item>
+        <item>On When Mute</item>
+    </string-array>
+    <string-array name="str_arr_setting_cc_basic_selection_vals">
+        <item>Off</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>Text1</item>
+        <item>Text2</item>
+        <item>Text3</item>
+        <item>Text4</item>
+    </string-array>
+    <string-array name="str_arr_setting_cc_advanced_selection_vals">
+        <item>Off</item>
+        <item>Service1</item>
+        <item>Service2</item>
+        <item>Service3</item>
+        <item>Service4</item>
+        <item>Service5</item>
+        <item>Service6</item>
+    </string-array>
+    <string-array name="setting_digital_cc_mode">
+        <item>Custom</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="setting_digital_cc_font_size">
+        <item>Normal</item>
+        <item>Small</item>
+        <item>Large</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="setting_digital_cc_font_style">
+        <item>Default</item>
+        <item>Style1</item>
+        <item>Style2</item>
+        <item>Style3</item>
+        <item>Style4</item>
+        <item>Style5</item>
+        <item>Style6</item>
+        <item>Style7</item>
+    </string-array>
+    <string-array name="setting_digital_cc_font_edge_style">
+        <item>None</item>
+        <item>Raised</item>
+        <item>Depressed</item>
+        <item>Uniform</item>
+        <item>Left Shadow</item>
+        <item>Right Shadow</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="setting_digital_cc_caption_color">
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+        <item>Cyan</item>
+        <item>White</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="setting_digital_cc_caption_opacity">
+        <item>Solid</item>
+        <item>Flashing</item>
+        <item>Translucent</item>
+        <item>Transparent</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="setting_digital_cc_italic_attr">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="setting_digital_cc_underline_attr">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_software_update_oad_value">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_oad_view_prompt_value">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="str_arr_lnbpower_option">
+        <item>Off</item>
+        <item>13/18V</item>
+        <item>13V</item>
+        <item>18V</item>
+        <item>14/19V</item>
+        <item>14V</item>
+        <item>19V</item>
+    </string-array>
+    <string-array name="str_arr_compensation_option">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_option">
+        <item>UNIVERSAL</item>
+        <item>MDU_1</item>
+        <item>MDU_2</item>
+        <item>MDU_3</item>
+        <item>MDU_4</item>
+        <item>5150_MHZ</item>
+        <item>5750_MHZ</item>
+        <item>5150_5750_MHZ</item>
+        <item>9750_MHZ</item>
+        <item>10600_MHZ</item>
+        <item>10750_MHZ</item>
+        <item>11250_MHZ</item>
+        <item>11300_MHZ</item>
+        <item>11475_MHZ</item>
+        <item>9750_10700_MHZ</item>
+        <item>9750_10750_MHZ</item>
+        <item>10000_10450_MHZ</item>
+        <item>USER_MODE</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_low">
+        <item>9750</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>5150</item>
+        <item>5750</item>
+        <item>5150</item>
+        <item>9750</item>
+        <item>10600</item>
+        <item>10750</item>
+        <item>11250</item>
+        <item>11300</item>
+        <item>11475</item>
+        <item>9750</item>
+        <item>9750</item>
+        <item>10000</item>
+        <item>9750</item>
+    </string-array>
+    <string-array name="str_arr_lnb_frequencies_high">
+        <item>10600</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>5150</item>
+        <item>5750</item>
+        <item>5750</item>
+        <item>9750</item>
+        <item>10600</item>
+        <item>10750</item>
+        <item>11250</item>
+        <item>11300</item>
+        <item>11475</item>
+        <item>10700</item>
+        <item>10750</item>
+        <item>10450</item>
+        <item>10600</item>
+    </string-array>
+    <string-array name="str_arr_22knz_tone_option">
+        <item>Auto</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="str_arr_toneburst_option">
+        <item>None</item>
+        <item>Burst A</item>
+        <item>Burst B</item>
+    </string-array>
+    <string-array name="str_arr_diseqc_1_0_option">
+        <item>None</item>
+        <item>LNB 1</item>
+        <item>LNB 2</item>
+        <item>LNB 3</item>
+        <item>LNB 4</item>
+    </string-array>
+    <string-array name="str_arr_diseqc_1_1_option">
+        <item>None</item>
+        <item>LNB 1</item>
+        <item>LNB 2</item>
+        <item>LNB 3</item>
+        <item>LNB 4</item>
+        <item>LNB 5</item>
+        <item>LNB 6</item>
+        <item>LNB 7</item>
+        <item>LNB 8</item>
+        <item>LNB 9</item>
+        <item>LNB 10</item>
+        <item>LNB 11</item>
+        <item>LNB 12</item>
+        <item>LNB 13</item>
+        <item>LNB 14</item>
+        <item>LNB 15</item>
+        <item>LNB 16</item>
+    </string-array>
+    <string-array name="str_arr_motor_diseqc_version">
+        <item>None</item>
+        <item>DiSEqC 1.2</item>
+        <item>DiSEqC 1.3</item>
+    </string-array>
+    <string-array name="str_arr_single_cable_slot_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="str_arr_single_cable_lnb_option">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="str_arr_longitude_direction_option">
+        <item>East</item>
+        <item>West</item>
+    </string-array>
+    <string-array name="str_arr_latitude_direction_option">
+        <item>North</item>
+        <item>South</item>
+    </string-array>
+    <string-array name="str_arr_satellite_band_option">
+        <item>C</item>
+        <item>Ku</item>
+    </string-array>
+    <string-array name="str_arr_transponder_polarization_option">
+        <item>V</item>
+        <item>H</item>
+    </string-array>
+
+    <!-- For bandwidth switch -->
+    <string-array name="str_arr_bandwidth_option">
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <!-- For UHF 7 MHz Option -->
+    <string-array name="str_arr_uhf_7mhz_option">
+        <item>关</item>
+        <item>开</item>
+    </string-array>
+    <!-- For scan type -->
+    <string-array name="str_arr_tuning_type">
+        <item>ATV</item>
+        <item>DTV</item>
+        <item>ATV+DTV</item>
+    </string-array>
+    <string-array name="str_arr_dvbc_tuning_type">
+        <item>ATV</item>
+        <item>CADTV</item>
+        <item>ATV+CADTV</item>
+    </string-array>
+
+    <!-- For dvbc operator -->
+    <string-array name="str_arr_dvbc_operator">
+        <item>Others</item>
+        <item>Cdsmatv</item>
+        <item>Cdcable</item>
+        <item>Comhem</item>
+        <item>Upc</item>
+        <item>Yousee</item>
+        <item>Cableready</item>
+        <item>Ziggo</item>
+        <item>Stofa</item>
+    </string-array>
+    <string-array name="str_arr_hdmi_edid_version">
+        <item>Default</item>
+        <item>EDID 1.4</item>
+        <item>EDID 2.0</item>
+    </string-array>
+    <string-array name="str_arr_hbbtv_switch">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_input_sources">
+        <item>VGA</item>
+        <item>ATV</item>
+        <item>CVBS</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>CVBS4</item>
+        <item>CVBS5</item>
+        <item>CVBS6</item>
+        <item>CVBS7</item>
+        <item>CVBS8</item>
+        <item>CVBS_MAX</item>
+        <item>SVIDEO</item>
+        <item>SVIDEO2</item>
+        <item>SVIDEO3</item>
+        <item>SVIDEO4</item>
+        <item>SVIDEO_MAX</item>
+        <item>YPBPR</item>
+        <item>YPBPR2</item>
+        <item>YPBPR3</item>
+        <item>YPBPR_MAX</item>
+        <item>SCART</item>
+        <item>SCART2</item>
+        <item>SCART_MAX</item>
+        <item>HDMI</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>HDMI_MAX</item>
+        <item>DTV</item>
+        <item>DVI</item>
+        <item>DVI2</item>
+        <item>DVI3</item>
+        <item>DVI4</item>
+        <item>DVI_MAX</item>
+        <item>STORAGE</item>
+        <item>KTV</item>
+        <item>JPEG</item>
+        <item>DTV2</item>
+        <item>STORAGE2</item>
+        <item>DIV3</item>
+        <item>SCALER_OP</item>
+        <item>RUV</item>
+        <item>VGA2</item>
+        <item>VGA3</item>
+        <item>NUM</item>
+        <item>NONE</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+    <item msgid="8151962652413645395">"2 分钟"</item>
+    <item msgid="8675215713017289017">"5 分钟"</item>
+    <item msgid="477015974247590543">"1 小时"</item>
+    <item msgid="5198271470953124739">"永不超时"</item>
+  </string-array>
+   <string-array name="wifi_p2p_status">
+    <item msgid="1701505390737218306">"已连接"</item>
+    <item msgid="3189211552661432651">"已邀请"</item>
+    <item msgid="3206450250360237549">"失败"</item>
+    <item msgid="7785896708926971207">"可用"</item>
+    <item msgid="2330782789550628803">"超出范围"</item>
+  </string-array>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/mainlinear_general_weather" style="@style/third_main_layout1_style4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/third_layout1_title_style">
+        <TextView android:id="@+id/city" style="@style/third_layout_title_text_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout  style="@style/third_layout1_item_style1">
+                    <TextView android:text="@string/weather_today_weather" style="@style/third_layout1_text_style2" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView android:id="@+id/weather_type" style="@style/third_layout1_text_style4" />
+                        <ImageView android:id="@+id/weather_icon" style="@style/third_layout1_image_style2" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout style="@style/third_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/third_layout1_item_style1">
+
+                    <TextView android:text="@string/weather_current_temperature" style="@style/third_layout1_text_style2" />
+
+                    <TextView  android:id="@+id/current_temperature" style="@style/third_layout1_text_style3" />
+                </LinearLayout>
+                <LinearLayout style="@style/third_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/third_layout1_item_style1">
+                    <TextView android:text="@string/weather_today_temperature" style="@style/third_layout1_text_style2" />
+                    <TextView  android:id="@+id/today_temperature" style="@style/third_layout1_text_style3" />
+                </LinearLayout>
+                <LinearLayout style="@style/third_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/third_layout1_item_style1">
+                    <TextView android:text="@string/weather_wind_power" style="@style/third_layout1_text_style2" />
+                    <TextView  android:id="@+id/wind_power" style="@style/third_layout1_text_style3" />
+                </LinearLayout>
+                <LinearLayout style="@style/third_layout_segmentation_style" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/query_city_weather"
+                android:layout_width="480.0dip"
+                android:layout_height="37.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:background="@drawable/button_change"
+                android:text="@string/weather_query_city"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout style="@style/third_layout_segmentation_style" />
+            <Button
+                android:id="@+id/see_detail_weather"
+                android:layout_width="480.0dip"
+                android:layout_height="37.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:background="@drawable/button_change"
+                android:text="@string/weather_See_detail"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

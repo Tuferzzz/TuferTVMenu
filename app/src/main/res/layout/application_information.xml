@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="700dip"
+        android:layout_height="500dip"
+        android:background="@drawable/set_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/line" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="49dip" >
+
+            <LinearLayout
+                android:layout_width="455dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include layout="@layout/app_detail_info" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="210dip"
+                android:background="@drawable/vertical_line" />
+
+            <LinearLayout
+                android:layout_width="245dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <include layout="@layout/app_operation" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uninstall_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="35dip"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="672dip"
+            android:layout_height="17.5dip"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="7dip" >
+
+            <include layout="@layout/progress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dip"
+                android:background="@drawable/line" >
+            </ImageView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">TuferTVMenu</string>
+    <string name="degree">&#176;</string>
+    <string name="whtertji">级</string>
+    <string name="str_touchbar_back">返回</string>
+    <string name="str_touchbar_home">主页</string>
+    <string name="str_touchbar_task">任务</string>
+    <string name="str_touchbar_input">输入源</string>
+    <string name="str_touchbar_menu">菜单</string>
+    <string name="str_touchbar_volplus">音量+</string>
+    <string name="str_touchbar_volminus">音量-</string>
+    <string name="str_touchbar_blightplus">背光+</string>
+    <string name="str_touchbar_blightminus">背光-</string>
+    <string name="str_touchbar_brightnessplus">亮度+</string>
+    <string name="str_touchbar_brightnessminus">亮度-</string>
+    <string name="str_touchbar_channelplus">频道+</string>
+    <string name="str_touchbar_channelminus">频道-</string>
+    <string name="str_touchbar_whitepanel">白板</string>
+    <string name="str_touchbar_screencomment">批注</string>
+    <string name="str_touchbar_screenshot">截图</string>
+    <string name="str_touchbar_user">自定义</string>
+    <string name="str_touchbar_defaultvalue">50</string>
+    <string name="str_touchbar_taken_screenshot">已截图到目录:/mnt/sdcard/screenshot!</string>
+    <string name="str_sdcard_not_found">SD 卡未插入!</string>
+    <string name="source_changing">正在切换!</string>
+    <string name="menu_cannot_use">本项目仅在电视通道下有效!</string>
+    <string name="input_cannot_use">本项目仅在电视通道下有效!</string>
+    <string name="str_mainmenu_general">通用</string>
+    <string name="str_mainmenu_picture">图像</string>
+    <string name="str_mainmenu_sound">声音</string>
+    <string name="str_mainmenu_channel">频道</string>
+    <string name="str_mainmenu_network">网络</string>
+    <string name="str_mainmenu_intelligence">智能</string>
+    <string name="str_mainmenu_system">系统</string>
+    <string name="str_mainmenu_about">关于</string>
+    <string name="str_mainmenu_content">image</string>
+    <string name="str_mainmenu_no_text" />
+    <string name="str_mainmenu_default_val0">0</string>
+    <string name="str_mainmenu_default_val50">50</string>
+    <string name="str_mainmenu_default_switch_on">开</string>
+    <string name="str_mainmenu_default_switch_off">关</string>
+    <string name="str_mainmenu_dialog_confirm">确定</string>
+    <string name="str_mainmenu_dialog_cancel">取消</string>
+    <string name="str_mainmenu_general_powerinput">开机通道</string>
+    <string name="str_mainmenu_general_powerinput_android">安卓</string>
+    <string name="str_mainmenu_general_appmanager">应用管理</string>
+
+    <string name="str_mainmenu_general_timedate">时间/日期</string>
+    <string name="str_mainmenu_general_weather">天气</string>
+    <string name="str_mainmenu_general_appmanager_name">应用名称</string>
+    <string name="str_mainmenu_general_appmanager_version">版本</string>
+    <string name="str_mainmenu_general_appmanager_size">大小</string>
+    <string name="str_mainmenu_general_weather_time">日期</string>
+    <string name="str_mainmenu_general_weather_icon">天气</string>
+    <string name="str_mainmenu_general_weather_temperature">温度</string>
+    <string name="str_mainmenu_general_weather_weather">天气类型</string>
+    <string name="str_mainmenu_general_weather_wind">风力</string>
+    <string name="str_mainmenu_general_appmanager_total_space">总空间：</string>
+    <string name="str_mainmenu_general_appmanager_free_space">剩余空间：</string>
+    <string name="str_mainmenu_general_weather_return">返回</string>
+    <string name="str_mainmenu_general_weather_title">天气查询</string>
+    <string name="str_mainmenu_general_weather_other">其他</string>
+    <string name="weather_current_temperature">当前温度:</string>
+    <string name="weather_today_weather">今日天气:</string>
+    <string name="weather_today_temperature">今日温度:</string>
+    <string name="weather_wind_power">风向风力:</string>
+    <string name="weather_careful">温馨提示:</string>
+    <string name="weather_query_city">查询其他城市天气</string>
+    <string name="weather_See_detail">查看未来五天天气</string>
+    <string name="input_city_name">请输入查询的城市名:</string>
+    <string name="str_mainmenu_general_weather_city">广州</string>
+    <string name="str_mainmenu_general_weather_pm25">PM2.5</string>
+    <string name="str_mainmenu_general_weather_pm25_val">48</string>
+    <string name="str_mainmenu_general_weather_today">今天</string>
+    <string name="str_mainmenu_general_weather_tomorrow">明天</string>
+    <string name="str_mainmenu_general_weather_dat">后天</string>
+    <string name="str_mainmenu_general_weather_today_date">周四</string>
+    <string name="str_mainmenu_general_weather_temperature1">26℃~36℃</string>
+    <string name="str_mainmenu_general_weather_weather1">晴</string>
+    <string name="str_mainmenu_general_weather_wind1">微风</string>
+    <string name="str_mainmenu_general_weather_index">指数</string>
+    <string name="str_mainmenu_general_weather_query">天气查询中...</string>
+    <string name="str_mainmenu_general_weather_query_error">查无天气信息。</string>
+    <string name="str_mainmenu_general_weather_enter_city_name">请输入城市名称</string>
+    <string name="str_mainmenu_general_weather_network_error">网络异常，无法查询天气，请先检测网络是否可用！</string>
+    <string name="str_mainmenu_picture_picturemode">图像模式</string>
+    <string name="str_mainmenu_picture_geometricadjust">几何调整</string>
+    <string name="str_mainmenu_picture_zoommode">缩放</string>
+    <string name="str_mainmenu_picture_brightness">亮度调节</string>
+    <string name="str_mainmenu_picture_contrast">对比度</string>
+    <string name="str_mainmenu_picture_backlight">背光</string>
+    <string name="str_mainmenu_picture_hue">色调</string>
+    <string name="str_mainmenu_picture_autoadjust">自动调整</string>
+    <string name="str_mainmenu_picture_imgnoisereduction">图像降噪</string>
+    <string name="str_mainmenu_picture_color_temperature">色温</string>
+    <string name="str_mainmenu_picture_color_temperature_standard">标准</string>
+    <string name="str_mainmenu_picture_color_temperature_cold">冷</string>
+    <string name="str_mainmenu_picture_color_temperature_warm">暖</string>
+    <string name="str_mainmenu_picture_color_temperature_user">用户</string>
+    <string name="str_mainmenu_picture_picturemode_lightness">明亮</string>
+    <string name="str_mainmenu_picture_picturemode_standard">标准</string>
+    <string name="str_mainmenu_picture_picturemode_soft">柔和</string>
+    <string name="str_mainmenu_picture_picturemode_user">用户</string>
+    <string name="str_mainmenu_picture_picturemode_game">游戏</string>
+    <string name="str_mainmenu_picture_picturemode_auto">自动</string>
+    <string name="str_mainmenu_picture_picturemode_pc">电脑</string>
+    <string name="str_mainmenu_picture_picturemode_vivid">艳丽</string>
+    <string name="str_mainmenu_picture_picturemode_natural">自然</string>
+    <string name="str_mainmenu_picture_picturemode_sports">运动</string>
+    <string name="str_mainmenu_picture_geometricadjust_clock">时钟</string>
+    <string name="str_mainmenu_picture_geometricadjust_phase">相位</string>
+    <string name="str_mainmenu_picture_geometricadjust_horizontal_pos">水平位置</string>
+    <string name="str_mainmenu_picture_geometricadjust_vertical_pos">垂直位置</string>
+    <string name="str_mainmenu_picture_zoommode_default">默认</string>
+    <string name="str_mainmenu_picture_zoommode_16x9">16:9</string>
+    <string name="str_mainmenu_picture_zoommode_4x3">4:3</string>
+    <string name="str_mainmenu_picture_zoommode_auto">自动</string>
+    <string name="str_mainmenu_picture_zoommode_panoramamode">全景</string>
+    <string name="str_mainmenu_picture_zoommode_justscan">Just Scan</string>
+    <string name="str_mainmenu_picture_zoommode_zoom1">缩放1</string>
+    <string name="str_mainmenu_picture_zoommode_zoom2">缩放2</string>
+    <string name="str_mainmenu_picture_zoommode_14x9">14:9</string>
+    <string name="str_mainmenu_picture_zoommode_p2p">点对点</string>
+    <string name="str_mainmenu_picture_zoommode_subtitle">字幕</string>
+    <string name="str_mainmenu_picture_zoommode_movie">影视</string>
+    <string name="str_mainmenu_picture_zoommode_personal">用户</string>
+    <string name="str_mainmenu_picture_zoommode_4x3_panScan">全景(4x3)</string>
+    <string name="str_mainmenu_picture_zoommode_4x3_letterBox">宽银幕(4x3)</string>
+    <string name="str_mainmenu_picture_zoommode_16x9_pillarbox">垂直黑边(16x9)</string>
+    <string name="str_mainmenu_picture_zoommode_16x9_panscan">扫描(16x9)</string>
+    <string name="str_mainmenu_picture_zoommode_4x3_combind">合并(4x3)</string>
+    <string name="str_mainmenu_picture_zoommode_16x9_combind">合并(16x9)</string>
+    <string name="str_mainmenu_picture_zoommode_zoom_2x">缩放2x</string>
+    <string name="str_mainmenu_picture_zoommode_zoom_3x">缩放3x</string>
+    <string name="str_mainmenu_picture_zoommode_zoom_4x">缩放4x</string>
+    <string name="str_pic_pcimagemode_waiting">电脑画面正在调整，请稍后...</string>
+    <string name="str_pic_pcimagemode_success">PC画面调整​​成功！</string>
+    <string name="str_pic_pcimagemode_failed">PC画面调整失败！</string>
+    <string name="str_mainmenu_sound_soundmode">声音模式</string>
+    <string name="str_mainmenu_sound_srs">SRS 音效</string>
+    <string name="str_mainmenu_sound_equalizer">均衡</string>
+    <string name="str_mainmenu_sound_track">音轨</string>
+    <string name="str_mainmenu_sound_channelselect">声道选择</string>
+    <string name="str_mainmenu_sound_mute">静音</string>
+    <string name="str_mainmenu_sound_soundmode_standard">标准</string>
+    <string name="str_mainmenu_sound_soundmode_music">音乐</string>
+    <string name="str_mainmenu_sound_soundmode_movie">影院</string>
+    <string name="str_mainmenu_sound_soundmode_sports">运动</string>
+    <string name="str_mainmenu_sound_soundmode_user">用户</string>
+    <string name="str_mainmenu_sound_equalizer_120hz">120Hz</string>
+    <string name="str_mainmenu_sound_equalizer_500hz">500Hz</string>
+    <string name="str_mainmenu_sound_equalizer_1.5khz">1.5KHz</string>
+    <string name="str_mainmenu_sound_equalizer_5khz">5KHz</string>
+    <string name="str_mainmenu_sound_equalizer_10khz">10KHz</string>
+    <string name="str_mainmenu_sound_track_track1">音轨-1</string>
+    <string name="str_mainmenu_sound_track_track2">音轨-2</string>
+    <string name="str_mainmenu_sound_track_track3">音轨-3</string>
+    <string name="str_mainmenu_sound_channelselect_mono">单声道</string>
+    <string name="str_mainmenu_sound_channelselect_stereo">立体声</string>
+    <string name="str_mainmenu_channel_colorsystem">彩色制式</string>
+    <string name="str_mainmenu_channel_soundsystem">声音制式</string>
+    <string name="str_mainmenu_channel_manualtuning">手动搜台</string>
+    <string name="str_mainmenu_channel_autotuning">搜台</string>
+    <string name="str_mainmenu_channel_programedit">节目列表</string>
+    <string name="str_mainmenu_network_networkselection">网络选择</string>
+    <string name="str_mainmenu_network_networkselection_default_val">无线网络</string>
+    <string name="str_mainmenu_network_wifihotspot">无线热点</string>
+    <string name="str_mainmenu_network_wifidirect">Wi-Fi 直连</string>
+    <string name="str_mainmenu_network_wifidirect_default_val">关闭</string>
+    <string name="str_mainmenu_network_networkdetails">网络详情</string>
+    <string name="str_mainmenu_intelligence_sleeptime">定时关机</string>
+    <string name="str_mainmenu_intelligence_childlock">童锁</string>
+    <string name="str_mainmenu_intelligence_energysaving">节能</string>
+    <string name="str_mainmenu_intelligence_temperaturedet">温度监控</string>
+    <string name="str_mainmenu_intelligence_temperaturedet_default_val">39℃</string>
+    <string name="str_mainmenu_intelligence_sensorlight">感光</string>
+    <string name="str_mainmenu_intelligence_protecteyes">护眼</string>
+    <string name="str_mainmenu_intelligence_nosignalreturn">智能返回</string>
+    <string name="str_mainmenu_intelligence_nosignal_standby">无信号待机</string>
+    <string name="str_mainmenu_intelligence_power_on_time">定时开机</string>
+    <string name="str_mainmenu_intelligence_identify">智能识别</string>
+    <string name="str_mainmenu_intelligence_menu_display_time">菜单显示时间</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_alway">关</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_5S">5s</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_10S">10s</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_15S">15s</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_20S">20s</string>
+    <string name="str_mainmenu_intelligence_menu_display_time_25S">25s</string>
+    <string name="str_mainmenu_intelligence_sleeptime_off">关</string>
+    <string name="str_mainmenu_intelligence_sleeptime_10m">10分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_20m">20分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_30m">30分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_60m">60分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_90m">90分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_120m">120分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_180m">180分钟</string>
+    <string name="str_mainmenu_intelligence_sleeptime_240m">240分钟</string>
+    <string name="str_mainmenu_intelligence_power_on_time_off">关</string>
+    <string name="str_mainmenu_intelligence_power_on_time_15m">15分钟</string>
+    <string name="str_mainmenu_intelligence_power_on_time_30m">30分钟</string>
+    <string name="str_mainmenu_intelligence_power_on_time_1h">1小时</string>
+    <string name="str_mainmenu_intelligence_power_on_time_2h">2小时</string>
+    <string name="str_mainmenu_intelligence_power_on_time_4h">4小时</string>
+    <string name="str_mainmenu_intelligence_power_on_time_6h">6小时</string>
+    <string name="str_mainmenu_intelligence_power_on_time_12h">12小时</string>
+    <string name="str_mainmenu_intelligence_power_on_time_24h">24小时</string>
+    <string name="str_click_tounlock">点击图标解锁</string>
+    <string name="str_childlock_open">童锁已打开！</string>
+    <string name="str_enterpasswd_unlock">输入密码解锁</string>
+    <string name="str_passwd_wrong">密码输入错误!</string>
+    <string name="str_please_inputpasswd">输入密码:</string>
+    <string name="str_passwd_warning">密码只能是数字</string>
+    <string name="str_confirm_tounlock">确认</string>
+    <string name="str_screenlock_cancel">取消</string>
+    <string name="str_childlock_closed">童锁已关闭!</string>
+    <string name="str_temperaturedet_centigrade">℃</string>
+    <string name="str_temperature_alert_dialog_title">警告: 当前温度过高！</string>
+    <string name="str_temperature_alert_dialog_message1">温度过高，</string>
+    <string name="str_temperature_alert_dialog_message2">秒后关机。</string>
+    <string name="str_temperature_alert_dialog_confirm">确定</string>
+    <string name="str_mainmenu_system_inputmethod">输入法</string>
+    <string name="str_mainmenu_system_more_settings">更多设置</string>
+    <string name="str_mainmenu_system_inputmethod_default_val">搜狗输入法</string>
+    <string name="str_mainmenu_system_location">区域设置</string>
+    <string name="str_mainmenu_system_location_default_val">广州</string>
+    <string name="str_mainmenu_system_language">语言</string>
+    <string name="str_mainmenu_system_shopping">商场模式</string>
+    <string name="str_mainmenu_system_security">安全</string>
+    <string name="str_mainmenu_system_powermusic">开机音乐</string>
+    <string name="str_mainmenu_system_memory">内存管理</string>
+    <string name="str_mainmenu_system_language_chinese">简体中文</string>
+    <string name="str_mainmenu_system_language_chinese_traditional">繁体中文</string>
+    <string name="str_mainmenu_system_language_english">English</string>
+    <string name="str_mainmenu_about_systeminfo">系统信息</string>
+    <string name="str_mainmenu_about_instructions">电子说明书</string>
+    <string name="str_mainmenu_about_localinfo">本机信息</string>
+    <string name="str_mainmenu_about_upgrade">软件更新</string>
+    <string name="str_mainmenu_about_localname">本地名称</string>
+    <string name="str_mainmenu_about_localname_default_val">SMART TV</string>
+    <string name="str_mainmenu_about_restore">恢复出厂设置</string>
+    <string name="str_mainmenu_about_dialogmenu_title">确定要升级吗？</string>
+    <string name="str_mainmenu_about_dialogmenu_confirm">确认</string>
+    <string name="str_mainmenu_about_dialogmenu_cancel">取消</string>
+    <string name="str_mainmenu_about_waiting_val">请稍等！</string>
+    <string name="str_mainmenu_about_plug_usb">请插入USB!</string>
+    <string name="str_mainmenu_about_dialog_message_restore_to_default">确定要恢复出厂设置吗？</string>
+    <string name="str_mainmenu_network_info">网络详情</string>
+    <string name="str_mainmenu_network_ip_addr">IP地址:</string>
+    <string name="str_mainmenu_network_mask_addr">子网掩码:</string>
+    <string name="str_mainmenu_network_way_addr">默认网关:</string>
+    <string name="str_mainmenu_network_dns_addr">默认DNS:</string>
+    <string name="str_mainmenu_network_mac_addr">默认MAC:</string>
+    <string name="str_mainmenu_network_status">未连接网络</string>
+    <string name="str_mainmenu_network_hotspot">无线热点</string>
+    <string name="str_mainmenu_network_wifihotspot_oc">WiFi 热点</string>
+    <string name="str_mainmenu_network_setup_hotspot">配置WiFi热点</string>
+    <string name="str_mainmenu_network_hotspot_edit">编辑</string>
+    <string name="str_mainmenu_network_hotspot_SSID">SSID</string>
+    <string name="str_mainmenu_network_hotspot_passord">密码</string>
+    <string name="str_mainmenu_network_hotspot_security">安全性</string>
+    <string name="str_mainmenu_network_hotspot_NONE">无</string>
+    <string name="str_mainmenu_network_hotspot_WPA2_PSK">WPA2 PSK</string>
+    <string name="str_save">保存</string>
+    <string name="wifiap_pwd_notice">密码至少应包含8个字符，请重新输入</string>
+    <string name="please_input_ssid">请输入SSID</string>
+    <string name="wifiap_config_success">设置成功</string>
+    <string name="wifiap_config_opening">正在打开热点</string>
+    <string name="wifiap_config_closing">正在关闭热点</string>
+    <string name="wifiap_config_is_opened">热点已经打开</string>
+    <string name="str_install_apk_title">Android更新</string>
+    <string name="str_install_apk_message">Android系统正在更新,请稍候...</string>
+    <string name="str_mainmenu_about_systeminfo_model">型号：</string>
+    <string name="str_mainmenu_about_systeminfo_version">软件版本：</string>
+    <string name="str_mainmenu_about_systeminfo_system_version">系统版本：</string>
+    <string name="str_mainmenu_about_systeminfo_memory_info">内存信息(可用 / 总共)：</string>
+    <string name="str_mainmenu_channal_tip">仅在TV通道下使用!</string>
+    <string name="str_signal_alert_dialog_title">信号已插入!</string>
+    <string name="str_signal_alert_dialog_message">秒后自动切换,是否手动切换?</string>
+    <string name="str_signal_alert_dialog_confirm">是</string>
+    <string name="str_signal_alert_dialog_cancel">否</string>
+    <string name="str_touchbar_home_2">系统切换</string>
+    <string name="str_custom_channel_name_title">修改当前通道名称?</string>
+    <string name="str_custom_channel_name_confirm">确认</string>
+    <string name="str_custom_channel_name_cancel">取消</string>
+    <string name="str_custom_channel_name_donot_support">此通道不支持修改名称!</string>
+    <string name="str_power_inputsource_memorymode">记忆信号源</string>
+    <string name="str_mainmenu_intelligence_time_hour">小时</string>
+    <string name="str_mainmenu_intelligence_time_minute">分钟</string>
+    <string name="str_mainmenu_intelligence_time_type">次数</string>
+    <string name="str_mainmenu_intelligence_time_switch">开关</string>
+    <string name="wifiap_config_Please_turn_off">请关闭热点再编辑</string>
+    <string name="open_app">打开</string>
+
+
+
+
+    <!-- for time -->
+    <string name="str_time_confirm_tip">请按红键确认设置! </string>
+    <string name="str_time_time">时间 </string>
+    <string name="str_time_date">日期</string>
+    <string name="str_time_currenttime">当前时间</string>
+    <string name="str_time_offtime">关机时间</string>
+    <string name="str_time_schedule">开机时间</string>
+    <string name="str_time_sleep">睡眠时间</string>
+    <string name="str_time_autotime">自动调整</string>
+    <string name="str_time_schedule_ontime">在时间</string>
+    <string name="str_time_set_time_on_title">开机时间</string>
+    <string name="str_time_set_time_off_title">关机时间</string>
+    <string name="str_time_set_time_on">定时开机</string>
+    <string name="str_time_set_time_off">定时关机</string>
+    <string name="str_time_schedule_hour">小时</string>
+    <string name="str_time_schedule_minute">分钟</string>
+    <string name="str_time_schedule_source">源</string>
+    <string name="str_time_schedule_channel">频道</string>
+    <string name="str_time_schedule_volume">音量</string>
+    <string name="str_time_hour">小时 </string>
+    <string name="str_time_minute">分钟 </string>
+    <string name="str_time_second">秒</string>
+    <string name="str_time_change_timezone">Timezone automatic updated</string>
+
+    <!-- system language and input setting -->
+    <string name="language_setting">语言设置</string>
+    <string name="keyboard_setting">修改默认输入法</string>
+    <string name="inpupt_setting">输入法设置</string>
+    <string name="setting">设置</string>
+    <string name="language_input_setting">语言/键盘设置</string>
+
+    <!-- system backup update -->
+    <string name="system_backup_update">系统备份升级</string>
+    <string name="system_backup">系统备份</string>
+    <string name="system_restore">系统还原</string>
+    <string name="backup_restore">备份还原</string>
+    <string name="system_information">系统信息</string>
+    <string name="system_restore_factory">恢复出厂</string>
+    <string name="system_restore_factory_setting">恢复出厂设置</string>
+    <string name="system_time">系统时间</string>
+    <string name="local_update">本地升级</string>
+    <string name="erasure_cache">擦除cache分区</string>
+    <string name="net_update">网络升级</string>
+    <string name="system_net_update">系统网络升级</string>
+    <string name="system_local_update">系统本地升级</string>
+    <string name="download">立即下载</string>
+    <string name="update">立即升级</string>
+    <string name="backup">立即备份</string>
+    <string name="restore">立即还原</string>
+    <string name="progress">当前进度：</string>
+    <string name="current_version">当前系统版本：</string>
+    <string name="sdcard_success">移动设备可以正常使用</string>
+    <string name="cache_success">cache分区有足够的存储空间</string>
+    <string name="check_new_version">正在检查新版本......</string>
+    <string name="new_version">检测到新版本：</string>
+    <string name="check_updatezip">检测到升级包，确认是否升级？</string>
+    <string name="download_new_version">是否立即下载新版？</string>
+    <string name="downloading">正在下载新版本......</string>
+    <string name="downloaded">下载完成</string>
+    <string name="to_update">马上升级？</string>
+    <string name="updating">正在更新系统......</string>
+    <string name="updated">请重新启动TV，更新程序会在重启后继续......</string>
+    <string name="no_sdcard">系统不能检测到移动设备，没有办法执行更新操作，请插入移动设备。</string>
+    <string name="sdcard">正在检测设备......</string>
+    <string name="exit">退出</string>
+    <string name="reboot">重启TV</string>
+    <string name="check_failure">安装过程中出现错误，请更换更新包。</string>
+    <string name="check_success">校验成功。</string>
+    <string name="latest">当前系统已经是最新版本，暂时不需要升级！</string>
+    <string name="no_update_file">您的移动设备上没有最新的镜像文件</string>
+    <string name="tips">请检查您存放的目录是否为：/mstara3/,文件名是否是:update_signed.zip</string>
+    <string name="check_directry">升级包必须放在移动设备根目录，且升级包文件名为：update_signed.zip</string>
+
+    <string name="start_backup">移动设备可以正常使用，您可以备份当前的TV系统，请点击开始备份。</string>
+    <string name="start">开始备份</string>
+    <string name="backUping">正在备份，请不要执行其他的操作，请等待......</string>
+    <string name="restoring">正在恢复，请不要执行其他的操作，请等待......</string>
+    <string name="start_restore">移动设备可以正常使用，您可以恢复当前的TV系统，请点击开始恢复。</string>
+    <string name="no_restore">移动设备上面无恢复文件，无法进行系统恢复操作。</string>
+    <string name="restore_start">开始恢复</string>
+    <string name="restore_success">恢复完成，请重启TV</string>
+    <string name="wire_mac_address">有线MAC地址</string>
+    <string name="wireless_mac_address">无线MAC地址</string>
+    <string name="update_list">本版本的更新内容如下：</string>
+    <string name="sdcard_insert">检测到移动设备插入</string>
+    <string name="sdcard_remove">检测到移动设备移除或出现异常</string>
+    <string name="download_error">下载的过程中出现错误，请重新下载</string>
+    <string name="read_file_error">读取文件出错，请检查移动设备上是否有versioninfor文件</string>
+    <string name="check_package">正在校验更新包......</string>
+    <string name="continue_download">继续下载</string>
+    <string name="is_downloading">正在下载升级包</string>
+    <string name="download_ing">正在下载</string>
+    <string name="notice_restore_factory">恢复出厂设置功能清单(清除TV上的所有用户数据)：</string>
+    <string name="notice_erasure_cache">进入recovery模式，擦除设备的Cache分区</string>
+    <string name="notice_system_backup">进入recovery模式，备份当前系统</string>
+    <string name="notice_system_restore">进入recovery模式，将系统还原为之前的备份</string>
+    <string name="clear_google_user">。清除你的Google账户</string>
+    <string name="system_and_app_set">。系统及应用程序数据和设置</string>
+    <string name="tv_data_restore">。TV数据的出厂恢复</string>
+    <string name="notice_tv_date_restore_success">TV数据的出厂恢复成功</string>
+    <string name="notice_tv_date_restore_failed">TV数据的出厂恢复失败</string>
+    <string name="restore_factory_system_reboot">系统正在重新启动...</string>
+    <string name="restore_factory_confirm_restore">是否确认恢复出厂设置 ？</string>
+    <string name="erasure_cache_confirm_restore">是否确认擦除Cache分区 ？</string>
+    <string name="system_backup_confirm_restore">是否确认备份系统 ？</string>
+    <string name="system_restore_confirm_restore">是否确认还原系统 ？</string>
+
+
+
+
+    <string name="str_cha_channel">频道</string>
+    <string name="str_cha_autotuning">自动搜台</string>
+    <string name="str_cha_dtvmanualtuning"> DTV手动搜台</string>
+    <string name="str_cha_atvmanualtuning">ATV手动搜台</string>
+    <string name="str_cha_bandwidth_switch">带宽切换</string>
+    <string name="str_cha_bandwidth_uhf_7mhz">7MHz over UHF</string>
+    <string name="str_cha_programedit">频道编辑</string>
+    <string name="str_cha_signalinfo">Signal Information</string>
+    <string name="str_cha_ciinformation"> CI信息</string>
+    <string name="str_cha_software_update_oad">Software Update (OAD)</string>
+    <string name="str_cha_time_to_search_for_ssu">Time to Search for SSU</string>
+    <string name="str_cha_time_to_search_for_ssu_default">4:00</string>
+    <string name="str_cha_oadscan">OAD Scan</string>
+    <string name="str_cha_oad_view_prompt">View Prompt to Update</string>
+    <string name="str_mainmenu_menu">菜单</string>
+    <string name="str_cha_autotuning_tuningtype">自动搜台类型</string>
+    <string name="str_cha_autotuning_tuningtype_atv">模拟电视</string>
+    <string name="str_cha_autotuning_country_australia">澳大利亚</string>
+    <string name="str_cha_autotuning_country_austria">奥地利</string>
+    <string name="str_cha_autotuning_country_beligum">比利时</string>
+    <string name="str_cha_autotuning_country_bulgaral">保加利亚</string>
+    <string name="str_cha_autotuning_country_croatia">克罗地亚</string>
+    <string name="str_cha_autotuning_country_czech">捷克</string>
+    <string name="str_cha_autotuning_country_denmark">丹麦</string>
+    <string name="str_cha_autotuning_country_finland">芬兰</string>
+    <string name="str_cha_autotuning_country_france">法国</string>
+    <string name="str_menu_parentalcontrol">家长控制</string>
+    <string name="str_lock_system">系统锁定</string>
+    <string name="str_lock">Lock</string>
+    <string name="str_set_pwd">修改密码</string>
+    <string name="str_block_program">节目锁定</string>
+    <string name="str_parental_contentlock">Content Lock</string>
+    <string name="str_parental_guidance">等级设定</string>
+    <string name="str_cha_airdtv_title">Air DTV</string>
+    <string name="str_cha_airtv_title">Air</string>
+    <string name="str_cha_cabletv_title">Cable</string>
+    <string name="str_ci_cam_pincode">CI CAM Pin Code</string>
+    <string name="str_ci_set_cam_pincode_done">Set Pin Code Done</string>
+
+    <string name="str_cha_antannatype_none">None</string>
+    <string name="str_cha_antannatype_air">天线类型</string>
+    <string name="str_cha_antannatype_cable">有线</string>
+
+    <string name="str_stop_record_dialog_title">确定要退出录像系统？</string>
+    <string name="str_stop_record_dialog_message">正在录像...确认要退出吗？</string>
+    <string name="str_stop_record_playback_dialog_message">System will stop record and playback if user want to channel change</string>
+    <string name="str_stop_record_dialog_confirm">确定</string>
+    <string name="str_stop_record_dialog_cancel">取消</string>
+    <string name="str_stop_playback_dialog_message">System will stop playback if user want to channel change</string>
+    <string name="str_disk_too_slow">U盘读取过慢</string>
+    <string name="enter_old_pwd">请输入旧密码</string>
+    <string name="enter_check_pwd">请输入密码</string>
+    <string name="enter_new_pwd">请输入新密码</string>
+    <string name="confirm_new_pwd">请确认新密码</string>
+    <string name="block_program_title">节目锁定</string>
+
+
+
+    <!-- For CA String define -->
+    <string name="str_cha_cainformation"> CA信息</string>
+    <string name="str_ca_title">CA信息</string>
+    <string name="str_ca_card_info">智能卡信息</string>
+    <string name="str_ca_card_management">智能卡管理</string>
+    <string name="str_ca_card_paired">机卡配对</string>
+    <string name="str_ca_card_feed">子母卡喂养</string>
+    <string name="str_ca_info_title">智能卡信息</string>
+    <string name="str_ca_info_entitle">普通授权</string>
+    <string name="str_ca_info_detitle">反授权</string>
+    <string name="str_ca_info_purse_info">钱包信息</string>
+    <string name="str_ca_card_version">CAS版本信息</string>
+    <string name="str_ca_mg_title">智能卡管理</string>
+    <string name="str_ca_mg_modify_pin">修改PIN码</string>
+    <string name="str_ca_mg_work_time">修改工作时段</string>
+    <string name="str_ca_mg_watch_level">修改观看级别</string>
+    <string name="str_ca_info_pin_title">修改PIN码</string>
+    <string name="str_ca_mg_old_pin">请输入原始PIN码:</string>
+    <string name="str_ca_mg_new_pin">请输入新PIN码:</string>
+    <string name="str_ca_mg_new_pin2">请确认 PIN码:</string>
+    <string name="str_ca_mg_submit">确认</string>
+    <string name="str_set_work_time_title">修改工作时段</string>
+    <string name="str_ca_start_work_time">请设定开始时间:</string>
+    <string name="str_ca_end_work_time">请设定结束时间:</string>
+    <string name="str_ca_work_time_pin">请输入PIN码:</string>
+    <string name="str_work_time_hour_text">小时</string>
+    <string name="str_work_time_minute_text">分钟</string>
+    <string name="str_watch_level_title">修改观看级别</string>
+    <string name="str_watch_level_text">观看级别:</string>
+    <string name="str_watch_level_init">0</string>
+    <string name="str_ca_operator_title">运营商信息</string>
+    <string name="str_ca_op_id">编号</string>
+    <string name="str_ca_op_operator_id">运营商ID</string>
+    <string name="str_ca_version_title">CAS版本信息</string>
+    <string name="str_ca_version_id">CDCAS版本号:</string>
+    <string name="str_ca_version_stb_num">机顶盒唯一编号:</string>
+    <string name="str_ca_card_id">卡号:</string>
+    <string name="str_ca_entitle_title">普通授权</string>
+    <string name="str_ca_entitle_id">产品ID</string>
+    <string name="str_ca_entitle_video_id">能否录像:</string>
+    <string name="str_ca_entitle_date">过期日期</string>
+    <string name="str_ca_entitle_video_flag_yes">是</string>
+    <string name="str_ca_entitle_video_flag_no">否</string>
+    <string name="str_ca_detitle_title">反授权</string>
+    <string name="str_ca_detitle_list">反授权确认码列表</string>
+    <string name="str_ca_detitle_state">状态</string>
+    <string name="str_ca_detitle_state_yes">已读</string>
+    <string name="str_ca_detitle_state_no">未读</string>
+    <string name="str_ca_purse_title">钱包信息</string>
+    <string name="str_ca_purse_id">钱包ID</string>
+    <string name="str_ca_purse_points">花费点数</string>
+    <string name="str_ca_purse_credit">信用度</string>
+
+    <string name="str_set_off">关</string>
+    <string name="str_set_on">开</string>
+    <string name="str_set_colorrange">颜色范围</string>
+    <string name="str_set_colorrange_0to255">0~255</string>
+    <string name="str_set_moviemode">电影模式</string>
+
+    <!-- For CA Error Type define -->
+    <string name="st_ca_rc_ok">成功</string>
+    <string name="st_ca_rc_unknown">未知错误</string>
+    <string name="st_ca_rc_pointer_invalid">指针无效</string>
+    <string name="st_ca_rc_card_invalid">智能卡无效</string>
+    <string name="st_ca_rc_pin_invalid">PIN码无效</string>
+    <string name="st_ca_rc_dataspace_small">所给的空间不足</string>
+    <string name="st_ca_rc_card_pairother">智能卡已经对应别的机顶盒</string>
+    <string name="st_ca_rc_data_not_find">没有找到所要的数据</string>
+    <string name="st_ca_rc_prog_status_invalid">要购买的节目状态无效</string>
+    <string name="st_ca_rc_card_no_room">智能卡没有空间存放购买的节目</string>
+    <string name="st_ca_rc_worktime_invalid">设定的工作时段无效</string>
+    <string name="st_ca_rc_ippv_canntdel">IPPV节目不能被删除</string>
+    <string name="st_ca_rc_card_nopair">智能卡没有对应任何的机顶盒</string>
+    <string name="st_ca_rc_watchrating_invalid">设定的观看级别无效</string>
+    <string name="st_ca_rc_card_notsupport">当前智能卡不支持此功能</string>
+    <string name="st_ca_rc_data_error">数据错误，智能卡拒绝</string>
+    <string name="st_ca_rc_feedtime_not_arrive">喂养时间未到，子卡不能被喂养</string>
+    <string name="st_ca_rc_card_typeerror">子母卡喂养失败，插入智能卡类型错误</string>
+    <string name="st_ca_rc_cas_failed">发卡cas指令执行失败</string>
+    <string name="st_ca_rc_oper_failed">发卡运营商指令执行失败</string>
+    <string name="st_ca_rc_pin_len">Pin code less than 6 digits</string>
+    <string name="st_ca_rc_diff_pin">Pin code do not accord</string>
+
+    <!-- For Picture -->
+    <string name="str_auto_adjust">自动调整</string>
+    <string name="str_pic_picture_adjustment">图像调整</string>
+    <string name="str_pic_picture">图像</string>
+    <string name="str_pic_picturemode">图像模式</string>
+
+
+
+    <string name="str_pic_contrast">对比</string>
+    <string name="str_pic_brightness">亮度</string>
+    <string name="str_pic_color">颜色</string>
+    <string name="str_pic_sharpness">锐度</string>
+    <string name="str_pic_hue">色相</string>
+    <string name="str_pic_saturation">饱和度</string>
+    <string name="str_pic_backlight">背光</string>
+    <string name="str_pic_colortemperature">色温</string>
+
+
+
+    <string name="str_pic_colortemperature_red">Red</string>
+    <string name="str_pic_colortemperature_green">Green</string>
+    <string name="str_pic_colortemperature_blue">Blue</string>
+    <string name="str_pic_zoommode">缩放模式</string>
+
+
+
+    <string name="str_pic_imgnoisereduction">图像降噪</string>
+    <string name="str_pic_mpegnoisereduction">MPEG降噪</string>
+
+
+
+
+    <string name="str_pic_pcimagemode">PC画面调整</string>
+    <string name="str_pic_autotune">自动调整 </string>
+    <string name="str_set_hdmicec_arc">HDMI_ARC</string>
+
+
+    <!-- for pc image mode -->
+
+    <string name="str_pic_clock">时钟 </string>
+    <string name="str_pic_phase">相位</string>
+    <string name="str_pic_horizontal_pos">水平位置</string>
+    <string name="str_pic_vertical_pos">垂直位置</string>
+
+    <!-- sound menu -->
+
+    <string name="str_sound_sound_adjustment">声音模式调整</string>
+    <string name="str_sound_soundmode">声音模式</string>
+
+
+
+    <string name="str_sound_bass">低音</string>
+    <string name="str_sound_treble">高音</string>
+    <string name="str_sound_equalizer">均衡器</string>
+    <string name="str_sound_equalizer120hz">120Hz</string>
+    <string name="str_sound_equalizer500hz">500Hz</string>
+    <string name="str_sound_equalizer1.5khz">1.5KHz</string>
+    <string name="str_sound_equalizer5khz">5KHz</string>
+    <string name="str_sound_equalizer10khz">10KHz</string>
+    <string name="str_sound_balance">声音均衡</string>
+    <string name="str_sound_avc"> AVC </string>
+    <string name="str_sound_ad">AD Switch</string>
+    <string name="str_sound_ad_volume">AD 音量</string>
+    <string name="str_sound_autohoh">Auto HOH</string>
+    <string name="str_sound_truehdbypass">次时代源码输出</string>
+
+    <string name="str_sound_srs">SRS</string>
+
+
+
+    <string name="str_sound_surround">​​​​环绕音</string>
+
+
+
+    <string name="str_sound_spdifoutput">SPDIF输出</string>
+
+
+
+    <string name="str_sound_separatehear">单独听</string>
+
+
+
+    <!-- For 3d -->
+
+    <string name="str_3d_3d"> 3D </string>
+
+    <string name="str_3d_self_adaptive_detecttriple">3D 自检</string>
+
+
+    <string name="str_3dto2d_self_adaptive_detecttriple">3D-2D 自检</string>
+
+
+    <string name="str_3d_self_adaptive_detectlevel">自适应强度</string>
+
+
+
+    <string name="str_3d_conversion">3D格式转换</string>
+
+
+
+    <string name="str_3d_3dto2d">3D转2D</string>
+
+
+
+    <string name="str_3d_3ddepth">3D景深</string>
+
+
+
+    <string name="str_3d_3doffset">3D 偏移</string>
+
+
+
+    <string name="str_3d_autostart">自动启动</string>
+
+
+
+    <string name="str_3d_3doutputaspect"> 3D输出宽高比</string>
+
+
+
+    <string name="str_3d_lrswitch">左右交换</string>
+
+
+
+    <!-- for Channel -->
+    <string name="str_cha_antannatype">Antenna Type</string>
+
+
+
+
+
+    <string name="str_prompt_setup_wizard_title">Please Select Antenna Type and Start AutoScan</string>
+    <string name="str_prompt_setup_wizard_next">Next</string>
+    <string name="str_prompt_setup_wizard_skip">Skip</string>
+    <string name="str_prompt_setup_location_title">Please select location</string>
+
+    <string name="str_cha_changing_antenna_type">Changing Antenna Type</string>
+    <string name="str_ci_async_cmd_switch_route">CI invoke route switch ...</string>
+    <string name="str_cha_please_wait">Wait a Moment Please</string>
+
+    <string name="str_cha_tv_route_none">NONE</string>
+    <string name="str_cha_tv_route_dvbt">Air</string>
+    <string name="str_cha_tv_route_dvbc">Cable</string>
+    <string name="str_cha_tv_route_dvbs">Satellite</string>
+    <string name="str_cha_tv_route_dvbt2">Air</string>
+    <string name="str_cha_tv_route_dvbs2">Satellite</string>
+    <string name="str_cha_tv_route_dtmb">DTMB</string>
+    <string name="str_cha_tv_route_unknown">Unknown</string>
+
+
+
+
+
+
+
+    <string name="str_cha_channeltuning">频道调谐</string>
+    <string name="str_cha_tv">模拟电视：</string>
+    <string name="str_cha_tv_0">0</string>
+    <string name="str_cha_dtv">数字电视：</string>
+
+
+
+
+
+    <!-- For CA notify Type define -->
+    <string name="st_ca_message_cancel_type">取消当前的显示</string>
+    <string name="st_ca_message_badcard_type">无法识别卡</string>
+    <string name="st_ca_message_expicard_type">智能卡过期，请更换新卡</string>
+    <string name="st_ca_message_insertcard_type">加扰节目，请插入智能卡</string>
+    <string name="st_ca_message_nooper_type">卡中不存在节目运营商</string>
+    <string name="st_ca_message_blackout_type">条件禁播</string>
+    <string name="st_ca_message_outworktime_type">当前时段被设定为不能观看</string>
+    <string name="st_ca_message_watchlevel_type">节目级别高于设定的观看级别</string>
+    <string name="st_ca_message_pairing_type">智能卡与本机顶盒不对应</string>
+    <string name="st_ca_message_noentitle_type">没有授权</string>
+    <string name="st_ca_message_decryptfail_type">节目解密失败</string>
+    <string name="st_ca_message_nomoney_type">卡内金额不足</string>
+    <string name="st_ca_message_errregion_type">区域不正确</string>
+    <string name="st_ca_message_needfeed_type">子卡需要和母卡对应，请插入母卡</string>
+    <string name="st_ca_message_errcard_type">智能卡校验失败，请联系运营商</string>
+    <string name="st_ca_message_update_type">智能卡升级中，请不要拔卡或者关机</string>
+    <string name="st_ca_message_lowcardver_type">请升级智能卡</string>
+    <string name="st_ca_message_viewlock_type">请勿频繁切换频道</string>
+    <string name="st_ca_message_maxrestart_type">智能卡暂时休眠，请5分钟后重新开机</string>
+    <string name="st_ca_message_freeze_type">智能卡已冻结，请联系运营商</string>
+    <string name="st_ca_message_callback_type">智能卡已暂停，请回传收视记录给运营商</string>
+    <string name="st_ca_message_curtain_type">窗帘节目，不可预览阶段</string>
+    <string name="st_ca_message_cardteststart_type">升级测试卡测试中...</string>
+    <string name="st_ca_message_cardtestfaild_type">升级测试卡测试失败，请检查机卡通讯模块</string>
+    <string name="st_ca_message_cardtestsucc_type">升级测试卡测试成功</string>
+    <string name="st_ca_message_nocaliboper_type">卡中不存在移植库定制运营商</string>
+    <string name="st_ca_message_stblocked_type">请重启机顶盒</string>
+    <string name="st_ca_message_stbfreeze_type">机顶盒被冻结</string>
+
+
+    <string name="str_cha_dtvautotuning_startscan">Start Scan</string>
+    <string name="str_cha_dtvautotuning_frequency">频率</string>
+    <string name="str_cha_dtvautotuning_modulation">调制</string>
+    <string name="str_cha_dtvautotuning_symbol">符号率</string>
+    <string name="str_cha_dtvautotuning_networkid">网路ID</string>
+    <string name="str_cha_dtvautotuning_networkid_invalid">NetworkID Invalid</string>
+    <string name="str_cha_dtvautotuning_ok">ok</string>
+    <string name="str_cha_dtvautotuning_auto">Auto</string>
+    <string name="str_cha_dtvautotuning_signalstrength">信号强度</string>
+    <string name="str_cha_dtvautotuning_signalquality">信号质量</string>
+    <string name="str_cha_dvbsdtvtuning_scanmode">Scan Mode</string>
+    <string name="str_cha_dvbsdtvtuning_servicetype">Service Type</string>
+    <string name="str_cha_dvbsdtvtuning_networksearch">Network Search</string>
+    <string name="str_cha_dvbsdtvtuning_transponder">Transponder</string>
+    <string name="str_cha_dvbsdtvtuning_satellite">Satellite</string>
+    <string name="str_cha_dvbsdtvtuning_searchtype">Search Option</string>
+    <string name="str_cha_radio">广播：</string>
+    <string name="str_cha_data">数据：</string>
+    <string name="str_cha_program">频道 </string>
+    <string name="str_cha_tuningprogress_percent_0">0%</string>
+    <string name="str_cha_tuningprogress_uhf">UHF</string>
+    <string name="str_cha_tuningprogress_vhf">VHF</string>
+    <string name="str_cha_tuningprogress_ch">频道</string>
+    <string name="str_cha_tuningprogress_freq">Freq</string>
+    <string name="str_cha_tuningprogress_dtv">数字电视</string>
+    <string name="str_cha_exittuning_info">你确定要退出ATV/DTV搜台？ </string>
+    <string name="str_cha_exittuning_yes">是</string>
+    <string name="str_cha_exittuning_no">否</string>
+    <string name="str_cha_dtvmanualtuning_channelno">频道号</string>
+    <string name="str_cha_dtvmanualtuning_ch">频道</string>
+    <string name="str_cha_dtvmanualtuning_ch_1">1</string>
+    <string name="str_cha_dtvmanualtuning_modulation_64qam">64QAM</string>
+    <string name="str_cha_dtvmanualtuning_frequency">频率</string>
+    <string name="str_cha_dtvmanualtuning_modulation">调制</string>
+    <string name="str_cha_dtvmanualtuning_symbol">符号率</string>
+    <string name="str_cha_dtvmanualtuning_starttuning">搜索</string>
+    <string name="str_cha_dtvmanualtuning_signalstrength">信号强度</string>
+    <string name="str_cha_dtvmanualtuning_signalquality">信号质量</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_dtv">数字电视：</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_0">0</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_radio">电台：</string>
+    <string name="str_cha_dtvmanualtuning_tuningresult_data">数据：</string>
+    <string name="str_cha_atvmanualtuning_channelno">频道号</string>
+    <string name="str_cha_atvmanualtuning_store_channelno">储存至：</string>
+    <string name="str_cha_atvmanualtuning_ch">CH</string>
+    <string name="str_cha_atvmanualtuning_channel_1">1</string>
+    <string name="str_cha_atvmanualtuning_colorsystem">彩色制式</string>
+    <string name="str_cha_atvmanualtuning_colorsystem_Auto">自动</string>
+    <string name="str_cha_atvmanualtuning_soundsystem">声音制式</string>
+    <string name="str_cha_atvmanualtuning_soundsystem_Auto">自动</string>
+    <string name="str_cha_atvmanualtuning_starttuning">搜索</string>
+    <string name="str_cha_atvmanualtuning_fine_tune">微调</string>
+    <string name="str_cha_atvmanualtuning_frequency">频率：</string>
+    <string name="str_cha_atvmanualtuning_frequency_427">427</string>
+    <string name="str_cha_atvmanualtuning_frequency_mhz">MHZ</string>
+    <string name="str_cha_dtvmanualtuning_galaxy">GALAXY</string>
+    <string name="str_cha_dtvmanualtuning_polarization">Polarization</string>
+    <string name="str_cha_dtvmanualtuning_network">Network</string>
+    <string name="str_cha_dtvmanualtuning_scan_mode">Scan Mode</string>
+    <string name="str_cha_dtvmanualtuning_service_type">Service type</string>
+    <string name="str_cha_transport_stream">Transport stream</string>
+    <string name="str_cha_service">Service</string>
+    <string name="str_cha_save">Save</string>
+    <string name="str_cha_software_version">Software Version</string>
+    <string name="str_demo_demo">演示</string>
+    <string name="str_demo_mwe"> MWE </string>
+    <string name="str_demo_dbc"> DBC </string>
+    <string name="str_demo_off">Off</string>
+    <string name="str_demo_dlc"> DLC </string>
+    <string name="str_demo_dcc"> DCC </string>
+    <string name="str_demo_nr">图像降噪 </string>
+    <string name="str_demo_uclear">超高清</string>
+
+
+
+    <!-- for audio language list -->
+    <string name="str_audio_language_title">音乐语种 </string>
+    <!-- for cimmi -->
+    <string name="str_cimmi_title">CI信息</string>
+    <string name="str_cimmi_hint_ci_inserted">CI卡插入</string>
+    <string name="str_cimmi_hint_ci_removed">CI卡移除</string>
+    <string name="str_cimmi_hint_ci_auto_test">CI自测</string>
+    <string name="str_cimmi_hint_ci_passwd_hint">输入密码</string>
+    <!-- for current action -->
+    <string name="str_current_action">加载</string>
+    <!-- for pvr file system -->
+    <string name="str_pvr_file_system_title">个人视频文件系统</string>
+    <string name="str_pvr_file_system_select_disk">磁盘选择</string>
+    <string name="str_pvr_file_system_time_shift_size">时间前进长度</string>
+    <string name="str_pvr_file_system_format_start">格式化</string>
+    <string name="str_pvr_file_system_format_context">成功</string>
+    <string name="str_pvr_file_system_speed_check">速度测试</string>
+    <string name="str_pvr_file_system_speed_context">完成</string>
+    <string name="str_pvr_file_system_always_timeshift">Always Timeshift</string>
+    <string name="str_pvr_file_system_always_context">打开</string>
+    <!-- for pvr full page browser -->
+    <string name="str_pvr_lcn_textview">LCN</string>
+    <string name="str_pvr_channel_textview">频道</string>
+    <string name="srt_pvr_program_service_textview">节目供应</string>
+    <string name="str_pvr_program_service_tips_red">删除</string>
+    <string name="str_pvr_program_service_tips_green">升序</string>
+    <string name="str_pvr_program_service_tips_descend">降序</string>
+    <string name="str_pvr_program_service_tips_blue">排序</string>
+    <string name="str_pvr_program_service_tips_yellow">OK</string>
+    <string name="str_pvr_lcn_title">标题</string>
+    <string name="str_pvr_lcn_record_data">记录数据</string>
+    <string name="str_pvr_lcn_data">2011-11-25</string>
+
+    <!-- For epg schedule list -->
+    <string name="str_epg_program_schedule_list_modify">修改</string>
+    <string name="str_epg_program_schedule_list_delete">删除</string>
+    <!-- For sound format info-->
+    <string name="str_sound_format_mono">MONO</string>
+    <string name="str_sound_format_dual_a">DUAL A</string>
+    <string name="str_sound_format_dual_ab">DUAL AB</string>
+    <string name="str_sound_format_dual_b">DUAL B</string>
+    <string name="str_sound_format_forced_mono">MONO</string>
+    <string name="str_sound_format_g_stereo">STEREO</string>
+    <string name="str_sound_format_hidev_mono">MONO</string>
+    <string name="str_sound_format_unknown">UNKNOWN</string>
+    <string name="str_sound_format_k_stereo">STEREO</string>
+    <string name="str_sound_format_left_left">LEFT LEFT</string>
+    <string name="str_sound_format_left_right">LEFT RIGHT</string>
+    <string name="str_sound_format_mono_sap">MONO SAP</string>
+    <string name="str_sound_format_nicam_dual_a">NICAM DUAL A</string>
+    <string name="str_sound_format_nicam_dual_ab">NICAM DUAL AB</string>
+    <string name="str_sound_format_nicam_dual_b">NICAM DUAL B</string>
+    <string name="str_sound_format_nicam_mono">NICAM MONO</string>
+    <string name="str_sound_format_nicam_stereo">NICAM STEREO</string>
+    <string name="str_sound_format_right_right">RIGHT RIGHT</string>
+    <string name="str_sound_format_stereo_sap">STEREO SAP</string>
+    <string name="str_sound_format_stereo">STEREO</string>
+
+    <!-- For audio language-->
+    <string name="str_audio_language">Audio Language</string>
+
+    <!-- For check password-->
+    <string name="str_check_password_pass">Password Pass</string>
+    <string name="str_check_password_wrong">Wrong Password</string>
+    <string name="str_check_password_invalid">Invalid Action</string>
+    <string name="str_check_password_incorrect">Incorrect Password!</string>
+    <string name="str_check_password_input_number">Please input number ,only number is valid</string>
+    <string name="str_pvr_listview_item">文本显示</string>
+    <string name="str_pvr_playback_error_reason">Can\'t PlayBack Properly, the Reason is:\n</string>
+    <string name="str_pvr_usb_removed">USB REMOVED</string>
+    <string name="str_pvr_insert_usb">请插入U盘先！</string>
+    <string name="str_pvr_format_usb">要格式化所选的U盘吗？</string>
+    <string name="str_pvr_format_usb_progressing">Format USB Disk Progressing...\nPlease Do Not Unplug the
+        USB Disk!</string>
+    <string name="str_pvr_usb_speed_test_progressing">速度测试进行中...\n请不要拔掉U盘！</string>
+    <string name="str_pvr_program_saving">节目保存中...请稍候！</string>
+    <string name="str_pvr_exit_confirm">正在录像...确认要退出吗？</string>
+    <string name="str_pvr_is_recording">录像中</string>
+    <string name="str_editText1">00</string>
+    <string name="str_pvr_unsurpt_flsystem">Unsupported File System,Please Do Format First!</string>
+    <string name="str_pvr_is_standby">Standby</string>
+    <string name="str_pvr_tip">Are you going to stop pvr recording, or go to standby recording?</string>
+    <string name="str_pvr_tip2">Are you going to stop pvr recording?</string>
+    <string name="str_pvr_abloop_too_short">The AB Loop time is too short, the shortest time is 2 seconds</string>
+    <string name="str_pvr_record_fail">record fail</string>
+    <string name="str_pvr_alwaystimeshift_record_fail">Always time shift record fail</string>
+    <string name="str_pvr_no_usb">No USB Detected</string>
+    <string name="str_pvr_disk_read_only">Disk read only</string>
+    <string name="str_pvr_out_of_space">Out Of Disk Space</string>
+    <string name="str_pvr_data_only">Can not record data only channel</string>
+    <string name="str_pvr_scrambled_program">Scrambled Program</string>
+    <string name="str_pvr_ch_blocked">CH Blocked</string>
+    <string name="str_pvr_rating_blocked">Rating Blocked</string>
+    <string name="str_pvr_retention_expired">Retention Limit Expired</string>
+    <string name="str_pvr_vod_not_allow">VOD content not allow to record</string>
+    <string name="str_pvr_ciplus_copy_protection">CI+ URI Protection</string>
+    <string name="str_pvr_ciplus_unsupport">CI+ Unsupport</string>
+    <string name="str_pvr_ginga_running">Ginga running</string>
+    <string name="str_pvr_bad_video_audio">bad video audio</string>
+    <string name="str_pvr_max_recording_reached">Max recording count reached</string>
+    <string name="str_pvr_mehg5_data_only">MEHG5 data only program</string>
+    <string name="str_pvr_success">Success</string>
+    <string name="str_pvr_error">Error</string>
+    <string name="str_pvr_overwrite_before">Timeshift will overwrite</string>
+    <string name="str_pvr_still_check_disk">处理中，请稍候</string>
+
+
+
+    <!-- for pvr menu -->
+    <string name="str_player_recorder">录制</string>
+    <string name="str_player_play">播放</string>
+    <string name="str_player_stop">停止</string>
+    <string name="str_player_pause">暂停</string>
+    <string name="str_player_stepin">Step</string>
+    <string name="str_player_rev">快速回播</string>
+    <string name="str_player_ff">快速播放</string>
+    <string name="str_player_slow">慢速播放</string>
+    <string name="str_player_time">选时播放</string>
+    <string name="str_player_forward">前进</string>
+    <string name="str_player_backward">后退</string>
+    <string name="str_player_capture">Capture</string>
+    <string name="str_pvr_file_system_menu">菜单</string>
+    <string name="str_list_menu_hint_b_skip">跳过</string>
+    <string name="str_list_menu_hint_g_fivorite">喜爱</string>
+    <string name="str_list_menu_hint_g_edit">编辑</string>
+    <string name="str_list_menu_hint_r_delete">删除</string>
+    <string name="str_list_menu_hint_y_move">移动</string>
+
+    <!-- for ci+ op -->
+    <string name="str_ciplus_op_confirmation_title">Confirm CI+ OP Refresh</string>
+    <string name="str_ciplus_op_refresh">Do you allow TV to do operator profile refresh?</string>
+    <string name="str_op_menu_title">Operator Profiles Menu</string>
+    <string name="str_op_channel_list_title">OP Channel List</string>
+    <string name="str_op_menu">OP Menu</string>
+    <string name="str_op_forbid_channel_tuning_content">Forbid to do channel tune under OP mode.\nPlease exit OP mode at first.</string>
+    <string name="str_enter_op">Enter OP</string>
+    <string name="str_exit_op">Exit OP</string>
+    <string name="str_delete_profile">Delete Profile</string>
+    <string name="str_delete_op_msg">Are you sure to delete the operator profile [</string>
+    <string name="str_delete_op_confirm">Confirm to delete OP</string>
+    <string name="str_forbid_channel_tuning">Forbid Channel Tuning</string>
+    <string name="str_cam_upgrade_alarm">CAM is under upgrading.\nPlease try later...</string>
+    <string name="str_op_tuning_alarm">OP is tuning.\nPlease try later...</string>
+
+    <!-- for reminder -->
+    <string name="str_reminder_mode">模式</string>
+    <string name="str_reminder_date">日期</string>
+    <string name="str_reminder_month">月份</string>
+    <string name="str_reminder_hour">小时</string>
+    <string name="str_reminder_minute">分钟</string>
+    <string name="str_reminder_channel">节目</string>
+    <string name="str_reminder_auto">自动</string>
+    <string name="str_reminder_once">一次</string>
+    <string name="str_reminder_daily">每天</string>
+    <string name="str_reminder_weekly">每周</string>
+    <string name="str_reminder_title">预约设置</string>
+    <string name="str_reminder_record_event">Record this event</string>
+
+    <!-- for source info atv -->
+    <string name="str_atv_source_imageformat">彩色制式</string>
+    <string name="str_atv_source_soundformat">声音模式</string>
+    <string name="str_atv_source_audioformat">伴音制式</string>
+
+    <string name="audio_type_mpeg">MPEG</string>
+    <string name="audio_type_dolby_d">Dolby D</string>
+    <string name="audio_type_aac">AAC</string>
+    <string name="audio_type_ac3p">AC3P</string>
+    <string name="audio_type_dra1">DRA1</string>
+
+
+
+    <!-- for Audio Info AAC Profile And Level -->
+    <string name="aac_level1">AAC L1</string>
+    <string name="aac_level2">AAC L2</string>
+    <string name="aac_level4">AAC L4</string>
+    <string name="aac_level5">AAC L5</string>
+    <string name="he_aac_level2">HE-AAC L2</string>
+    <string name="he_aac_level3">HE-AAC L3</string>
+    <string name="he_aac_level4">HE-AAC L4</string>
+    <string name="he_aac_level5">HE-AAC L5</string>
+
+    <!-- for source info dtv -->
+    <string name="str_dtv_source_info_program_period">节目段</string>
+    <string name="str_dtv_source_info_program_name">当前节目名</string>
+    <string name="str_dtv_source_info_program_type">节目类型</string>
+    <string name="str_dtv_source_info_program_format">视频格式</string>
+    <string name="str_dtv_source_info_audio_format">音频格式</string>
+    <string name="str_dtv_source_info_mheg5">MHEG5</string>
+    <string name="str_dtv_source_info_Subtitle">字幕</string>
+    <string name="str_dtv_source_info_language">音轨</string>
+    <string name="str_dtv_source_info_teletext">图文</string>
+    <string name="str_dtv_source_info_no_teletext">很抱歉，没有可用的图文信息</string>
+    <string name="str_dtv_source_info_no_subtitle">很抱歉，沒有可用的字幕信息</string>
+    <string name="str_dtv_source_info_description">描述</string>
+    <string name="str_dtv_source_info_resolution">分辨率</string>
+    <string name="str_dtv_source_info_ginga">GINGA</string>
+    <string name="str_dtv_source_info_cc_exist">CC:Yes</string>
+    <string name="str_dtv_source_info_cc_noexist">CC:No</string>
+
+
+
+
+
+
+
+    <string name="str_set_setting">设置 </string>
+    <string name="str_set_language">语言 </string>
+    <string name="str_set_audio_language1">第一语言</string>
+    <string name="str_set_audio_language2">第二语言</string>
+    <!--
+    <string name="str_set_subtitle_switch">Subtitle</string>
+    <string name="str_set_subtitle_language1">Subtitle Language</string>
+    <string name="str_set_subtitle_language2">2nd Subtitle Language</string>
+    -->
+    <string name="str_set_subtitle_switch">字幕</string>
+    <string name="str_set_subtitle_language1">字幕语言</string>
+    <string name="str_set_subtitle_language2">字幕语言2</string>
+    <string name="str_set_language_czech">Czech</string>
+    <string name="str_set_language_danish">Danish</string>
+    <string name="str_set_language_german">German</string>
+    <string name="str_set_language_english">English</string>
+    <string name="str_set_language_spanish">Spanish</string>
+    <string name="str_set_language_greek">Greek</string>
+    <string name="str_set_language_french">French</string>
+    <string name="str_set_language_croatian">Croatian</string>
+    <string name="str_set_language_italian">Italian</string>
+    <string name="str_set_language_hungarian">Hungarian</string>
+    <string name="str_set_language_dutch">Dutch</string>
+    <string name="str_set_language_norwegian">Norwegian</string>
+    <string name="str_set_language_polish">Polish</string>
+    <string name="str_set_language_portuguese">Portuguese</string>
+    <string name="str_set_language_russian">Russian</string>
+    <string name="str_set_language_romanian">Romanian</string>
+    <string name="str_set_language_slovenian">Slovenian</string>
+    <string name="str_set_language_serbian">Serbian</string>
+    <string name="str_set_language_finnish">Finnish</string>
+    <string name="str_set_language_swedish">Swedish</string>
+    <string name="str_set_language_bulgarian">Bulgarian</string>
+    <string name="str_set_language_slovak">Slovak</string>
+    <string name="str_set_language_chinese">Chinese</string>
+    <string name="str_set_language_gaelic">Gaelic</string>
+    <string name="str_set_language_welsh">Welsh</string>
+    <string name="str_set_language_irish">Irish</string>
+    <string name="str_set_language_arabic">Arabic</string>
+    <string name="str_set_language_latvian">Latvian</string>
+    <string name="str_set_language_hebrew">Hebrew</string>
+    <string name="str_set_language_turkish">Turkish</string>
+    <string name="str_set_language_estonian">Estonian</string>
+    <string name="str_set_language_gallegan">Gallegan</string>
+    <string name="str_set_language_basque">Basque</string>
+    <string name="str_set_language_catalan">Catalan</string>
+    <string name="str_set_language_icelandic">Icelandic</string>
+    <string name="str_set_language_letzeburgesch">Letzeburgesch</string>
+    <string name="str_set_language_lithuanian">Lithuanian</string>
+    <string name="str_set_language_ukrainian">Ukrainian</string>
+    <string name="str_set_language_byelorussian">Byelorussian</string>
+    <string name="str_set_language_maori">Maori</string>
+    <string name="str_set_language_mandarin">Mandarin</string>
+    <string name="str_set_language_cantonese">Cantonese</string>
+    <string name="str_set_language_korean">Korean</string>
+    <string name="str_set_language_japanese">Japanese</string>
+    <string name="str_set_language_hindi">Hindi</string>
+    <string name="str_set_language_thai">Thai</string>
+    <string name="str_set_language_vietnamese">Vietnamese</string>
+    <string name="str_set_language_malay">Bahasa Melayu</string>
+    <string name="str_set_language_qab">Second Audio</string>
+    <string name="str_set_language_qac">Third Audio</string>
+    <string name="str_set_language_multiple">Multiple</string>
+
+
+
+    <string name="str_set_menutime">菜单显示时间</string>
+    <string name="str_set_menutime_5sec">5 秒</string>
+
+
+
+    <string name="str_set_switchmode">切换模式</string>
+    <string name="str_set_switchmode_blackscreen">黑屏</string>
+    <string name="str_set_autosourceident">信号源识别</string>
+    <string name="str_set_sourcepreview">信号源预览</string>
+
+
+
+    <string name="str_set_autosourceswit">信号源自动识别</string>
+
+
+
+    <string name="str_set_mhlswitch">MHL自动切换</string>
+
+
+
+    <string name="str_set_bluescreenswitch">蓝屏</string>
+
+
+
+    <string name="str_set_hdmicec"> HDMI_CEC </string>
+
+
+
+    <string name="str_set_standyon">系统待机</string>
+
+
+
+    <string name="str_set_powersetting">电源设置</string>
+    <string name="str_set_restoretodefault">还原为默认</string>
+    <string name="str_set_hdmicec_label">HDMI_CEC</string>
+    <string name="str_set_hdmicec_devicelist">设备列表</string>
+    <string name="str_set_hdmicec_off">关</string>
+    <string name="str_set_hdmicec_onoff">HDMI CEC 开/关</string>
+
+
+
+    <string name="str_updating_edid">AMP 信息更新中...</string>
+
+    <string name="str_set_hdmicec_autostandby">自动待机</string>
+    <string name="str_set_powersetting_powermusic">开机音乐</string>
+    <string name="str_set_powersetting_powerlogo">开机图标</string>
+    <string name="str_set_powersetting_powervolume">开机音量</string>
+
+    <!-- Loading -->
+
+    <string name="loading">载入 </string>
+
+    <!-- for hot key -->
+
+    <string name="volume">音量</string>
+    <string name="picture">图像模式</string>
+    <string name="sound">​​​​声音模式</string>
+    <string name="zoom">缩放模式</string>
+    <string name="str_root_alert_dialog_title">提示</string>
+    <string name="str_root_alert_dialog_message">确定要退出电视系统？ </string>
+    <string name="str_root_alert_dialog_confirm">确定</string>
+    <string name="str_root_alert_dialog_cancel">取消</string>
+    <string name="str_root_alert_dialog_message_restore_to_default">Are you sure to restore to default?</string>
+
+    <!-- Factory Menu -->
+
+    <string name="str_factory_adc"> ADC调整</string>
+    <string name="str_factory_whitebalance">白平衡</string>
+    <string name="str_factory_picturemode">图片模式</string>
+    <string name="str_factory_non_standard">非标准选项</string>
+    <string name="str_factory_non_linear"> Non_linear </string>
+    <string name="str_factory_overscan">过扫描</string>
+    <string name="str_factory_ssc"> SSC的调整</string>
+    <string name="str_factory_peq"> PEQ </string>
+    <string name="str_factory_otheroption">其他选项</string>
+    <string name="str_factory_adc_source">源</string>
+    <string name="str_factory_adc_rgain"> R GAIN </string>
+    <string name="str_factory_adc_ggain">摹增益</string>
+    <string name="str_factory_adc_bgain"> B增益</string>
+    <string name="str_factory_adc_roffset"> ř偏移</string>
+    <string name="str_factory_adc_goffset"> g补偿</string>
+    <string name="str_factory_adc_boffset"> B偏移</string>
+    <string name="str_factory_adc_autoadjust">自动调整</string>
+    <string name="str_factory_wbadjust_source">源</string>
+    <string name="str_factory_wbadjust_rgain"> R GAIN </string>
+    <string name="str_factory_wbadjust_ggain">摹增益</string>
+    <string name="str_factory_wbadjust_bgain"> B增益</string>
+    <string name="str_factory_wbadjust_roffset"> ř偏移</string>
+    <string name="str_factory_wbadjust_goffset"> g补偿</string>
+    <string name="str_factory_wbadjust_boffset"> B偏移</string>
+    <string name="str_factory_wbadjust_autoadjust">自动调整</string>
+    <string name="str_factory_wbadjust_colortemp">色温</string>
+    <string name="str_factory_picmode_picmode">图片模式</string>
+    <string name="str_factory_picmode_brightness">亮度</string>
+    <string name="str_factory_picmode_contrast">对比</string>
+    <string name="str_factory_picmode_saturation">饱和度</string>
+    <string name="str_factory_picmode_hue">色相</string>
+    <string name="str_factory_picmode_sharpness">锐度</string>
+    <string name="str_factory_nonlinear_curvetype">曲线类型</string>
+    <string name="str_factory_nonlinear_osd0"> OSD_0 </string>
+    <string name="str_factory_nonlinear_osd25"> OSD_25 </string>
+    <string name="str_factory_nonlinear_osd50"> OSD_50 </string>
+    <string name="str_factory_nonlinear_osd75"> OSD_75 </string>
+    <string name="str_factory_nonlinear_osd100"> OSD_100 </string>
+    <string name="str_factory_overscan_source">源</string>
+    <string name="str_factory_overscan_hsize"> h外型尺寸</string>
+    <string name="str_factory_overscan_hposition">水平位置</string>
+    <string name="str_factory_overscan_vsize"> V尺寸</string>
+    <string name="str_factory_overscan_vposition">垂直位置</string>
+    <string name="str_factory_nonstandard_viftop"> VIF_TOP </string>
+    <string name="str_factory_nonstandard_vifvgamaximum"> VIF_VGA_MAXIMUM </string>
+    <string name="str_factory_nonstandard_vifcpkp"> VIF_CR_KP </string>
+    <string name="str_factory_nonstandard_vifcpki"> VIF_CR_KI </string>
+    <string name="str_factory_nonstandard_vifasiasignaloption"> VIF_ASIA_SIGNAL_OPTION </string>
+    <string name="str_factory_nonstandard_vifcpkpkiadjust"> VIF_CR_KP_KI_ADJUST </string>
+    <string name="str_factory_nonstandard_vifovermodulation"> VIF_OVER_MODULATION </string>
+    <string name="str_factory_nonstandard_vifclampgain"> VIF_CLAMPGAIN_GAIN_OV_NEGATIVE </string>
+    <string name="str_factory_nonstandard_chinadescrambler"> CHINA_DESCRAMBLER_BOX </string>
+    <string name="str_factory_nonstandard_delay">延迟</string>
+    <string name="str_factory_nonstandard_vifcrthr"> VIF_CR_THR </string>
+    <string name="str_factory_nonstandard_vifversion"> VIF_VERSION </string>
+    <string name="str_factory_nonstandard_vifagcref"> VIF_AGC_REF </string>
+    <string name="str_factory_nonstandard_gaindistributionthr"> GAIN_DISTRIBUTION_THR </string>
+    <string name="str_factory_nonstandard_afecd4"> AEFC_D4 </string>
+    <string name="str_factory_nonstandard_aefcd5"> AEFC_D5 [2] </string>
+    <string name="str_factory_nonstandard_aefcd8"> AEFC_D8 [3:0] </string>
+    <string name="str_factory_nonstandard_aefcd9"> AEFC_D9 [0] </string>
+    <string name="str_factory_nonstandard_aefcd7high"> AEFC_D7_HIGH_BOUN </string>
+    <string name="str_factory_nonstandard_aefcd7"> AEFC_D7_LOW_BOUN </string>
+    <string name="str_factory_nonstandard_aefca0"> AEFC_A0 </string>
+    <string name="str_factory_nonstandard_aefca1"> AEFC_A1 </string>
+    <string name="str_factory_nonstandard_aefc66"> AEFC_66 [7:6] </string>
+    <string name="str_factory_nonstandard_aefc6e"> AEFC_6E [7:4] </string>
+    <string name="str_factory_nonstandard_aefc6elow"> AEFC_6E [3:0] </string>
+    <string name="str_factory_nonstandard_aefc43"> AEFC_43 </string>
+    <string name="str_factory_nonstandard_aefc44"> AEFC_44 </string>
+    <string name="str_factory_nonstandard_aefccb"> AEFC_CB </string>
+    <string name="str_factory_nonstandard_vddsp"> AUDIO_NR_TH </string>
+    <string name="str_factory_nonstandard_audiohidev"> AUDIO_HIDEV_MODE </string>
+    <string name="str_factory_nonstandard_audionr"> AUDIO_NR_TH </string>
+    <string name="str_factory_nonstandard_audiosif">音频SIF阈值</string>
+    <string name="str_factory_nonstandard_audiodsp"> AUDIO_DSP_VERSION </string>
+    <string name="str_factory_ssc_miuenable"> MIU启用</string>
+    <string name="str_factory_ssc_miumodulation"> MIU调制</string>
+    <string name="str_factory_ssc_miupercentage"> MIU百分比(%)</string>
+    <string name="str_factory_ssc_lvdsenable"> LVDS启用</string>
+    <string name="str_factory_ssc_lvdsmodulation"> LVDS调制</string>
+    <string name="str_factory_ssc_lvdspercentage"> LVDS百分比(%)</string>
+    <string name="str_factory_peq_fo1coarse"> FO1粗</string>
+    <string name="str_factory_peq_fo1fine"> FO1精细</string>
+    <string name="str_factory_peq_fo2coarse"> FO2粗</string>
+    <string name="str_factory_peq_fo2fine"> FO2精细</string>
+    <string name="str_factory_peq_fo3coarse"> FO3粗</string>
+    <string name="str_factory_peq_fo3fine"> FO3精细</string>
+    <string name="str_factory_peq_gain1"> 增益1 </string>
+    <string name="str_factory_peq_gain2"> 增益2 </string>
+    <string name="str_factory_peq_gain3"> 增益3 </string>
+    <string name="str_factory_peq_q1"> Q1 </string>
+    <string name="str_factory_peq_q2"> Q2 </string>
+    <string name="str_factory_peq_q3"> Q3 </string>
+    <string name="str_factory_otheroption_version">版本</string>
+    <string name="str_factory_otheroption_board">局</string>
+    <string name="str_factory_otheroption_panel">面板</string>
+    <string name="str_factory_otheroption_dateandtimes">日期/时间</string>
+    <string name="str_factory_otheroption_watchdog">看门狗</string>
+    <string name="str_factory_otheroption_testpattern">测试模式</string>
+    <string name="str_factory_otheroption_restoretodefault">还原为默认</string>
+    <string name="str_factory_otheroption_poweronmode">电源模式</string>
+    <string name="str_factory_otheroption_uartenable"> UART启用</string>
+    <string name="str_factory_otheroption_dtvavdelay"> DTV AV延迟（Non_standard）</string>
+    <string name="str_factory_otheroption_initialfunction">初步频道</string>
+    <string name="str_factory_otheroption_panelswing">小组秋千</string>
+    <string name="str_factory_otheroption_audioprescale">音频预分频</string>
+
+    <!-- for program edit -->
+
+    <string name="str_program_edit_dialog_ok">确定</string>
+    <string name="str_program_edit_dialog_cancel">取消</string>
+    <string name="str_program_edit_dialog_input">请输入</string>
+    <string name="str_no_sinal">无信号</string>
+    <string name="str_channelList_favorite">喜爱列表</string>
+    <string name="str_channelList_program">节目列表</string>
+    <string name="program_guide_time">Program Guide:Time</string>
+
+    <string name="str_channelList_search">搜寻</string>
+    <string name="str_channelList_sort">排序</string>
+
+
+
+    <!-- For Record Style -->
+    <string name="str_textview_record_title">刻录设置</string>
+    <string name="str_textview_record_chaneel_name">频道名</string>
+    <string name="str_textview_record_sbutitle">副标题</string>
+    <string name="str_textview_record_context">数值</string>
+    <string name="str_textview_record_mode">模式</string>
+    <string name="str_textview_record_start_time">开始时间</string>
+    <string name="str_textview_record_end_time">结束时间</string>
+    <string name="str_record_date">号</string>
+    <string name="str_record_month">月</string>
+    <string name="str_record_hour">时</string>
+    <string name="str_record_minute">分</string>
+
+    <!-- For schedule list style -->
+    <string name="str_textview_schedule_list_title">节目列表</string>
+    <string name="str_textview_schedule_list_time">时间</string>
+    <string name="str_textview_schedule_list_date">日期</string>
+    <string name="str_schedule_list_channel_name">频道名</string>
+    <string name="str_schedule_list_programmer_title">节目名</string>
+
+    <!-- For schedule list style -->
+    <string name="str_screenshot_tip_title">截屏提示</string>
+    <string name="str_screenshot_tip_msg">是否截取当前屏幕做为当机画面?</string>
+    <string name="str_screenshot_opt_success">截屏成功!</string>
+    <string name="str_screenshot_opt_failed">截屏失败!</string>
+
+    <!-- For epg -->
+    <string name="str_epg_title_time">电子节目指南: 时间</string>
+    <string name="str_epg_title_channel">电子节目指南: 节目</string>
+    <string name="str_epg_tips_b_reminder">提醒</string>
+    <string name="str_epg_tips_r_record">录制</string>
+    <string name="str_epg_tips_y_schedule">安排</string>
+    <string name="str_epg_tips_g_info">信息</string>
+    <string name="str_epg_event_extend_no_info">No Information</string>
+    <string name="str_epg_event_age">Age : </string>
+    <string name="str_epg_event_content">Content : </string>
+    <string name="str_epg_event_genre">Genre : </string>
+    <string name="str_epg_event_name">Event</string>
+    <string name="str_epg_event_rating">Rating</string>
+    <string name="str_epg_event_simulcast_hd">Simulcast</string>
+    <string name="str_epg_event_broadcastlater_hd">Broadcast</string>
+    <string name="str_epg_event_unresolved">Not resolved.</string>
+    <string name="str_epg_timer_conflict">Conflict</string>
+    <string name="str_epg_timer_prompt_delete_conflict_schedule">Delete all Conflict Schedule?</string>
+    <string name="str_epg_timer_delete_conflict_confirm">确定</string>
+    <string name="str_epg_timer_delete_conflict_cancel">取消</string>
+
+
+    <!-- For epg Genre-->
+    <string name="str_genre_movie">Movie</string>
+    <string name="str_genre_movie_drama">Movie/Drama</string>
+    <string name="str_genre_movie_drama_general">Movie/Drama(general)</string>
+    <string name="str_genre_news">News</string>
+    <string name="str_genre_news_factual">News and Factual</string>
+    <string name="str_genre_news_current_default">Current Affairs</string>
+    <string name="str_genre_news_current_general">News/Current Affairs(general)</string>
+    <string name="str_genre_news_current">News/Current Affairs</string>
+    <string name="str_genre_entertainment">Entertainment</string>
+    <string name="str_genre_show_general">Show/Game Show(general)</string>
+    <string name="str_genre_show">Show/Game Show</string>
+    <string name="str_genre_sports_general">Sports(general)</string>
+    <string name="str_genre_sport">Sport</string>
+    <string name="str_genre_chidren">Children\'s</string>
+    <string name="str_genre_youth">Children\'s/Youths programmes</string>
+    <string name="str_genre_music_default">Music</string>
+    <string name="str_genre_music_general">Music/Ballet/Dance(general)</string>
+    <string name="str_genre_music">Music/Ballet/Dance</string>
+    <string name="str_genre_art_general">Arts/Culture(without music, general)</string>
+    <string name="str_genre_art">Art/Culture(without music)</string>
+    <string name="str_genre_social_general">Social/Political Issues/Economics(general)</string>
+    <string name="str_genre_social">Social/Political Issues/Economics</string>
+    <string name="str_genre_education_default">Education/Information</string>
+    <string name="str_genre_education_uk">Education</string>
+    <string name="str_genre_education_others_general">Education/Science/Factual Topics(general)</string>
+    <string name="str_genre_education_others">Education/Science/Factual Topics</string>
+    <string name="str_genre_infotainment">Infotainment</string>
+    <string name="str_genre_life_uk">Lifestyle</string>
+    <string name="str_genre_life">Leisure Hobbis</string>
+    <string name="str_genre_not_support">Not Supported</string>
+    <string name="str_genre_original_language">Original Language</string>
+    <string name="str_genre_special">Special</string>
+    <string name="str_genre_special_characteristics">Special Characteristics</string>
+    <string name="str_genre_reserved">Reserved For Future Use</string>
+    <string name="str_genre_drama">Drama</string>
+    <string name="str_genre_user_defined">User Defined</string>
+    <string name="str_genre_undefined">Undefined</string>
+    <string name="str_genre_unclassified">Unclassified</string>
+    <string name="str_genre_comedy">Comedy</string>
+    <string name="str_genre_documentary">Documentary</string>
+
+
+
+    <!-- For schedule list style -->
+    <string name="str_left_time">剩余时间：</string>
+    <string name="str_left_time_choosen_yes">是</string>
+    <string name="str_left_time_choosen_no">否</string>
+
+    <!-- For screen mode hint msg -->
+    <string name="str_invalid_service">无效服务</string>
+    <string name="str_no_ci_module">未插CI卡</string>
+    <string name="str_ci_plus_authentication">CI+ 认证</string>
+    <string name="str_scrambled_program">加密节目</string>
+    <string name="str_program_block">锁定节目</string>
+    <string name="str_parental_block">父母锁定</string>
+    <string name="str_rating_blocked">等级锁定</string>
+    <string name="str_input_block">INPUT BLOCK</string>
+    <string name="str_audio_only">音频节目</string>
+    <string name="str_data_only">数据节目</string>
+    <string name="str_common_video"></string>
+    <string name="str_unsupported">不支持</string>
+    <string name="str_invalid_pmt">无效 PMT</string>
+    <string name="str_no_signal">无信号</string>
+
+    <!-- For auto update scan -->
+    <string name="str_auto_update_scan">自动更新节目</string>
+
+    <!-- For channel control -->
+    <string name="str_channelcontrol_scan">SCANNING</string>
+    <string name="str_channelcontrol_channels">CHANNELS:</string>
+    <string name="str_channelcontrol_notfound">Channel not found</string>
+    <string name="str_channelcontrol_done">DONE</string>
+
+    <!-- For Toast style -->
+    <string name="str_3d_toast">MWE功能自动关闭确保3D转换有效</string>
+    <string name="str_demo_toast">3D转换自动关闭确保MWE功能有效</string>
+    <string name="str_cha_cities_choosen">城市选择</string>
+    <string name="str_invalid_3d_format">无效3D格式</string>
+
+
+    <!-- For CA mode -->
+    <string name="email_theme">主题</string>
+    <string name="email_time">时间</string>
+    <string name="email_level">级别</string>
+    <string name="email_state">状态</string>
+    <string name="email_aid">[红色键] 刪除 [绿色键] 刪除全部</string>
+    <string name="email_del">[红色键] 刪除 </string>
+    <string name="email_free_space">剩余空间:</string>
+    <string name="email_free_letter">封</string>
+    <string name="email_important">重要</string>
+    <string name="email_ordinary">普通</string>
+    <string name="email_read">已读</string>
+    <string name="email_unread">未读</string>
+    <string name="email">电子邮件</string>
+    <string name="email_notify">通知</string>
+    <string name="really_remove_this_email">确定要删除此邮件?</string>
+    <string name="really_remove_all_email">确定要删除所有邮件?</string>
+    <string name="ippv_freeviewed_segment">IPPV免费预览阶段</string>
+    <string name="ippv_payviewed_segment">IPPV收费阶段</string>
+    <string name="ippt_payviewed_segment">IPPT收费段</string>
+    <string name="ippv_tvsid">运营商ID：</string>
+    <string name="ippv_payviewed_productid">节目ID：</string>
+    <string name="ippv_payviewed_slotid">钱包ID：</string>
+    <string name="ippv_product_state">产品状态：</string>
+    <string name="ippv_payviewed_expireddate">过期日期：</string>
+    <string name="ippt_interval_min">时间间隔：</string>
+    <string name="ippv_payviewed_cantape">可录像价格：</string>
+    <string name="ippv_payviewed_price">价格：</string>
+    <string name="ippv_payviewed_cannottape">不可录像价格：</string>
+    <string name="ippv_pin">PIN：</string>
+    <string name="ippv_pin_ok">成功</string>
+    <string name="ippv_pointer_invalid">价格指针为空</string>
+    <string name="ippv_card_invalid">智能卡无效</string>
+    <string name="ippv_card_no_room">智能卡没有空间存放节目</string>
+    <string name="ippv_prog_status_invalid">要购买的节目状态无效</string>
+    <string name="ippv_pin_invalid">PIN码无效</string>
+    <string name="ippv_data_not_find">没有找到所要的数据</string>
+    <string name="ippv_info_page">当前页/IPPV总数：</string>
+    <string name="ippv_product_state_booking">预定</string>
+    <string name="ippv_product_state_viewed">播放</string>
+    <string name="ippv_can_tape">能</string>
+    <string name="ippv_can_not_tape">不能</string>
+    <string name="str_ca_mg_child_or_parent_card">子/母卡：</string>
+    <string name="str_ca_mg_child_or_parent_card1">子/母卡</string>
+    <string name="str_ca_mg_child_card">子卡</string>
+    <string name="str_ca_mg_parent_card">母卡</string>
+    <string name="str_ca_mg_parent_cardnum">母卡卡号：</string>
+    <string name="str_ca_mg_child_cardnum">子卡卡号：</string>
+    <string name="str_ca_mg_delaytime">喂养周期：</string>
+    <string name="str_ca_mg_delaytime1">喂养周期</string>
+    <string name="str_ca_mg_lastfeedtime">上次喂养时间：</string>
+    <string name="str_ca_mg_lastfeedtime1">上次喂养时间</string>
+    <string name="str_ca_mg_ippv_program">IPPV节目信息</string>
+    <string name="str_ca_mg_card_info">子母卡信息</string>
+    <string name="really_remove_this_info">确定要删除此信息?</string>
+    <string name="really_remove_all_info">确定要删除所有信息?</string>
+    <string name="is_update">是否要进行系统升级?</string>
+    <string name="update_loading">正在下载升级包,请稍候...</string>
+    <string name="installing">正在安装升级包,请稍候...</string>
+    <string name="update_complete_is_reboot">升级包已下载完成,是否重启升级</string>
+    <string name="update_failed">下载失败</string>
+    <string name="please_insert_parent_card">请插入母卡</string>
+    <string name="please_insert_child_card">请插入子卡</string>
+    <string name="read_feeddata_from_parent_failed">读取母卡数据失败</string>
+    <string name="feeddata_successed">喂养成功</string>
+    <string name="feeddata_failed">喂养失败</string>
+    <string name="delete_successed">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="cdca_rc_ok">当前机卡对应</string>
+    <string name="cdca_rc_card_pairother">智能卡已对应别的机顶盒</string>
+    <string name="cdca_rc_card_nopair">智能卡没有对应任何机顶盒</string>
+    <string name="cdca_rc_invalid">智能卡不在机顶盒或无效卡</string>
+    <string name="need_please_insert_child_card">子卡需要与母卡对应，请插入母卡</string>
+    <string name="ippv_cdca_rc_ok">操作成功</string>
+    <string name="ippv_cdca_rc_data_not_find">没有找到相应的运营商</string>
+    <string name="cdca_rc_pointer_invalid">指针为空</string>
+    <string name="clean_J2T_value">清空输入时间值</string>
+
+
+
+
+    <string name="str_dtv_source_info_age">年龄</string>
+
+    <!-- FOR  Option -->
+    <string name="str_menu_option">OPTION</string>
+    <string name="str_option_caption">Caption</string>
+    <string name="str_option_caption_off">OFF</string>
+    <string name="str_option_ginga_on_off">Ginga</string>
+    <string name="str_option_ginga_on">ON</string>
+    <string name="str_option_ginga_off">OFF</string>
+    <string name="str_option_ginga_list">Ginga Application</string>
+    <string name="str_option_store_cookies">Store Cookies</string>
+    <string name="str_option_store_cookies_off">OFF</string>
+    <string name="str_option_store_cookies_on">ON</string>
+
+
+    <!-- for box only -->
+    <string name="wait_for_tuning_hint">"正在搜台, 请稍等..."</string>
+    <string name="str_pic_xvycc">xvYCC</string>
+
+
+
+    <string name="str_vchip_vchip">V-chip settings</string>
+    <string name="str_vchip_button_lock">Button Lock</string>
+
+
+
+    <string name="str_vchip_block_unrated_tv">Block Unrated TV</string>
+
+
+
+    <string name="str_vchip_usa_parental_control">USA Parental Control</string>
+    <string name="str_vchip_rrt5_setting">RRT5 Setting</string>
+    <string name="str_vchip_reset_rrt5l">Reset RRT5</string>
+    <string name="str_vchip_change_password">Change Password</string>
+    <string name="str_vchip_check_password">Check Password</string>
+    <string name="str_vchip_enter_check_pwd">Please enter password</string>
+    <string name="str_vchip_enter_old_pwd">old password</string>
+    <string name="str_vchip_enter_new_pwd">new password</string>
+    <string name="str_vchip_confirm_new_pwd">confirm password</string>
+    <string name="changepassword_title">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">confirm Password</string>
+    <string name="oldpasswordtip">Enter old password.</string>
+    <string name="newpasswordtip">Enter new password.</string>
+    <string name="confirmpasswordtip">Enter confirm password.</string>
+    <string name="sure">sure</string>
+    <string name="cancel">cancel</string>
+    <string name="clean">clean</string>
+    <string name="passwordsettip">Please enter the password.</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="password">password:</string>
+    <string name="password_tip_old">Please enter the old password.</string>
+    <string name="password_tip_new">Please enter the new password.</string>
+    <string name="password_tip_condirm">Please confirm the new password.</string>
+    <string name="errortip">The password is incorrect.Please enter the password again.</string>
+
+    <!-- for USA Parental Control -->
+    <string name="usa_movie_ratings">Movie Ratings</string>
+    <string name="usa_movie_ratings_none">None</string>
+    <string name="usa_movie_ratings_g">G</string>
+    <string name="usa_movie_ratings_pg">PG</string>
+    <string name="usa_movie_ratings_pg_13">PG-13</string>
+    <string name="usa_movie_ratings_r">R</string>
+    <string name="usa_movie_ratings_nc_17">NC-17</string>
+    <string name="usa_movie_ratings_x">X</string>
+    <string name="usa_movie_ratings_nr">NR</string>
+    <string name="usa_tv_ratings">TV Ratings</string>
+    <string name="usa_tv_ratings_none">None</string>
+    <string name="usa_tv_ratings_tv_y">TV-Y</string>
+    <string name="usa_tv_ratings_tv_y7">TV-Y7</string>
+    <string name="usa_tv_ratings_tv_g">TV-G</string>
+    <string name="usa_tv_ratings_tv_pg">TV-PG</string>
+    <string name="usa_tv_ratings_tv_14">TV-14</string>
+    <string name="usa_tv_ratings_tv_ma">TV-MA</string>
+    <string name="usa_tv_ratings_tv_title_all">ALL</string>
+    <string name="usa_tv_ratings_tv_title_fv">FV</string>
+    <string name="usa_tv_ratings_tv_title_l">L</string>
+    <string name="usa_tv_ratings_tv_title_s">S</string>
+    <string name="usa_tv_ratings_tv_title_v">V</string>
+    <string name="usa_tv_ratings_tv_title_d">D</string>
+    <string name="contentdescription">null</string>
+
+    <string name="old_password_not_filled_completely">The old password does not filled completely. Please enter again.</string>
+    <string name="new_password_not_filled_completely">The new password does not filled completely. Please enter again.</string>
+    <string name="originalpassworderr">The original password is incorrect. Please enter again.</string>
+    <string name="newconfirmpassworderr">The new password and password to confirm do not match.Please enter again.</string>
+    <string name="resetsuccess">Password reset successfully.</string>
+    <string name="resetrrt5_title">Reset RRT5</string>
+    <string name="resetrrt5_tips">Are you sure?</string>
+
+    <!-- for Canadian Parental Control -->
+    <string name="str_vchip_canadian_parental_control">Canadian Parental Control</string>
+
+
+
+    <!-- Closed Caption -->
+    <string name="str_setting_cc_title">CC Settings</string>
+    <string name="str_setting_cc_mode">CC mode</string>
+    <string name="str_setting_cc_basic_selection">Basic Selection</string>
+    <string name="str_setting_cc_advanced_selection">Advanced Selection</string>
+    <string name="str_setting_cc_advanced_setting">Advanced Setting</string>
+
+
+
+    <!-- Closed Caption Digital -->
+    <string name="str_setting_cc_dig_title">ADV CC Settings</string>
+    <string name="str_setting_cc_dig_mode">Mode</string>
+    <string name="str_setting_cc_dig_font_style">Font Style</string>
+    <string name="str_setting_cc_dig_font_size">Font Size</string>
+    <string name="str_setting_cc_dig_font_edge_style">Font Edge Style</string>
+    <string name="str_setting_cc_dig_font_edge_color">Font Edge Color</string>
+    <string name="str_setting_cc_dig_fg_color">FG color</string>
+    <string name="str_setting_cc_dig_bg_color">BG Color</string>
+    <string name="str_setting_cc_dig_fg_opacity">FG Opacity</string>
+    <string name="str_setting_cc_dig_bg_opacity">BG Opacity</string>
+    <string name="str_setting_cc_italic_attr">Italic</string>
+    <string name="str_setting_cc_underline_attr">Underline</string>
+
+
+
+    <!-- For OAD string define -->
+    <string name="str_oad_msg_software_not_available">OAD is not available !</string>
+    <string name="str_oad_msg_download_found">New software is found</string>
+    <string name="str_oad_msg_dowload_prompt">Download it now ?</string>
+    <string name="str_oad_msg_dowload_prompt_nz">A software upgrade is available. Please select YES to upgrade now - this will take a couple of minutes - or leave in standby (off button on remote) when finished viewing to upgrade later. Thank you.</string>
+    <string name="str_oad_msg_downloading">Downloading</string>
+    <string name="str_oad_msg_downloading_nz">Your receiver is currently downloading a essential software upgrade. This will only take a few minutes. Please DO NOT adjust your receiver or switch OFF during this time. Thank you.</string>
+    <string name="str_oad_msg_scan_confirm">Do you want to start looking for new software?</string>
+    <string name="str_oad_downloadprogress_percent_0">0%</string>
+    <string name="str_oad_yes">Yes</string>
+    <string name="str_oad_no">No</string>
+    <string name="str_oad_exit">Exit</string>
+
+
+
+    <!-- For NIT update string define -->
+    <string name="str_nit_msg_frequency_change_confirm">Frequency change! Re-scan is required.\nPress OK to scan channel. This may take some time to finish action.\nPress Exit to ignore required.</string>
+    <string name="str_nit_msg_multiplexer_add_confirm">New multiplex might be available! Re-scan is required.\nPress OK to scan channel. This may take some time to finish action.\nPress Exit to ignore required.</string>
+    <string name="str_nit_msg_multiplexer_remove_confirm">Multiplex removed might be available! Re-scan is required.\nPress OK to scan channel. This may take some time to finish action.\nPress Exit to ignore required.</string>
+    <string name="str_nit_ok">OK</string>
+    <string name="str_nit_exit">Exit</string>
+
+    <!-- For DVBS LNB Setting -->
+    <string name="str_lnbsetting_title">LNB Setting</string>
+    <string name="str_lnbsetting_satellite">Satellite</string>
+    <string name="str_lnbsetting_transponder">Transponder</string>
+    <string name="str_lnbsetting_transponder_freq">(MHz)</string>
+    <string name="str_lnbsetting_transponder_symbol">(kS/s)</string>
+    <string name="str_lnbsetting_lnbpower">LNB Power</string>
+    <string name="str_lnbsetting_compensation">Long Cable Compensation</string>
+    <string name="str_lnbsetting_frequencies">LNB Low/High Frequencies</string>
+    <string name="str_lnbsetting_frequencies_title">LNB Type</string>
+    <string name="str_lnbsetting_frequencies_low">Low</string>
+    <string name="str_lnbsetting_frequencies_high">High</string>
+    <string name="str_lnbsetting_frequencies_set">Changing Setting</string>
+    <string name="str_lnbsetting_22knz_tone">22kHz Tone</string>
+    <string name="str_lnbsetting_toneburst">Toneburst</string>
+    <string name="str_lnbsetting_diseqc_1_0">DiSEqC 1.0</string>
+    <string name="str_lnbsetting_diseqc_1_1">DiSEqC 1.1</string>
+    <string name="str_lnbsetting_diseqc_1_2">DiSEqC 1.2</string>
+    <string name="str_lnbsetting_diseqc_1_3">DiSEqC 1.3</string>
+    <string name="str_lnboptting_diseqc_change">Changing DiSEqC</string>
+    <string name="str_lnbsetting_motor_none">None</string>
+    <string name="str_lnbsetting_motor">Motor</string>
+    <string name="str_lnbsetting_signalquality">Quality</string>
+    <string name="str_lnbsetting_strength">Strength</string>
+    <string name="str_lnbsetting_singlecable">Single Cable</string>
+    <string name="str_lnbsetting_singlecable_none">None</string>
+    <string name="str_lnbsetting_singlecable_slot">Slot</string>
+    <string name="str_lnbsetting_singlecable_freq">Frequencies</string>
+    <string name="str_lnbsetting_singlecable_pin">Pin</string>
+    <string name="str_lnbsetting_singlecable_lnb">LNB</string>
+    <string name="str_lnbsetting_singlecable_verify">Verify</string>
+    <string name="str_lnboption_menu_hint_add">Add</string>
+    <string name="str_lnboption_menu_hint_delete">Delete</string>
+    <string name="str_lnboption_menu_hint_edit">Edit</string>
+    <string name="str_lnboption_menu_hint_position">Position</string>
+    <string name="str_lnboption_menu_hint_limit">Limit</string>
+    <string name="str_lnboption_menu_hint_location">Location</string>
+    <string name="str_lnboption_editor_number">No.</string>
+    <string name="str_lnboption_editor_longitude_direction">Longitude Direction</string>
+    <string name="str_lnboption_editor_longitude_angle">Longitude Angle</string>
+    <string name="str_lnboption_editor_frequency">Frequency</string>
+    <string name="str_lnboption_editor_symbolrate">Symbol Rate</string>
+    <string name="str_lnboption_editor_band">Band</string>
+    <string name="str_lnboption_editor_polarization">Polarization</string>
+    <string name="str_lnboption_editor_rename">Rename</string>
+    <string name="str_lnboption_editor_name">Name</string>
+    <string name="str_lnboption_editor_del_dialog_title">Tip</string>
+    <string name="str_lnboption_editor_del_dialog_msg">Delete selected item ?</string>
+    <string name="str_lnboption_editor_del_dialog_yes">Yes</string>
+    <string name="str_lnboption_editor_del_dialog_no">No</string>
+    <string name="str_lnb_motor_editor_title">Motor Setting</string>
+    <string name="str_lnb_motor_editor_move_auto">Move Auto</string>
+    <string name="str_lnb_motor_editor_move_continue">Move Continue</string>
+    <string name="str_lnb_motor_editor_move_step">Move Step(1)</string>
+    <string name="str_lnb_motor_editor_store_position">Store Position</string>
+    <string name="str_lnb_motor_editor_goto_position">Go to Position</string>
+    <string name="str_lnb_motor_editor_set_west_limit">Set West Limit</string>
+    <string name="str_lnb_motor_editor_set_east_limit">Set East Limit</string>
+    <string name="str_lnb_motor_editor_goto_reference">Go to Reference</string>
+    <string name="str_lnb_motor_editor_goto_x">Go to X</string>
+    <string name="str_lnb_motor_editor_disable_limit">Disable Limit</string>
+    <string name="str_lnb_motor_editor_location">Location :</string>
+    <string name="str_lnb_motor_editor_longitude_direction">Longitude Direction</string>
+    <string name="str_lnb_motor_editor_longitude_angle">Longitude Angle</string>
+    <string name="str_lnb_motor_editor_latitude_direction">Latitude Direction</string>
+    <string name="str_lnb_motor_editor_latitude_angle">Latitude Angle</string>
+    <string name="str_lnb_motor_editor_ok">Ok</string>
+    <string name="str_lnb_motor_editor_stop">Stop</string>
+    <string name="str_lnb_motor_editor_east">East</string>
+    <string name="str_lnb_motor_editor_west">West</string>
+
+
+
+    <!-- For target region -->
+    <string name="str_target_region_country">国家</string>
+    <string name="str_target_region_primary">第一地区</string>
+    <string name="str_target_region_secondary">第二地区</string>
+    <string name="str_target_region_tertiary">第三地区</string>
+
+
+
+    <!-- For HDMI EDID Version -->
+    <string name="str_hdmi_edid_version">HDMI EDID 版本</string>
+    <string name="str_hdmi_edid_version_change">正在切换HDMI EDID版本</string>
+    <string name="str_hdmi_edid_version_wait">请稍等...</string>
+
+
+
+    <string name="str_tv_unknown">未知</string>
+
+    <string name="str_set_hbbtv_switch">HBBTV</string>
+
+
+    <string name="str_preferred_channel_list">Preferred Channel List</string>
+    <!-- For all input sources -->
+
+    <string name="str_input_source_lock_title">Input Source Lock</string>
+    <string name="str_input_source_lock_prompt">Lock/Unlock</string>
+    <string name="str_input_source_reset_prompt">Reset All</string>
+
+
+
+
+        <string name="system_setting">系统设置_SSET-1.02</string>
+
+
+        <!-- language setting -->
+        <string name="chian">中文 (中文)</string>
+        <string name="english">英文</string>
+        <!-- desktp setting -->
+        <string name="preview">预览</string>
+        <string name="background">背景</string>
+        <string name="style">风格</string>
+        <string name="blue_sky">蓝色星空</string>
+
+        <!-- system setting -->
+        <string name="desktop_setting">桌面设置</string>
+        <string name="application_manage">应用管理</string>
+        <string name="net_setting">网络和位置设置</string>
+
+        <string name="date_time_setting">时间和日期设置</string>
+        <string name="system_update">系统升级</string>
+        <string name="about">关于</string>
+        <string name="choice">选择</string>
+        <string name="confirm">确认</string>
+    <string name="refresh">搜索</string>
+        <string name="back">返回</string>
+        <string name="d3_setting">3D设置</string>
+        <string name="audio_setting">音频设置</string>
+        <string name="display_setting">显示设置</string>
+        <string name="display_position">重现率</string>
+        <string name="display_position_top">上</string>
+        <string name="display_position_bottom">下</string>
+        <string name="fail_for_moving_diplay">"在移屏模式，无法设置分辨率！"</string>
+        <string name="display_position_left">左</string>
+        <string name="display_position_right">右</string>
+        <string name="display_position_default">恢复默认值</string>
+        <string name="video_setting">视频设置</string>
+
+
+        <!-- city setting -->
+        <string name="city_setting">城市设置</string>
+        <string name="city_setting_select">选择当前所在的城市</string>
+        <string name="current_city">当前城市</string>
+        <string name="current_city_city">市</string>
+        <string name="current_city_no_setting">未设置</string>
+        <string name="city_choose">城市已选择为</string>
+
+
+
+        <!-- network setting -->
+        <string name="net_state">网络状态</string>
+        <string name="wire_setting">有线设置</string>
+        <string name="wireless_setting">无线设置</string>
+        <string name="wifi_not_connect">未连接无线网络，无法打开</string>
+        <string name="location_service_switch">此服务将获取您的位置，是否同意?</string>
+        <string name="dial_setting">PPPoE拨号设置</string>
+        <string name="wifi_direct">WiFi direct</string>
+        <string name="pppoe_connect_format">PPPoE连接方式</string>
+        <string name="pppoe_disconnect">PPPoE连接断开</string>
+        <string name="auto_ip">自动获取IP地址</string>
+        <string name="ip_address">IP 地址</string>
+        <string name="subnet_mask">子网掩码</string>
+        <string name="default_geteway">默认网关</string>
+        <string name="forget">忘记</string>
+        <string name="first_dns">首选DNS</string>
+        <string name="second_dns">备用DNS</string>
+        <string name="username">用户名</string>
+
+        <string name="show_password">显示密码</string>
+        <string name="show_password_1">显示密码：</string>
+        <string name="notice_no_pwd">本wifi没有设密码请直接点击连接按钮</string>
+        <string name="input_username">请输入用户名</string>
+        <string name="input_password">请输入密码</string>
+        <string name="auto_dialer">自动拨号</string>
+        <string name="connect_format">连接方式</string>
+        <string name="wire_connect">有线连接</string>
+        <string name="wireless_connect">无线连接</string>
+        <string name="connect_state">连接至</string>
+        <string name="disconnect_state">断开状态</string>
+        <string name="pppoe_connect">PPPoE连接</string>
+        <string name="connect_net">连接</string>
+        <string name="wifi_state_enable">Wi-Fi不可用</string>
+        <string name="pppoe_dialer">PPPoE拨号</string>
+        <string name="disconnect">断开</string>
+        <string name="is_dialing">正在拨号...</string>
+        <string name="pppoe_status_str">PPPoE 网络状态：</string>
+        <string name="dialer_hangup">挂断</string>
+        <string name="dialer_ok">拨号</string>
+        <string name="check_username_password">验证用户名和密码...</string>
+        <string name="ssid_password_error">SSID或密码错误</string>
+        <string name="check_ssid_password">验证SSID和密码...</string>
+        <string name="is_getting_ip">正在获取IP地址...</string>
+        <string name="is_scanning">正在扫描...</string>
+        <string name="connect_success">连接成功...</string>
+        <string name="choice_wifi">请选择无线网络</string>
+        <string name="wireless_signal">无线信号</string>
+        <string name="wired_progress">正在进行线连接，请稍候重试</string>
+
+        <!-- <string name="edit">编辑</string> -->
+        <string name="ss_id">SSID</string>
+        <string name="Wifi">Wi-Fi</string>
+        <string name="add">添加</string>
+        <string name="add_wifi_net">添加Wi-Fi网络</string>
+        <string name="modify">未修改</string>
+        <string name="wifi_net">Wi-Fi网络</string>
+        <string name="net_ssid">网络SSID：</string>
+        <string name="wifi_secure">安全性:</string>
+        <string name="none">无</string>
+        <string name="secure_wep">WEP</string>
+        <string name="secure_wpa">WPA/WPA2 PSK</string>
+        <string name="secure_eap">802.1×EAP</string>
+        <string name="net_password">密码：</string>
+        <string name="modigy_password">建立连接</string>
+        <string name="save">保存</string>
+        <string name="connect_to">连接</string>
+        <string name="scanning">正在扫描Wi-Fi网络</string>
+        <string name="select_wifi_scan">点此选择无线网络</string>
+        <string name="eth_able">有线网卡可用</string>
+        <string name="eth_enable">有线网不可用</string>
+        <string name="eth_unkonw">有线网卡状态未知</string>
+        <string name="wifi_able">无线网卡可用</string>
+        <string name="wifi_enable">无线网卡不可用</string>
+        <string name="check_ip">验证IP地址</string>
+        <string name="check_default">验证网关</string>
+        <string name="check_net_mask">验证子网掩码</string>
+        <string name="check_first_dns">验证DNS</string>
+        <string name="check_ip_failure">验证IP地址失败</string>
+        <string name="check_default_failure">验证网关失败</string>
+        <string name="check_netmask_failure">验证子网掩码失败</string>
+        <string name="check_dns_failure">验证DNS失败</string>
+        <string name="wire_con_failure">有线连接失败,请验证是否插入网线。</string>
+        <string name="wire_has_wire">网线已经插入,可以进行有线连接。</string>
+        <string name="pppoe_auto_success">PPPoE自动拨号成功。</string>
+        <string name="pppoe_connect_success">PPPoE拨号成功。</string>
+        <string name="pppoe_auto_failure">PPPoE自动拨号失败，请验证是否插入网线或者是用户名和密码错误。</string>
+        <string name="new_msg">您有新消息了。</string>
+        <string name="pppoe_tips">PPPoE自动拨号提示信息</string>
+        <string name="update_packages_download">正在进行更新包的下载</string>
+        <string name="please_hangup_pppoe">请先挂断PPPoE拨号网络</string>
+        <string name="device_do_not_support">该无线网卡不支持wifi热点</string>
+        <string name="please_insert_dongle">请插入无线网卡</string>
+        <string name="no_single_list">没有可用的无线网络</string>
+        <string name="please_switch_wire">请先关闭无线网络</string>
+        <string name="please_switch_wifeless">请先切换到无线网络连接</string>
+        <string name="device_name">设备名称：</string>
+        <string name="device_status">设备状态：</string>
+        <string name="device_address">设备地址：</string>
+        <string name="wlan_direct_device">WLan Direct设备</string>
+        <string name="device_discover">搜索</string>
+        <string name="device_list">设备列表：</string>
+        <string name="wifi_direct_connect">连接</string>
+        <string name="wifi_direct_disconnect">断开</string>
+        <string name="wifi_direct_cancel">按返回键取消操作</string>
+        <string name="wifi_direct_search">正在搜索...</string>
+        <string name="device_search_failed">搜索失败！</string>
+        <string name="device_search_success">搜索成功！</string>
+        <string name="please_open_direct">请开启wifi direct功能</string>
+        <string name="wifi_hotspot">WiFi热点</string>
+        <string name="config_wifi_hotspot">配置WiFi热点</string>
+        <string name="wifi_net_ssid">网络SSID</string>
+        <string name="wifi_hotspot_secure">安全性</string>
+        <string name="password_min_length">密码至少应包含8个字符</string>
+        <string name="wifi_security_wpa">WPA PSK</string>
+        <string name="wifi_security_wpa2">WPA2 PSK</string>
+        <string name="wifi_security_open">Open</string>
+
+        <string name="ssid_pwd_too_length">SSID或 密码设置过长，请重新输入</string>
+
+        <string name="wps_key_connect">WPS一键连接：</string>
+        <string name="wifi_wps_in_progress">"正在进行 WPS，这一过程可能需要数十秒的时间"</string>
+        <string name="wifi_wps_failed">"无法启动 WPS，请重试"</string>
+        <string name="wifi_wps_overlap_error">"检测到另一个 Wi-Fi 保护会话。请过几分钟后重试。"</string>
+        <string name="wps_has_start">WPS已启动</string>
+        <string name="location_service">位置服务</string>
+        <string name="google_location">Google的位置服务</string>
+        <string name="wifi_net_location">允许应用程序使用来自网络的数据确定您的大致位置</string>
+        <string name="no_wifi_network">无线网络断开，无法打开Google的位置服务</string>
+
+        <!-- date time setting -->
+        <string name="date_time_auto">通过网络自动获取时间日期</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+        <string name="time_zone">时区</string>
+        <string name="hour_format">使用24小时格式</string>
+        <string name="choose_date_format">选择日期格式</string>
+        <string name="default_date_format">MM/dd/yyyy</string>
+        <string name="year">年</string>
+        <string name="month">月</string>
+        <string name="day">日</string>
+        <string name="hour">时</string>
+        <string name="minute">分</string>
+        <string name="date_setting">日期设置</string>
+        <string name="time_setting">时间设置</string>
+        <string name="timezone_select">时区选择</string>
+        <string name="page">页数</string>
+        <string name="last_page">最后一页</string>
+        <string name="first_page">第一页</string>
+        <string name="correct_month">请输入正确的月份</string>
+        <string name="correct_day">请输入正确的日期 </string>
+        <string name="correct_hour">请输入正确的小时数 </string>
+        <string name="correct_minute">请输入正确的分钟数 </string>
+        <string name="correct_second">请输入正确的秒数 </string>
+        <!-- yangf 12-01-18 -->
+        <string name="correct_year">请输入正确的年份</string>
+        <string name="system_support_max_date">系统支持的最大日期为2038-1-18，请重新输入。 </string>
+        <string name="scope_year">输入范围:1970~2038</string>
+
+        <!-- about -->
+        <string name="model_number">型号</string>
+        <string name="system_version">系统版本</string>
+        <string name="memory_infor">内存信息(可用/总共)</string>
+        <string name="disk_infor">磁盘容量(可用/总共)</string>
+        <string name="legal_infor">法律信息</string>
+
+        <!-- application manage -->
+        <string name="app_setting">应用设置</string>
+        <string name="all_app">所有应用</string>
+        <string name="internal_storage">内部存储空间</string>
+        <string name="used">已使用：</string>
+        <string name="total">总容量：</string>
+        <string name="appstore_app">允许安装非AppStore应用</string>
+        <string name="first_install">首选安装位置</string>
+        <string name="install_type_default">由系统确定</string>
+        <string name="install_type_exte">可卸载的SD卡</string>
+        <string name="install_type_inte">设备内部存储</string>
+        <string name="version">版本：</string>
+
+        <string name="ok">确定</string>
+
+    <string name="recompute_size">"正在重新计算大小..."</string>
+
+
+    <string name="app_total">总大小：</string>
+    <string name="app_size">应用程序：</string>
+    <string name="app_data">数据：</string>
+    <string name="cache_date">缓存：</string>
+    <string name="move_sd">移至sdcard</string>
+    <string name="force_stop">强制停止</string>
+    <string name="uninstall_app">卸载</string>
+    <string name="uninstall_app_tips">是否要卸载应用程序?</string>
+    <string name="uninstall_done">卸载完成</string>
+    <string name="uninstall_failure">卸载失败</string>
+    <string name="uninstalling">正在卸载......</string>
+    <string name="clear_data">清除数据</string>
+	<string name="force_close_tips">强行关闭其应用程序可能导致异常，您确定要这样做吗？?</string>
+    <string name="cancle">取消</string>
+    <string name="delete">删除</string>
+	<string name="delete_tips">所有应用程序的数据将永久删除。删除内容：包括所有文档，
+帐户设置，数据库等</string>
+        <!-- 3D Setting -->
+        <string name="d3_auto_touch">3D自适应触发：</string>
+        <string name="d3_auto_delicacy">3D自适应灵敏：</string>
+        <string name="d3_mode">3D模式：</string>
+        <string name="d3_to_2d">3D转2D：</string>
+        <string name="d3_depth_field">3D景深：</string>
+        <string name="d3_view">3D视点：</string>
+        <string name="auto_start">自动开始：</string>
+        <string name="d2">2D</string>
+        <string name="d3">3D</string>
+        <string name="d3_screen">3D屏显：</string>
+        <string name="full_screen">全屏</string>
+        <string name="ratio">4：3</string>
+        <string name="change_left_right">左右交换：</string>
+        <string name="open">开</string>
+        <string name="close">关</string>
+
+        <!-- video setting -->
+        <string name="luminance">亮度</string>
+        <string name="contrast">对比度</string>
+        <string name="multicolour">彩色</string>
+        <string name="acute">锐度</string>
+
+        <!-- audio setting -->
+        <string name="high_voice">高音</string>
+        <string name="low_voice">低音</string>
+        <string name="blance">平衡</string>
+        <string name="spdif">S/PDIF</string>
+        <string msgid="1136191511238508967" name="wifi_not_in_range">"不在范围内"</string>
+        <string msgid="2104752038187543712" name="wifi_disabled">"已停用"</string>
+        <string msgid="8426719916135950136" name="wifi_remembered">"已保存"</string>
+        <string msgid="6759903183748011566" name="wifi_secured">"通过进行保护"</string>
+        <string msgid="6489317496506267302" name="wifi_secured_with_status">"通过进行保护"</string>
+
+        <!-- bluetooth setting -->
+        <string msgid="3332098786253116023" name="lock_settings_picker_title">"选择屏幕锁定"</string>
+        <string msgid="4676390750360727396" name="yes">"是"</string>
+        <string msgid="6731231425810196216" name="no">"无"</string>
+        <string msgid="1592123443519355854" name="unknown">"未知"</string>
+        <string msgid="5549625000628014477" name="bluetooth">"蓝牙"</string>
+        <string msgid="2930835434091839916" name="bluetooth_visibility">"可检测性"</string>
+        <string msgid="8373421452106840526" name="bluetooth_is_discoverable">"让附近所有的蓝牙设备均可检测到（<xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g>）"</string>
+        <string msgid="2849387702249327748" name="bluetooth_is_discoverable_always">"让附近所有的蓝牙设备均可检测到"</string>
+        <string msgid="9120274591523391910" name="bluetooth_not_visible_to_other_devices">"不让其他蓝牙设备检测到"</string>
+        <string msgid="2049983392373296028" name="bluetooth_only_visible_to_paired_devices">"仅让已配对的设备检测到"</string>
+        <string msgid="128269993123955177" name="bluetooth_not_discoverable">"可以检测到设备"</string>
+        <string msgid="8002247464357005429" name="bluetooth_visibility_timeout">"检测超时设置"</string>
+        <string msgid="6483353842671501585" name="bluetooth_visibility_timeout_summary">"设置可检测到设备的时间"</string>
+        <string msgid="3139322992062086225" name="bluetooth_lock_voice_dialing">"锁定语音拨号"</string>
+        <string msgid="4741338867496787042" name="bluetooth_lock_voice_dialing_summary">"屏幕锁定时停止使用蓝牙拨号器"</string>
+        <string msgid="1886018064039454227" name="bluetooth_devices">"蓝牙设备"</string>
+        <string msgid="8415828355207423800" name="bluetooth_device_name">"设备名称"</string>
+        <string msgid="2653752006416027426" name="bluetooth_name_not_set">"未设置名称，使用帐户名"</string>
+        <!--<string msgid="787970073150631155" name="bluetooth_rename_device" product="tablet">"重命名平板电脑"</string>-->
+        <!--<string msgid="6267987985556136749" name="bluetooth_rename_device" product="default">"重命名手机"</string>-->
+        <string msgid="1648028693822994566" name="bluetooth_rename_button">"重命名"</string>
+        <string msgid="6026705382020027966" name="bluetooth_disconnect_title">"断开连接？"</string>
+        <string msgid="9148530542956217908" name="bluetooth_disconnect_all_profiles">"此操作将会断开您与以下设备的连接：&lt;br>&lt;b><xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b>"</string>
+        <string msgid="5916643979709342557" name="bluetooth_disable_profile_title">"要停用个人资料吗？"</string>
+        <string msgid="2895844842011809904" name="bluetooth_disable_profile_message">"此操作将停用：&lt;br>&lt;b><xliff:g id="PROFILE_NAME">%1$s</xliff:g>&lt;/b>&lt;br>&lt;br>来自：&lt;br>&lt;b><xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/b>"</string>
+        <string msgid="6038755206916626419" name="bluetooth_connected">"已连接"</string>
+        <string msgid="2866994875046035609" name="bluetooth_connected_no_headset">"已连接（无手机）"</string>
+        <string msgid="4576188601581440337" name="bluetooth_connected_no_a2dp">"已连接（无媒体）"</string>
+        <string msgid="9195757766755553810" name="bluetooth_connected_no_headset_no_a2dp">"已连接（没有手机或媒体信号）"</string>
+        <string msgid="6557104142667339895" name="bluetooth_disconnected">"已断开连接"</string>
+        <string msgid="8913264760027764974" name="bluetooth_disconnecting">"正在断开连接..."</string>
+        <string msgid="8555009514614320497" name="bluetooth_connecting">"正在连接..."</string>
+        <string msgid="644716244548801421" name="bluetooth_unknown"></string>
+        <string msgid="1426882272690346242" name="bluetooth_pairing">"正在配对..."</string>
+        <string msgid="5291950341750186887" name="bluetooth_device">"未命名的蓝牙设备"</string>
+        <string msgid="192587958424295789" name="progress_scanning">"正在搜索"</string>
+        <string msgid="5655704645616731277" name="progress_tap_to_pair">""</string>
+        <string msgid="1085232930277181436" name="bluetooth_no_devices_found">"未在附近找到蓝牙设备。"</string>
+        <string msgid="4726721390078512173" name="bluetooth_notif_ticker">"蓝牙配对请求"</string>
+        <string msgid="2485175521845371514" name="bluetooth_notif_title">"配对请求"</string>
+        <string msgid="1931617700075106801" name="bluetooth_notif_message">"触摸可与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”进行配对"</string>
+        <string msgid="5164787486105868895" name="bluetooth_show_received_files">"显示接收到的文件"</string>
+        <string msgid="8721012448931226323" name="device_picker">"蓝牙设备选择器"</string>
+        <string msgid="1523129741266262748" name="bluetooth_permission_request">"蓝牙权限请求"</string>
+        <string msgid="5279027758886569301" name="bluetooth_ask_enablement">"某个应用程序想要打开蓝牙。允许该程序打开蓝牙吗？"</string>
+        <!--<string msgid="4420151924834278808" name="bluetooth_ask_discovery" product="tablet">"您TV上的某个应用程序想让其他蓝牙设备在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的平板电脑。允许该程序执行相应操作吗？"</string>-->
+        <!--<string msgid="4478906085771274647" name="bluetooth_ask_discovery" product="default">"您TV上的某个应用程序想让其他蓝牙设备在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。允许该程序执行相应操作吗？"</string>-->
+        <!--<string msgid="8737516188038252313" name="bluetooth_ask_lasting_discovery" product="tablet">"您TV电脑上的某个应用程序想让其他蓝牙设备“一直可检测到”您的平板电脑。允许该程序执行相应操作吗？"</string>-->
+        <!--<string msgid="7751530664834149084" name="bluetooth_ask_lasting_discovery" product="default">"您TV上的某个应用程序想让其他蓝牙设备“一直可检测到”您的手机。允许该程序执行相应操作吗？"</string>-->
+        <!--<string msgid="8504403125440086020" name="bluetooth_ask_enablement_and_discovery" product="tablet">"您TV电脑上的某个应用程序想要打开蓝牙，以便其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的平板电脑。允许该程序打开蓝牙吗？"</string>-->
+        <!--<string msgid="3040361003987241057" name="bluetooth_ask_enablement_and_discovery" product="default">"您TV上的某个应用程序想要打开蓝牙，以便其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。允许该程序打开蓝牙吗？"</string>-->
+        <!--<string msgid="7254712987802497615" name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet">"您TV电脑上的某个应用程序想要打开蓝牙，以便其他设备可检测到您的平板电脑。允许该程序打开蓝牙吗？"</string>-->
+        <!--<string msgid="3947789545028519103" name="bluetooth_ask_enablement_and_lasting_discovery" product="default">"您TV上的某个应用程序想要打开蓝牙，以便其他设备可检测到您的手机。允许该程序打开蓝牙吗？"</string>-->
+        <string msgid="4850574877288036646" name="bluetooth_turning_on">"正在打开蓝牙..."</string>
+        <string msgid="2337747302892025192" name="bluetooth_turning_off">"正在关闭蓝牙…"</string>
+        <string msgid="40711424456733571" name="bluetooth_auto_connect">"自动连接"</string>
+        <string msgid="4747918249032890077" name="bluetooth_connection_permission_request">"蓝牙连接请求"</string>
+        <string msgid="3687933246423942977" name="bluetooth_connection_notif_message">"触摸可连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”。"</string>
+        <string msgid="8455427559949998023" name="bluetooth_connection_dialog_text">"要连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”吗？"</string>
+        <string msgid="457033227379858269" name="bluetooth_phonebook_request">"电话簿请求"</string>
+        <string msgid="5203107624986011263" name="bluetooth_pb_acceptance_dialog_text">"“%1$s”希望访问您的联系人和通话记录。要向“%2$s”授予访问权吗？"</string>
+        <string msgid="2901499974259177202" name="bluetooth_pb_remember_choice">"下次不再询问"</string>
+        <string msgid="2739642871806935825" name="lockpassword_password_recently_used">"设备管理器不允许使用最近的密码"</string>
+        <string msgid="313822574062553672" name="lockpassword_ok_label">"确定"</string>
+        <string msgid="8818529276331121899" name="lockpassword_cancel_label">"取消"</string>
+        <string msgid="6431583477570493261" name="lockpattern_tutorial_cancel_label">"取消"</string>
+        <string msgid="3559793618653400434" name="lockpattern_tutorial_continue_label">"下一步"</string>
+        <string msgid="1759001157415978959" name="lock_setup">"设置已完成"</string>
+        <string msgid="3562216873644263804" name="device_admin_title">"设备管理"</string>
+        <string msgid="5059296715271077278" name="manage_device_admin">"设备管理器"</string>
+        <string msgid="7672709110988761075" name="manage_device_admin_summary">"查看或停用设备管理器"</string>
+        <string msgid="1037056952714061893" name="bluetooth_quick_toggle_title">"蓝牙"</string>
+        <string msgid="5293641680139873341" name="bluetooth_quick_toggle_summary">"打开蓝牙"</string>
+        <string msgid="1810521656168174329" name="bluetooth_settings">"蓝牙"</string>
+        <string msgid="1908745291161353016" name="bluetooth_settings_title">"蓝牙"</string>
+        <string msgid="2091062709530570462" name="bluetooth_settings_summary">"管理连接、设置设备名称和可检测性"</string>
+        <string msgid="6385750334766370310" name="bluetooth_pairing_request">"蓝牙配对请求"</string>
+        <string msgid="5698297871117529185" name="bluetooth_enter_pin_msg">"要与 <xliff:g id="BOLD_0">&lt;br>&lt;b></xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b>&lt;br>&lt;br></xliff:g> 设备配对，请键入该设备所需的 PIN："</string>
+        <string msgid="2220143735340367939" name="bluetooth_enter_passkey_msg">"要与 <xliff:g id="BOLD_0">&lt;br>&lt;b></xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD">&lt;/b>&lt;br>&lt;br></xliff:g> 设备配对，请键入该设备所需的配对密钥："</string>
+        <string msgid="7222713483058171357" name="bluetooth_enable_alphanumeric_pin">"PIN 由字母或符号组成"</string>
+        <string msgid="3815897557875873646" name="bluetooth_pin_values_hint">"通常为 0000 或 1234"</string>
+        <string msgid="3617812138113586885" name="bluetooth_enter_pin_other_device">"您可能还需要在另一台设备上输入此 PIN。"</string>
+        <string msgid="1808735246794073465" name="bluetooth_enter_passkey_other_device">"您可能还需要在另一台设备上输入此匹配密钥。"</string>
+        <string msgid="3708312912841950052" name="bluetooth_confirm_passkey_msg">"要与以下设备配对：&lt;br>&lt;b><xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b>&lt;br>&lt;br>请确保其显示的配对密钥为：&lt;br>&lt;b><xliff:g id="PASSKEY">%2$s</xliff:g>&lt;/b>"</string>
+        <string msgid="1615930853859551491" name="bluetooth_incoming_pairing_msg">"来自：&lt;br>&lt;b><xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b>&lt;br>&lt;br>要与此设备配对吗？"</string>
+        <string msgid="2796550001376088433" name="bluetooth_display_passkey_pin_msg">"要与 <xliff:g id="BOLD1_0">&lt;br>&lt;b></xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1">&lt;/b>&lt;br>&lt;br></xliff:g> 设备配对，请在该设备上键入：<xliff:g id="BOLD2_1">&lt;br>&lt;b></xliff:g><xliff:g id="PASSKEY">%2$s</xliff:g><xliff:g id="END_BOLD2">&lt;/b></xliff:g>，然后按回车键。"</string>
+        <string msgid="6163520056536604875" name="bluetooth_pairing_accept">"配对"</string>
+        <string msgid="4185420413578948140" name="bluetooth_pairing_decline">"取消"</string>
+        <string msgid="6850384073923533096" name="bluetooth_error_title"></string>
+        <string msgid="3748157733635947087" name="bluetooth_pairing_error_message">"无法与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”进行配对。"</string>
+        <string msgid="8337234855188925274" name="bluetooth_pairing_pin_error_message">"PIN 或配对密钥不正确，无法与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”配对。"</string>
+        <string msgid="7870998403045801381" name="bluetooth_pairing_device_down_error_message">"无法与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”进行通信。"</string>
+        <string msgid="1648157108520832454" name="bluetooth_pairing_rejected_error_message">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> 已拒绝配对。"</string>
+        <string msgid="1779660510084746802" name="bluetooth_connecting_error_message">"连接到<xliff:g id="DEVICE_NAME">%1$s</xliff:g>时出现问题。"</string>
+        <string msgid="2277464653118896016" name="bluetooth_preference_scan_title">"扫描查找设备"</string>
+        <string msgid="5957007154213560390" name="bluetooth_search_for_devices">"搜索设备"</string>
+        <string msgid="9203739709307871727" name="bluetooth_searching_for_devices">"正在搜索..."</string>
+        <string msgid="907776049862799122" name="bluetooth_preference_device_settings">"设备设置"</string>
+        <string msgid="1970524193086791964" name="bluetooth_preference_paired_devices">"已配对的设备"</string>
+        <string msgid="1647983835063249680" name="bluetooth_preference_found_devices">"可用设备"</string>
+        <string msgid="3997659895003244941" name="bluetooth_device_context_connect">"连接"</string>
+        <string msgid="8220072022970148683" name="bluetooth_device_context_disconnect">"断开网络共享"</string>
+        <string msgid="7611522504813927727" name="bluetooth_device_context_pair_connect">"配对和连接"</string>
+        <string msgid="662992425948536144" name="bluetooth_device_context_unpair">"取消配对"</string>
+        <string msgid="7644014238070043798" name="bluetooth_device_context_disconnect_unpair">"断开连接和取消配对"</string>
+        <string msgid="2643129703569788771" name="bluetooth_device_context_connect_advanced">"选项…"</string>
+        <string msgid="8572178316357220524" name="bluetooth_menu_advanced">"高级"</string>
+        <string msgid="2142159726881547669" name="bluetooth_advanced_titlebar">"高级蓝牙设置"</string>
+        <string msgid="4793562956642282639" name="bluetooth_empty_list_bluetooth_off">"要监测设备，请打开蓝牙功能。"</string>
+        <string msgid="6952214406025825164" name="bluetooth_connect_specific_profiles_title">"连接到..."</string>
+        <string msgid="2031475486179830674" name="bluetooth_profile_a2dp">"媒体音频"</string>
+        <string msgid="8658779596261212609" name="bluetooth_profile_headset">"手机音频"</string>
+        <string msgid="9168139293654233697" name="bluetooth_profile_opp">"文件传输"</string>
+        <string msgid="3680729023366986480" name="bluetooth_profile_hid">"输入设备"</string>
+        <string msgid="3391606497945147673" name="bluetooth_profile_pan">"互联网访问"</string>
+        <string msgid="8429049285027482959" name="bluetooth_profile_pan_nap">"互联网连接共享"</string>
+        <string msgid="3524648279150937177" name="bluetooth_disconnect_a2dp_profile">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>将与媒体音频断开连接。"</string>
+        <string msgid="8635908811168780720" name="bluetooth_disconnect_headset_profile">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>将与免提音频断开连接。"</string>
+        <string msgid="3282295189719352075" name="bluetooth_disconnect_hid_profile">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>将与输入设备断开连接。"</string>
+        <string msgid="8037627994382458698" name="bluetooth_disconnect_pan_user_profile">"将断开 <xliff:g id="DEVICE_NAME">%1$s</xliff:g> 的互联网访问。"</string>
+        <!--<string msgid="5455448395850929200" name="bluetooth_disconnect_pan_nap_profile" product="tablet">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> 将断开而不再共享该平板电脑的互联网连接。"</string>-->
+        <!--<string msgid="5266851881175033601" name="bluetooth_disconnect_pan_nap_profile" product="default">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> 将断开而不再共享该手机的互联网连接。"</string>-->
+        <string msgid="6066342531927499308" name="bluetooth_device_advanced_title">"已配对的蓝牙设备"</string>
+        <string msgid="3689050071425683114" name="bluetooth_device_advanced_online_mode_title">"连接"</string>
+        <string msgid="1204424107263248336" name="bluetooth_device_advanced_online_mode_summary">"连接到蓝牙设备"</string>
+        <string msgid="3764437426089639639" name="bluetooth_device_advanced_profile_header_title">"个人资料"</string>
+        <string msgid="5148578059584955791" name="bluetooth_device_advanced_rename_device">"重命名"</string>
+        <string msgid="8222550640371627365" name="bluetooth_device_advanced_enable_opp_title">"允许传输传入的文件"</string>
+        <string msgid="963376081347721598" name="bluetooth_a2dp_profile_summary_connected">"已连接到媒体音频"</string>
+        <string msgid="7661070206715520671" name="bluetooth_headset_profile_summary_connected">"已连接到手机音频"</string>
+        <string msgid="2611913495968309066" name="bluetooth_opp_profile_summary_connected">"已连接到文件传输服务器"</string>
+        <string msgid="1267091356089086285" name="bluetooth_opp_profile_summary_not_connected">"未连接到文件传输服务器"</string>
+        <string msgid="3381760054215168689" name="bluetooth_hid_profile_summary_connected">"已连接到输入设备"</string>
+        <string msgid="4602294638909590612" name="bluetooth_pan_user_profile_summary_connected">"连接到设备以访问互联网"</string>
+        <string msgid="1561383706411975199" name="bluetooth_pan_nap_profile_summary_connected">"与设备共享本地互联网连接"</string>
+        <string msgid="4630849022250168427" name="bluetooth_a2dp_profile_summary_use_for">"用于媒体音频"</string>
+        <string msgid="8705753622443862627" name="bluetooth_headset_profile_summary_use_for">"用于手机音频"</string>
+        <string msgid="1255674547144769756" name="bluetooth_opp_profile_summary_use_for">"用于文件传输"</string>
+        <string msgid="232727040453645139" name="bluetooth_hid_profile_summary_use_for">"用于输入"</string>
+        <string msgid="5664884523822068653" name="bluetooth_pan_profile_summary_use_for">"用于访问互联网"</string>
+        <string msgid="3218335822716052885" name="bluetooth_dock_settings">"底座设置"</string>
+        <string msgid="5543069893044375188" name="bluetooth_dock_settings_title">"底座用于音频"</string>
+        <string msgid="1001821426078644650" name="bluetooth_dock_settings_headset">"将底座用作免提电话"</string>
+        <string msgid="8791004998846630574" name="bluetooth_dock_settings_a2dp">"用于音乐和媒体"</string>
+        <string msgid="5551459057010609115" name="bluetooth_dock_settings_remember">"记住设置"</string>
+        <string name="no_bluetooth_device">未找到蓝牙设备</string>
+        <string name="start_download_update_package">开始下载升级包......</string>
+        <string name="bluetooth_devicename">设备名称</string>
+        <string name="bluetooth_discoverable">可检测性</string>
+        <string name="bluetooth_discoverable_timeout">可检测到设备的时间超时</string>
+        <string name="bluetooth_scan_for_devices">扫描查找设备</string>
+        <string name="open_bluetooth_first">请开启蓝牙</string>
+        <string name="bluetooth_setting">蓝牙设置</string>
+        <string name="voice_setting">声音设置</string>
+        <string name="safety_setting">安全设置</string>
+        <string name="touch_sound_effect">按键音</string>
+        <string name="visible_password">密码可见</string>
+        <string name="show_bg">壁纸</string>
+        <string name="font_size">字体大小</string>
+        <string name="big_font_size">大号字体</string>
+        <string name="font_setting">字体设置</string>
+        <string name="dormancy">休眠</string>
+        <string name="voice">声音</string>
+        <string name="show">显示</string>
+        <string name="safety">安全</string>
+        <string name="aided">辅助功能</string>
+        <string name="twominute">2分钟</string>
+        <string name="fiveminute">5分钟</string>
+        <string name="onehour">1小时</string>
+        <string name="never">从不</string>
+        <string name="input_not_null">输入不能为空</string>
+        <string name="sdcard_not_app">Sd卡中没有安装应用.</string>
+        <string name="sdcard_all_storage">总容量:</string>
+        <string name="sdcard_free_storage">已使用:</string>
+        <string name="sdcard_app">Sd卡应用</string>
+        <string name="sdcard_storage">Sd卡存储空间</string>
+        <string name="app_move_to_sdcard">移至sdcard</string>
+        <string name="app_move_to_tv">移至内存</string>
+    <string name="app_move_fail">应用移动失败!</string>
+    <string name="sdcard_not_exist">SD卡不存在，请插入SD卡.</string>
+    <string name="app_moving">移动中</string>
+        <string name="header_add_an_account">添加帐户</string>
+        <string name="sync_enabled">同步功能已开启</string>
+        <string name="sync_disabled">同步功能已关闭</string>
+        <string name="sync_error">同步出错</string>
+        <string name="accessibility_sync_enabled">同步功能已启用</string>
+        <string name="accessibility_sync_disabled">同步功能已停用</string>
+        <string name="accessibility_sync_error">同步错误。</string>
+        <string name="remove_account_label">删除帐户</string>
+        <string name="really_remove_account_message">删除该帐户会从手机中删除所有相关的邮件、联系人以及其它数据。</string>
+        <string name="remove_account_failed">某些应用程序需要使用此帐户。您只有将平板电脑重置为出厂默认设置（此操作会删除您的所有个人数据），才能删除此帐户。您可以通过“设置”>“备份和重置 ”执行此操作。</string>
+        <string name="really_remove_account_title">要删除帐户吗？</string>
+        <string name="cant_sync_dialog_message">目前，此条目的同步功能已停用。要更改此设置，请暂时启用后台数据和自动同步功能。</string>
+        <string name="cant_sync_dialog_title">无法手动同步</string>
+        <string name="sync_is_failing">同步操作当前遇到了一些问题，很快便可恢复。</string>
+        <string name="finish_button_label">完成</string>
+        <string name="header_data_and_synchronization">数据与同步</string>
+        <string name="sync_item_title" >同步<xliff:g id="AUTHORITY">%s</xliff:g></string>
+        <string name="sync_menu_sync_now" >立即同步</string>
+        <string name="sync_menu_sync_cancel" >取消同步</string>
+    <string name="sync_one_time_sync" >触摸可立即同步（<xliff:g id="LAST_SYNC_TIME">
+%1$s</xliff:g>）</string>
+    <string name="str_mainmenu_channel_colorsystem_pal">PAL</string>
+    <string name="str_mainmenu_channel_colorsystem_ntsc_m">NTSC_M</string>
+    <string name="str_mainmenu_channel_colorsystem_secam">SECAM</string>
+    <string name="str_mainmenu_channel_colorsystem_ntsc_44">NTSC_44</string>
+    <string name="str_mainmenu_channel_colorsystem_pal_m">PAL_M</string>
+    <string name="str_mainmenu_channel_colorsystem_pal_n">PAL_N</string>
+    <string name="str_mainmenu_channel_colorsystem_pal_60">PAL_60</string>
+    <string name="str_mainmenu_channel_colorsystem_nostandard">NO_STANDARD</string>
+    <string name="str_mainmenu_channel_colorsystem_auto">AUTO</string>
+    <string name="str_mainmenu_channel_soundsystem_bg">BG</string>
+    <string name="str_mainmenu_channel_soundsystem_dk">DK</string>
+    <string name="str_mainmenu_channel_soundsystem_i">I</string>
+    <string name="str_mainmenu_channel_soundsystem_l">L</string>
+    <string name="str_mainmenu_channel_soundsystem_m">M</string>
+    <string name="proxy_error_invalid_exclusion_list">The exclusion list you typed isn\'t properly formatted. Type a
+comma-separated list of excluded domains.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other
+apps.</string>
+    <string name="wifi_action_advanced_yes">OK</string>
+    <!-- Label for action to not use advanced settings for the wifi connection [CHAR LIMIT=50] -->
+    <string name="wifi_action_advanced_no">No (recommended)</string>
+    <!-- Label for action to not use a proxy for the wifi connection [CHAR LIMIT=50] -->
+    <string name="wifi_action_proxy_none">None</string>
+    <!-- Label for action to setup a proxy for the wifi connection [CHAR LIMIT=50] -->
+    <string name="wifi_action_proxy_manual">Manual</string>
+    <!-- Label for action to use dhcp to obtain an ip address for the wifi connection [CHAR LIMIT=50] -->
+    <string name="wifi_action_status_info">Status info</string>
+    <!-- Title for action to setup advanced options for the wifi connection [CHAR LIMIT=50] -->
+    <string name="wifi_action_advanced_options_title">Advanced options</string>
+    <!-- Description for action to setup advanced options for the wifi connection [CHAR LIMIT=50] -->
+    <!-- Error message if the IP address is not valid [CHAR LIMIT=50] -->
+    <string name="wifi_ip_settings_invalid_ip_address">Enter a valid IP address</string>
+    <!-- Error message if the gateway is not valid [CHAR LIMIT=50] -->
+    <string name="wifi_ip_settings_invalid_gateway">Enter a valid gateway address</string>
+    <!-- Error message if the dns is not valid [CHAR LIMIT=50] -->
+    <string name="wifi_ip_settings_invalid_dns">Enter a valid DNS address</string>
+    <!-- Error message if the network prefix length is not valid [CHAR LIMIT=50] -->
+    <string name="wifi_ip_settings_invalid_network_prefix_length">Enter a network prefix length between 0 and 32</string>
+    <!-- Hint text for the IP address -->
+
+
+	 <string name="wifi_display_settings_title" msgid="564299108014609382">"无线显示"</string>
+    <string name="device_display_timetitie">"启动时间"</string>
+    <string name="device_volme">"音量设置"</string>
+    <string name="device_display_image">"当前屏保"</string>
+    <string name="device_daydreams_none">"无"</string>
+    <string name="err_not_enough_storage_for_cache">您的设备Cache分区没有足够的存储空间,请重启设备释放内存或插入内存足够的SDCard后再操作.</string>
+    <string name="err_not_enough_storage_for_sdcard">您的设备SDCard没有足够的存储空间,请释放足够的内存后再操作.</string>
+    <string name="err_not_enough_storage">您的设备没有足够的存储空间,请保证足够的内存后再操作.</string>
+    <string name="upgrade_help_title">升级操作帮助：</string>
+    <string name="upgrade_help_1">1.点击“立即下载”后，新软件开始下载。下载完成后，点击“立即升级”，设备开始升级。</string>
+    <string name="upgrade_help_3">2.升级完成后，设备进入待机状态(红色指示灯常亮)，请按遥控“电源”键开机。</string>
+    <string name="upgrade_help_4">3.升级工作完成。</string>
+    <string name="attention">注意事项：</string>
+    <string name="attention_1">1.升级过程中勿遥控设备或将设备断电。</string>
+    <string name="attention_2">2.升级过程中当设备长时间处于黑屏待机状态时请按遥控"电源"键开机。</string>
+    <string name="attention_3">3.升级后设备将恢复出厂设置，请重新网络设置等其它操作。</string>
+    <string name="attention_4" />
+    <string name="msg_net_err1">您的网络不通,请配置好网络后再操作.</string>
+    <string name="upgrade_package_downFeload_finished">网络升级包下载完成</string>
+    <string name="update_settings">"系统升级"</string>
+        <string name="add_account_label" >添加帐户</string>
+		<string name="update_by_local">局部更新</string>
+        <string name="del_more_application" >磁盘空间不足,请删除更多应用</string>
+
+        <string name="msg_no_clear_data">"此程序没有数据可以清理"</string>
+        <string name="wake_up_alert">"（休眠后可按“首页”键唤醒）"</string>
+        <string name="select_updatezip">请选择升级包:</string>
+        <string name="select_update_package">选择升级包</string>
+        <string name="mobile_stoarge_device">移动存储设备</string>
+        <string name="not_network">没有连接网络，不能进行网络升级！</string>
+        <string name="download_update_fail">网络下载升级包错误，无法正常下载升级包！</string>
+        <string name="check_version_fail">从服务器获取升级包版本号异常，无法正常升级！</string>
+        <string name="sdcard_lable">Sdcard</string>
+        <string name="hdmioutformat">HDMI输出格式</string>
+        <string name="hdmioutformat_sure_change">系统重启中....</string>
+        <string name="hdmioutformat_info">警告！</string>
+        <string name="resolution">分辨率</string>
+        <string name="solution1080P24">DACOUT_1080P_24</string>
+        <string name="solution1080P25">DACOUT_1080P_25</string>
+        <string name="solution1080P30">DACOUT_1080P_30</string>
+        <string name="solution1080P50">DACOUT_1080P_50</string>
+        <string name="solution1080P60">DACOUT_1080P_60</string>
+        <string name="solution1080I50">DACOUT_1080I_50</string>
+        <string name="solution1080I60">DACOUT_1080I_60</string>
+        <string name="solution720P60">DACOUT_720P_60</string>
+        <string name="solution720P50">DACOUT_720P_50</string>
+        <string name="solution576P50">DACOUT_576P_50</string>
+        <string name="solution576I50">DACOUT_576I_50</string>
+        <string name="solution480P60">DACOUT_480P_60</string>
+        <string name="solution480I60">DACOUT_480I_60</string>
+        <string name="solution4K2KP30">DACOUT_4K2KP_30</string>
+        <string name="solution_sure_change">确认切换分辨率吗？系统将重启</string>
+        <string name="solution_info">提示信息</string>
+        <string name="solution_ok">确认</string>
+        <string name="solution_cancle">取消</string>
+
+        <string name="check_wifi_direct_error">您的无线网卡没有WiFi Direct功能</string>
+        <string name="check_wifi_hotspot_error">您的无线网卡没有WiFi热点功能</string>
+        <!-- add by felix.hu begin 2012/11/15 -->
+        <!-- comment : fix mantis bug 0296552 -->
+        <string name="close_wifi_txt">"请先关闭wifi!"</string>
+        <string name="close_wifiap_txt">"请先关闭wifi热点"</string>
+        <!-- comment : add wifi proxy 2012/11/21-->
+        <string name="proxy_settings">"代理设置"</string>
+        <string name="proxy_hostname">"代理服务器主机名"</string>
+        <string name="proxy_port">"代理服务器端口"</string>
+        <string name="proxy_exclusion">"对以下对象绕过代理"</string>
+        <string name="proxy_hostname_hint">"proxy.example.com"</string>
+        <string name="proxy_port_hint">"8080"</string>
+        <string name="proxy_exclusion_hint">"example.com,mycomp.test.com"</string>
+        <!-- HTTP proxy settings. The error if the hostname is not valid -->
+        <string name="proxy_error_invalid_host">"代理服务器名无效."</string>
+        <!-- HTTP proxy settings. Error msg -->
+        <string name="proxy_error_invalid_port">"代理服务器端口无效."</string>
+        <!-- comment : fix mantis bug 0301757 -->
+        <string name="open_wifi_text">"请先开启WiFi"</string>
+        <string name="wifi_direct_toggle_txt">"WiFi Direct"</string>
+        <string name="wifi_direct_toggle_hint">"随Wi-Fi会自动开启与关闭"</string>
+        <!-- add by felix.hu end -->
+    <string name="load_app_failed">"加载应用失败."</string>
+        <string name="wifi_failed_connect_message">"无法连接网络"</string>
+        <string name="wifi_failed_save_message">"无法保存网络"</string>
+        <string name="wifi_failed_forget_message">"无法取消保存网络"</string>
+        <string name="wifi_add_ssid">"添加其他"</string>
+        <string name="ethernet_dev_switch">"切换网卡"</string>
+        <string name="ethernet_switch">"开启有线连接"</string>
+        <string name="ethernet_ipv6">"IPv6"</string>
+        <string name="network_proxy">"代理设置"</string>
+        <string name="proxy_switch">"开启代理"</string>
+        <string name="proxy_address">"代理地址"</string>
+        <string name="proxy_verify">"验证"</string>
+        <string name="mac_address">"物理地址"</string>
+        <string name="ipv6_netmask">"子网前缀长度"</string>
+		<string name="auto_static">静态IP设置</string>
+        <!-- network settings title -->
+        <string name="network_status_title">"网络状态"</string>
+        <string name="ethernet_settings_title">"有线设置"</string>
+        <string name="wifi_settings_title">"无线设置"</string>
+    <string name="ethernet_settings">"有线设置"</string>
+        <string name="pppoe_settings_title">">>PPPoE设置"</string>
+        <string name="proxy_settings_title">">>代理设置"</string>
+        <string name="wifip2p_settings_title">">>Wi-Fi Direct"</string>
+        <string name="wifiap_settings_title">"Wi-Fi热点"</string>
+        <string name="location_settings_title">">>位置服务"</string>
+
+        <string name="open_ethernet_hint">"请先关闭Wi-Fi"</string>
+        <string name="not_support_security_hint">"不支持的加密类型"</string>
+        <string name="wifi_disabled_generic">"已停用"</string>
+        <string name="wifi_disabled_network_failure">"已停用状况不佳的互联网连接"</string>
+        <string name="wifi_disabled_password_failure">"身份验证出现问题"</string>
+        <string name="wifi_display_status_connecting">"正在连接"</string>
+        <string name="wifi_display_status_connected">"已连接"</string>
+        <string name="wifi_not_save">"不保存"</string>
+
+        <string-array name="net_settings">
+            <item>网络状态</item>
+            <item>有线设置</item>
+            <item>无线设置</item>
+            <item>Wi-Fi热点</item>
+            <item>Mac地址</item>
+            <item>蓝牙</item>
+        </string-array>
+        <string name="wifi_display_settings_empty_list_wifi_display_off" msgid="1225626898926363100">"要查看设备，请打开无线显示功能。"</string>
+        <string name="wifi_display_settings_empty_list_wifi_display_disabled" msgid="7363832031876872257">"由于 Wi-Fi 已关闭，因此无线显示功能已停用。"</string>
+        <string name="wifi_display_search_for_devices" msgid="5065526281193354502">"搜索显示设备"</string>
+        <string name="wifi_display_searching_for_devices" msgid="5172373825348672137">"正在搜索…"</string>
+        <string name="wifi_display_no_devices_found" msgid="8180582698282377626">"找不到附近有无线显示设备。"</string>
+        <string name="wifi_display_paired_devices" msgid="7395326840730024303">"已配对的显示设备"</string>
+        <string name="wifi_display_available_devices" msgid="4558314642853513487">"可用设备"</string>
+        <string name="wifi_display_status_available" msgid="1924167525172207067">"可用"</string>
+        <string name="wifi_display_details" msgid="7791118209992162698">"显示设备设置"</string>
+        <string name="wifi_display_disconnect_title" msgid="1543715924639003599">"是否断开连接？"</string>
+        <string name="wifi_display_disconnect_text" msgid="4824860802264489088">"此操作将会断开您与以下设备的连接：&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;"</string>
+        <string name="wifi_display_options_title" msgid="5740656401635054838">"无线显示选项"</string>
+        <string name="wifi_display_options_forget" msgid="9119048225398894580">"取消保存"</string>
+        <string name="wifi_display_options_done" msgid="5703116500357822557">"完成"</string>
+        <string name="wifi_display_options_name" msgid="4756080222307467898">"名称"</string>
+        <string name="wifi_display_summary_on" msgid="3695429596604962531">"开启"</string>
+        <string name="wifi_display_summary_off" msgid="2445210133184740611">"关闭"</string>
+        <string name="wifi_display_summary_disabled" msgid="5318394806146587849">"已停用"</string>
+
+
+
+    <string name="msg_no_stop">"此程式沒有運行,不需要強制停止"</string>
+
+
+
+
+    <string name="msg_readconfig_err">读取配置文件出错</string>
+    <string name="msg_net_err">请求版本信息出错,请检查网络.</string>
+    <string name="msg_check_mac_err">该MAC地址不能升级</string>
+    <string name="msg_check_ver_err">服务器验证出错</string>
+    <string name="msg_version_newest">当前已是最新版本</string>
+    <string name="msg_download_err">升级包下载失败</string>
+    <string name="copy_package">正在复制更新包......</string>
+    <string name="copy_yes">复制更新包完成</string>
+
+
+
+    <string name="ethernet_ip_set">IP    设置</string>
+    <string name="auto_DHCP">DHCP</string>
+    <string name="please_open_wired">请先连接有线网络!</string>
+    <string name="please_open_wireless">请先连接无线网络!</string>
+	<string msgid="6267987985556136749" name="bluetooth_rename_device" >"重命名手机"</string>
+	<string name="mac_wired_address">有线MAC地址 : </string>
+	<string name="mac_wireless_address">无线MAC地址 : </string>
+	<string name="wired_mac_address_settings_title">有线Mac地址</string>
+	<string name="wireless_mac_address_settings_title">无线Mac地址</string>
+	<string name="bluetoothsettings_title">蓝牙</string>
+	  <!-- Wifi Security type indicating no security [CHAR LIMIT=30] -->
+    <string name="wifi_security_type_none">None</string>
+    <!-- Wifi Security type indicating WEP security [CHAR LIMIT=30] -->
+    <string name="wifi_security_type_wep">WEP</string>
+    <!-- Wifi Security type indicating WPA/WPA2 security [CHAR LIMIT=30] -->
+    <string name="wifi_security_type_wpa">WPA/WPA2 PSK</string>
+    <!-- Wifi Security type indicating EAP security [CHAR LIMIT=30] -->
+    <string name="wifi_security_type_eap">802.1x EAP</string>
+    <string name="msg_upgrade_err">升级失败</string>
+    <string name="msg_download_ok">升级包下载完成</string>
+    <string name="md5_check_error">md5校验错误</string>
+    <string name="msg_downloading">正在下载中</string>
+	<string name="upgrade_package_download_finished">网络升级包下载完成</string>
+	<string name="str_HDMI_4">OPS</string>
+    <string name="str_HDMI_DP">HDMI-DP</string>
+    <string name="str_mainmenu_general_app_serach">应用查询中...</string>
+    <string name="str_no_app">没有安装第三方应用程序!</string>
+    <string name="str_noexit_app">该应用未安装或已卸载!</string>
+    <string name="get_weather_data_shibai">获取数据失败，请检查网络！</string>
+    <string name="query_cityname_shibai">查询城市名有误，获取数据失败！</string>
+
+</resources>

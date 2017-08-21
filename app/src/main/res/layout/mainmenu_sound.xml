@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_sound_soundmode" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_sound_soundmode" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_sound_soundmode" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_sound_soundmode_val" android:text="@string/str_mainmenu_sound_soundmode_standard" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_srs" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_sound_srs" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_sound_srs" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_sound_srs_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_equalizer" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_sound_equalizer" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_sound_equalizer" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_avc" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_sound_track" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_sound_avc" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_sound_avc_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_surround" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_sound_soundmode" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_sound_channel_select" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_sound_surround" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_sound_surround_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_auto_hoh" android:layout_marginTop="25.0dip" android:layout_marginLeft="123.0dip" android:layout_below="@id/linearlayout_sound_srs" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/sound_auto_hoh" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_sound_autohoh" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_sound_auto_hoh_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_sound_mute" android:layout_marginLeft="246.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_sound_equalizer" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/ic_mute" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_sound_mute" style="@style/second_text_name" />
+        <TextView android:id="@+id/mute_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

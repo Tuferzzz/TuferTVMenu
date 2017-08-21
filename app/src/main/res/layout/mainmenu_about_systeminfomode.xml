@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/mainlinear_about_systeminfo" style="@style/system_info_main_layout1_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/third_layout1_title_style">
+        <TextView android:text="@string/str_mainmenu_about_systeminfo" style="@style/system_info_layout_title_text_style" />
+    </LinearLayout>
+    <ScrollView style="@style/system_info_layout1_scrollview_style">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@+id/linearlayout_about_systeminfo_model" style="@style/system_info_layout1_item_style">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/str_mainmenu_about_systeminfo_model" />
+                    <TextView android:id="@+id/system_info_model" style="@style/system_info_layout1_text_style" />
+                </LinearLayout>
+                <LinearLayout style="@style/system_info_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@+id/linearlayout_about_systeminfo_version" style="@style/system_info_layout1_item_style">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/str_mainmenu_about_systeminfo_version" />
+                    <TextView android:id="@+id/system_info_version" style="@style/system_info_layout1_text_style" />
+                </LinearLayout>
+                <LinearLayout style="@style/system_info_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@+id/linearlayout_about_systeminfo_system_version" style="@style/system_info_layout1_item_style">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/str_mainmenu_about_systeminfo_system_version" />
+                    <TextView android:id="@+id/system_info_system_version" style="@style/system_info_layout1_text_style" />
+                </LinearLayout>
+                <LinearLayout style="@style/system_info_layout_segmentation_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@+id/linearlayout_about_systeminfo_memory_info" style="@style/system_info_layout1_item_style">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/str_mainmenu_about_systeminfo_memory_info" />
+                    <TextView android:id="@+id/system_info_memory_info" style="@style/system_info_layout1_text_style" />
+                </LinearLayout>
+                <LinearLayout style="@style/system_info_layout_segmentation_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

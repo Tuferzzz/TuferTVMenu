@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_intelligence_identify" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_identify" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_identify" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_identify_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_childlock" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_childlock" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_childlock" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_childlock_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_energysaving" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_energysaving" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_energysaving" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_energysaving_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_temperaturedet" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_temperature_detection" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_temperaturedet" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_temperaturedet_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_sensorlight" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_intelligence_identify" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_sensorlight" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_sensorlight" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_sensorlight_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_protecteyes" android:layout_marginTop="25.0dip" android:layout_marginLeft="123.0dip" android:layout_below="@id/linearlayout_intelligence_childlock" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_protecteyes" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_protecteyes" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_protecteyes_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_nosignalreturn" android:layout_marginTop="25.0dip" android:layout_marginLeft="246.0dip" android:layout_below="@id/linearlayout_intelligence_energysaving" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_nosignalreturn" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_nosignalreturn" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_nosignalreturn_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_nosignalstandby" android:layout_marginTop="25.0dip" android:layout_marginLeft="369.0dip" android:layout_below="@id/linearlayout_intelligence_temperaturedet" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_standby" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_nosignal_standby" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_nosignalstandby_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_sleeptime" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_intelligence_sensorlight" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_sleeptime" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_sleeptime" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_sleeptime_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_power_on_time" android:layout_marginTop="25.0dip" android:layout_marginLeft="123.0dip" android:layout_below="@id/linearlayout_intelligence_sensorlight" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_poser_on_time" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_power_on_time" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_power_on_time_val" android:text="@string/str_mainmenu_default_switch_off" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_intelligence_menu_display_time" android:layout_marginTop="25.0dip" android:layout_marginLeft="246.0dip" android:layout_below="@id/linearlayout_intelligence_sensorlight" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_intelligence_menu_display_time" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_intelligence_menu_display_time" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_intelligence_menu_display_time_val" android:text="@string/str_mainmenu_intelligence_menu_display_time_alway" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

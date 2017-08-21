@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<LinearLayout android:id="@+id/linearlayout_channel_colorsystem" style="@style/linearlayout_style">-->
+        <!--<ImageView android:src="@drawable/mainmenu_channel_color_system" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />-->
+        <!--<TextView android:text="@string/str_mainmenu_channel_colorsystem" style="@style/second_text_name" />-->
+        <!--<TextView android:id="@+id/textview_colorsystem_val" android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout android:id="@+id/linearlayout_channel_soundsystem" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">-->
+        <!--<ImageView android:src="@drawable/mainmenu_channel_sound_system" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />-->
+        <!--<TextView android:text="@string/str_mainmenu_channel_soundsystem" style="@style/second_text_name" />-->
+        <!--<TextView android:id="@+id/textview_soundsystem_val" android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout android:id="@+id/linearlayout_channel_manualtuning" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">-->
+        <!--<ImageView android:src="@drawable/mainmenu_channel_manual_tuning" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />-->
+        <!--<TextView android:text="@string/str_mainmenu_channel_manualtuning" style="@style/second_text_name" />-->
+        <!--<TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout android:id="@+id/linearlayout_channel_autotuning" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_channel_auto_tuning" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_channel_autotuning" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_channel_programedit" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_channel_program_edit" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_channel_programedit" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

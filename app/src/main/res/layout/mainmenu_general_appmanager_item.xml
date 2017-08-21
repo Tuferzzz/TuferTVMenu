@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/appManager_item_LinearLayout" android:background="@drawable/mainmenu_third_layout_focus_state" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="480.0dip" android:layout_height="40.0dip">
+        <ImageView android:layout_gravity="center" android:focusable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:focusable="false" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:focusable="false" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="right|center" android:focusable="false" android:layout_width="130.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/appManager_segmentation" style="@style/third_layout_segmentation_style" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mac_address_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x400dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/wired_mac_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/please_open_wired"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp25" />
+
+    <TextView
+        android:id="@+id/wireless_mac_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/please_open_wireless"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp25" />
+
+</LinearLayout>

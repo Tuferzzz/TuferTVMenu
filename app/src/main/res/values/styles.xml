@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="mainmenu_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_background</item>
+        <item name="android:layout_width">700.0dip</item>
+        <item name="android:layout_height">465.0dip</item>
+    </style>
+    <style name="mainmenu_buttons_layout">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">163.0dip</item>
+        <item name="android:layout_height">446.0dip</item>
+        <item name="android:layout_marginLeft">11.0dip</item>
+        <item name="android:layout_marginTop">11.0dip</item>
+    </style>
+    <style name="first_normal_button">
+        <item name="android:textSize">26.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:background">@drawable/mainmenu_button_focus_state</item>
+
+
+        <item name="android:layout_width">160.0dip</item>
+        <item name="android:layout_height">54.0dip</item>
+    </style>
+    <style name="mainmenu_viewflipper_style">
+        <item name="android:persistentDrawingCache">animation</item>
+        <item name="android:layout_width">515.0dip</item>
+        <item name="android:layout_height">444.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">11.0dip</item>
+        <item name="android:layout_marginRight">11.0dip</item>
+        <item name="android:flipInterval">1000</item>
+    </style>
+    <style name="mainmenu_fragment_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">23.0dip</item>
+        <item name="android:paddingTop">25.0dip</item>
+        <item name="android:paddingRight">23.0dip</item>
+        <item name="android:layout_width">515.0dip</item>
+        <item name="android:layout_height">444.0dip</item>
+    </style>
+    <style name="time_sty_menu">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">336dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/picture_mode_img_bg</item>
+    </style>
+    <!-- combo button -->
+    <style name="time_sty_combo_btn">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <!-- seekbar button -->
+    <style name="time_sty_seekbar_btn">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginBottom">0dp</item>
+
+    </style>
+    <style name="time_sty_seekbar_name">
+        <item name="android:layout_width">87dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginLeft">27dp</item>
+    </style>
+    <style name="time_sty_seekbar_indicator">
+        <item name="android:layout_width">33dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="time_sty_bar" >
+        <item name="android:layout_width">111dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+        <item name="android:thumb">@drawable/picture_mode_img_bar</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="linearlayout_style">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/submain_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">114.0dip</item>
+    </style>
+    <style name="second_imageview">
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="second_text_name">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="second_text_val">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="third_layout_title_text_style">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="third_layout_title_text_style1">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="third_layout_title_text_style_for_img_noise_reduction">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="img_btn_time_set_style">
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="third_layout_segmentation_style">
+        <item name="android:background">@drawable/mainmenu_third_segmentation</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="third_main_layout1_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout1_background</item>
+        <item name="android:layout_width">276.0dip</item>
+        <item name="android:layout_height">358.0dip</item>
+    </style>
+    <style name="third_main_layout1_style1">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout3_background</item>
+        <item name="android:layout_width">500.0dip</item>
+        <item name="android:layout_height">358.0dip</item>
+    </style>
+    <style name="third_main_layout1_style4">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/programme_img_info_bg</item>
+        <item name="android:layout_width">500.0dip</item>
+        <item name="android:layout_height">358.0dip</item>
+    </style>
+    <style name="system_info_layout1_scrollview_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">462.0dip</item>
+        <item name="android:layout_height">296.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="system_info_main_layout1_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/programme_img_info_bg</item>
+        <item name="android:layout_width">476.0dip</item>
+        <item name="android:layout_height">358.0dip</item>
+    </style>
+    <style name="system_info_layout1_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_third_layout_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">450.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="system_info_layout1_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+    </style>
+    <style name="system_info_layout_title_text_style">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="system_info_layout_segmentation_style">
+        <item name="android:background">@drawable/mainmenu_third_segmentation</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="network_main_layout1_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout1_background</item>
+        <item name="android:layout_width">276.0dip</item>
+        <item name="android:layout_height">358.0dip</item>
+    </style>
+    <style name="third_main_layout1_style2">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout1_background2</item>
+        <item name="android:layout_width">276.0dip</item>
+        <item name="android:layout_height">168.0dip</item>
+    </style>
+    <style name="third_main_layout1_style3">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout1_background2</item>
+        <item name="android:layout_width">276.0dip</item>
+        <item name="android:layout_height">220.0dip</item>
+    </style>
+    <style name="third_layout1_title_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">500.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:layout_marginTop">7.0dip</item>
+    </style>
+    <style name="third_layout1_scrollview_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">296.0dip</item>
+    </style>
+    <style name="third_layout1_items_style3">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">174.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+    </style>
+    <style name="third_layout1_items_style2">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">118.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+
+    <style name="third_layout1_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_third_layout_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:layout_width">250.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="third_layout1_item_style1">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_width">480.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="third_layout1_edit_box_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_third_layout_focus_state</item>
+        <item name="android:layout_width">250.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="network_layout1_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">250.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="hotspot_layout1_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/submain_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">250.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="hotspot_ssid_layout1_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">90.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+    </style>
+    <style name="third_layout1_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40.0dip</item>
+    </style>
+    <style name="third_layout1_text_style4">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="third_layout1_text_style1">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">65.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+    </style>
+    <style name="third_layout1_text_style2">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">200.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+
+    </style>
+    <style name="third_layout1_text_style3">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">10dp</item>
+
+
+    </style>
+    <style name="network_layout1_state_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="network_layout1_text_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="networkinfo_layout1_text_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="third_layout1_image_style">
+        <item name="android:background">@drawable/mainmenu_third_item_no_focus</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="third_layout1_image_style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+</style>
+
+
+    <style name="third_layout1_image_style1">
+        <item name="android:background">@drawable/mainmenu_third_item_no_focus</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right|center</item>
+
+        <item name="android:focusable">false</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="third_main_layout2_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout2_background</item>
+        <item name="android:layout_width">350.0dip</item>
+        <item name="android:layout_height">295.0dip</item>
+    </style>
+    <style name="third_main_layout2_style2">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/programme_img_info_bg</item>
+        <item name="android:layout_width">350.0dip</item>
+        <item name="android:layout_height">350.0dip</item>
+    </style>
+    <style name="third_main_layout2_style1">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:layout_width">350.0dip</item>
+        <item name="android:layout_height">121.0dip</item>
+    </style>
+    <style name="third_layout2_title_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">336.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+    </style>
+
+    <style name="third_layout2_scrollview_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">336.0dip</item>
+        <item name="android:layout_height">233.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+
+    <style name="third_layout2_scrollview_style1">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">336.0dip</item>
+        <item name="android:layout_height">288.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="third_layout2_items_style1">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">336.0dip</item>
+        <item name="android:layout_height">58.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="third_layout2_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_third_layout_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">330.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="third_layout2_text_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">105.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="third_layout2_text_style1">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="third_layout2_seekbar_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">15.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:maxHeight">26.0dip</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+        <item name="android:minHeight">26.0dip</item>
+        <item name="android:thumb">@drawable/mainmenu_seekbar_img</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="third_layout2_text_val_style">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:text">@string/str_mainmenu_default_val50</item>
+    </style>
+    <style name="third_layout2_text_val_style1">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+
+    </style>
+    <style name="dialogmenu_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="restoredialogmenu_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="layout_mainmenu_about_systeminfo">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout3_background</item>
+        <item name="android:layout_width">500.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="layout_mainmenu_about_systeminfo_title_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:layout_marginTop">7.0dip</item>
+    </style>
+    <style name="layout_mainmenu_about_systeminfo_title_text_style">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="layout_mainmenu_about_systeminfo_text_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="about_dialogmenu_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="time_sty_simple_btn">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/mainmenu_third_layout_focus_state</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">256.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="time_sty_leftarrow">
+        <item name="android:background">@drawable/common_img_arrow_l</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">13.0dip</item>
+        <item name="android:layout_height">13.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="time_sty_rightarrow">
+        <item name="android:background">@drawable/common_img_arrow_r</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">13.0dip</item>
+        <item name="android:layout_height">13.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+    </style>
+    <style name="time_sty_combo_name">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">27.0dip</item>
+    </style>
+    <style name="time_sty_combo_indicator">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">97.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="linearlayout_time_power_layout1_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mainmenu_third_layout1_background2</item>
+        <item name="android:layout_width">276.0dip</item>
+        <item name="android:layout_height">270.0dip</item>
+    </style>
+    <style name="time_off_layout1_items_style2">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">118.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="third_layout1_scrollview_style_time">
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">296.0dip</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+    </style>
+    <style name="third_layout1_title_style_time">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">262.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:layout_marginTop">15.0dip</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="Label">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Label.Shadow" parent="@style/Label">
+        <item name="android:shadowColor">#88000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+    <style name="Label.Shadow.ExtraLarge" parent="@style/Label.Shadow">
+        <item name="android:textSize">@dimen/text_xl</item>
+    </style>
+    <style name="Label.Shadow.Medium" parent="@style/Label.Shadow">
+        <item name="android:textSize">@dimen/text_md</item>
+    </style>
+    <style name="Label.Shadow.Small" parent="@style/Label.Shadow">
+        <item name="android:textSize">@dimen/text_sm</item>
+    </style>
+    <style name="Line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="Line.Solid" parent="@style/Line">
+        <item name="android:layout_marginTop">@dimen/margin_xs</item>
+        <item name="android:layout_marginBottom">@dimen/margin_xs</item>
+        <item name="android:src">@color/forecast_gray</item>
+    </style>
+
+    <style name="WeatherModule">
+        <item name="android:background">@drawable/weather_module_bg</item>
+        <item name="android:padding">@dimen/padding_sm</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- dialog -->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/picture_mode_img_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/one_px</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="dialog1">
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--内容覆盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 窗口样式Dialog -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <!-- 4 dots -->
+    <style name="sound_sty_dots_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">133dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+    </style>
+    <style name="sound_sty_enabledot">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:background">@drawable/common_img_pagepoint_enable</item>
+    </style>
+    <style name="sound_sty_disabledot">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:background">@drawable/common_img_pagepoint_disable</item>
+    </style>
+
+    <!-- arrows -->
+    <style name="sound_sty_leftarrow">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:background">@drawable/common_img_arrow_l</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="sound_sty_rightarrow">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:background">@drawable/common_img_arrow_r</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- 4 dots -->
+    <style name="pic_mode_sty_dots_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">133dip</item>
+        <item name="android:layout_marginTop">7dip</item>
+    </style>
+    <style name="pic_mode_sty_enabledot">
+        <item name="android:layout_width">15dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/common_img_pagepoint_enable</item>
+    </style>
+    <style name="pic_mode_sty_disabledot">
+        <item name="android:layout_width">15dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/common_img_pagepoint_disable</item>
+    </style>
+
+    <!-- combo button -->
+    <style name="menu_vchip_sty_combo_btn">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+
+    <style name="menu_vchip_sty_combo_name">
+        <item name="android:layout_width">124dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">27dip</item>
+    </style>
+
+    <style name="menu_vchip_sty_combo_indicator">
+        <item name="android:layout_width">97dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 4 dots -->
+    <style name="menu_vchip_sty_dots_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dip</item>
+        <item name="android:layout_marginTop">7dip</item>
+    </style>
+
+    <style name="menu_vchip_sty_enabledot">
+        <item name="android:layout_width">15dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/common_img_pagepoint_enable</item>
+    </style>
+
+    <style name="menu_vchip_sty_disabledot">
+        <item name="android:layout_width">15dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/common_img_pagepoint_disable</item>
+    </style>
+
+    <!-- arrows -->
+    <style name="menu_vchip_sty_leftarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:background">@drawable/common_img_arrow_l</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="menu_vchip_sty_rightarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:background">@drawable/common_img_arrow_r</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- combo button -->
+    <style name="pic_mode_sty_combo_btn">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+    <style name="pic_mode_sty_combo_name">
+        <item name="android:layout_width">124dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">27dip</item>
+    </style>
+    <style name="pic_mode_sty_combo_indicator">
+        <item name="android:layout_width">97dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- seekbar button -->
+    <style name="pic_mode_sty_seekbar_btn">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginBottom">0dip</item>
+    </style>
+    <style name="pic_mode_sty_bar">
+        <item name="android:layout_width">111dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">50</item>
+        <item name="android:thumb">@drawable/picture_mode_img_bar</item>
+        <item name="android:thumbOffset">0dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="pic_mode_colortmp_sty_bar">
+        <item name="android:layout_width">111dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:max">2048</item>
+        <item name="android:progress">50</item>
+        <item name="android:thumb">@drawable/picture_mode_img_bar</item>
+        <item name="android:thumbOffset">0dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="pic_mode_sty_seekbar_name">
+        <item name="android:layout_width">87dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginLeft">27dip</item>
+    </style>
+    <style name="pic_mode_sty_seekbar_indicator">
+        <item name="android:layout_width">33dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="pic_mode_sty_colortmp_indicator">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <!-- arrows -->
+    <style name="pic_mode_sty_leftarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:background">@drawable/common_img_arrow_l</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="pic_mode_sty_rightarrow">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">13dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:background">@drawable/common_img_arrow_r</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- dots for Auto Tune Option -->
+    <style name="autotune_sty_dots_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">333dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+    </style>
+    <style name="autotune_sty_enabledot">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:background">@drawable/common_img_pagepoint_enable</item>
+    </style>
+    <style name="autotune_sty_disabledot">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:background">@drawable/common_img_pagepoint_disable</item>
+    </style>
+
+    <!-- For Toast style -->
+    <string name="str_3d_toast">MWE mode off to make 3D mode validate</string>
+    <string name="str_demo_toast">3D Mode off to make MWE mode validate</string>
+    <string name="str_cha_cities_choosen">city option</string>
+    <string name="str_invalid_3d_format">Invalid 3D Format</string>
+
+    <string-array name="cities_option_array">
+        <item>Others</item>
+        <item>Beijing</item>
+        <item>Anhui</item>
+        <item>Hefei</item>
+        <item>Anqin</item>
+        <item>Bengbu</item>
+        <item>Xiamen</item>
+        <item>Quanzhou</item>
+        <item>Luoyang</item>
+        <item>Zhangzhou</item>
+        <item>Guangzhou</item>
+        <item>Guangdong</item>
+        <item>Dongguan</item>
+        <item>Guiyang</item>
+        <item>Haikou</item>
+        <item>Shijiazhuang</item>
+        <item>Qinhuangdao</item>
+        <item>Tangshan</item>
+        <item>Haerbin</item>
+        <item>Zhengzhou</item>
+        <item>Luoyang</item>
+        <item>Nanyang</item>
+        <item>Hubei</item>
+        <item>Wuhan</item>
+        <item>Huanggang</item>
+        <item>Jingzhou</item>
+        <item>Yichang</item>
+        <item>ChangshaGuangda</item>
+        <item>ChangshaGuoan</item>
+        <item>Nantong</item>
+        <item>Nanchang</item>
+        <item>Jilin</item>
+        <item>Dalian</item>
+        <item>Huhehaote</item>
+        <item>Xian</item>
+        <item>Chengdu</item>
+        <item>Wulumuqi</item>
+        <item>Jinhua</item>
+        <item>Ningbo</item>
+        <item>Shaoxing</item>
+    </string-array>
+    <!-- button -->
+    <style name="button_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="program_edit_list_view_item_bg_style">
+        <item name="android:layout_width">320dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">35dip</item>
+    </style>
+    <!--Search Progress Bar-->
+    <style name="searchprogressbar_empty">
+        <item name="android:layout_width">7dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:drawable">@drawable/picture_serchprogressbar_empty</item>
+    </style>
+    <style name="menu_vchip_sty_menu">
+        <item name="android:layout_width">275dip</item>
+        <item name="android:layout_height">336dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/picture_mode_img_bg</item>
+    </style>
+    <style name="PassWordDialogSpace">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">@drawable/background_password_view</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="program_edit_memu_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">320dip</item>
+        <item name="android:layout_height">489dip</item>
+        <item name="android:background">@drawable/list_menu_img_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="program_edit_title_style">
+        <item name="android:text">@string/str_cha_programedit</item>
+        <item name="android:layout_marginTop">36dip</item>
+        <item name="android:layout_marginLeft">27dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">267dip</item>
+        <item name="android:layout_height">35dip</item>
+    </style>
+    <style name="program_edit_list_view_style">
+        <item name="android:layout_width">320dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_height">347dip</item>
+        <item name="android:listSelector">@drawable/button_state</item>
+    </style>
+    <style name="program_edit_img_style">
+        <item name="android:layout_width">59dip</item>
+        <item name="android:layout_height">17dip</item>
+        <item name="android:layout_marginTop">9dip</item>
+    </style>
+
+    <style name="program_edit_list_view_item_number_style">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">27dip</item>
+    </style>
+    <style name="program_edit_list_view_item_data_style">
+        <item name="android:layout_width">127dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="program_edit_list_view_item_img_style">
+        <item name="android:layout_width">35dip</item>
+        <item name="android:layout_height">17dip</item>
+        <item name="android:layout_marginTop">9dip</item>
+    </style>
+    <style name="program_edit_list_view_item_icon_style">
+        <item name="android:layout_width">17dip</item>
+        <item name="android:layout_height">17dip</item>
+        <item name="android:layout_marginTop">9dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="UsbSelecterDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="programme_style">
+        <item name="android:layout_width">1280dip</item>
+        <item name="android:layout_height">520dip</item>
+    </style>
+    <style name="programme_epg_style">
+        <item name="android:layout_marginTop">32dip</item>
+        <item name="android:layout_marginLeft">467dip</item>
+        <item name="android:layout_width">320dip</item>
+        <item name="android:layout_height">456dip</item>
+        <item name="android:background">@drawable/programme_img_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="programme_epg_title_style">
+        <item name="android:focusable">true</item>
+        <item name="android:text">@string/program_guide_time</item>
+        <item name="android:layout_marginTop">21dip</item>
+        <item name="android:layout_marginLeft">27dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">267dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/programme_epg_selcet</item>
+    </style>
+    <style name="programme_epg_context_style">
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">267dip</item>
+        <item name="android:layout_marginLeft">27dip</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/programme_epg_selcet</item>
+    </style>
+    <style name="programme_epg_list_view_style">
+        <item name="android:layout_width">267dip</item>
+        <item name="android:layout_marginLeft">27dip</item>
+        <item name="android:layout_height">295dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@drawable/programme_epg_listview_item_selcet
+        </item>
+    </style>
+    <style name="programme_epg_img_layout_style">
+        <item name="android:layout_width">293dip</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:layout_marginTop">9dip</item>
+        <item name="android:layout_marginLeft">13dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="programme_epg_img_style">
+        <item name="android:layout_marginTop">3dip</item>
+        <item name="android:layout_width">73dip</item>
+        <item name="android:layout_height">17dip</item>
+    </style>
+
+    <!-- Add by gerard.jiang 2013/04/17 -->
+    <style name="program_epg_schedule_list_style">
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_width">33dip</item>
+        <item name="android:layout_height">17dip</item>
+    </style>
+    <!-- End by gerard.jiang 2013/04/17 -->
+
+    <style name="programme_epg_img_bottom_layout_style">
+        <item name="android:layout_width">293dip</item>
+        <item name="android:layout_height">24dip</item>
+        <item name="android:layout_marginTop">7dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">13dip</item>
+    </style>
+    <style name="programme_epg_img_ok_style">
+        <item name="android:layout_width">41dip</item>
+        <item name="android:layout_height">24dip</item>
+    </style>
+    <style name="programme_epg_index_style">
+        <item name="android:layout_marginLeft">185dip</item>
+        <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">24dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dip</item>
+    </style>
+    <style name="programme_epg_list_view_item_bg_style">
+        <item name="android:layout_width">333dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:addStatesFromChildren">true</item>
+    </style>
+    <style name="programme_epg_list_view_item_text_view_style_num">
+        <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="programme_epg_list_view_item_text_view_style">
+        <item name="android:layout_width">180dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="programme_epg_img_top_layout_style">
+        <item name="android:layout_width">59dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginTop">7dip</item>
+        <item name="android:layout_marginLeft">236dip</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="common_img_pagepoint_style">
+        <item name="android:layout_width">15dip</item>
+        <item name="android:layout_height">15dip</item>
+    </style>
+    <style name="programme_epg_info_style">
+        <item name="android:layout_marginTop">245dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">19dip</item>
+        <item name="android:layout_width">227dip</item>
+        <item name="android:layout_height">233dip</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="programme_epg_info_text_view_style">
+        <item name="android:layout_width">227dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17dip</item>
+    </style>
+    <style name="programme_epg_info_edit_text_style">
+        <item name="android:layout_marginTop">7dip</item>
+        <item name="android:layout_width">227dip</item>
+        <item name="android:layout_height">147dip</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:textSize">15dip</item>
+    </style>
+    <style name="programme_epg_img_info_layout_style">
+        <item name="android:layout_width">59dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- For ATSC -->
+    <style name="atscprogramme_epg_title_style">
+        <item name="android:focusable">true</item>
+        <item name="android:text">@string/program_guide_time</item>
+        <item name="android:layout_marginTop">21dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">290dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">@drawable/programme_epg_selcet</item>
+    </style>
+    <style name="atscprogramme_epg_context_style">
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">290dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/programme_epg_selcet</item>
+    </style>
+    <style name="atscprogramme_epg_list_view_style">
+        <item name="android:layout_width">290dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_height">297dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@drawable/programme_epg_listview_item_selcet
+        </item>
+    </style>
+
+    <style name="atscprogramme_epg_list_view_item_text_view_style_num">
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="atscprogramme_epg_list_view_item_text_view_style">
+        <item name="android:layout_width">180dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <style name="atscprogramme_epg_list_view_item_text_view_style_cc">
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="setting_content">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在activity上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowContentOverlay">@null</item><!-- 窗口是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- Activity切换动画效果，也可以自定义 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.5</item><!-- 灰度 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!--<item name="android:windowFullscreen">true</item>&lt;!&ndash; 设置全屏 &ndash;&gt;-->
+    </style>
+
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wireless_setting_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/wifi_switch_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/Wifi"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <CheckBox
+            android:id="@+id/wifi_switch_checkbox"
+            android:layout_width="@dimen/x120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x5dp"
+            android:button="@drawable/custom_checkbox" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/wifi_ssid_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x350dp"
+        android:listSelector="@drawable/select_item" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/mainlinear_general_appmanager" android:background="@drawable/programme_img_info_bg" android:layout_width="500.0dip" android:layout_height="345.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/appTitleLinearLayout" android:layout_width="489.0dip" android:layout_height="47.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:id="@+id/weather_city_name" style="@style/third_layout_title_text_style" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="489.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/str_mainmenu_general_weather_time" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginLeft="90.0dip" android:text="@string/str_mainmenu_general_weather_icon" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:text="@string/str_mainmenu_general_weather_temperature" />
+        </LinearLayout>
+        <ScrollView android:layout_gravity="center" android:orientation="vertical" android:id="@+id/weatherScrollView" android:layout_width="489.0dip" android:layout_height="210.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/appManager_segmentation" style="@style/third_layout_segmentation_style" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="489.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginBottom="0.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/weather_careful" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/careful" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5dp" android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+</LinearLayout>

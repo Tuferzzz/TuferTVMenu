@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativelayout_picture" style="@style/mainmenu_fragment_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_picture_picturemode" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_picturemode" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_picturemode" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_picturemode_val" android:text="@string/str_mainmenu_picture_picturemode_standard" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_xvYCC" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_geometric_adjustment" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_pic_xvycc" style="@style/second_text_name" />
+        <TextView android:id="@+id/xvycc_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_zoommode" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_zoommode" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_zoommode" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_zoommode_val" android:text="@string/str_mainmenu_picture_zoommode_default" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_color_temperature" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_color_temperature" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_color_temperature" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_color_temperature_val" android:text="@string/str_mainmenu_picture_color_temperature_standard" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_mpegnoisereduction" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_picturemode" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_automatic_adjustment" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_pic_mpegnoisereduction" style="@style/second_text_name" />
+        <TextView android:id="@+id/mpegnoisereduction_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_imgnoisereduction" android:layout_marginLeft="123.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_xvYCC" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_imgnoisereduction" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_imgnoisereduction" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_imgnoisereduction_val" android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_brightness" android:layout_marginLeft="246.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_zoommode" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_brightness" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_brightness" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_brightness_val" android:text="@string/str_mainmenu_default_val50" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_contrast" android:layout_marginLeft="369.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_color_temperature" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_contrast" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_contrast" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_contrast_val" android:text="@string/str_mainmenu_default_val50" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_backlight" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_mpegnoisereduction" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_backlight" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_backlight" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_backlight_val" android:text="@string/str_mainmenu_default_val50" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_picture_hue" android:layout_marginLeft="123.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/linearlayout_picture_imgnoisereduction" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_picture_hue" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_picture_hue" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_picture_hue_val" android:text="@string/str_mainmenu_default_val0" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

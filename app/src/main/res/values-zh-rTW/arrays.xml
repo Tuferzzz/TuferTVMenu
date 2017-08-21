@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_arr_mainmenu_switch_vals">
+        <item>關</item>
+        <item>開</item>
+    </string-array>
+    <string-array name="date_format_values" translatable="false">
+        <item>月-日-年</item>
+        <item>日-月-年</item>
+        <item>年-月-日</item>
+    </string-array>
+    <string-array name="str_arr_general_powerinput_vals">
+        <item>記憶信號源</item>
+        <item>VGA</item>
+        <item>ATV</item>
+        <item>視頻1</item>
+        <item>視頻2</item>
+        <item>分量</item>
+        <item>前置電腦</item>
+        <item>內置電腦</item>
+        <item>前置高清</item>
+        <item>HDMI</item>
+        <item>DP</item>
+        <item>DTV</item>
+    </string-array>
+    <string-array name="str_arr_pic_imgnoisereduction_vals">
+        <item>關</item>
+        <item>弱</item>
+        <item>中</item>
+        <item>強</item>
+        <item>自動</item>
+    </string-array>
+    <string-array name="str_arr_pic_mpegnoisereduction_vals">
+        <item>關</item>
+        <item>弱</item>
+        <item>中</item>
+        <item>強</item>
+    </string-array>
+    <string-array name="str_arr_picture_colortemperature_vals">
+        <item>冷</item>
+        <item>標準</item>
+        <item>暖</item>
+        <item>用戶</item>
+    </string-array>
+    <string-array name="str_arr_picture_picturemode_vals">
+        <item>明亮</item>
+        <item>標準</item>
+        <item>柔和</item>
+        <item>用戶</item>
+        <item>遊戲</item>
+        <item>自動</item>
+        <item>電腦</item>
+        <item>艷麗</item>
+        <item>自然</item>
+        <item>運動</item>
+    </string-array>
+    <string-array name="str_arr_picture_zoommode_vals">
+        <item>默認</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>自動</item>
+        <item>全景</item>
+        <item>Just Scan</item>
+        <item>縮放1</item>
+        <item>縮放2</item>
+        <item>14:9</item>
+        <item>點對點</item>
+        <!--<item>字幕</item>-->
+        <!--<item>影視</item>-->
+        <!--<item>用戶</item>
+        <item>全景(4x3)</item>
+        <item>寬銀幕(4x3)</item>
+        <item>垂直黑邊(16x9)</item>
+        <item>掃描(16x9)</item>
+        <item>合併(4x3)</item>
+        <item>合併(16x9)</item>
+        <item>縮放2x</item>
+        <item>縮放3x</item>
+        <item>縮放4x</item>-->
+    </string-array>
+    <string-array name="str_arr_sound_soundmode_vals">
+        <item>標準</item>
+        <item>音樂</item>
+        <item>影院</item>
+        <item>運動</item>
+        <item>用戶</item>
+    </string-array>
+    <string-array name="str_arr_sound_track_vals">
+        <item>音軌-1</item>
+        <item>音軌-2</item>
+        <item>音軌-3</item>
+    </string-array>
+    <string-array name="str_arr_sound_channelselect_vals">
+        <item>單聲道</item>
+        <item>立體聲</item>
+    </string-array>
+    <string-array name="str_arr_network_networkselection_vals">
+        <item>無線網絡</item>
+        <item>有線網絡</item>
+        <item>未連接網絡</item>
+    </string-array>
+    <string-array name="str_arr_network_wifidirect_vals">
+        <item>關閉</item>
+        <item>開啟</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_menu_display_time_vals">
+        <item>關</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>25s</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_sleeptime_vals">
+        <item>關</item>
+        <item>10分鐘</item>
+        <item>20分鐘</item>
+        <item>30分鐘</item>
+        <item>60分鐘</item>
+        <item>90分鐘</item>
+        <item>120分鐘</item>
+        <item>180分鐘</item>
+        <item>240分鐘</item>
+    </string-array>
+    <string-array name="str_arr_intelligence_power_on_time_vals">
+        <item>關</item>
+        <item>15分鐘</item>
+        <item>30分鐘</item>
+        <item>1小時</item>
+        <item>2小時</item>
+        <item>4小時</item>
+        <item>6小時</item>
+        <item>12小時</item>
+        <item>24小時</item>
+    </string-array>
+    <string-array name="str_arr_system_language_vals">
+        <item>簡體中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="str_arr_about_upgradeStatus">
+        <item>失敗!</item>
+        <item>成功!</item>
+        <item>找不到文件!</item>
+        <item>請插入USB!</item>
+    </string-array>
+    <string-array name="str_arr_network_status">
+        <item>有線網絡</item>
+        <item>WIFI</item>
+        <item>網絡未連接</item>
+    </string-array>
+    <string-array name="str_arr_time_switch">
+        <item>關閉</item>
+        <item>開啟</item>
+    </string-array>
+    <string-array name="str_arr_type_switch">
+        <item>關閉</item>
+        <item>僅一次</item>
+        <item>每天</item>
+        <item>週一至週五</item>
+        <item>週一至週六</item>
+        <item>週六至週日</item>
+        <item>僅週日</item>
+    </string-array>
+    <string-array name="language_names" translatable="false">
+        <item>中文 (简体)</item>
+        <item>中文 (繁体)</item>
+        <item>英文</item>
+
+    </string-array>
+</resources>

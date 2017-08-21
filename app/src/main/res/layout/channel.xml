@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="275dp"
+    android:layout_height="336dp"
+    android:layout_gravity="center"
+    android:background = "@drawable/picture_mode_img_bg" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_cha_channel"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="@string/str_cha_channel"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- For ComboButton Antenna Type -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_antennatype"
+                style="@style/menu_vchip_sty_combo_btn" >
+
+                <ImageView style="@style/menu_vchip_sty_leftarrow" />
+
+                <TextView
+                    style="@style/menu_vchip_sty_combo_name"
+                    android:text="@string/str_cha_antannatype" />
+
+                <TextView style="@style/menu_vchip_sty_combo_indicator" />
+
+                <ImageView style="@style/menu_vchip_sty_rightarrow" />
+
+            </LinearLayout>
+
+            <!-- For Auto Tuning -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_autotuning"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <TextView
+                    android:id="@+id/textview_cha_autotuning"
+                    android:layout_width="133dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_autotuning"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!-- For DTV Manual Tuning -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_dtvmanualtuning"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <TextView
+                    android:id="@+id/textview_cha_dtvmanualtuning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_dtvmanualtuning"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!-- For ATV Manual Tuning -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_atvmanualtuning"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <TextView
+                    android:id="@+id/textview_cha_atvmanualtuning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_atvmanualtuning"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For DVBS LNB Setting &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_dvbs_lnbsetting"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_cha_dvb_lnbsetting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_lnbsetting_title"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For Bandwidth Switch &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_bandwidth_switch"
+                style="@style/pic_mode_sty_combo_btn" >
+
+                <ImageView style="@style/pic_mode_sty_leftarrow" >
+                </ImageView>
+
+                <TextView
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_cha_bandwidth_switch" />
+
+                <TextView style="@style/pic_mode_sty_combo_indicator" />
+
+                <ImageView style="@style/pic_mode_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For UHF 7 MHz Option &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_bandwidth_uhf_7mhz"
+                android:visibility="gone"
+                style="@style/pic_mode_sty_combo_btn" >
+
+                <ImageView style="@style/pic_mode_sty_leftarrow" >
+                </ImageView>
+
+                <TextView
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_cha_bandwidth_uhf_7mhz" />
+
+                <TextView style="@style/pic_mode_sty_combo_indicator" />
+
+                <ImageView style="@style/pic_mode_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For Program Edit &ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/linearlayout_cha_programedit"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="33dp"-->
+                <!--android:focusable="true"-->
+                <!--android:clickable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:background="@drawable/pic_mode_focus_state" >-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textview_cha_programedit"-->
+                    <!--android:layout_width="133dp"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:gravity="left|center_vertical"-->
+                    <!--android:text="@string/str_cha_programedit"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:layout_marginLeft="27dp" />-->
+            <!--</LinearLayout>-->
+
+            <!-- For Signal Informaiton -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_signalinfo"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+                <TextView
+                    android:id="@+id/textview_cha_signalinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_signalinfo"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For CA Information &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_cainformation"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:background="@drawable/pic_mode_focus_state"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_cha_cainformation"
+                    android:layout_width="133dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="27dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_cainformation"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For CI Information &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_ciinformation"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <TextView
+                    android:id="@+id/textview_cha_ciinformation"
+                    android:layout_width="133dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_ciinformation"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="27dp" />
+            </LinearLayout>
+
+            <!--&lt;!&ndash; For Software Update OAD &ndash;&gt;-->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_software_update_oad"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/pic_mode_focus_state"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow"
+                    android:layout_marginTop="10dp" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textview_cha_software_update_oad"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="27dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_software_update_oad"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textview_cha_software_update_oad_val"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_set_off"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"
+                    android:layout_marginTop="10dp" >
+                </ImageView>
+            </LinearLayout>
+
+            <!-- For OAD Time -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_oadtime"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow"
+                    android:layout_marginTop="10dp" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textview_cha_time_to_search_for_ssu"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="27dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_time_to_search_for_ssu"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textview_cha_time_to_search_for_ssu_val"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_cha_time_to_search_for_ssu_default"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"
+                    android:layout_marginTop="10dp" >
+                </ImageView>
+            </LinearLayout>
+
+            <!-- For OAD Scan -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_oadscan"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/pic_mode_focus_state" >
+
+                <TextView
+                    android:id="@+id/textview_cha_oadscan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_cha_oadscan"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft = "27dp" />
+            </LinearLayout>
+
+            <!-- For OAD View Prompt -->
+            <LinearLayout
+                android:id="@+id/linearlayout_cha_oad_view_prompt"
+                style="@style/pic_mode_sty_combo_btn" >
+
+                <ImageView style="@style/pic_mode_sty_leftarrow" >
+                </ImageView>
+
+                <TextView
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_cha_oad_view_prompt" />
+
+                <TextView style="@style/pic_mode_sty_combo_indicator" />
+
+                <ImageView style="@style/pic_mode_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

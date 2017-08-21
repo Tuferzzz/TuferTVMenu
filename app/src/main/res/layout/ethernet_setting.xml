@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ethernet_setting_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <!-- add by ken.bi [2013/5/6] -->
+
+    <RelativeLayout
+        android:id="@+id/ethernet_dev_switch_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/ethernet_dev_switch"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <CheckBox
+            android:id="@+id/ethernet_dev_switch_checkbox"
+            android:layout_width="@dimen/x120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x5dp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ethernet_switch_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/ethernet_switch"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <CheckBox
+            android:id="@+id/ethernet_switch_checkbox"
+            android:layout_width="@dimen/x120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x5dp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ethernet_toggle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ethernet_auto_ip_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/x40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x35dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x30dp"
+                android:text="@string/auto_ip"
+                android:textColor="#CCCCCC"
+                android:textSize="@dimen/sp22" />
+
+            <CheckBox
+                android:id="@+id/ethernet_auto_ip"
+                android:layout_width="@dimen/x120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x5dp"
+                android:button="@drawable/custom_checkbox" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ethernet_ipv6_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/x40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x35dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x30dp"
+                android:text="@string/ethernet_ipv6"
+                android:textColor="#CCCCCC"
+                android:textSize="@dimen/sp22" />
+
+            <CheckBox
+                android:id="@+id/ethernet_ipv6"
+                android:layout_width="@dimen/x120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x5dp"
+                android:button="@drawable/custom_checkbox" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ethernet_ip_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/ipv4_layout" />
+
+            <include layout="@layout/ipv6_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/save_cancel_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ethernet_ip_save_btn"
+                android:layout_width="@dimen/x80dp"
+                android:layout_height="@dimen/x35dp"
+                android:layout_marginRight="@dimen/x200dp"
+               android:background="@drawable/edit_text" 
+                android:textColor="#ffffffff"
+                android:text="@string/save"
+                android:textSize="@dimen/sp18" />
+
+            <Button
+                android:id="@+id/ethernet_ip_cancel_btn"
+                android:layout_width="@dimen/x80dp"
+                android:layout_height="@dimen/x35dp"
+                android:background="@drawable/edit_text" 
+                android:textColor="#ffffffff"
+                android:text="@string/cancle"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

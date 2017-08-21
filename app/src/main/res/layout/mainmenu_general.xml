@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_general_powerinput" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_general_poweron_inputsource" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_general_powerinput" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_general_powerinput_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_general_appmanager" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_general_application_management" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_general_appmanager" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_general_timedate" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_general_timedate" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_general_timedate" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_general_weather" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_general_weather" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_general_weather" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

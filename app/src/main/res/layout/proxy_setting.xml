@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proxy_setting_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <!-- turnOn or turnOff switch: -->
+
+    <RelativeLayout
+        android:id="@+id/proxy_switch_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/proxy_switch"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <CheckBox
+            android:id="@+id/proxy_switch"
+            android:layout_width="@dimen/x100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40dp"
+            android:button="@drawable/custom_checkbox" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/proxy_info_config_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- proxy address: -->
+
+        <RelativeLayout
+            android:id="@+id/proxy_address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/x40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x30dp"
+                android:text="@string/proxy_hostname"
+                android:textColor="#CCCCCC"
+                android:textSize="@dimen/sp22" />
+
+            <EditText
+                android:id="@+id/proxy_address_edit"
+                android:layout_width="@dimen/x250dp"
+                android:layout_height="@dimen/x35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x40dp"
+                android:background="@drawable/edit_text_large"
+                android:gravity="center"
+                android:hint="@string/proxy_hostname_hint"
+                android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/proxy_port_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/x40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x30dp"
+                android:text="@string/proxy_port"
+                android:textColor="#CCCCCC"
+                android:textSize="@dimen/sp22" />
+
+            <EditText
+                android:id="@+id/proxy_port_edit"
+                android:layout_width="@dimen/x250dp"
+                android:layout_height="@dimen/x35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x40dp"
+                android:background="@drawable/edit_text_large"
+                android:gravity="center"
+                android:hint="@string/proxy_port_hint"
+                android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor" />
+        </RelativeLayout>
+        <!-- verify -->
+
+        <RelativeLayout
+            android:id="@+id/proxy_verify_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/x40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x30dp"
+                android:text="@string/proxy_verify"
+                android:textColor="#CCCCCC"
+                android:textSize="@dimen/sp22" />
+
+            <CheckBox
+                android:id="@+id/proxy_verify"
+                android:layout_width="@dimen/x100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x40dp"
+                android:button="@drawable/custom_checkbox" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/proxy_auth_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- username -->
+
+            <RelativeLayout
+                android:id="@+id/proxy_username_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/x40dp" >
+
+                <TextView
+                    android:id="@+id/proxy_username_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/x30dp"
+                    android:text="@string/username"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/sp22" />
+
+                <EditText
+                    android:id="@+id/proxy_username"
+                    android:layout_width="@dimen/x250dp"
+                    android:layout_height="@dimen/x35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40dp"
+                    android:background="@drawable/edit_text_large"
+                    android:gravity="center"
+                    android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </RelativeLayout>
+
+            <!-- password -->
+
+            <RelativeLayout
+                android:id="@+id/proxy_password_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/x40dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/x30dp"
+                    android:text="@string/password"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/sp22" />
+
+                <EditText
+                    android:id="@+id/proxy_password"
+                    android:layout_width="@dimen/x250dp"
+                    android:layout_height="@dimen/x35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x40dp"
+                    android:background="@drawable/edit_text_large"
+                    android:gravity="center"
+                    android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/save_cancel_proxy_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/x30dp" >
+
+            <Button
+                android:id="@+id/proxy_save"
+                android:layout_width="@dimen/x80dp"
+                android:layout_height="@dimen/x35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x150dp"
+                android:background="@drawable/edit_text"
+                android:nextFocusRight="@+id/proxy_cancel"
+                android:text="@string/save"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/sp18" />
+
+            <Button
+                android:id="@+id/proxy_cancel"
+                android:layout_width="@dimen/x80dp"
+                android:layout_height="@dimen/x35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x150dp"
+                android:background="@drawable/edit_text"
+                android:nextFocusLeft="@+id/proxy_save"
+                android:text="@string/cancle"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/sp18" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

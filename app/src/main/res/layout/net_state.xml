@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_state_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:visibility="gone"  >
+
+    <RelativeLayout
+        android:id="@+id/connect_format_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/x40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x30dp"
+            android:text="@string/connect_format"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp22" />
+
+        <ImageView
+            android:id="@+id/left_arrowhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40dp"
+            android:background="@drawable/desktop_right"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/connect_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x50dp"
+            android:layout_toLeftOf="@id/left_arrowhead"
+            android:background="@drawable/one_px"
+            android:text="@string/wire_connect"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/right_arrowhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x50dp"
+            android:layout_toLeftOf="@id/connect_type"
+            android:background="@drawable/desktop_left"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20dp"
+        android:paddingLeft="@dimen/x30dp"
+        android:text="@string/net_state"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp18" />
+
+    <LinearLayout
+        android:id="@+id/net_state_layout"
+        android:layout_width="@dimen/x700dp"
+        android:layout_height="@dimen/x320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x20dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="left"
+        android:padding="1dp"
+        android:background="@drawable/net_state_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wire_net_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textColor="#CCCCCC"
+
+            android:textSize="@dimen/sp25" />
+
+        <!-- <include layout="@layout/net_state_wire" /> -->
+        <!-- <include layout="@layout/net_state_wireless" /> -->
+        <!-- <include layout="@layout/net_state_pppoe" /> -->
+        <TextView
+            android:id="@+id/ethernet_Mac_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp25"
+            />
+        <TextView
+            android:id="@+id/wifi_Mac_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="1dp"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/sp25"
+            />
+    </LinearLayout>
+
+</LinearLayout>

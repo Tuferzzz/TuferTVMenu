@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/mainmenu_fragment_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/linearlayout_network_networkselection" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_network_network_selection" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/ethernet_settings" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_network_networkselection_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_network_wifi" android:layout_marginLeft="123.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/wifi" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/Wifi" style="@style/second_text_name" />
+        <TextView android:id="@+id/wifi_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_network_wifihotspot" android:layout_marginLeft="246.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_network_wifi_hotspot" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_network_wifihotspot" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_network_wifihotspot_val" style="@style/second_text_val" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_network_networkdetails" android:layout_marginLeft="369.0dip" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_network_network_details" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_network_networkdetails" style="@style/second_text_name" />
+        <TextView android:text="@string/str_mainmenu_no_text" style="@style/second_text_val" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearlayout_network_bluetooth" android:layout_marginTop="25.0dip" android:layout_below="@+id/linearlayout_network_networkselection" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/bluetooth" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/bluetooth_setting" style="@style/second_text_name" />
+        <TextView android:id="@+id/bluetooth_val" style="@style/second_text_val" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_check_tv"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:checkMark="@drawable/custom_radio_button"
+    android:gravity="center_vertical"
+    android:paddingLeft="35dip"
+    android:paddingRight="140dip"
+    android:textColor="#FFFFFFFF"
+    android:textSize="20sp" />
