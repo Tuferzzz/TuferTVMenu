@@ -134,12 +134,6 @@ public class AppManagerActivity extends Activity {
 
         }
         Collections.sort(myAppList, new AppInfoComparator());
-        //mHandler.sendEmptyMessage(1);
-//        for(AppInfo app:myAppList){
-//            queryPackageSize(app,app.getPackageName());
-//        }
-        //Log.d("msg",myAppList.size()+"");
-
     }
     class AppInfoComparator
             implements Comparator<AppInfo>
@@ -164,7 +158,6 @@ public class AppManagerActivity extends Activity {
     private void init() {
         total_space_text= (TextView) findViewById(R.id.total_space_text);
         free_space_text= (TextView) findViewById(R.id.free_space_text);
-        //tv_no_app= (TextView) findViewById(R.id.tv_no_app);
         total_space_text.setText(getRomTotalSize());
         free_space_text.setText(getRomAvailableSize());
 
@@ -172,20 +165,9 @@ public class AppManagerActivity extends Activity {
 
     private void initView()
     {
-//        try {
-//            Thread.sleep(100);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        myAppList= MainActivity.myAppList;
         if (myAppList==null||myAppList.size()==0){
-            //tv_no_app.setVisibility(View.VISIBLE);
             Toast.makeText(this,getString(R.string.str_no_app),Toast.LENGTH_SHORT).show();
         }
-//        if (mTempAppInfoList==null||mTempAppInfoList.size()==0){
-//            //tv_no_app.setVisibility(View.VISIBLE);
-//            Toast.makeText(this,getString(R.string.str_no_app),Toast.LENGTH_SHORT).show();
-//        }
         ScrollView localScrollView = (ScrollView)findViewById(R.id.appScrollView);
         this.mLinearLayout = new LinearLayout(this);
         Object localObject = new LinearLayout.LayoutParams(-1, -1);

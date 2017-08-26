@@ -113,7 +113,6 @@ public class PackageSizeObserver extends IPackageStatsObserver.Stub {
         mAppInfo.setCodeSize(appSize);
         mAppInfo.setDataSize(dataSize);
         mAppInfo.setCacheSize(cacheSize);
-        //mAppInfo.setTotalSize(totalSize);
 
         mAppInfoHandler.sendEmptyMessage(REFRESH_APP_SIZE);
     }

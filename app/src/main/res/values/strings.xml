@@ -438,11 +438,11 @@
   <string name="str_ca_purse_points">Spend points</string>
   <string name="str_ca_purse_credit">Credit line</string>
 
-    <string name="str_set_off">关</string>
-    <string name="str_set_on">开</string>
-    <string name="str_set_colorrange">颜色范围</string>
+    <string name="str_set_off">OFF</string>
+    <string name="str_set_on">ON</string>
+    <string name="str_set_colorrange">Color range</string>
     <string name="str_set_colorrange_0to255">0~255</string>
-    <string name="str_set_moviemode">电影模式</string>
+    <string name="str_set_moviemode">Movie mode</string>
 
 
 
@@ -1212,134 +1212,134 @@
     <string name="str_time_change_timezone">Timezone automatic updated</string>
 
     <!-- For CA notify Type define -->
-    <string name="st_ca_message_cancel_type">取消当前的显示</string>
-    <string name="st_ca_message_badcard_type">无法识别卡</string>
-    <string name="st_ca_message_expicard_type">智能卡过期，请更换新卡</string>
-    <string name="st_ca_message_insertcard_type">加扰节目，请插入智能卡</string>
-    <string name="st_ca_message_nooper_type">卡中不存在节目运营商</string>
-    <string name="st_ca_message_blackout_type">条件禁播</string>
-    <string name="st_ca_message_outworktime_type">当前时段被设定为不能观看</string>
-    <string name="st_ca_message_watchlevel_type">节目级别高于设定的观看级别</string>
-    <string name="st_ca_message_pairing_type">智能卡与本机顶盒不对应</string>
-    <string name="st_ca_message_noentitle_type">没有授权</string>
-    <string name="st_ca_message_decryptfail_type">节目解密失败</string>
-    <string name="st_ca_message_nomoney_type">卡内金额不足</string>
-    <string name="st_ca_message_errregion_type">区域不正确</string>
-    <string name="st_ca_message_needfeed_type">子卡需要和母卡对应，请插入母卡</string>
-    <string name="st_ca_message_errcard_type">智能卡校验失败，请联系运营商</string>
-    <string name="st_ca_message_update_type">智能卡升级中，请不要拔卡或者关机</string>
-    <string name="st_ca_message_lowcardver_type">请升级智能卡</string>
-    <string name="st_ca_message_viewlock_type">请勿频繁切换频道</string>
-    <string name="st_ca_message_maxrestart_type">智能卡暂时休眠，请5分钟后重新开机</string>
-    <string name="st_ca_message_freeze_type">智能卡已冻结，请联系运营商</string>
-    <string name="st_ca_message_callback_type">智能卡已暂停，请回传收视记录给运营商</string>
-    <string name="st_ca_message_curtain_type">窗帘节目，不可预览阶段</string>
-    <string name="st_ca_message_cardteststart_type">升级测试卡测试中...</string>
-    <string name="st_ca_message_cardtestfaild_type">升级测试卡测试失败，请检查机卡通讯模块</string>
-    <string name="st_ca_message_cardtestsucc_type">升级测试卡测试成功</string>
-    <string name="st_ca_message_nocaliboper_type">卡中不存在移植库定制运营商</string>
-    <string name="st_ca_message_stblocked_type">请重启机顶盒</string>
-    <string name="st_ca_message_stbfreeze_type">机顶盒被冻结</string>
+    <string name="st_ca_message_cancel_type">Cancel current display</string>
+    <string name="st_ca_message_badcard_type">Unrecognized card</string>
+    <string name="st_ca_message_expicard_type">Smart card expired, please replace the new card</string>
+    <string name="st_ca_message_insertcard_type">Please insert smart card into scrambling program</string>
+    <string name="st_ca_message_nooper_type">There is no program operator in the card</string>
+    <string name="st_ca_message_blackout_type">Conditional seeding</string>
+    <string name="st_ca_message_outworktime_type">The current period is set to not be viewed</string>
+    <string name="st_ca_message_watchlevel_type">The program level is higher than the set viewing level</string>
+    <string name="st_ca_message_pairing_type">The smart card does not correspond to this set top box</string>
+    <string name="st_ca_message_noentitle_type">No authorization</string>
+    <string name="st_ca_message_decryptfail_type">The program failed to decrypt</string>
+    <string name="st_ca_message_nomoney_type">Insufficient amount of money in the card</string>
+    <string name="st_ca_message_errregion_type">Area incorrect</string>
+    <string name="st_ca_message_needfeed_type">The daughter card needs to correspond to the master card. Please insert the master card</string>
+    <string name="st_ca_message_errcard_type">The smart card failed to check. Please contact the operator</string>
+    <string name="st_ca_message_update_type">In the smart card upgrade, please do not unplug or switch off</string>
+    <string name="st_ca_message_lowcardver_type">Please upgrade your smart card</string>
+    <string name="st_ca_message_viewlock_type">Please do not switch channels frequently</string>
+    <string name="st_ca_message_maxrestart_type">The smart card is temporarily asleep. Please restart it in 5 minutes</string>
+    <string name="st_ca_message_freeze_type">The smart card has been frozen. Please contact the operator</string>
+    <string name="st_ca_message_callback_type">The smart card has been suspended. Please return the recording to the operator</string>
+    <string name="st_ca_message_curtain_type">Curtain program, can not preview stage</string>
+    <string name="st_ca_message_cardteststart_type">Upgrade the test card test...</string>
+    <string name="st_ca_message_cardtestfaild_type">The upgrade test card failed. Please check the card communication module</string>
+    <string name="st_ca_message_cardtestsucc_type">Upgrade the test card successfully</string>
+    <string name="st_ca_message_nocaliboper_type">There is no custom carrier for the transplant Library in the card</string>
+    <string name="st_ca_message_stblocked_type">Please restart the set-top box</string>
+    <string name="st_ca_message_stbfreeze_type">The set-top box is blocked</string>
 
     <!-- For 3d -->
 
     <string name="str_3d_3d"> 3D </string>
 
-    <string name="str_3d_self_adaptive_detecttriple">3D 自检</string>
+    <string name="str_3d_self_adaptive_detecttriple">3D Self check</string>
 
 
-    <string name="str_3dto2d_self_adaptive_detecttriple">3D-2D 自检</string>
+    <string name="str_3dto2d_self_adaptive_detecttriple">3D-2D Self check</string>
 
 
-    <string name="str_3d_self_adaptive_detectlevel">自适应强度</string>
-
-
-
-    <string name="str_3d_conversion">3D格式转换</string>
+    <string name="str_3d_self_adaptive_detectlevel">Adaptive strength</string>
 
 
 
-    <string name="str_3d_3dto2d">3D转2D</string>
+    <string name="str_3d_conversion">3D format conversion</string>
 
 
 
-    <string name="str_3d_3ddepth">3D景深</string>
+    <string name="str_3d_3dto2d">3D turn 2D</string>
 
 
 
-    <string name="str_3d_3doffset">3D 偏移</string>
+    <string name="str_3d_3ddepth">3D depth of field</string>
 
 
 
-    <string name="str_3d_autostart">自动启动</string>
+    <string name="str_3d_3doffset">3D deviation</string>
 
 
 
-    <string name="str_3d_3doutputaspect"> 3D输出宽高比</string>
+    <string name="str_3d_autostart">Auto start</string>
 
 
 
-    <string name="str_3d_lrswitch">左右交换</string>
+    <string name="str_3d_3doutputaspect"> 3D output aspect ratio</string>
+
+
+
+    <string name="str_3d_lrswitch">Left lateral exchange</string>
     <!-- For screen mode hint msg -->
-    <string name="str_invalid_service">无效服务</string>
-    <string name="str_no_ci_module">未插CI卡</string>
-    <string name="str_ci_plus_authentication">CI+ 认证</string>
-    <string name="str_scrambled_program">加密节目</string>
-    <string name="str_program_block">锁定节目</string>
-    <string name="str_parental_block">父母锁定</string>
-    <string name="str_rating_blocked">等级锁定</string>
+    <string name="str_invalid_service">Invalid service</string>
+    <string name="str_no_ci_module">CI card is not inserted</string>
+    <string name="str_ci_plus_authentication">CI+ Authentication</string>
+    <string name="str_scrambled_program">Encrypted program</string>
+    <string name="str_program_block">Lock show</string>
+    <string name="str_parental_block">Parental locking</string>
+    <string name="str_rating_blocked">Level locking</string>
     <string name="str_input_block">INPUT BLOCK</string>
-    <string name="str_audio_only">音频节目</string>
-    <string name="str_data_only">数据节目</string>
+    <string name="str_audio_only">Audio program</string>
+    <string name="str_data_only">Data program</string>
     <string name="str_common_video"></string>
-    <string name="str_unsupported">不支持</string>
-    <string name="str_invalid_pmt">无效 PMT</string>
-    <string name="str_no_signal">无信号</string>
+    <string name="str_unsupported">I won't support it</string>
+    <string name="str_invalid_pmt">invalid PMT</string>
+    <string name="str_no_signal">No signal</string>
     <!-- Factory Menu -->
 
-    <string name="str_factory_adc"> ADC调整</string>
-    <string name="str_factory_whitebalance">白平衡</string>
-    <string name="str_factory_picturemode">图片模式</string>
-    <string name="str_factory_non_standard">非标准选项</string>
+    <string name="str_factory_adc"> ADC adjustment</string>
+    <string name="str_factory_whitebalance">white balance</string>
+    <string name="str_factory_picturemode">Picture mode</string>
+    <string name="str_factory_non_standard">Nonstandard options</string>
     <string name="str_factory_non_linear"> Non_linear </string>
-    <string name="str_factory_overscan">过扫描</string>
-    <string name="str_factory_ssc"> SSC的调整</string>
+    <string name="str_factory_overscan">Over scan</string>
+    <string name="str_factory_ssc"> SSC adjustment</string>
     <string name="str_factory_peq"> PEQ </string>
-    <string name="str_factory_otheroption">其他选项</string>
-    <string name="str_factory_adc_source">源</string>
+    <string name="str_factory_otheroption">Other options</string>
+    <string name="str_factory_adc_source">source</string>
     <string name="str_factory_adc_rgain"> R GAIN </string>
-    <string name="str_factory_adc_ggain">摹增益</string>
-    <string name="str_factory_adc_bgain"> B增益</string>
-    <string name="str_factory_adc_roffset"> ř偏移</string>
-    <string name="str_factory_adc_goffset"> g补偿</string>
-    <string name="str_factory_adc_boffset"> B偏移</string>
-    <string name="str_factory_adc_autoadjust">自动调整</string>
-    <string name="str_factory_wbadjust_source">源</string>
+    <string name="str_factory_adc_ggain">Copy gain</string>
+    <string name="str_factory_adc_bgain"> B gain</string>
+    <string name="str_factory_adc_roffset"> ř offset</string>
+    <string name="str_factory_adc_goffset"> G compensation</string>
+    <string name="str_factory_adc_boffset"> B offset</string>
+    <string name="str_factory_adc_autoadjust">Automatic adjustment</string>
+    <string name="str_factory_wbadjust_source">source</string>
     <string name="str_factory_wbadjust_rgain"> R GAIN </string>
-    <string name="str_factory_wbadjust_ggain">摹增益</string>
-    <string name="str_factory_wbadjust_bgain"> B增益</string>
-    <string name="str_factory_wbadjust_roffset"> ř偏移</string>
-    <string name="str_factory_wbadjust_goffset"> g补偿</string>
-    <string name="str_factory_wbadjust_boffset"> B偏移</string>
-    <string name="str_factory_wbadjust_autoadjust">自动调整</string>
-    <string name="str_factory_wbadjust_colortemp">色温</string>
-    <string name="str_factory_picmode_picmode">图片模式</string>
-    <string name="str_factory_picmode_brightness">亮度</string>
-    <string name="str_factory_picmode_contrast">对比</string>
-    <string name="str_factory_picmode_saturation">饱和度</string>
-    <string name="str_factory_picmode_hue">色相</string>
-    <string name="str_factory_picmode_sharpness">锐度</string>
-    <string name="str_factory_nonlinear_curvetype">曲线类型</string>
+    <string name="str_factory_wbadjust_ggain">Copy gain</string>
+    <string name="str_factory_wbadjust_bgain"> B gain</string>
+    <string name="str_factory_wbadjust_roffset"> ř offset</string>
+    <string name="str_factory_wbadjust_goffset"> G compensation</string>
+    <string name="str_factory_wbadjust_boffset"> B offset</string>
+    <string name="str_factory_wbadjust_autoadjust">Automatic adjustment</string>
+    <string name="str_factory_wbadjust_colortemp">Color temperature</string>
+    <string name="str_factory_picmode_picmode">Picture mode</string>
+    <string name="str_factory_picmode_brightness">brightness</string>
+    <string name="str_factory_picmode_contrast">Contrast</string>
+    <string name="str_factory_picmode_saturation">saturation</string>
+    <string name="str_factory_picmode_hue">Hue</string>
+    <string name="str_factory_picmode_sharpness">Sharpness</string>
+    <string name="str_factory_nonlinear_curvetype">Curve type</string>
     <string name="str_factory_nonlinear_osd0"> OSD_0 </string>
     <string name="str_factory_nonlinear_osd25"> OSD_25 </string>
     <string name="str_factory_nonlinear_osd50"> OSD_50 </string>
     <string name="str_factory_nonlinear_osd75"> OSD_75 </string>
     <string name="str_factory_nonlinear_osd100"> OSD_100 </string>
-    <string name="str_factory_overscan_source">源</string>
-    <string name="str_factory_overscan_hsize"> h外型尺寸</string>
-    <string name="str_factory_overscan_hposition">水平位置</string>
-    <string name="str_factory_overscan_vsize"> V尺寸</string>
-    <string name="str_factory_overscan_vposition">垂直位置</string>
+    <string name="str_factory_overscan_source">source</string>
+    <string name="str_factory_overscan_hsize"> H exterior size</string>
+    <string name="str_factory_overscan_hposition">Horizontal position</string>
+    <string name="str_factory_overscan_vsize"> V size</string>
+    <string name="str_factory_overscan_vposition">Vertical position</string>
     <string name="str_factory_nonstandard_viftop"> VIF_TOP </string>
     <string name="str_factory_nonstandard_vifvgamaximum"> VIF_VGA_MAXIMUM </string>
     <string name="str_factory_nonstandard_vifcpkp"> VIF_CR_KP </string>
@@ -1349,7 +1349,7 @@
     <string name="str_factory_nonstandard_vifovermodulation"> VIF_OVER_MODULATION </string>
     <string name="str_factory_nonstandard_vifclampgain"> VIF_CLAMPGAIN_GAIN_OV_NEGATIVE </string>
     <string name="str_factory_nonstandard_chinadescrambler"> CHINA_DESCRAMBLER_BOX </string>
-    <string name="str_factory_nonstandard_delay">延迟</string>
+    <string name="str_factory_nonstandard_delay">delay</string>
     <string name="str_factory_nonstandard_vifcrthr"> VIF_CR_THR </string>
     <string name="str_factory_nonstandard_vifversion"> VIF_VERSION </string>
     <string name="str_factory_nonstandard_vifagcref"> VIF_AGC_REF </string>
@@ -1371,73 +1371,73 @@
     <string name="str_factory_nonstandard_vddsp"> AUDIO_NR_TH </string>
     <string name="str_factory_nonstandard_audiohidev"> AUDIO_HIDEV_MODE </string>
     <string name="str_factory_nonstandard_audionr"> AUDIO_NR_TH </string>
-    <string name="str_factory_nonstandard_audiosif">音频SIF阈值</string>
+    <string name="str_factory_nonstandard_audiosif">Audio SIF threshold</string>
     <string name="str_factory_nonstandard_audiodsp"> AUDIO_DSP_VERSION </string>
-    <string name="str_factory_ssc_miuenable"> MIU启用</string>
-    <string name="str_factory_ssc_miumodulation"> MIU调制</string>
-    <string name="str_factory_ssc_miupercentage"> MIU百分比(%)</string>
-    <string name="str_factory_ssc_lvdsenable"> LVDS启用</string>
-    <string name="str_factory_ssc_lvdsmodulation"> LVDS调制</string>
-    <string name="str_factory_ssc_lvdspercentage"> LVDS百分比(%)</string>
-    <string name="str_factory_peq_fo1coarse"> FO1粗</string>
-    <string name="str_factory_peq_fo1fine"> FO1精细</string>
-    <string name="str_factory_peq_fo2coarse"> FO2粗</string>
-    <string name="str_factory_peq_fo2fine"> FO2精细</string>
-    <string name="str_factory_peq_fo3coarse"> FO3粗</string>
-    <string name="str_factory_peq_fo3fine"> FO3精细</string>
-    <string name="str_factory_peq_gain1"> 增益1 </string>
-    <string name="str_factory_peq_gain2"> 增益2 </string>
-    <string name="str_factory_peq_gain3"> 增益3 </string>
+    <string name="str_factory_ssc_miuenable"> MIU Enable</string>
+    <string name="str_factory_ssc_miumodulation"> MIU Enable</string>
+    <string name="str_factory_ssc_miupercentage"> MIU Percentage(%)</string>
+    <string name="str_factory_ssc_lvdsenable"> LVDS Enable</string>
+    <string name="str_factory_ssc_lvdsmodulation"> LVDS modulation</string>
+    <string name="str_factory_ssc_lvdspercentage"> LVDS Percentage(%)</string>
+    <string name="str_factory_peq_fo1coarse"> The crude FO1</string>
+    <string name="str_factory_peq_fo1fine"> FO1 fine</string>
+    <string name="str_factory_peq_fo2coarse"> The crude FO2</string>
+    <string name="str_factory_peq_fo2fine"> FO2 fine</string>
+    <string name="str_factory_peq_fo3coarse"> The crude FO3</string>
+    <string name="str_factory_peq_fo3fine"> FO3 fine</string>
+    <string name="str_factory_peq_gain1"> Gain 1 </string>
+    <string name="str_factory_peq_gain2"> Gain 2 </string>
+    <string name="str_factory_peq_gain3"> Gain 3 </string>
     <string name="str_factory_peq_q1"> Q1 </string>
     <string name="str_factory_peq_q2"> Q2 </string>
     <string name="str_factory_peq_q3"> Q3 </string>
-    <string name="str_factory_otheroption_version">版本</string>
-    <string name="str_factory_otheroption_board">局</string>
-    <string name="str_factory_otheroption_panel">面板</string>
-    <string name="str_factory_otheroption_dateandtimes">日期/时间</string>
-    <string name="str_factory_otheroption_watchdog">看门狗</string>
-    <string name="str_factory_otheroption_testpattern">测试模式</string>
-    <string name="str_factory_otheroption_restoretodefault">还原为默认</string>
-    <string name="str_factory_otheroption_poweronmode">电源模式</string>
-    <string name="str_factory_otheroption_uartenable"> UART启用</string>
-    <string name="str_factory_otheroption_dtvavdelay"> DTV AV延迟（Non_standard）</string>
-    <string name="str_factory_otheroption_initialfunction">初步频道</string>
-    <string name="str_factory_otheroption_panelswing">小组秋千</string>
-    <string name="str_factory_otheroption_audioprescale">音频预分频</string>
+    <string name="str_factory_otheroption_version">Edition</string>
+    <string name="str_factory_otheroption_board">game</string>
+    <string name="str_factory_otheroption_panel">panel</string>
+    <string name="str_factory_otheroption_dateandtimes">Date / time</string>
+    <string name="str_factory_otheroption_watchdog">Watchdog</string>
+    <string name="str_factory_otheroption_testpattern">Test mode</string>
+    <string name="str_factory_otheroption_restoretodefault">Revert to default</string>
+    <string name="str_factory_otheroption_poweronmode">Power mode</string>
+    <string name="str_factory_otheroption_uartenable"> UART Enable</string>
+    <string name="str_factory_otheroption_dtvavdelay"> DTV AV delay（Non_standard）</string>
+    <string name="str_factory_otheroption_initialfunction">Initial channel</string>
+    <string name="str_factory_otheroption_panelswing">Group swing</string>
+    <string name="str_factory_otheroption_audioprescale">Audio frequency division</string>
 
-    <string name="str_cha_channel">频道</string>
-    <string name="str_cha_autotuning">自动搜台</string>
-    <string name="str_cha_dtvmanualtuning"> DTV手动搜台</string>
-    <string name="str_cha_atvmanualtuning">ATV手动搜台</string>
-    <string name="str_cha_bandwidth_switch">带宽切换</string>
+    <string name="str_cha_channel">channel</string>
+    <string name="str_cha_autotuning">Automatic search</string>
+    <string name="str_cha_dtvmanualtuning"> DTV manual search</string>
+    <string name="str_cha_atvmanualtuning">ATV manual search</string>
+    <string name="str_cha_bandwidth_switch">Bandwidth switching</string>
     <string name="str_cha_bandwidth_uhf_7mhz">7MHz over UHF</string>
-    <string name="str_cha_programedit">频道编辑</string>
+    <string name="str_cha_programedit">Channel editor</string>
     <string name="str_cha_signalinfo">Signal Information</string>
-    <string name="str_cha_ciinformation"> CI信息</string>
+    <string name="str_cha_ciinformation"> CI information</string>
     <string name="str_cha_software_update_oad">Software Update (OAD)</string>
     <string name="str_cha_time_to_search_for_ssu">Time to Search for SSU</string>
     <string name="str_cha_time_to_search_for_ssu_default">4:00</string>
     <string name="str_cha_oadscan">OAD Scan</string>
     <string name="str_cha_oad_view_prompt">View Prompt to Update</string>
-    <string name="str_mainmenu_menu">菜单</string>
-    <string name="str_cha_autotuning_tuningtype">自动搜台类型</string>
-    <string name="str_cha_autotuning_tuningtype_atv">模拟电视</string>
-    <string name="str_cha_autotuning_country_australia">澳大利亚</string>
-    <string name="str_cha_autotuning_country_austria">奥地利</string>
-    <string name="str_cha_autotuning_country_beligum">比利时</string>
-    <string name="str_cha_autotuning_country_bulgaral">保加利亚</string>
-    <string name="str_cha_autotuning_country_croatia">克罗地亚</string>
-    <string name="str_cha_autotuning_country_czech">捷克</string>
-    <string name="str_cha_autotuning_country_denmark">丹麦</string>
-    <string name="str_cha_autotuning_country_finland">芬兰</string>
-    <string name="str_cha_autotuning_country_france">法国</string>
-    <string name="str_menu_parentalcontrol">家长控制</string>
-    <string name="str_lock_system">系统锁定</string>
+    <string name="str_mainmenu_menu">menu</string>
+    <string name="str_cha_autotuning_tuningtype">Auto search type</string>
+    <string name="str_cha_autotuning_tuningtype_atv">analog television</string>
+    <string name="str_cha_autotuning_country_australia">Australia</string>
+    <string name="str_cha_autotuning_country_austria">Austria</string>
+    <string name="str_cha_autotuning_country_beligum">Belgium</string>
+    <string name="str_cha_autotuning_country_bulgaral">Bulgaria</string>
+    <string name="str_cha_autotuning_country_croatia">Croatia</string>
+    <string name="str_cha_autotuning_country_czech">Czech</string>
+    <string name="str_cha_autotuning_country_denmark">Denmark</string>
+    <string name="str_cha_autotuning_country_finland">Finland</string>
+    <string name="str_cha_autotuning_country_france">France</string>
+    <string name="str_menu_parentalcontrol">Parental control</string>
+    <string name="str_lock_system">System locking</string>
     <string name="str_lock">Lock</string>
-    <string name="str_set_pwd">修改密码</string>
-    <string name="str_block_program">节目锁定</string>
+    <string name="str_set_pwd">Modify password</string>
+    <string name="str_block_program">Program lock</string>
     <string name="str_parental_contentlock">Content Lock</string>
-    <string name="str_parental_guidance">等级设定</string>
+    <string name="str_parental_guidance">Class setting</string>
     <string name="str_cha_airdtv_title">Air DTV</string>
     <string name="str_cha_airtv_title">Air</string>
     <string name="str_cha_cabletv_title">Cable</string>
@@ -1445,31 +1445,31 @@
     <string name="str_ci_set_cam_pincode_done">Set Pin Code Done</string>
 
     <string name="str_cha_antannatype_none">None</string>
-    <string name="str_cha_antannatype_air">天线类型</string>
-    <string name="str_cha_antannatype_cable">有线</string>
+    <string name="str_cha_antannatype_air">Antenna type</string>
+    <string name="str_cha_antannatype_cable">Wired</string>
 
 
     <!-- sound menu -->
 
-    <string name="str_sound_sound_adjustment">声音模式调整</string>
-    <string name="str_sound_soundmode">声音模式</string>
+    <string name="str_sound_sound_adjustment">Sound mode adjustment</string>
+    <string name="str_sound_soundmode">Sound mode</string>
 
 
 
-    <string name="str_sound_bass">低音</string>
-    <string name="str_sound_treble">高音</string>
-    <string name="str_sound_equalizer">均衡器</string>
+    <string name="str_sound_bass">low pitch</string>
+    <string name="str_sound_treble">high pitch</string>
+    <string name="str_sound_equalizer">Equalizer</string>
     <string name="str_sound_equalizer120hz">120Hz</string>
     <string name="str_sound_equalizer500hz">500Hz</string>
     <string name="str_sound_equalizer1.5khz">1.5KHz</string>
     <string name="str_sound_equalizer5khz">5KHz</string>
     <string name="str_sound_equalizer10khz">10KHz</string>
-    <string name="str_sound_balance">声音均衡</string>
+    <string name="str_sound_balance">Sound balance</string>
     <string name="str_sound_avc"> AVC </string>
     <string name="str_sound_ad">AD Switch</string>
-    <string name="str_sound_ad_volume">AD 音量</string>
+    <string name="str_sound_ad_volume">AD volume</string>
     <string name="str_sound_autohoh">Auto HOH</string>
-    <string name="str_sound_truehdbypass">次时代源码输出</string>
+    <string name="str_sound_truehdbypass">Sub era source output</string>
 
     <string name="str_sound_srs">SRS</string>
 
@@ -1479,11 +1479,11 @@
 
 
 
-    <string name="str_sound_spdifoutput">SPDIF输出</string>
+    <string name="str_sound_spdifoutput">SPDIF output</string>
 
 
 
-    <string name="str_sound_separatehear">单独听</string>
+    <string name="str_sound_separatehear">Listen alone</string>
 
 
   <!-- for source info atv -->
@@ -1869,7 +1869,7 @@
         <string name="app_size">Application：</string>
         <string name="app_data">Data：</string>
         <string name="cache_date">Cache：</string>
-        <string name="move_sd">移至sdcard</string>
+        <string name="move_sd">move to sdcard</string>
         <string name="force_stop">Force stop</string>
         <string name="uninstall_app">Uninstall</string>
         <string name="uninstall_app_tips">Whether to uninstall the application?</string>
@@ -1893,7 +1893,7 @@
     <string name="morning">am</string>
     <string name="Afternoon">pm</string>
     <string name="shiqu">Time zone</string>
-    <string name="shiqu_item">GMT+08:00,中国标准时间</string>
+    <string name="shiqu_item">GMT+08:00,China standard time</string>
     <string name="uses_24hour">Use 24 hour system</string>
     <string name="select_date_format">Select date format</string>
     <string name="y_m_d">Y-M-D</string>
@@ -2424,10 +2424,10 @@
         <string name="solution480P60">DACOUT_480P_60</string>
         <string name="solution480I60">DACOUT_480I_60</string>
         <string name="solution4K2KP30">DACOUT_4K2KP_30</string>
-        <string name="solution_sure_change">确认切换分辨率吗？</string>
-        <string name="solution_info">提示信息</string>
-        <string name="solution_ok">确认</string>
-        <string name="solution_cancle">取消</string>
+        <string name="solution_sure_change">Confirm handover resolution?？</string>
+        <string name="solution_info">Prompt information</string>
+        <string name="solution_ok">confirm</string>
+        <string name="solution_cancle">cancle</string>
 
         <string name="check_wifi_direct_error">Your wireless card not support WiFi Direct</string>
         <string name="check_wifi_hotspot_error">Your wireless card not support WiFi Hotspots</string>
@@ -2613,48 +2613,48 @@
 
 
     <!-- For Picture -->
-    <string name="str_auto_adjust">自动调整</string>
-    <string name="str_pic_picture_adjustment">图像调整</string>
-    <string name="str_pic_picture">图像</string>
-    <string name="str_pic_picturemode">图像模式</string>
+    <string name="str_auto_adjust">Auto adjust</string>
+    <string name="str_pic_picture_adjustment">Picture adjustment</string>
+    <string name="str_pic_picture">Picture</string>
+    <string name="str_pic_picturemode">Picture Mode</string>
 
 
 
-    <string name="str_pic_contrast">对比</string>
-    <string name="str_pic_brightness">亮度</string>
-    <string name="str_pic_color">颜色</string>
-    <string name="str_pic_sharpness">锐度</string>
-    <string name="str_pic_hue">色相</string>
-    <string name="str_pic_saturation">饱和度</string>
-    <string name="str_pic_backlight">背光</string>
-    <string name="str_pic_colortemperature">色温</string>
+    <string name="str_pic_contrast">Contrast</string>
+    <string name="str_pic_brightness">Brightness</string>
+    <string name="str_pic_color">Color</string>
+    <string name="str_pic_sharpness">Sharpness</string>
+    <string name="str_pic_hue">Hue</string>
+    <string name="str_pic_saturation">Saturation</string>
+    <string name="str_pic_backlight">Backlight</string>
+    <string name="str_pic_colortemperature">Color temperature</string>
 
 
 
     <string name="str_pic_colortemperature_red">Red</string>
     <string name="str_pic_colortemperature_green">Green</string>
     <string name="str_pic_colortemperature_blue">Blue</string>
-    <string name="str_pic_zoommode">缩放模式</string>
+    <string name="str_pic_zoommode">Zoom mode</string>
 
 
 
-    <string name="str_pic_imgnoisereduction">图像降噪</string>
-    <string name="str_pic_mpegnoisereduction">MPEG降噪</string>
+    <string name="str_pic_imgnoisereduction">Image Noise reduction</string>
+    <string name="str_pic_mpegnoisereduction">MPEG Noise reduction</string>
 
 
 
 
-    <string name="str_pic_pcimagemode">PC画面调整</string>
-    <string name="str_pic_autotune">自动调整 </string>
+    <string name="str_pic_pcimagemode">PC picture adjustment</string>
+    <string name="str_pic_autotune">Automatic adjustment </string>
     <string name="str_set_hdmicec_arc">HDMI_ARC</string>
 
 
     <!-- for pc image mode -->
 
-    <string name="str_pic_clock">时钟 </string>
-    <string name="str_pic_phase">相位</string>
-    <string name="str_pic_horizontal_pos">水平位置</string>
-    <string name="str_pic_vertical_pos">垂直位置</string>
+    <string name="str_pic_clock">Clock </string>
+    <string name="str_pic_phase">phase</string>
+    <string name="str_pic_horizontal_pos">Horizontal position</string>
+    <string name="str_pic_vertical_pos">Vertical position</string>
 
     <!-- for Channel -->
 
@@ -2681,9 +2681,9 @@
     <string name="str_nit_exit">Exit</string>
 
     <!-- For schedule list style -->
-    <string name="str_left_time">剩余时间：</string>
-    <string name="str_left_time_choosen_yes">是</string>
-    <string name="str_left_time_choosen_no">否</string>
+    <string name="str_left_time">Remaining time：</string>
+    <string name="str_left_time_choosen_yes">yes</string>
+    <string name="str_left_time_choosen_no">no</string>
     <!-- For all input sources -->
 
     <string name="str_input_source_lock_title">Input Source Lock</string>
@@ -2692,82 +2692,82 @@
 
 
     <!-- For CA Error Type define -->
-    <string name="st_ca_rc_ok">成功</string>
-    <string name="st_ca_rc_unknown">未知错误</string>
-    <string name="st_ca_rc_pointer_invalid">指针无效</string>
-    <string name="st_ca_rc_card_invalid">智能卡无效</string>
-    <string name="st_ca_rc_pin_invalid">PIN码无效</string>
-    <string name="st_ca_rc_dataspace_small">所给的空间不足</string>
-    <string name="st_ca_rc_card_pairother">智能卡已经对应别的机顶盒</string>
-    <string name="st_ca_rc_data_not_find">没有找到所要的数据</string>
-    <string name="st_ca_rc_prog_status_invalid">要购买的节目状态无效</string>
-    <string name="st_ca_rc_card_no_room">智能卡没有空间存放购买的节目</string>
-    <string name="st_ca_rc_worktime_invalid">设定的工作时段无效</string>
-    <string name="st_ca_rc_ippv_canntdel">IPPV节目不能被删除</string>
-    <string name="st_ca_rc_card_nopair">智能卡没有对应任何的机顶盒</string>
-    <string name="st_ca_rc_watchrating_invalid">设定的观看级别无效</string>
-    <string name="st_ca_rc_card_notsupport">当前智能卡不支持此功能</string>
-    <string name="st_ca_rc_data_error">数据错误，智能卡拒绝</string>
-    <string name="st_ca_rc_feedtime_not_arrive">喂养时间未到，子卡不能被喂养</string>
-    <string name="st_ca_rc_card_typeerror">子母卡喂养失败，插入智能卡类型错误</string>
-    <string name="st_ca_rc_cas_failed">发卡cas指令执行失败</string>
-    <string name="st_ca_rc_oper_failed">发卡运营商指令执行失败</string>
+    <string name="st_ca_rc_ok">Success</string>
+    <string name="st_ca_rc_unknown">unknown error</string>
+    <string name="st_ca_rc_pointer_invalid">Invalid pointer</string>
+    <string name="st_ca_rc_card_invalid">Invalid smart card</string>
+    <string name="st_ca_rc_pin_invalid">Invalid PIN code</string>
+    <string name="st_ca_rc_dataspace_small">The space given is insufficient</string>
+    <string name="st_ca_rc_card_pairother">Smart cards already correspond to other set-top boxes</string>
+    <string name="st_ca_rc_data_not_find">The data was not found</string>
+    <string name="st_ca_rc_prog_status_invalid">The program status to buy is invalid</string>
+    <string name="st_ca_rc_card_no_room">Smart cards have no space to store purchased programs</string>
+    <string name="st_ca_rc_worktime_invalid">The set period is invalid</string>
+    <string name="st_ca_rc_ippv_canntdel">IPPV programs cannot be deleted</string>
+    <string name="st_ca_rc_card_nopair">The smart card does not correspond to any set top box</string>
+    <string name="st_ca_rc_watchrating_invalid">The set viewing level is invalid</string>
+    <string name="st_ca_rc_card_notsupport">The current smart card does not support this feature</string>
+    <string name="st_ca_rc_data_error">Data error, smart card reject</string>
+    <string name="st_ca_rc_feedtime_not_arrive">Feeding time is not reached, the child card can not be fed</string>
+    <string name="st_ca_rc_card_typeerror">Child card feed failed. Insert smart card type error</string>
+    <string name="st_ca_rc_cas_failed">The execution of the hairpin CAS command failed</string>
+    <string name="st_ca_rc_oper_failed">Card operators failed to execute instructions</string>
     <string name="st_ca_rc_pin_len">Pin code less than 6 digits</string>
     <string name="st_ca_rc_diff_pin">Pin code do not accord</string>
     <!-- for current action -->
-    <string name="str_current_action">加载</string>
+    <string name="str_current_action">Load</string>
     <!-- For auto update scan -->
-    <string name="str_auto_update_scan">自动更新节目</string>
+    <string name="str_auto_update_scan">Auto update program</string>
 
-    <string name="msg_upgrade_err">升级失败</string>
-    <string name="msg_download_ok">升级包下载完成</string>
-    <string name="md5_check_error">md5校验错误</string>
-    <string name="msg_downloading">正在下载中</string>
-    <string name="msg_readconfig_err">读取配置文件出错</string>
-    <string name="msg_net_err">请求版本信息出错,请检查网络.</string>
-    <string name="msg_check_mac_err">该MAC地址不能升级</string>
-    <string name="msg_check_ver_err">服务器验证出错</string>
-    <string name="msg_version_newest">当前已是最新版本</string>
-    <string name="msg_download_err">升级包下载失败</string>
-    <string name="copy_package">正在复制更新包......</string>
-    <string name="copy_yes">复制更新包完成</string>
+    <string name="msg_upgrade_err">Upgrade failed</string>
+    <string name="msg_download_ok">Upgrade pack download complete</string>
+    <string name="md5_check_error">MD5 checksum error</string>
+    <string name="msg_downloading">Downloading</string>
+    <string name="msg_readconfig_err">Error reading configuration file</string>
+    <string name="msg_net_err">There was an error requesting version information. Please check the network.</string>
+    <string name="msg_check_mac_err">The MAC address cannot be upgraded</string>
+    <string name="msg_check_ver_err">Server validation error</string>
+    <string name="msg_version_newest">This is the latest version at this time</string>
+    <string name="msg_download_err">Upgrade package download failed</string>
+    <string name="copy_package">Copying update package......</string>
+    <string name="copy_yes">Copy update package complete</string>
 
-    <string name="device_display_timetitie">"启动时间"</string>
-    <string name="device_volme">"音量设置"</string>
-    <string name="device_display_image">"当前屏保"</string>
-    <string name="device_daydreams_none">"无"</string>
-    <string name="err_not_enough_storage_for_cache">您的设备Cache分区没有足够的存储空间,请重启设备释放内存或插入内存足够的SDCard后再操作.</string>
-    <string name="err_not_enough_storage_for_sdcard">您的设备SDCard没有足够的存储空间,请释放足够的内存后再操作.</string>
-    <string name="err_not_enough_storage">您的设备没有足够的存储空间,请保证足够的内存后再操作.</string>
-    <string name="upgrade_help_title">升级操作帮助：</string>
-    <string name="upgrade_help_1">1.点击“立即下载”后，新软件开始下载。下载完成后，点击“立即升级”，设备开始升级。</string>
-    <string name="upgrade_help_3">2.升级完成后，设备进入待机状态(红色指示灯常亮)，请按遥控“电源”键开机。</string>
-    <string name="upgrade_help_4">3.升级工作完成。</string>
-    <string name="attention">注意事项：</string>
-    <string name="attention_1">1.升级过程中勿遥控设备或将设备断电。</string>
-    <string name="attention_2">2.升级过程中当设备长时间处于黑屏待机状态时请按遥控"电源"键开机。</string>
-    <string name="attention_3">3.升级后设备将恢复出厂设置，请重新网络设置等其它操作。</string>
+    <string name="device_display_timetitie">"Start-up time"</string>
+    <string name="device_volme">"Volume Setting"</string>
+    <string name="device_display_image">"Current Screensaver"</string>
+    <string name="device_daydreams_none">"nothing"</string>
+    <string name="err_not_enough_storage_for_cache">Your device Cache partition does not have enough storage space. Restart the device, free memory, or insert enough memory to operate after SDCard.</string>
+    <string name="err_not_enough_storage_for_sdcard">Your device 'SDCard' does not have enough storage space. Please release enough memory before operating.</string>
+    <string name="err_not_enough_storage">Your device does not have enough storage space. Please ensure sufficient memory before proceeding.</string>
+    <string name="upgrade_help_title">Upgrade operation help：</string>
+    <string name="upgrade_help_1">1.Click the "download now", and the new software starts downloading. When the download is complete, click "upgrade now" and the device starts upgrading。</string>
+    <string name="upgrade_help_3">2.When the upgrade is complete, the device is in standby mode (red indicator light, Chang Liang). Press the remote power button to start the device。</string>
+    <string name="upgrade_help_4">3.Upgrade work done。</string>
+    <string name="attention">Matters needing attention：</string>
+    <string name="attention_1">1.During the upgrade, do not remotely control the equipment or power off the equipment。</string>
+    <string name="attention_2">2.During the upgrade process, when the device is in black standby for a long time, press the remote control "power" button to boot。</string>
+    <string name="attention_3">3.After the upgrade, the device will resume factory settings, please reinstall the network settings and other operations。</string>
     <string name="attention_4" />
-    <string name="msg_net_err1">您的网络不通,请配置好网络后再操作.</string>
-    <string name="upgrade_package_download_finished">网络升级包下载完成</string>
-    <string name="update_settings">"系统升级"</string>
-    <string name="update_by_local">局部更新</string>
+    <string name="msg_net_err1">Your network is blocked. Please configure the network before re operation.</string>
+    <string name="upgrade_package_download_finished">Download the network upgrade package</string>
+    <string name="update_settings">"System upgrade"</string>
+    <string name="update_by_local">Local updating</string>
 
 
-    <string name="auto_static">静态IP设置</string>
-    <string name="ethernet_ip_set">IP    设置</string>
+    <string name="auto_static">Static IP settings</string>
+    <string name="ethernet_ip_set">IP settings</string>
     <string name="auto_DHCP">DHCP</string>
-    <string name="please_open_wired">请先连接有线网络!</string>
-    <string name="please_open_wireless">请先连接无线网络!</string>
-    <string name="mac_wired_address">有线MAC地址 : </string>
-    <string name="mac_wireless_address">无线MAC地址 : </string>
-    <string name="wired_mac_address_settings_title">>>有线Mac地址</string>
-    <string name="wireless_mac_address_settings_title">>>无线Mac地址</string>
-    <string name="bluetoothsettings_title">>>蓝牙</string>
+    <string name="please_open_wired">Please connect to the wired network first!</string>
+    <string name="please_open_wireless">Please connect the wireless network first!</string>
+    <string name="mac_wired_address">Wired MAC address : </string>
+    <string name="mac_wireless_address">Wireless MAC address : </string>
+    <string name="wired_mac_address_settings_title">>>Wired Mac address</string>
+    <string name="wireless_mac_address_settings_title">>>Wireless Mac address</string>
+    <string name="bluetoothsettings_title">>>Bluetooth</string>
 
 
 
-    <string msgid="6267987985556136749" name="bluetooth_rename_device" >"重命名手机"</string>
+    <string msgid="6267987985556136749" name="bluetooth_rename_device" >"Rename phone"</string>
     <!-- Wifi Security type indicating no security [CHAR LIMIT=30] -->
     <string name="wifi_security_type_none">None</string>
     <!-- Wifi Security type indicating WEP security [CHAR LIMIT=30] -->
@@ -2803,7 +2803,7 @@
 
     <string name="str_HDMI_4">OPS</string>
     <string name="str_HDMI_DP">HDMI-DP</string>
-    <string name="upgrade_package_downFeload_finished">网络升级包下载完成</string>
+    <string name="upgrade_package_downFeload_finished">Download the network upgrade package！</string>
     <string name="str_mainmenu_general_app_serach">Application Query...</string>
     <string name="str_no_app">No third party applications are installed!</string>
     <string name="str_noexit_app">The application is not installed or uninstalled!</string>
