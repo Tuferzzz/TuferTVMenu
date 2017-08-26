@@ -46,6 +46,7 @@ import java.security.GeneralSecurityException;
 import java.text.DecimalFormat;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.org.dtools.ini.BasicIniFile;
 import tufer.com.menutest.org.dtools.ini.IniFile;
 import tufer.com.menutest.org.dtools.ini.IniFileReader;
@@ -371,10 +372,9 @@ public class SystemNetUpdateActivity extends Activity {
 		this.sendBroadcast(intent);
 
 	}
-
 	@Override
 	protected void onStop() {
-
+		MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
 		super.onStop();
 	}
 
@@ -1148,4 +1148,6 @@ public class SystemNetUpdateActivity extends Activity {
 		}
 		return false;
 	}
+
+
 }

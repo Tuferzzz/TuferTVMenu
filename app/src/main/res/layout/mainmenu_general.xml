@@ -25,4 +25,9 @@
             android:scrollHorizontally="true"
             android:singleLine="true"/>
     </LinearLayout>
+    <LinearLayout android:id="@+id/linearlayout_general_wind" android:layout_marginTop="25.0dip" android:layout_below="@+id/linearlayout_general_powerinput" style="@style/linearlayout_style">
+        <ImageView android:src="@drawable/mainmenu_general_xuanfu_wind" android:contentDescription="@string/str_mainmenu_content" style="@style/second_imageview" />
+        <TextView android:text="@string/str_mainmenu_general_wind" style="@style/second_text_name" />
+        <TextView android:id="@+id/textview_general_wind_val" style="@style/second_text_val" />
+    </LinearLayout>
 </RelativeLayout>

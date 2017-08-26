@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -33,6 +34,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.Util.ForecastWeatherInfo;
 import tufer.com.menutest.Util.Tools;
 import tufer.com.menutest.Util.url;
@@ -142,6 +144,9 @@ public class WeaterActivity extends Activity  {
 //                bundle.putSerializable("mWeather",mWeather);
 //                intent.putExtras(bundle);
                     startActivity(intent);
+                }
+                else{
+                    Toast.makeText(WeaterActivity.this,getString(R.string.get_weather_data_shibai),Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -324,5 +329,9 @@ public class WeaterActivity extends Activity  {
         }
     }
 
-
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_GENERAL);
+        super.onStop();
+    }
 }

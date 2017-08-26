@@ -82,6 +82,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import tufer.com.menutest.R;
 
@@ -91,7 +92,7 @@ import tufer.com.menutest.R;
  */
 public class NetworkStatusHolder {
 
-    private static final String TAG = "MSettings.NetworkStatusHolder";
+    private static final String TAG = "NetworkStatus";
 
     private NetworkSettingsActivity mNetworkSettingsActivity;
 
@@ -118,6 +119,7 @@ public class NetworkStatusHolder {
      * @param connectType wire/wireless.
      */
     public void refreshConnectType(String connectType) {
+        //Toast.makeText(mNetworkSettingsActivity,"网络类型:"+connectType,Toast.LENGTH_SHORT).show();
         if (connectType != null) {
             mConnectTypeTxt.setText(connectType);
         }
@@ -130,6 +132,7 @@ public class NetworkStatusHolder {
      */
     public void refreshNetworkStatus(String networkStatus) {
         Log.d(TAG, "refreshNetworkStatus, " + networkStatus);
+        //Toast.makeText(mNetworkSettingsActivity,"网络状态:"+networkStatus,Toast.LENGTH_SHORT).show();
         if (networkStatus.contains("IP")) {
         	try {
 				String[] s = networkStatus.split("IP");

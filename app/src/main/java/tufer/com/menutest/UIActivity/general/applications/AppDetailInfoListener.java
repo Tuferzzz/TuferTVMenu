@@ -111,119 +111,46 @@ public class AppDetailInfoListener {
 
             @Override
             public void onClick(View v) {
-                PackageInfo packageInfo;
-                try {
-                    packageInfo = mAppDetailInfoActivity.getPackageManager().getPackageInfo(
-                            mAppDetailInfoActivity.packageName, 0);
-                } catch (PackageManager.NameNotFoundException e) {
-                    packageInfo = null;
-                    e.printStackTrace();
-                }
-                if(packageInfo ==null){
-                    Toast.makeText(mAppDetailInfoActivity,mAppDetailInfoActivity.
-                            getString(R.string.str_no_app),Toast.LENGTH_SHORT).show();
-                }else{
-                    PackageManager manager = mAppDetailInfoActivity.getPackageManager();
-                    Intent openApp = manager.getLaunchIntentForPackage(mAppDetailInfoActivity.packageName);
-                    mAppDetailInfoActivity.startActivity(openApp);
-                }
-
-                //mAppDetailInfoActivity.showDialog(AppDetailInfoActivity.OPEN_APP);
+                mAppDetailInfoViewHolder.setNoneBackground();
+                mAppDetailInfoActivity.position=0;
+                mAppDetailInfoViewHolder.setBackground(mAppDetailInfoActivity.position);
+                mAppDetailInfoActivity.showWind();
 
             }
         });
-
-        mAppDetailInfoViewHolder.open_app
-                .setOnFocusChangeListener(new OnFocusChangeListener() {
-
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        if (hasFocus) {
-                            mAppDetailInfoViewHolder.open_app
-                                    .setBackgroundResource(R.drawable.left_bg);
-                        } else {
-                            mAppDetailInfoViewHolder.open_app
-                                    .setBackgroundResource(R.drawable.one_px);
-                        }
-                    }
-                });
 
         mAppDetailInfoViewHolder.uninstall_btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                mAppDetailInfoActivity.showDialog(AppDetailInfoActivity.UNINSTALL);
+                mAppDetailInfoViewHolder.setNoneBackground();
+                mAppDetailInfoActivity.position=2;
+                mAppDetailInfoViewHolder.setBackground(mAppDetailInfoActivity.position);
+                mAppDetailInfoActivity.showWind();
             }
         });
-
-        mAppDetailInfoViewHolder.uninstall_btn
-                .setOnFocusChangeListener(new OnFocusChangeListener() {
-
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        if (hasFocus) {
-                            mAppDetailInfoViewHolder.uninstall_btn
-                                    .setBackgroundResource(R.drawable.left_bg);
-                        } else {
-                            mAppDetailInfoViewHolder.uninstall_btn
-                                    .setBackgroundResource(R.drawable.one_px);
-                        }
-                    }
-                });
 
         mAppDetailInfoViewHolder.force_stop_btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if (mAppDetailInfoActivity.isRunning) {
-                    mAppDetailInfoActivity.showDialog(AppDetailInfoActivity.FORCE_STOP);
-                } else {
-                    showToast(R.string.msg_no_stop);
-                }
+                mAppDetailInfoViewHolder.setNoneBackground();
+                mAppDetailInfoActivity.position=1;
+                mAppDetailInfoViewHolder.setBackground(mAppDetailInfoActivity.position);
+                mAppDetailInfoActivity.showWind();
             }
         });
-
-        mAppDetailInfoViewHolder.force_stop_btn
-                .setOnFocusChangeListener(new OnFocusChangeListener() {
-
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        if (hasFocus) {
-                            mAppDetailInfoViewHolder.force_stop_btn
-                                    .setBackgroundResource(R.drawable.left_bg);
-                        } else {
-                            mAppDetailInfoViewHolder.force_stop_btn
-                                    .setBackgroundResource(R.drawable.one_px);
-                        }
-                    }
-                });
 
         mAppDetailInfoViewHolder.clear_data_btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if (mAppDetailInfoActivity.isHasData) {
-                    mAppDetailInfoActivity.showDialog(AppDetailInfoActivity.CLEAR_DATA);
-                } else {
-                    showToast(R.string.msg_no_clear_data);
-                }
+                mAppDetailInfoViewHolder.setNoneBackground();
+                mAppDetailInfoActivity.position=3;
+                mAppDetailInfoViewHolder.setBackground(mAppDetailInfoActivity.position);
+                mAppDetailInfoActivity.showWind();
             }
         });
-
-        mAppDetailInfoViewHolder.clear_data_btn
-                .setOnFocusChangeListener(new OnFocusChangeListener() {
-
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        if (hasFocus) {
-                            mAppDetailInfoViewHolder.clear_data_btn
-                                    .setBackgroundResource(R.drawable.left_bg);
-                        } else {
-                            mAppDetailInfoViewHolder.clear_data_btn
-                                    .setBackgroundResource(R.drawable.one_px);
-                        }
-                    }
-                });
     }
 
     public void setInvisible() {

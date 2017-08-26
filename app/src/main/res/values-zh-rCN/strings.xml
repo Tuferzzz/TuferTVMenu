@@ -45,7 +45,7 @@
     <string name="str_mainmenu_general_powerinput">开机通道</string>
     <string name="str_mainmenu_general_powerinput_android">安卓</string>
     <string name="str_mainmenu_general_appmanager">应用管理</string>
-
+    <string name="str_mainmenu_general_wind">辅助触摸</string>
     <string name="str_mainmenu_general_timedate">时间/日期</string>
     <string name="str_mainmenu_general_weather">天气</string>
     <string name="str_mainmenu_general_appmanager_name">应用名称</string>
@@ -271,9 +271,10 @@
     <string name="str_install_apk_title">Android更新</string>
     <string name="str_install_apk_message">Android系统正在更新,请稍候...</string>
     <string name="str_mainmenu_about_systeminfo_model">型号：</string>
+    <string name="str_mainmenu_about_systeminfo_localname">本地名称：</string>
     <string name="str_mainmenu_about_systeminfo_version">软件版本：</string>
     <string name="str_mainmenu_about_systeminfo_system_version">系统版本：</string>
-    <string name="str_mainmenu_about_systeminfo_memory_info">内存信息(可用 / 总共)：</string>
+    <string name="str_mainmenu_about_systeminfo_memory_info">运行内存(可用 / 总共)：</string>
     <string name="str_mainmenu_channal_tip">仅在TV通道下使用!</string>
     <string name="str_signal_alert_dialog_title">信号已插入!</string>
     <string name="str_signal_alert_dialog_message">秒后自动切换,是否手动切换?</string>
@@ -2451,5 +2452,8 @@ apps.</string>
     <string name="str_noexit_app">该应用未安装或已卸载!</string>
     <string name="get_weather_data_shibai">获取数据失败，请检查网络！</string>
     <string name="query_cityname_shibai">查询城市名有误，获取数据失败！</string>
+    <string name="rename_null">修改名不能为空，修改失败！</string>
+    <string name="str_only_usermode_available">只在用户模式下可用!</string>
+    <string name="str_function_not_open">该功能暂时未开放!</string>
 
 </resources>

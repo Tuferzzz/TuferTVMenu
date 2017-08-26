@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.UIActivity.holder.ChannelViewHolder;
 
 /**
@@ -22,5 +23,10 @@ public class ChannelActivity extends Activity {
         mChannelViewHolder=new ChannelViewHolder(this);
         mChannelViewHolder.findViews();
         mChannelViewHolder.updateUi();
+    }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_CHANNEL);
+        super.onStop();
     }
 }

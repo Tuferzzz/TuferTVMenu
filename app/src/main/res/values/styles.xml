@@ -105,9 +105,9 @@
         <item name="android:gravity">center</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@drawable/submain_focus_state</item>
-        <item name="android:focusable">true</item>
-        <item name="android:focusableInTouchMode">true</item>
-        <item name="android:clickable">true</item>
+        <!--<item name="android:focusable">true</item>-->
+        <!--<item name="android:focusableInTouchMode">true</item>-->
+        <!--<item name="android:clickable">true</item>-->
         <item name="android:layout_width">100.0dip</item>
         <item name="android:layout_height">114.0dip</item>
     </style>

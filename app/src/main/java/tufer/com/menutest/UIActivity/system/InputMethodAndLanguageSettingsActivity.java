@@ -300,6 +300,11 @@ public class InputMethodAndLanguageSettingsActivity extends Activity {
             return false;
         }
     }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_SYSTEM);
+        super.onStop();
+    }
 
 
 }

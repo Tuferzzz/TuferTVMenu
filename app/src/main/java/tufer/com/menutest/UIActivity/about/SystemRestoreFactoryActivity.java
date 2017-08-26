@@ -98,6 +98,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.Util.Tools;
 
 
@@ -296,6 +297,11 @@ public class SystemRestoreFactoryActivity extends Activity {
             Log.d(TAG, "chmod 666 fail!");
             e.printStackTrace();
         }
+    }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
+        super.onStop();
     }
 
 

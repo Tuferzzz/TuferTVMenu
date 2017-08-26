@@ -141,7 +141,6 @@ public class AppDetailInfoViewHolder {
     }
 
     private void findViews() {
-        //mAppOperation = (ListView) mAppDetailInfoActivity.findViewById(R.id.app_operation_select);
 
         app_icon_iv = (ImageView) mAppDetailInfoActivity.findViewById(R.id.app_icon);
         app_name_tv = (TextView) mAppDetailInfoActivity.findViewById(R.id.app_name);
@@ -152,13 +151,23 @@ public class AppDetailInfoViewHolder {
         app_cache = (TextView) mAppDetailInfoActivity.findViewById(R.id.app_cache_tv);
 
         open_app= (Button) mAppDetailInfoActivity.findViewById(R.id.open_app);
+        open_app.setFocusable(false);
+        open_app.setClickable(false);
         force_stop_btn = (Button) mAppDetailInfoActivity.findViewById(R.id.force_stop_btn);
+        force_stop_btn.setFocusable(false);
+        force_stop_btn.setClickable(false);
         uninstall_btn = (Button) mAppDetailInfoActivity.findViewById(R.id.uninstall_btn);
+        uninstall_btn.setFocusable(false);
+        uninstall_btn.setClickable(false);
         clear_data_btn = (Button) mAppDetailInfoActivity.findViewById(R.id.clear_data_btn);
+        clear_data_btn.setFocusable(false);
+        clear_data_btn.setClickable(false);
         mMoveApp = (Button) mAppDetailInfoActivity.findViewById(R.id.move_app_btn);
+        mMoveApp.setFocusable(false);
+        mMoveApp.setClickable(false);
+
         mProgressBar = (ProgressBar) mAppDetailInfoActivity.findViewById(R.id.progress_bar);
         mProgressBar.setIndeterminate(true);
-        open_app.setNextFocusUpId(R.id.move_app_btn);
 
         uninstall = (TextView) mAppDetailInfoActivity.findViewById(R.id.uninstall_progress);
 
@@ -166,6 +175,35 @@ public class AppDetailInfoViewHolder {
         appLayout = (LinearLayout) mAppDetailInfoActivity.findViewById(R.id.app_ll);
         dataLayout = (LinearLayout) mAppDetailInfoActivity.findViewById(R.id.data_ll);
         cacheLayout = (LinearLayout) mAppDetailInfoActivity.findViewById(R.id.cache_ll);
+    }
+    protected void setNoneBackground() {
+        open_app.setBackgroundResource(R.drawable.one_px);
+        force_stop_btn.setBackgroundResource(R.drawable.one_px);
+        uninstall_btn.setBackgroundResource(R.drawable.one_px);
+        clear_data_btn.setBackgroundResource(R.drawable.one_px);
+        mMoveApp.setBackgroundResource(R.drawable.one_px);
+    }
+
+    protected void setBackground(int index) {
+        switch (index) {
+            case 0:
+                open_app.setBackgroundResource(R.drawable.set_button);
+                break;
+            case 1:
+                force_stop_btn.setBackgroundResource(R.drawable.set_button);
+                break;
+            case 2:
+                uninstall_btn.setBackgroundResource(R.drawable.set_button);
+                break;
+            case 3:
+                clear_data_btn.setBackgroundResource(R.drawable.set_button);
+                break;
+            case 4:
+                mMoveApp.setBackgroundResource(R.drawable.set_button);
+                break;
+            default:
+                break;
+        }
     }
 
 }

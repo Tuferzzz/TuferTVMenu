@@ -110,6 +110,7 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.widget.Toast;
 
 import com.mstar.android.wifi.MWifiManager;
 
@@ -118,7 +119,7 @@ import com.mstar.android.wifi.MWifiManager;
  */
 public class NetworkStatusSettings extends NetworkSettings implements INetworkSettingsListener {
 
-    private static final String TAG = "MSettings.NetworkStatus";
+    private static final String TAG = "NetworkStatus";
 
     private static final int TYPE_ETHERNET = 0;
     private static final int TYPE_WIFI = 1;
@@ -199,10 +200,13 @@ public class NetworkStatusSettings extends NetworkSettings implements INetworkSe
      */
     public void refreshNetworkStatus() {
         if (isWifiConnected()) {
+            //Toast.makeText(mActivity,"刷新WIFI连接",Toast.LENGTH_SHORT).show();
             refreshWifiStatus();
         } else if (mPPPoEManager.PppoeGetStatus() == PPPOE_STA.CONNECTED) {
+            //Toast.makeText(mActivity,"刷新PPPoE连接",Toast.LENGTH_SHORT).show();
             refreshPPPoEStatus();
         } else {
+            //Toast.makeText(mActivity,"刷新以太网连接",Toast.LENGTH_SHORT).show();
             refreshEthernetStatus();
         }
     }

@@ -37,6 +37,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.UIActivity.general.applications.AppDetailInfoActivity;
 
 
@@ -325,8 +326,8 @@ public class AppManagerActivity extends Activity {
 
     @Override
     protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_GENERAL);
         super.onStop();
-
     }
     /**
      * 显示加载中对话框
@@ -357,4 +358,5 @@ public class AppManagerActivity extends Activity {
             processDia = null;
         }
     }
+
 }

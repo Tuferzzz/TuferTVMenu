@@ -2,6 +2,7 @@ package tufer.com.menutest.UIActivity.about;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -13,13 +14,14 @@ import android.widget.TextView;
 import java.io.File;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 
 /**
  * Created by Administrator on 2017/7/6 0006.
  */
 
 public class SystemInfoActivity extends Activity {
-    TextView system_info_model,system_info_version,system_info_system_version,system_info_memory_info;
+    TextView system_info_model,system_info_version,system_info_system_version,system_info_memory_info,system_info_localname;
     //String[] api={"1.0","1.1","1.5","1.6","2.0","2.0.1","2.1","2.2-2.2.3","2.3-2.3.2","2.3.3-2.3.7","3.0","3.1","3.2.x","4.0.1-4.0.2","4.0.3-4.0.4","4.1.x","4.2.x","4.3.x","4.4","4.4w","5.0","5.1","6.0","7.0"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +32,14 @@ public class SystemInfoActivity extends Activity {
         system_info_version.setText(getAppVersionName(this));
         system_info_system_version.setText("Android "+ android.os.Build.VERSION.RELEASE+"(API:"+android.os.Build.VERSION.SDK_INT+")");
         system_info_memory_info.setText(getRomAvailableSize()+"/"+getRomTotalSize());
-
+        system_info_localname.setText(getSharedPreferences("MyTvSetting",0).getString(
+                "LocalName",android.os.Build.MODEL
+        ));
     }
 
     private void initView() {
         system_info_model= (TextView) findViewById(R.id.system_info_model);
+        system_info_localname= (TextView) findViewById(R.id.system_info_localname);
         system_info_version= (TextView) findViewById(R.id.system_info_version);
         system_info_system_version= (TextView) findViewById(R.id.system_info_system_version);
         system_info_memory_info= (TextView) findViewById(R.id.system_info_memory_info);
@@ -81,5 +86,11 @@ public class SystemInfoActivity extends Activity {
         long blockSize = stat.getBlockSize();
         long availableBlocks = stat.getAvailableBlocks();
         return Formatter.formatFileSize(SystemInfoActivity.this, blockSize * availableBlocks);
+    }
+
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
+        super.onStop();
     }
 }

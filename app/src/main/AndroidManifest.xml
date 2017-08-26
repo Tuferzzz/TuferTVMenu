@@ -147,6 +147,8 @@
 			
         </activity>
 
+        <activity android:name=".UIActivity.SelectDialog"></activity>
+
         <activity android:name=".UIActivity.general.appinfo.AppManagerActivity"
             />
         <activity android:name=".UIActivity.general.applications.AppDetailInfoActivity"

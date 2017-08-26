@@ -109,6 +109,7 @@ import com.mstar.android.tvapi.factory.FactoryManager;
 import com.mstar.android.tvapi.common.exception.TvCommonException;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 
 public class DateTimeSettings extends Activity {
 
@@ -752,5 +753,10 @@ public class DateTimeSettings extends Activity {
             mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(is24Hour);
             saveTimeFormatValue();
         }
+    }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_GENERAL);
+        super.onStop();
     }
 }

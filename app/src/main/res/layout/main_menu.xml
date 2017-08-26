@@ -2,7 +2,7 @@
 <LinearLayout android:id="@+id/MainMenu" style="@style/mainmenu_layout_style"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:id="@+id/mainmenu_buttons" style="@style/mainmenu_buttons_layout">
-        <Button android:id="@+id/generalButton" android:text="@string/str_mainmenu_general" style="@style/first_normal_button" />
+        <Button android:id="@+id/generalButton" android:text="@string/str_mainmenu_general" android:background="@drawable/mainmenu_button1_focus" style="@style/first_normal_button" />
         <Button android:id="@+id/pictureButton" android:layout_marginTop="1.0dip" android:text="@string/str_mainmenu_picture" style="@style/first_normal_button" />
         <Button android:id="@+id/soundButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_sound" style="@style/first_normal_button" />
         <Button android:id="@+id/channelButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_channel" style="@style/first_normal_button" />

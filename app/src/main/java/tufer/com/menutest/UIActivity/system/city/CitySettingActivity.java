@@ -84,6 +84,7 @@ import android.os.Bundle;
 import java.util.Locale;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 
 
 public class CitySettingActivity extends Activity {
@@ -126,6 +127,11 @@ public class CitySettingActivity extends Activity {
 
     private void registerListeners() {
         mCitySettingListeners = new CitySettingListeners(mSettingViewHolder);
+    }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_SYSTEM);
+        super.onStop();
     }
 
 }

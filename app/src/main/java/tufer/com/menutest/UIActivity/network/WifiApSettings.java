@@ -109,7 +109,7 @@ import com.mstar.android.wifi.MWifiManager;
 
 public class WifiApSettings extends NetworkSettings implements INetworkSettingsListener {
 
-    private static final String TAG = "MSettings.WifiApSettings";
+    private static final String TAG = "WifiApSettings";
 
     public static final int SECURE_TYPE_WPA = 0;
     public static final int SECURE_TYPE_WPA2 = 1;
@@ -393,8 +393,10 @@ public class WifiApSettings extends NetworkSettings implements INetworkSettingsL
         CheckBox checkBox = mWifiApSettingsHolder.getWifiApToggleCheckBox();
         if (apState == WifiManager.WIFI_AP_STATE_ENABLED) {
             checkBox.setChecked(true);
+            MainActivity.isWifiHotspotOn=true;
         } else {
             checkBox.setChecked(false);
+            MainActivity.isWifiHotspotOn=false;
         }
 
         if (getWifiManager().setWifiApEnabled(null, enable)) {
@@ -422,7 +424,6 @@ public class WifiApSettings extends NetworkSettings implements INetworkSettingsL
                     case WifiManager.WIFI_AP_STATE_ENABLING:
                         Log.d(TAG, "WIFI_AP_STATE_ENABLING");
                         checkBox.setEnabled(false);
-                        MainActivity.isWifiHotspotOn=false;
                         break;
                     case WifiManager.WIFI_AP_STATE_ENABLED:
                         // on enable is handled by tether broadcast notice
@@ -435,17 +436,17 @@ public class WifiApSettings extends NetworkSettings implements INetworkSettingsL
                     case WifiManager.WIFI_AP_STATE_DISABLING:
                         Log.d(TAG, "WIFI_AP_STATE_DISABLING");
                         checkBox.setEnabled(false);
-                        MainActivity.isWifiHotspotOn=false;
                         mWifiApSettingsHolder.refreshWifiApInfo(null);
                         break;
                     case WifiManager.WIFI_AP_STATE_DISABLED:
                         Log.d(TAG, "WIFI_AP_STATE_DISABLED");
                         checkBox.setEnabled(true);
-                        MainActivity.isWifiHotspotOn=true;
                         checkBox.setChecked(false);
+                        MainActivity.isWifiHotspotOn=false;
                         break;
                     default:
                         checkBox.setChecked(false);
+                        MainActivity.isWifiHotspotOn=false;
                         break;
                 }
             }

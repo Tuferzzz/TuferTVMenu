@@ -290,7 +290,7 @@ public class LanguageSelectDialog extends Dialog {
                 dismiss();
                 MainActivity.myMainActivity.finish();
 
-                mLanguageSettingActivity.finish();
+                //mLanguageSettingActivity.finish();
 //                PackageManager manager = mLanguageSettingActivity.getPackageManager();
 //                Intent openApp = manager.getLaunchIntentForPackage("tufer.com.menutest");
 //                mLanguageSettingActivity.startActivity(openApp);

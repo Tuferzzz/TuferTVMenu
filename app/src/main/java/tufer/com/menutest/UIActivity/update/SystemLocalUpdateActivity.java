@@ -115,6 +115,7 @@ import java.util.List;
 import java.util.Map;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.Util.Tools;
 
 
@@ -497,6 +498,11 @@ public class SystemLocalUpdateActivity extends Activity {
 			mUpdateFile = copyUpdateImageToCache(mUpdateFile);
 			updateSystem();
 		}
+	}
+	@Override
+	protected void onStop() {
+		MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
+		super.onStop();
 	}
 
 }

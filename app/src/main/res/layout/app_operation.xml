@@ -55,7 +55,6 @@
         android:paddingTop="5dip"
         android:text="@string/move_sd"
         android:textColor="#CCCCCCCC"
-        android:textSize="24sp"
-        android:nextFocusDown="@id/open_app"/>
+        android:textSize="24sp" />
 
 </LinearLayout>

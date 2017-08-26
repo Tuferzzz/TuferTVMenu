@@ -90,12 +90,14 @@ import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.mstar.android.MKeyEvent;
 import com.mstar.android.tvapi.common.vo.ProgramInfo;
@@ -107,6 +109,7 @@ import com.mstar.android.tv.TvAtscChannelManager;
 import com.mstar.android.tv.TvIsdbChannelManager;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.UIActivity.MstarBaseActivity;
 import tufer.com.menutest.UIActivity.TimeOutHelper;
 import tufer.com.menutest.Util.TvIntent;
@@ -1001,5 +1004,18 @@ public class ProgramListViewActivity extends MstarBaseActivity {
                 textSkip.setVisibility(View.VISIBLE);
             }
         }
+    }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_CHANNEL);
+        super.onStop();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if(event.getAction()==MotionEvent.ACTION_DOWN){
+            finish();
+        }
+        return super.onTouchEvent(event);
     }
 }

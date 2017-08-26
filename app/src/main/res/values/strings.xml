@@ -81,6 +81,7 @@
     <string name="str_mainmenu_general_powerinput">Power Input</string>
     <string name="str_mainmenu_general_powerinput_android">android</string>
     <string name="str_mainmenu_general_appmanager">AppManager</string>
+    <string name="str_mainmenu_general_wind">Auxiliary touch</string>
     <string name="str_mainmenu_general_timedate">Time/Date</string>
     <string name="str_mainmenu_general_weather">Weather</string>
     <string name="str_mainmenu_general_weather_time">Date</string>
@@ -323,9 +324,10 @@
     <string name="str_install_apk_title">Android Upgrade</string>
     <string name="str_install_apk_message">The Android system is Upgrading，please wait a moment...</string>
     <string name="str_mainmenu_about_systeminfo_model">Model：</string>
+    <string name="str_mainmenu_about_systeminfo_localname">Local Name：</string>
     <string name="str_mainmenu_about_systeminfo_version">Software Version：</string>
     <string name="str_mainmenu_about_systeminfo_system_version">System Version：</string>
-    <string name="str_mainmenu_about_systeminfo_memory_info">Memory Info(used / total)：</string>
+    <string name="str_mainmenu_about_systeminfo_memory_info">Run memory(used / total)：</string>
     <string name="str_mainmenu_channal_tip">Use only in TV channel!</string>
     <string name="str_signal_alert_dialog_title">Signal is connected!</string>
     <string name="str_signal_alert_dialog_message">s later auto switch,whether switch or not?</string>
@@ -2807,4 +2809,7 @@
     <string name="str_noexit_app">The application is not installed or uninstalled!</string>
     <string name="get_weather_data_shibai">Failed to obtain data. Please check the network！</string>
     <string name="query_cityname_shibai">Query city name is incorrect, access to data failed！</string>
+    <string name="rename_null">The modification name cannot be empty, and the modification failed！</string>
+    <string name="str_only_usermode_available">Available only in user mode!</string>
+    <string name="str_function_not_open">This function has not been opened yet!</string>
 </resources>

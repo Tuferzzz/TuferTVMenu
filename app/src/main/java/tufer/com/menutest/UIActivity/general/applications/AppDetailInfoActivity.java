@@ -109,18 +109,20 @@ import android.os.RemoteException;
 import android.os.UserHandle;
 import android.text.format.Formatter;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
 import android.widget.Toast;
 import android.graphics.drawable.Drawable;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.MainActivity;
 import tufer.com.menutest.Util.Tools;
 
 
 public class AppDetailInfoActivity extends Activity {
 
-    private static final String TAG = "MSettings.AppDetailInfoActivity";
+    private static final String TAG = "AppDetailInfoActivity";
 
     // force stop
     protected static final int FORCE_STOP = 0;
@@ -168,6 +170,8 @@ public class AppDetailInfoActivity extends Activity {
     private int mMoveFlags;
 
     private PackageMoveObserver mPackageMoveObserver;
+
+    protected int position=0;
 
     private static final int MSG_SDCARD_NOT_EXIST = 11; // sdcard is not exist
     private static final int MSG_APPLICATION_MOVE_FAIL = 12; // app move fail
@@ -273,6 +277,152 @@ public class AppDetailInfoActivity extends Activity {
         registerListeners();
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT || keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
+            dropDown();
+        } else if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
+            dropUp();
+        }
+
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            Log.d(TAG, "onKeyUp");
+            showWind();
+        }
+
+        return super.onKeyUp(keyCode, event);
+    }
+
+    protected void showWind() {
+        switch (position){
+            case 0:
+                PackageInfo packageInfo;
+                try {
+                    packageInfo = getPackageManager().getPackageInfo(packageName, 0);
+                } catch (PackageManager.NameNotFoundException e) {
+                    packageInfo = null;
+                    e.printStackTrace();
+                }
+                if(packageInfo ==null){
+                    Toast.makeText(this, getString(R.string.str_no_app),Toast.LENGTH_SHORT).show();
+                }else{
+                    PackageManager manager = getPackageManager();
+                    Intent openApp = manager.getLaunchIntentForPackage(packageName);
+                    startActivity(openApp);
+                }
+                break;
+            case 1:
+                if (isRunning) {
+                    showDialog(AppDetailInfoActivity.FORCE_STOP);
+                } else {
+                    showToast(R.string.msg_no_stop);
+                }
+                break;
+            case 2:
+                showDialog(AppDetailInfoActivity.UNINSTALL);
+                break;
+            case 3:
+                if (isHasData) {
+                    showDialog(AppDetailInfoActivity.CLEAR_DATA);
+                } else {
+                    showToast(R.string.msg_no_clear_data);
+                }
+                break;
+            case 4:
+                if (mPackageMoveObserver == null) {
+                    mPackageMoveObserver = new PackageMoveObserver();
+                }
+
+                if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+                    mMoveFlag = true;
+                    mHandler.sendEmptyMessage(MSG_APP_MOVE_FLAG);
+                    if (mPackageManager != null) {
+                        mPackageManager.movePackage(mAppInfo.getPackageName(),
+                                mPackageMoveObserver, mMoveFlags);
+                    }
+                } else {
+                    mHandler.sendEmptyMessage(MSG_SDCARD_NOT_EXIST);
+                }
+                break;
+        }
+    }
+
+    private void dropUp() {
+        switch (position){
+            case 0:
+                position=4;
+                mAppDetailInfoViewHolder.open_app.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 1:
+                position=0;
+                mAppDetailInfoViewHolder.force_stop_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.open_app.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 2:
+                position=1;
+                mAppDetailInfoViewHolder.uninstall_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.force_stop_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 3:
+                position=2;
+                mAppDetailInfoViewHolder.clear_data_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.uninstall_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 4:
+                position=3;
+                mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.clear_data_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+        }
+    }
+
+    private void dropDown() {
+        switch (position){
+            case 0:
+                position=1;
+                mAppDetailInfoViewHolder.open_app.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.force_stop_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 1:
+                position=2;
+                mAppDetailInfoViewHolder.force_stop_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.uninstall_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 2:
+                position=3;
+                mAppDetailInfoViewHolder.uninstall_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.clear_data_btn.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 3:
+                position=4;
+                mAppDetailInfoViewHolder.clear_data_btn.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.left_bg);
+                break;
+            case 4:
+                position=0;
+                mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.one_px);
+                mAppDetailInfoViewHolder.open_app.setBackgroundResource(R.drawable.left_bg);
+                break;
+        }
+    }
+
+    private void showToast(int id) {
+        if (id < 0)
+            return;
+
+        Toast.makeText(this, getString(id),
+                Toast.LENGTH_SHORT).show();
+    }
+
     /**
      * initialized data.
      */
@@ -350,31 +500,10 @@ public class AppDetailInfoActivity extends Activity {
         mAppDetailInfoViewHolder.mMoveApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mPackageMoveObserver == null) {
-                    mPackageMoveObserver = new PackageMoveObserver();
-                }
-
-                if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-                    mMoveFlag = true;
-                    mHandler.sendEmptyMessage(MSG_APP_MOVE_FLAG);
-                    if (mPackageManager != null) {
-                        mPackageManager.movePackage(mAppInfo.getPackageName(),
-                                mPackageMoveObserver, mMoveFlags);
-                    }
-                } else {
-                    mHandler.sendEmptyMessage(MSG_SDCARD_NOT_EXIST);
-                }
-            }
-        });
-
-        mAppDetailInfoViewHolder.mMoveApp.setOnFocusChangeListener(new OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.left_bg);
-                } else {
-                    mAppDetailInfoViewHolder.mMoveApp.setBackgroundResource(R.drawable.one_px);
-                }
+                mAppDetailInfoViewHolder.setNoneBackground();
+                position=4;
+                mAppDetailInfoViewHolder.setBackground(position);
+                showWind();
             }
         });
     }
@@ -619,4 +748,9 @@ public class AppDetailInfoActivity extends Activity {
         }
     }
 
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_GENERAL);
+        super.onStop();
+    }
 }

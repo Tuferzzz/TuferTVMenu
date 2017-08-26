@@ -133,6 +133,11 @@ public class EqualizerActivity extends Activity {
         seekBarBtn5KHz.setOnClickListener(seekBarBtnOnClickListener);
         seekBarBtn10KHz.setOnClickListener(seekBarBtnOnClickListener);
     }
+    @Override
+    protected void onStop() {
+        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_SOUND);
+        super.onStop();
+    }
 
 
 }
