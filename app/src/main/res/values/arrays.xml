@@ -175,7 +175,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginTop">69dip</item>
-        <item name="android:background">@drawable/picture_mode_img_bg</item>
+        <item name="android:background">@drawable/set_bg</item>
     </style>
     <!-- combo button -->
     <style name="cha_dtvautotuning_sty_combo_btn">

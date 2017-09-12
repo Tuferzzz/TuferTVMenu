@@ -90,6 +90,7 @@ import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
@@ -141,16 +142,16 @@ public class KeyboadrSelectDialog extends Dialog {
         setContentView(R.layout.inputmethod_setting);
 
         Window w = getWindow();
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        w.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
         Resources resources = mSettingActivity.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-        w.setTitle(null);
+        w.setTitle("                  "
+                + mSettingActivity.getResources().getString(R.string.keyboard_setting));
 
-        Point point = new Point();
-        Display display = w.getWindowManager().getDefaultDisplay();
-        display.getSize(point);
-        int width = (int) (point.x * 0.3);
-        int height = (int) (point.y * 0.4);
+        int width = (int) (outMetrics.widthPixels * 0.3);
+        int height = (int) (outMetrics.heightPixels * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();

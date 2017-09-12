@@ -5,15 +5,15 @@
     android:gravity="center" >
 
     <LinearLayout
-        android:layout_width="700dip"
-        android:layout_height="500dip"
+        android:layout_width="500dip"
+        android:layout_height="350dip"
         android:background="@drawable/set_bg"
         android:orientation="vertical" >
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dip"
+            android:layout_marginTop="20dip"
             android:background="@drawable/line" >
         </ImageView>
 
@@ -21,10 +21,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="49dip" >
+            android:paddingTop="34dip" >
 
             <LinearLayout
-                android:layout_width="455dip"
+                android:layout_width="325dip"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
@@ -33,11 +33,11 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="210dip"
+                android:layout_height="250dip"
                 android:background="@drawable/vertical_line" />
 
             <LinearLayout
-                android:layout_width="245dip"
+                android:layout_width="175dip"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:orientation="vertical" >
@@ -51,16 +51,16 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingTop="35dip"
+            android:paddingTop="24dip"
             android:textColor="#FFFFFFFF"
             android:textSize="18sp"
             android:visibility="invisible" />
 
         <LinearLayout
-            android:layout_width="672dip"
-            android:layout_height="17.5dip"
+            android:layout_width="480dip"
+            android:layout_height="12dip"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="7dip" >
+            android:paddingTop="5dip" >
 
             <include layout="@layout/progress" />
         </LinearLayout>
@@ -73,7 +73,7 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dip"
+                android:layout_marginTop="24dip"
                 android:background="@drawable/line" >
             </ImageView>
 

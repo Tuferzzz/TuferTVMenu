@@ -96,20 +96,21 @@
         android:layout_height="35dp"
         android:background="@drawable/button_state"
         >
-            <ImageView style="@style/autotune_sty_dots_layout" ></ImageView>
-            <ImageView style="@style/autotune_sty_disabledot" ></ImageView>
-             <ImageView style="@style/autotune_sty_disabledot"></ImageView>
-             <ImageView style="@style/autotune_sty_disabledot"></ImageView>
-             <ImageView style="@style/autotune_sty_enabledot"></ImageView>
+            <!--<ImageView style="@style/autotune_sty_dots_layout" ></ImageView>-->
+            <!--<ImageView style="@style/autotune_sty_disabledot" ></ImageView>-->
+             <!--<ImageView style="@style/autotune_sty_disabledot"></ImageView>-->
+             <!--<ImageView style="@style/autotune_sty_disabledot"></ImageView>-->
+             <!--<ImageView style="@style/autotune_sty_enabledot"></ImageView>-->
     </LinearLayout>
 
     <!-- For Turning Type -->
      <LinearLayout
-             android:id="@+id/linearlayout_cha_autotuning_tuningtype"
+            android:id="@+id/linearlayout_cha_autotuning_tuningtype"
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="35dp"
             android:focusable="true"
+            android:clickable="true"
             android:focusableInTouchMode="true"
             android:background="@drawable/button_state"
             >
@@ -135,11 +136,12 @@
             <ImageView style="@style/pic_mode_sty_rightarrow"></ImageView>
         </LinearLayout>
     <LinearLayout
-             android:id="@+id/linearlayout_cha_autotuning_antenna_type"
+            android:id="@+id/linearlayout_cha_autotuning_antenna_type"
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="35dp"
             android:focusable="true"
+            android:clickable="true"
             android:focusableInTouchMode="true"
             android:background="@drawable/button_state"
             >

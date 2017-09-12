@@ -5,7 +5,7 @@
     android:layout_height="40dip"
     android:checkMark="@drawable/custom_radio_button"
     android:gravity="center_vertical"
-    android:paddingLeft="35dip"
-    android:paddingRight="140dip"
+    android:paddingLeft="50dip"
+    android:paddingRight="70dip"
     android:textColor="#FFFFFFFF"
-    android:textSize="20sp" />
+    android:textSize="22sp" />

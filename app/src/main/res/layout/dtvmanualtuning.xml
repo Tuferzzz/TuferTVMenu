@@ -84,17 +84,28 @@
     android:orientation="vertical"
     android:layout_width="275dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/picture_mode_img_bg"
+    android:background="@drawable/set_bg"
     android:layout_gravity="center_horizontal"
-    android:layout_marginTop="28dp" >
+    android:layout_marginTop="28dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
      <TextView
         android:id="@+id/textview_cha_dtvmanualtuning"
         android:layout_width="275dp"
-        android:layout_height="67dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:text="@string/str_cha_dtvmanualtuning"
         android:textColor="#ffffff"
-        android:textSize="13dp" />
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line"
+        android:layout_marginBottom="5dp">
+    </ImageView>
+
     <Spinner
         android:id="@+id/DtvManualTuneSpinner"
         android:layout_width="fill_parent"
@@ -102,7 +113,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:textColor="#ffffff"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 
     <!-- For DVBS GALAXY -->
     <TextView
@@ -251,16 +262,17 @@
                 android:textColor="#ffffff"
                 android:textSize="15dp"
                 />
-            <TextView
-                android:id="@+id/textview_cha_dtvmanualtuning_modulation_val"
-                android:layout_width="100dp"
-                android:layout_height="27dp"
-                android:gravity="center"
-                android:text="@string/str_cha_dtvmanualtuning_modulation_64qam"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                />
-        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_cha_dtvmanualtuning_modulation_val"
+            android:layout_width="100dp"
+            android:layout_height="27dp"
+            android:gravity="center"
+            android:text="@string/str_cha_dtvmanualtuning_modulation_64qam"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
     <!-- For Symbol Rate -->
     <LinearLayout
             android:id="@+id/linearlayout_cha_dtvmanualtuning_symbol"

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="413dip"
-    android:layout_height="510dip"
+    android:layout_height="400dip"
     android:layout_gravity="center" >
 
     <LinearLayout
         android:layout_width="413dip"
-        android:layout_height="510dip"
+        android:layout_height="400dip"
         android:background="@drawable/set_bg"
         android:orientation="vertical" >
 
@@ -22,36 +22,35 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:paddingLeft="0dip"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="4dp"
                 android:textColor="#fff0f0f0"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <ImageView
-                android:layout_width="413dip"
-                android:layout_height="2dp"
-                android:layout_marginTop="10dip"
-                android:background="@drawable/osd_line_3_bar" >
-            </ImageView>
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/line" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/net_update_info"
             android:layout_width="fill_parent"
-            android:layout_height="170dip"
+            android:layout_height="136dip"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dip"
+            android:layout_marginTop="5dip"
             android:paddingLeft="0dip"
             android:layout_marginLeft="5dp"
             android:paddingRight="7dip"
-            android:paddingTop="15dip"
+            android:paddingTop="8dip"
             android:singleLine="false"
             android:textColor="#ffffffff"
-            android:textSize="20sp" >
+            android:textSize="16sp" >
         </TextView>
 
         <LinearLayout
             android:layout_width="413dip"
-            android:layout_height="170dip"
+            android:layout_height="136dip"
             android:layout_marginLeft="0dip"
             android:layout_marginTop="8dip" >
 
@@ -63,7 +62,7 @@
             android:layout_width="413dip"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="10dip"
+            android:paddingTop="5dip"
             android:visibility="invisible" >
 
             <TextView
@@ -72,19 +71,19 @@
                 android:paddingLeft="0dip"
                 android:text="@string/progress"
                 android:textColor="#fff0f0f0"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/current_progress"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#fff0f0f0"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="413dip"
-            android:layout_height="20dip"
+            android:layout_height="16dip"
             android:layout_marginLeft="0dip" >
 
 
@@ -93,7 +92,7 @@
                 android:id="@+id/progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="373dip"
-                android:layout_height="20dip"
+                android:layout_height="16dip"
                 android:layout_marginLeft="0dip"
                 android:background="@drawable/pro_frame_bg"
                 android:max="100"
@@ -103,20 +102,20 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="413dip"
-            android:layout_height="2dp"
-            android:background="@drawable/osd_line_3_bar" >
-        </ImageView>
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/line" />
 
         <Button
             android:id="@+id/immediate"
             android:layout_width="99dip"
-            android:layout_height="43dip"
+            android:layout_height="34dip"
             android:layout_gravity="center"
             android:layout_marginBottom="3dip"
             android:background="@drawable/channel_tuning_confirm"
             android:textColor="#fff0f0f0"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <!-- <include layout="@layout/bottom_back" /> -->
     </LinearLayout>

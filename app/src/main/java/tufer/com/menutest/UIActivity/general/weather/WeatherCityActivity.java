@@ -35,7 +35,7 @@ public class WeatherCityActivity extends Activity {
         setContentView(R.layout.mainmenu_general_weather);
         initView();
         weather_city_name.setText(mWeather.getCity()+getString(R.string.str_mainmenu_general_weather));
-        careful.setText(mWeather.getGanmao()+","+weatherInfoList.get(0).getNotice());
+        careful.setText(mWeather.getGanmao()+"."+weatherInfoList.get(0).getNotice());
         careful.setSelected(true);
         this.mLinearLayout = new LinearLayout(this);
         Object localObject = new LinearLayout.LayoutParams(-1, -1);
@@ -60,7 +60,7 @@ public class WeatherCityActivity extends Activity {
             localTextView3= (TextView) localLinearLayout.getChildAt(3);
             int condIcon = mWeather.CondIcon(weatherInfo.getType(), WeatherCityActivity.this);
             localImageView.setImageResource(condIcon);
-            localTextView1.setText((Calendar.getInstance().get(Calendar.MONTH) + 1)+getString(R.string.month)+weatherInfo.getDate());
+            localTextView1.setText(getMonth(i)+getString(R.string.month)+weatherInfo.getDate());
             String L_tmp = weatherInfo.getLow();
             String H_tmp = weatherInfo.getHigh();
             Pattern p = Pattern.compile("\\d+");
@@ -74,6 +74,32 @@ public class WeatherCityActivity extends Activity {
             i ++;
         }
         weatherScrollView.addView(mLinearLayout);
+    }
+
+    private int getMonth(int i) {
+        switch (Calendar.getInstance().get(Calendar.MONTH) + 1){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                if(Calendar.getInstance().get(Calendar.DATE)+i>31){
+                    return Calendar.getInstance().get(Calendar.MONTH) + 2;
+                }
+                break;
+            case 2:
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                if(Calendar.getInstance().get(Calendar.DATE)+i>30){
+                    return Calendar.getInstance().get(Calendar.MONTH) + 2;
+                }
+                break;
+        }
+        return Calendar.getInstance().get(Calendar.MONTH) + 1;
     }
 
     private void initView() {

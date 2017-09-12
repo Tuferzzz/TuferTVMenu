@@ -2,7 +2,7 @@
     android:id="@+id/upgrade_help"
     android:layout_width="413dip"
     android:layout_height="fill_parent"
-    android:layout_marginTop="5dip"
+    android:layout_marginTop="3dip"
     android:orientation="vertical"
     android:visibility="invisible" >
 

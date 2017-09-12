@@ -1292,7 +1292,7 @@
     <string name="str_audio_only">Audio program</string>
     <string name="str_data_only">Data program</string>
     <string name="str_common_video"></string>
-    <string name="str_unsupported">I won't support it</string>
+    <string name="str_unsupported">I wont support it</string>
     <string name="str_invalid_pmt">invalid PMT</string>
     <string name="str_no_signal">No signal</string>
     <!-- Factory Menu -->
@@ -1820,7 +1820,7 @@
 		to determine your approximate location</string>
 
         <!-- date time setting -->
-	<string name="date_time_auto">Set Date And Time Automatically From The Internet
+	<string name="date_time_auto">Gain time through the network
 	</string>
         <string name="date">Date</string>
         <string name="time">Time</string>
@@ -1829,7 +1829,7 @@
         <string name="choose_date_format">Date Format</string>
         <string name="default_date_format">MM/dd/yyyy</string>
         <string name="year">year</string>
-        <string name="month">month</string>
+        <string name="month">月</string>
         <string name="day">day</string>
         <string name="hour">hour</string>
         <string name="minute">minute</string>
@@ -1849,7 +1849,7 @@
         <!-- about -->
         <string name="model_number">models</string>
         <string name="system_version">System Version</string>
-        <string name="memory_infor">Memory Information (used / total)</string>
+        <string name="memory_infor">Memory InFo(used/total)</string>
         <string name="disk_infor">disk capacity (used / total)</string>
         <string name="legal_infor">legal information</string>
 
@@ -2737,7 +2737,7 @@
     <string name="device_display_image">"Current Screensaver"</string>
     <string name="device_daydreams_none">"nothing"</string>
     <string name="err_not_enough_storage_for_cache">Your device Cache partition does not have enough storage space. Restart the device, free memory, or insert enough memory to operate after SDCard.</string>
-    <string name="err_not_enough_storage_for_sdcard">Your device 'SDCard' does not have enough storage space. Please release enough memory before operating.</string>
+    <string name="err_not_enough_storage_for_sdcard">Your device "SDCard" does not have enough storage space. Please release enough memory before operating.</string>
     <string name="err_not_enough_storage">Your device does not have enough storage space. Please ensure sufficient memory before proceeding.</string>
     <string name="upgrade_help_title">Upgrade operation help：</string>
     <string name="upgrade_help_1">1.Click the "download now", and the new software starts downloading. When the download is complete, click "upgrade now" and the device starts upgrading。</string>
@@ -2812,4 +2812,209 @@
     <string name="rename_null">The modification name cannot be empty, and the modification failed！</string>
     <string name="str_only_usermode_available">Available only in user mode!</string>
     <string name="str_function_not_open">This function has not been opened yet!</string>
+
+    <!-- Philippines area code list -->
+    <string name="str_ewbs_ph_root_menu">Wide area zone</string>
+    <string name="str_ewbs_ph_nw_luzon">Luzon</string>
+    <string name="str_ewbs_ph_nw_visayas">Visaysa</string>
+    <string name="str_ewbs_ph_nw_mindanao">Mindanao</string>
+    <string name="str_ewbs_ph_region_ncr">National Capital Region (NCR)</string>
+    <string name="str_ewbs_ph_region_car">Cordillera Administrative Region (CAR)</string>
+    <string name="str_ewbs_ph_region_region_1">Ilocos Region (Region 1)</string>
+    <string name="str_ewbs_ph_region_region_2">Cagayan Valley (Region 2)</string>
+    <string name="str_ewbs_ph_region_region_3">Central Luzon (Region 3)</string>
+    <string name="str_ewbs_ph_region_region_4a">CALABARZON (Region 4-A)</string>
+    <string name="str_ewbs_ph_region_region_4b">MIMAROPA (Region 4-B)</string>
+    <string name="str_ewbs_ph_region_region_5">Bicol Region (Region 5)</string>
+    <string name="str_ewbs_ph_region_region_6">Western Visayas (Region 6)</string>
+    <string name="str_ewbs_ph_region_region_7">Central Visayas (Region 7)</string>
+    <string name="str_ewbs_ph_region_region_8">Eastern Visayas (Region 8)</string>
+    <string name="str_ewbs_ph_region_region_9">Zamboanga Peninsula (Region 9)</string>
+    <string name="str_ewbs_ph_region_region_10">Northern Mindanao (Region 10)</string>
+    <string name="str_ewbs_ph_region_region_11">Davao Region (Region 11)</string>
+    <string name="str_ewbs_ph_region_region_12">SOCCSKSARGEN (Region 12)</string>
+    <string name="str_ewbs_ph_region_region_13">CARAGA (Region 13)</string>
+    <string name="str_ewbs_ph_region_armm">Autonomous Region in Muslim Mindanao (ARMM)</string>
+    <!-- National Capital Region (NCR) -->
+    <string name="str_ewbs_ph_city_caloocan">Caloocan</string>
+    <string name="str_ewbs_ph_city_laspinas">Las Pinas</string>
+    <string name="str_ewbs_ph_city_makati">Makati</string>
+    <string name="str_ewbs_ph_city_malabon">Malabon</string>
+    <string name="str_ewbs_ph_city_mandaluyong">Mandaluyong</string>
+    <string name="str_ewbs_ph_city_manila">Manila</string>
+    <string name="str_ewbs_ph_city_marikina">Marikina</string>
+    <string name="str_ewbs_ph_city_muntinlupa">Muntinlupa</string>
+    <string name="str_ewbs_ph_city_navotas">Navotas</string>
+    <string name="str_ewbs_ph_city_paranaque">Paranaque</string>
+    <string name="str_ewbs_ph_city_pasay">Pasay</string>
+    <string name="str_ewbs_ph_city_pasig">Pasig</string>
+    <string name="str_ewbs_ph_city_pateros">Pateros</string>
+    <string name="str_ewbs_ph_city_quezoncity">Quezon City</string>
+    <string name="str_ewbs_ph_city_sanjuan">San Juan</string>
+    <string name="str_ewbs_ph_city_taguig">Taguig</string>
+    <string name="str_ewbs_ph_city_valenzuela">Valenzuela</string>
+    <!-- Cordillera Administrative Region (CAR) -->
+    <string name="str_ewbs_ph_city_abra">Abra</string>
+    <string name="str_ewbs_ph_city_apayao">Apayao</string>
+    <string name="str_ewbs_ph_city_baguio">Baguio</string>
+    <string name="str_ewbs_ph_city_benguet">Benguet</string>
+    <string name="str_ewbs_ph_city_ifugao">Ifugao</string>
+    <string name="str_ewbs_ph_city_kalinga">Kalinga</string>
+    <string name="str_ewbs_ph_city_mtprovince">Mt. Province</string>
+    <!-- Ilocos Region (Region 1) -->
+    <string name="str_ewbs_ph_city_ilocosnorte">Ilocos Norte</string>
+    <string name="str_ewbs_ph_city_ilocossur">Ilocos Sur</string>
+    <string name="str_ewbs_ph_city_launion">La Union</string>
+    <string name="str_ewbs_ph_city_pagasinan">Pagasinan</string>
+    <!-- Cagayan Valley (Region 2) -->
+    <string name="str_ewbs_ph_city_batanes">Batanes</string>
+    <string name="str_ewbs_ph_city_cagayan">Cagayan</string>
+    <string name="str_ewbs_ph_city_isabela">Isabela</string>
+    <string name="str_ewbs_ph_city_nuevavizcaya">Nueva Vizcaya</string>
+    <string name="str_ewbs_ph_city_quirino">Quirino</string>
+    <string name="str_ewbs_ph_city_santiago">Santiago</string>
+    <!-- Central Luzon (Region 3) -->
+    <string name="str_ewbs_ph_city_angeles">Angeles</string>
+    <string name="str_ewbs_ph_city_aurora">Aurora</string>
+    <string name="str_ewbs_ph_city_bataan">Bataan</string>
+    <string name="str_ewbs_ph_city_bulacan">Bulacan</string>
+    <string name="str_ewbs_ph_city_nuevaecija">Nueva Ecija</string>
+    <string name="str_ewbs_ph_city_olongapo">Olongapo</string>
+    <string name="str_ewbs_ph_city_pampanga">Pampanga</string>
+    <string name="str_ewbs_ph_city_tarlac">Tarlac</string>
+    <string name="str_ewbs_ph_city_zambales">Zambales</string>
+    <!-- CALABARZON (Region 4-A) -->
+    <string name="str_ewbs_ph_city_batangas">Batangas</string>
+    <string name="str_ewbs_ph_city_cavite">Cavite</string>
+    <string name="str_ewbs_ph_city_laguna">Laguna</string>
+    <string name="str_ewbs_ph_city_lucena">Lucena</string>
+    <string name="str_ewbs_ph_city_quezon">Quezon</string>
+    <string name="str_ewbs_ph_city_rizal">Rizal</string>
+    <!-- MIMAROPA (Region 4-B) -->
+    <string name="str_ewbs_ph_city_marinduque">Marinduque</string>
+    <string name="str_ewbs_ph_city_occidentalmindoro">Occidental Mindoro</string>
+    <string name="str_ewbs_ph_city_orientalmindoro">Oriental Mindoro</string>
+    <string name="str_ewbs_ph_city_palawan">Palawan</string>
+    <string name="str_ewbs_ph_city_puertoprincesa">Puerto Princesa</string>
+    <string name="str_ewbs_ph_city_romblon">Romblon</string>
+    <!-- Bicol Region (Region 5) -->
+    <string name="str_ewbs_ph_city_albay">Albay</string>
+    <string name="str_ewbs_ph_city_camarinessur">Camarines Sur</string>
+    <string name="str_ewbs_ph_city_camarinesnorte">Camarines Norte</string>
+    <string name="str_ewbs_ph_city_catanduanes">Catanduanes</string>
+    <string name="str_ewbs_ph_city_masbata">Masbata</string>
+    <string name="str_ewbs_ph_city_naga">Naga</string>
+    <string name="str_ewbs_ph_city_sorsogon">Sorsogon</string>
+    <!-- Western Visayas (Region 6) -->
+    <string name="str_ewbs_ph_city_aklan">Aklan</string>
+    <string name="str_ewbs_ph_city_antique">Antique</string>
+    <string name="str_ewbs_ph_city_bacolod">Bacolod</string>
+    <string name="str_ewbs_ph_city_capiz">Capiz</string>
+    <string name="str_ewbs_ph_city_guimaras">Guimaras</string>
+    <string name="str_ewbs_ph_city_iloilo">Iloilo</string>
+    <string name="str_ewbs_ph_city_iloilocity">Iloilo City</string>
+    <string name="str_ewbs_ph_city_negrosoccidental">Negros Occidental</string>
+    <!-- Central Visayas (Region 7) -->
+    <string name="str_ewbs_ph_city_bohol">Bohol</string>
+    <string name="str_ewbs_ph_city_cebu">Cebu</string>
+    <string name="str_ewbs_ph_city_cebucity">Cebu City</string>
+    <string name="str_ewbs_ph_city_lapulapu">Lapu Lapu</string>
+    <string name="str_ewbs_ph_city_negrosoriental">Negros Oriental</string>
+    <string name="str_ewbs_ph_city_siquijor">Siquijor</string>
+    <!-- Eastern Visayas (Region 8) -->
+    <string name="str_ewbs_ph_city_biliran">Biliran</string>
+    <string name="str_ewbs_ph_city_easternsamar">Eastern Samar</string>
+    <string name="str_ewbs_ph_city_leyte">Leyte</string>
+    <string name="str_ewbs_ph_city_northernsamar">Northern Samar</string>
+    <string name="str_ewbs_ph_city_ormoc">Ormoc</string>
+    <string name="str_ewbs_ph_city_samar">Samar</string>
+    <string name="str_ewbs_ph_city_southernleyte">Southern Leyte</string>
+    <string name="str_ewbs_ph_city_tacloban">Tacloban</string>
+    <!-- Zamboanga Peninsula (Region 9) -->
+    <string name="str_ewbs_ph_city_isabelacity">Isabela City</string>
+    <string name="str_ewbs_ph_city_zamboangacity">Zamboanga City</string>
+    <string name="str_ewbs_ph_city_zamboangadelnorte">Zamboanga del Norte</string>
+    <string name="str_ewbs_ph_city_zamboangadelsur">Zamboanga del Sur</string>
+    <string name="str_ewbs_ph_city_zamboangasibugay">Zamboanga Sibugay</string>
+    <!-- Northern Mindanao (Region 10) -->
+    <string name="str_ewbs_ph_city_bukidnon">Bukidnon</string>
+    <string name="str_ewbs_ph_city_cagayandeoro">Cagayan de Oro</string>
+    <string name="str_ewbs_ph_city_camiguin">Camiguin</string>
+    <string name="str_ewbs_ph_city_iligan">Iligan</string>
+    <string name="str_ewbs_ph_city_lanaodelnorte">Lanao del Norte</string>
+    <string name="str_ewbs_ph_city_misamisoccidental">Misamis Occidental</string>
+    <string name="str_ewbs_ph_city_misamisoriental">Misamis Oriental</string>
+    <!-- Davao Region (Region 11) -->
+    <string name="str_ewbs_ph_city_compostelavalley">Compostela Valley</string>
+    <string name="str_ewbs_ph_city_davaocity">Davao City</string>
+    <string name="str_ewbs_ph_city_davaodelnorte">Davao del Norte</string>
+    <string name="str_ewbs_ph_city_davaodelsur">Davao del Sur</string>
+    <string name="str_ewbs_ph_city_davaooriental">Davao Oriental</string>
+    <!-- SOCCSKSARGEN (Region 12) -->
+    <string name="str_ewbs_ph_city_cotabato">Cotabato</string>
+    <string name="str_ewbs_ph_city_cotabatocity">Cotabato City</string>
+    <string name="str_ewbs_ph_city_generalsantos">General Santos</string>
+    <string name="str_ewbs_ph_city_saranggani">Saranggani</string>
+    <string name="str_ewbs_ph_city_southcotabato">South Cotabato</string>
+    <string name="str_ewbs_ph_city_sultankudarat">Sultan Kudarat</string>
+    <!-- CARAGA (Region 13) -->
+    <string name="str_ewbs_ph_city_agusandelnorte">Agusan del Norte</string>
+    <string name="str_ewbs_ph_city_agusandelsur">Agusan del Sur</string>
+    <string name="str_ewbs_ph_city_butuan">Butuan</string>
+    <string name="str_ewbs_ph_city_dinagatislands">Dinagat Islands</string>
+    <string name="str_ewbs_ph_city_surigaodelnorte">Surigao del Norte</string>
+    <string name="str_ewbs_ph_city_surigaodelsur">Surigao del Sur</string>
+    <!-- Autonomous Region in Muslim Mindanao (ARMM) -->
+    <string name="str_ewbs_ph_city_basilan">Basilan</string>
+    <string name="str_ewbs_ph_city_lanaodelsur">Lanao del Sur</string>
+    <string name="str_ewbs_ph_city_maguindanao">Maguindanao</string>
+    <string name="str_ewbs_ph_city_sulu">Sulu</string>
+    <string name="str_ewbs_ph_city_tawitawi">Tawi-Tawi</string>
+    <!-- Emergency Warning Broadcast System (EWBS) -->
+    <string name="str_ewbs_area_code">Area Code</string>
+    <string name="str_ewbs_area_code_digit">Digit</string>
+    <string name="str_ewbs_area_code_name">Name</string>
+    <string name="str_ewbs_area_code_undefined">Undefined</string>
+    <string name="str_ewbs_auto_startup_screen">Automatic Startup Screen</string>
+    <string name="str_ewbs_title_type_zone">Wide Area Zone</string>
+    <string name="str_ewbs_title_type_region">Region</string>
+    <string name="str_ewbs_title_type_city">City</string>
+    <string-array name="str_arr_ewbs_auto_startup_screen_val">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string name="str_cha_epg">EPG</string>
+    <string name="str_cha_subcode">Subcode</string>
+    <string name="str_cha_emergencyInfo">Emergency Information</string>
+
+    <!-- EWS  -->
+    <string name="str_ews_status_awas">STATUS AWAS</string>
+    <string name="str_ews_status_siaga">STATUS SIAGA</string>
+    <string name="str_ews_status_waspada">STATUS WASPADA</string>
+    <string name="str_ews_code">Bencana :</string>
+    <string name="str_ews_event_date">Tanggal :</string>
+    <string name="str_ews_position">Posisi :</string>
+    <string name="str_ews_characteristic">Karakter :</string>
+    <string name="str_ews_message">Pesan :</string>
+    <string name="str_ews_main_menu_location_code">Location code</string>
+    <string name="str_ews_location_code">Location code:</string>
+    <string name="str_ews_location_code_save">Save</string>
+    <string name="str_ews_location_code_cancel">Cancel</string>
+    <!-- TTS -->
+    <string name="str_channel_return">Channel return</string>
+    <string name="str_freeze">Freeze on</string>
+    <string name="str_unfreeze">Freeze off</string>
+    <!-- Mulit Window -->
+    <string name="str_resource_conflict_title">Resource conflict</string>
+    <string name="str_resource_conflict_msg">TV Player is crashed, do you like to restart it?</string>
+
+    <!-- For Standby Scan -->
+    <string name="str_cha_active_standby_scan">Active Standby Mode</string>
+    <string-array name="str_arr_active_standby_scan_option">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="kernelVersion">Kernel Version</string>
+    <string name="buildVersion">Build Number</string>
 </resources>

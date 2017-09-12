@@ -10,15 +10,15 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:background">@drawable/mainmenu_background</item>
         <item name="android:layout_width">700.0dip</item>
-        <item name="android:layout_height">465.0dip</item>
+        <item name="android:layout_height">530.0dip</item>
     </style>
     <style name="mainmenu_buttons_layout">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">163.0dip</item>
         <item name="android:layout_height">446.0dip</item>
-        <item name="android:layout_marginLeft">11.0dip</item>
-        <item name="android:layout_marginTop">11.0dip</item>
+        <item name="android:layout_marginLeft">1.0dip</item>
+        <item name="android:layout_marginTop">42.0dip</item>
     </style>
     <style name="first_normal_button">
         <item name="android:textSize">26.0sp</item>
@@ -27,16 +27,17 @@
 
         <item name="android:background">@drawable/mainmenu_button_focus_state</item>
 
-
-        <item name="android:layout_width">160.0dip</item>
-        <item name="android:layout_height">54.0dip</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_width">154.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
     </style>
     <style name="mainmenu_viewflipper_style">
         <item name="android:persistentDrawingCache">animation</item>
         <item name="android:layout_width">515.0dip</item>
         <item name="android:layout_height">444.0dip</item>
         <item name="android:layout_marginLeft">1.0dip</item>
-        <item name="android:layout_marginTop">11.0dip</item>
+        <item name="android:layout_marginTop">42.0dip</item>
         <item name="android:layout_marginRight">11.0dip</item>
         <item name="android:flipInterval">1000</item>
     </style>
@@ -53,7 +54,7 @@
         <item name="android:layout_height">336dp</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:background">@drawable/picture_mode_img_bg</item>
+        <item name="android:background">@drawable/set_bg</item>
     </style>
     <!-- combo button -->
     <style name="time_sty_combo_btn">
@@ -267,7 +268,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">500.0dip</item>
         <item name="android:layout_height">46.0dip</item>
-        <item name="android:layout_marginTop">7.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
     </style>
     <style name="third_layout1_scrollview_style">
         <item name="android:layout_gravity">center</item>
@@ -470,7 +471,7 @@
     <style name="third_main_layout2_style1">
         <item name="android:layout_gravity">center</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:background">@drawable/set_bg</item>
         <item name="android:layout_width">350.0dip</item>
         <item name="android:layout_height">121.0dip</item>
     </style>
@@ -480,7 +481,7 @@
         <item name="android:layout_width">336.0dip</item>
         <item name="android:layout_height">46.0dip</item>
         <item name="android:layout_marginLeft">1.0dip</item>
-        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
     </style>
 
     <style name="third_layout2_scrollview_style">
@@ -729,7 +730,7 @@
     </style>
     <!-- dialog -->
     <style name="Dialog" parent="android:style/Theme.Dialog">
-        <item name="android:windowBackground">@drawable/picture_mode_img_bg</item>
+        <!--<item name="android:windowBackground">@drawable/picture_mode_img_bg</item>-->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>

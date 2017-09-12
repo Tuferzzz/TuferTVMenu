@@ -278,6 +278,15 @@ public class AppDetailInfoActivity extends Activity {
     }
 
     @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_ENTER ) {
+            showWind();
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT || keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
             return true;
@@ -287,17 +296,14 @@ public class AppDetailInfoActivity extends Activity {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
-            dropDown();
-        } else if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
-            dropUp();
+        switch (keyCode){
+            case KeyEvent.KEYCODE_DPAD_DOWN:
+                dropDown();
+                break;
+            case KeyEvent.KEYCODE_DPAD_UP:
+                dropUp();
+                break;
         }
-
-        if (keyCode == KeyEvent.KEYCODE_ENTER) {
-            Log.d(TAG, "onKeyUp");
-            showWind();
-        }
-
         return super.onKeyUp(keyCode, event);
     }
 
@@ -480,6 +486,7 @@ public class AppDetailInfoActivity extends Activity {
 
     class PackageMoveObserver extends IPackageMoveObserver.Stub {
 
+    
         @Override
         public void packageMoved(String packageName, int returnCode) throws RemoteException {
             mMoveFlag = false;

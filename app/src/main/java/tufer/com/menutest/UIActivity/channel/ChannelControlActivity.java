@@ -93,8 +93,12 @@ import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
+import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import com.mstar.android.tv.TvPvrManager;
 import com.mstar.android.tv.TvCommonManager;
@@ -113,7 +117,7 @@ import tufer.com.menutest.UIActivity.MstarBaseActivity;
 import tufer.com.menutest.UIActivity.SwitchPageHelper;
 import tufer.com.menutest.Util.TvIntent;
 import tufer.com.menutest.Util.Utility;
-
+import tufer.com.menutest.UIActivity.pvr.PVRActivity;
 
 public class ChannelControlActivity extends MstarBaseActivity {
 
@@ -207,12 +211,13 @@ public class ChannelControlActivity extends MstarBaseActivity {
 
     private ArrayList<ProgramInfo> mProgramNumbers = new ArrayList<ProgramInfo>();
 
-    private final static int[] mNumberResIds = { R.drawable.popup_img_number_0,
-            R.drawable.popup_img_number_1, R.drawable.popup_img_number_2,
-            R.drawable.popup_img_number_3, R.drawable.popup_img_number_4,
-            R.drawable.popup_img_number_5, R.drawable.popup_img_number_6,
-            R.drawable.popup_img_number_7, R.drawable.popup_img_number_8,
-            R.drawable.popup_img_number_9 };
+    private final static int[] mNumberResIds = {
+            R.drawable.popup_img_number_0, R.drawable.popup_img_number_1,
+            R.drawable.popup_img_number_2, R.drawable.popup_img_number_3,
+            R.drawable.popup_img_number_4, R.drawable.popup_img_number_5,
+            R.drawable.popup_img_number_6, R.drawable.popup_img_number_7,
+            R.drawable.popup_img_number_8, R.drawable.popup_img_number_9
+    };
 
     private Handler finishHandler = new Handler();
 
@@ -231,93 +236,91 @@ public class ChannelControlActivity extends MstarBaseActivity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             switch (msg.what) {
-            case DIRECT_TUNE_MESSAGE:
-                if (isProgramExist()) {
-                    if (mInputSource == TvCommonManager.INPUT_SOURCE_ATV) {
-                        if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
-                            doProgramSelForAtscSystem(mChannelNumberInput,
-                                    mChannelNumberMinorNum);
-                        } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
-                            if (mIsDotExist) {
-                                mTvCommonManager
-                                        .setInputSource(TvCommonManager.INPUT_SOURCE_DTV);
-                                mInputSource = TvCommonManager.INPUT_SOURCE_DTV;
-                                mTvChannelManager.selectProgram(
-                                        mChannelNumberInput,
-                                        TvChannelManager.SERVICE_TYPE_DTV);
+                case DIRECT_TUNE_MESSAGE:
+                    if (isProgramExist()) {
+                        if (mInputSource == TvCommonManager.INPUT_SOURCE_ATV) {
+                            if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
+                                doProgramSelForAtscSystem(mChannelNumberInput,
+                                        mChannelNumberMinorNum);
+                            } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
+                                if (mIsDotExist) {
+                                    mTvCommonManager
+                                            .setInputSource(TvCommonManager.INPUT_SOURCE_DTV);
+                                    mInputSource = TvCommonManager.INPUT_SOURCE_DTV;
+                                    mTvChannelManager.selectProgram(mChannelNumberInput,
+                                            TvChannelManager.SERVICE_TYPE_DTV);
+                                } else {
+                                    mTvChannelManager.selectProgram(
+                                            (Utility.getATVRealChNum(mChannelNumberInput)),
+                                            TvChannelManager.SERVICE_TYPE_ATV);
+                                }
                             } else {
                                 mTvChannelManager.selectProgram(
-                                        (Utility.getATVRealChNum(mChannelNumberInput)),
+                                        Utility.getATVRealChNum(mChannelNumberInput),
                                         TvChannelManager.SERVICE_TYPE_ATV);
                             }
-                        } else {
-                            mTvChannelManager.selectProgram(
-                                    Utility.getATVRealChNum(mChannelNumberInput),
-                                    TvChannelManager.SERVICE_TYPE_ATV);
-                        }
-                    } else if (mInputSource == TvCommonManager.INPUT_SOURCE_DTV) {
-                        if (true == Utility.isForegroundRecording() || (true == TvPvrManager.getInstance().isPlaybacking())) {
-                            Utility.channelSelect(ChannelControlActivity.this,mChannelNumberInput);
-                        }
-                        if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
-                            doProgramSelForAtscSystem(mChannelNumberInput,
-                                    mChannelNumberMinorNum);
-                        } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
-                            if ((!mIsDotExist)
-                                && (true == Utility.isSupportATV())) {
-                                mTvCommonManager
-                                        .setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
-                                mInputSource = TvCommonManager.INPUT_SOURCE_ATV;
-                                mTvChannelManager.selectProgram(
-                                        (Utility.getATVRealChNum(mChannelNumberInput)),
-                                        TvChannelManager.SERVICE_TYPE_ATV);
+                        } else if (mInputSource == TvCommonManager.INPUT_SOURCE_DTV) {
+                            if (true == Utility.isForegroundRecording()
+                                    || (true == TvPvrManager.getInstance().isPlaybacking())) {
+                                Utility.channelSelect(ChannelControlActivity.this,
+                                        mChannelNumberInput);
+                            }
+                            if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
+                                doProgramSelForAtscSystem(mChannelNumberInput,
+                                        mChannelNumberMinorNum);
+                            } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
+                                if ((!mIsDotExist) && (true == Utility.isSupportATV())) {
+                                    mTvCommonManager
+                                            .setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
+                                    mInputSource = TvCommonManager.INPUT_SOURCE_ATV;
+                                    mTvChannelManager.selectProgram(
+                                            (Utility.getATVRealChNum(mChannelNumberInput)),
+                                            TvChannelManager.SERVICE_TYPE_ATV);
+                                } else {
+                                    mTvChannelManager.selectProgram(mChannelNumberInput,
+                                            TvChannelManager.SERVICE_TYPE_DTV);
+                                }
                             } else {
-                                mTvChannelManager.selectProgram(
-                                        mChannelNumberInput,
+                                mTvChannelManager.selectProgram(mChannelNumberInput,
                                         TvChannelManager.SERVICE_TYPE_DTV);
                             }
-                        } else {
-                            mTvChannelManager.selectProgram(
-                                    mChannelNumberInput,
-                                    TvChannelManager.SERVICE_TYPE_DTV);
                         }
-                    }
-                } else {
-                    // if Channel is not exit, Try Scan this RF
-                    if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
-                        int RFNum = 0;
-                        if (mTvIsdbChannelManager.getAntennaType() == TvIsdbChannelManager.DTV_ANTENNA_TYPE_AIR) {
-                            RFNum = (mChannelNumberInput & HIGH_BYTE_16BIT) >> 8;
-                        } else {
-                            RFNum = mChannelNumberInput;
-                        }
+                    } else {
                         // if Channel is not exit, Try Scan this RF
-                        mCurRFScanNumber = RFNum;
-                        if (mIsDotExist) {
-                            dtvDirectTune(RFNum);
-                        } else {
-                            atvDirectTune(RFNum);
-                        }
-                    } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
-                        if (true == mTvAtscChannelManager.isRFNumberValid(mChannelNumberInput)) {
-                            dtvDirectTune(mChannelNumberInput);
-                            break;
+                        if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
+                            int RFNum = 0;
+                            if (mTvIsdbChannelManager.getAntennaType() == TvIsdbChannelManager.DTV_ANTENNA_TYPE_AIR) {
+                                RFNum = (mChannelNumberInput & HIGH_BYTE_16BIT) >> 8;
+                            } else {
+                                RFNum = mChannelNumberInput;
+                            }
+                            // if Channel is not exit, Try Scan this RF
+                            mCurRFScanNumber = RFNum;
+                            if (mIsDotExist) {
+                                dtvDirectTune(RFNum);
+                            } else {
+                                atvDirectTune(RFNum);
+                            }
+                        } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
+                            if (true == mTvAtscChannelManager.isRFNumberValid(mChannelNumberInput)) {
+                                dtvDirectTune(mChannelNumberInput);
+                                break;
+                            }
                         }
                     }
-                }
-                mChannelNumberInput = 0;
-                mInputDigitMajor = 0;
-                mInputDigitMinor = 0;
-                mInputKeySlash = false;
-                mChannelNumberMinorNum = 0;
+                    mChannelNumberInput = 0;
+                    mInputDigitMajor = 0;
+                    mInputDigitMinor = 0;
+                    mInputKeySlash = false;
+                    mChannelNumberMinorNum = 0;
 
-                if (mTvChannelManager.getTuningStatus() == TvChannelManager.TUNING_STATUS_NONE) {
-                    Intent intent = new Intent(TvIntent.ACTION_SOURCEINFO);
-                    intent.putExtra("info_key", true);
-                    mThisContext.startActivity(intent);
-                    finish();
-                }
-                break;
+                    if (mTvChannelManager.getTuningStatus() == TvChannelManager.TUNING_STATUS_NONE) {
+                        Intent intent = new Intent(TvIntent.ACTION_SOURCEINFO);
+                        intent.putExtra("info_key", true);
+                        mThisContext.startActivity(intent);
+                        finish();
+                    }
+                    break;
             }
         }
     };
@@ -354,8 +357,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
         if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
             mPreChannelNumber = mTvChannelManager.getCurrentChannelNumber();
             if (TvCommonManager.INPUT_SOURCE_ATV != mTvCommonManager.getCurrentTvInputSource()) {
-                mTvCommonManager
-                        .setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
+                mTvCommonManager.setInputSource(TvCommonManager.INPUT_SOURCE_ATV);
                 mInputSource = TvCommonManager.INPUT_SOURCE_ATV;
             }
             // FIXME ATSC/ISDB are using the same API
@@ -432,8 +434,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
         mChannelNum.setVisibility(View.GONE);
 
         mInputSource = mTvCommonManager.getCurrentTvInputSource();
-        int channel_key = getIntent()
-                .getIntExtra("KeyCode", KeyEvent.KEYCODE_1);
+        int channel_key = getIntent().getIntExtra("KeyCode", KeyEvent.KEYCODE_1);
         getProgList();
         if (mTvSystem == TvCommonManager.TV_SYSTEM_ISDB) {
             if (mTvIsdbChannelManager.getAntennaType() == TvIsdbChannelManager.DTV_ANTENNA_TYPE_AIR) {
@@ -465,20 +466,16 @@ public class ChannelControlActivity extends MstarBaseActivity {
         super.onResume();
         mDtvPlayerEventListener = new DtvEventListener();
         mAtvPlayerEventListener = new AtvPlayerEventListener();
-        mTvChannelManager
-                .registerOnDtvPlayerEventListener(mDtvPlayerEventListener);
-        mTvChannelManager
-                .registerOnAtvPlayerEventListener(mAtvPlayerEventListener);
+        mTvChannelManager.registerOnDtvPlayerEventListener(mDtvPlayerEventListener);
+        mTvChannelManager.registerOnAtvPlayerEventListener(mAtvPlayerEventListener);
     }
 
     @Override
     protected void onPause() {
         mHandler.removeMessages(DIRECT_TUNE_MESSAGE);
         stopTvDirectTune();
-        mTvChannelManager
-                .unregisterOnDtvPlayerEventListener(mDtvPlayerEventListener);
-        mTvChannelManager
-                .unregisterOnAtvPlayerEventListener(mAtvPlayerEventListener);
+        mTvChannelManager.unregisterOnDtvPlayerEventListener(mDtvPlayerEventListener);
+        mTvChannelManager.unregisterOnAtvPlayerEventListener(mAtvPlayerEventListener);
         mDtvPlayerEventListener = null;
         mAtvPlayerEventListener = null;
         super.onPause();
@@ -556,8 +553,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
                         isdbTenKeyCode(keyCode);
                         return true;
                     }
-                }
-                else if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
+                } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
                     if (true == isBolckingInput()) {
                         break;
                     }
@@ -617,8 +613,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
         if (keyCode == MKeyEvent.KEYCODE_MSTAR_BALANCE) {
             mTvNumberIconDot.setVisibility(View.VISIBLE);
             mHandler.removeMessages(DIRECT_TUNE_MESSAGE);
-            mHandler.sendEmptyMessageDelayed(DIRECT_TUNE_MESSAGE,
-                    WAIT_EXPIRE_TIME);
+            mHandler.sendEmptyMessageDelayed(DIRECT_TUNE_MESSAGE, WAIT_EXPIRE_TIME);
             return true;
         }
         if (mInputKeySlash == true) {
@@ -735,10 +730,9 @@ public class ChannelControlActivity extends MstarBaseActivity {
             ArrayList<Integer> n = null;
 
             /*
-             * isdb ch num includes major num and minor num,
-             * ex. original ch no = 1281, transforms to hex = 0x501, 5 is major
-             * num and 1 is minor num;
-             * displayed ch no is 5.1
+             * isdb ch num includes major num and minor num, ex. original ch no
+             * = 1281, transforms to hex = 0x501, 5 is major num and 1 is minor
+             * num; displayed ch no is 5.1
              */
             if (mIsDotExist == false) {
                 mInputDigitMajor++;
@@ -746,13 +740,12 @@ public class ChannelControlActivity extends MstarBaseActivity {
                 mInputDigitMinor++;
             }
             /*
-             * Layout looks like this: Icon1 Icon2 dot Icon3 Icon4 Icon5
-             * If current input is first major num or first minor num,
-             * then update Icon2 for first major num or Icon3 for first minor
-             * num;
-             * if current input is second major num or second minor num,
-             * then update both Icon1 and Icon2 for major num or Icon4 for
-             * second minor num
+             * Layout looks like this: Icon1 Icon2 dot Icon3 Icon4 Icon5 If
+             * current input is first major num or first minor num, then update
+             * Icon2 for first major num or Icon3 for first minor num; if
+             * current input is second major num or second minor num, then
+             * update both Icon1 and Icon2 for major num or Icon4 for second
+             * minor num
              */
             if ((mInputDigitMajor == 1 && mIsDotExist == false)
                     || (mInputDigitMinor == 1 && mIsDotExist == true)) {
@@ -773,16 +766,14 @@ public class ChannelControlActivity extends MstarBaseActivity {
             } else if ((mInputDigitMajor == 2 && mIsDotExist == false)
                     || (mInputDigitMinor == 2 && mIsDotExist == true)) {
                 if (mIsDotExist == false) {
-                    mChannelNumberInput = mChannelNumberInput * 10
-                            + (inputNumber << 8);
+                    mChannelNumberInput = mChannelNumberInput * 10 + (inputNumber << 8);
                     n = getResoulseID(numberToPicture(mChannelNumberInput >> 8));
                     mTvNumberIcon1.setImageResource(n.get(0));
                     mTvNumberIcon1.setVisibility(View.VISIBLE);
                     mTvNumberIcon2.setImageResource(n.get(1));
                     mTvNumberIcon2.setVisibility(View.VISIBLE);
                 } else {
-                    mChannelNumberInput += (mChannelNumberInput & LOW_BYTE_16BIT)
-                            * 9 + inputNumber;
+                    mChannelNumberInput += (mChannelNumberInput & LOW_BYTE_16BIT) * 9 + inputNumber;
                     n = getResoulseID(numberToPicture(inputNumber));
                     mTvMinorNumberIcon2.setImageResource(n.get(0));
                     mTvMinorNumberIcon2.setVisibility(View.VISIBLE);
@@ -846,8 +837,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
 
         if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
             for (ProgramInfo pi : mProgramNumbers) {
-                if ((mChannelNumberInput == pi.majorNum)
-                        && (mChannelNumberMinorNum == pi.minorNum)) {
+                if ((mChannelNumberInput == pi.majorNum) && (mChannelNumberMinorNum == pi.minorNum)) {
                     programIsExist = true;
                     break;
                 }
@@ -864,15 +854,15 @@ public class ChannelControlActivity extends MstarBaseActivity {
                 }
 
                 /*
-                 * Special case, the behavior is same as pure SN's UI.
-                 * User case:
-                 *  1. Channel list contents the ATV channel: CH5
-                 *  2. Current input source is DTV and the channel is: 5-8 (DTV channel)
-                 *  3. User input: 5-20, "5-20" is not existed in channel list
-                 *  4. Check the major number 5 as the ATV channel, CH5 is existed
-                 *  5. isProgramExist() returns "TRUE", Direct Tuning will not be performed
-                 *  6. Do program selection to "5-20"
-                 *  7. SN tune to channel "5-8" (the channel is kept in DTV 5-8 not the ATV CH5)
+                 * Special case, the behavior is same as pure SN's UI. User
+                 * case: 1. Channel list contents the ATV channel: CH5 2.
+                 * Current input source is DTV and the channel is: 5-8 (DTV
+                 * channel) 3. User input: 5-20, "5-20" is not existed in
+                 * channel list 4. Check the major number 5 as the ATV channel,
+                 * CH5 is existed 5. isProgramExist() returns "TRUE", Direct
+                 * Tuning will not be performed 6. Do program selection to
+                 * "5-20" 7. SN tune to channel "5-8" (the channel is kept in
+                 * DTV 5-8 not the ATV CH5)
                  */
                 if ((mChannelNumberInput == pi.majorNum) && (0 == pi.minorNum)) {
                     programIsExist = true;
@@ -899,7 +889,8 @@ public class ChannelControlActivity extends MstarBaseActivity {
                         break;
                     }
                 } else {
-                    // check if DTV channell avaliable or the most close to the Major number one
+                    // check if DTV channell avaliable or the most close to the
+                    // Major number one
                     if (channelNumber == mChannelNumberInput) {
                         programIsExist = true;
                         break;
@@ -913,17 +904,15 @@ public class ChannelControlActivity extends MstarBaseActivity {
             }
             if (programIsExist == false) {
                 /*
-                 * For ISDB only!!
-                 * If the channel number(major and minor) is not existed, find the first matched major to do channel switching.
-                 * For example, the channel list is:
-                 *    channel 1: 11-1  (11: Major number , 1:Minor number)
-                 *    channel 2: 11-2  (11: Major number , 2:Minor number)
-                 *
-                 * User input:
-                 *    case 1: input 11-  -> switch to 11-1 (find first 11-x)
-                 *    case 2: input 11-5 -> switch to 11-1 (find first 11-x)
-                 *    case 3: input 11-2 -> switch to 11-2 (11-2 is existed)
-                 *    case 4: input 11-1 -> switch to 11-1 (11-1 is existed)
+                 * For ISDB only!! If the channel number(major and minor) is not
+                 * existed, find the first matched major to do channel
+                 * switching. For example, the channel list is: channel 1: 11-1
+                 * (11: Major number , 1:Minor number) channel 2: 11-2 (11:
+                 * Major number , 2:Minor number) User input: case 1: input 11-
+                 * -> switch to 11-1 (find first 11-x) case 2: input 11-5 ->
+                 * switch to 11-1 (find first 11-x) case 3: input 11-2 -> switch
+                 * to 11-2 (11-2 is existed) case 4: input 11-1 -> switch to
+                 * 11-1 (11-1 is existed)
                  */
                 if (isMajorSame == true) {
                     mChannelNumberInput = channelMajorSame;
@@ -933,9 +922,8 @@ public class ChannelControlActivity extends MstarBaseActivity {
         } else {
             /*
              * For internal TV model(China mainland), ATV channel number start
-             * from 0.
-             * And for external TV model, ATV channel number start from 1.
-             * Here, we do program exist check by checking input index number
+             * from 0. And for external TV model, ATV channel number start from
+             * 1. Here, we do program exist check by checking input index number
              * with program count size inside mProgramNumbers array list.
              */
             int curInputSrc = mTvCommonManager.getCurrentTvInputSource();
@@ -965,8 +953,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
 
         if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
             for (ProgramInfo pi : mProgramNumbers) {
-                if ((majorNumber == pi.majorNum)
-                        && (minorNumber == pi.minorNum)) {
+                if ((majorNumber == pi.majorNum) && (minorNumber == pi.minorNum)) {
                     isExist = true;
                     break;
                 }
@@ -978,14 +965,13 @@ public class ChannelControlActivity extends MstarBaseActivity {
     private void doProgramSelForAtscSystem(int majorNumber, int minorNumber) {
         if ((mInputDigitMinor == 0) && (mChannelNumberMinorNum == 0)) {
             /*
-             * For ONE-PART channel, the minor number is defined as 0xFFFF.
-             * In a case: MajorNum = 15, MinorNum = 65535(0xFFFF),
-             * channel number will be displayed as "15" in channellist menu.
-             * If user inputs "15" to tune to the channel,
-             * it needs to convert minor channel number to "0xFFFF" before doing channel switching.
+             * For ONE-PART channel, the minor number is defined as 0xFFFF. In a
+             * case: MajorNum = 15, MinorNum = 65535(0xFFFF), channel number
+             * will be displayed as "15" in channellist menu. If user inputs
+             * "15" to tune to the channel, it needs to convert minor channel
+             * number to "0xFFFF" before doing channel switching.
              */
-            if (isOnePartChannelExist(majorNumber,
-                    TvAtscChannelManager.ONEPARTCHANNEL_MINOR_NUM)) {
+            if (isOnePartChannelExist(majorNumber, TvAtscChannelManager.ONEPARTCHANNEL_MINOR_NUM)) {
                 minorNumber = TvAtscChannelManager.ONEPARTCHANNEL_MINOR_NUM;
             }
         }
@@ -1013,7 +999,7 @@ public class ChannelControlActivity extends MstarBaseActivity {
         Log.i(TAG, "[curScannedChannel]:" + extra.curScannedChannel);
 
         if ((mTvSystem != TvCommonManager.TV_SYSTEM_ISDB)
-            && (mTvSystem != TvCommonManager.TV_SYSTEM_ATSC)) {
+                && (mTvSystem != TvCommonManager.TV_SYSTEM_ATSC)) {
             return;
         }
 
@@ -1273,19 +1259,20 @@ public class ChannelControlActivity extends MstarBaseActivity {
         } else if (mTvSystem == TvCommonManager.TV_SYSTEM_ATSC) {
             if (mTvChannelManager.getTuningStatus() == TvChannelManager.TUNING_STATUS_DTV_MANUAL_TUNING) {
                 mTvChannelManager.stopDtvScan();
-                if ((INVALID_CHANNEL_NUM != mPreChannelNumber) && (INVALID_CHANNEL_NUM != mPreChannelNumberMinorNum)) {
+                if ((INVALID_CHANNEL_NUM != mPreChannelNumber)
+                        && (INVALID_CHANNEL_NUM != mPreChannelNumberMinorNum)) {
                     doProgramSelForAtscSystem(mPreChannelNumber, mPreChannelNumberMinorNum);
                 } else {
                     mTvChannelManager.changeToFirstService(
-                        TvChannelManager.FIRST_SERVICE_INPUT_TYPE_DTV,
-                        TvChannelManager.FIRST_SERVICE_DEFAULT);
+                            TvChannelManager.FIRST_SERVICE_INPUT_TYPE_DTV,
+                            TvChannelManager.FIRST_SERVICE_DEFAULT);
                 }
             }
             if (mTvChannelManager.getTuningStatus() == TvChannelManager.TUNING_STATUS_ATV_AUTO_TUNING) {
                 mTvChannelManager.stopAtvManualTuning();
                 mTvChannelManager.changeToFirstService(
-                    TvChannelManager.FIRST_SERVICE_INPUT_TYPE_ATV,
-                    TvChannelManager.FIRST_SERVICE_DEFAULT);
+                        TvChannelManager.FIRST_SERVICE_INPUT_TYPE_ATV,
+                        TvChannelManager.FIRST_SERVICE_DEFAULT);
             }
         }
     }

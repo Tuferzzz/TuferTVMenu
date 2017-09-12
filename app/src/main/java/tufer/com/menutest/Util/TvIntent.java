@@ -143,6 +143,10 @@ public class TvIntent {
 
     public static final String ACTION_PVR_BROWSER = "tufer.com.menutest.UIActivity.intent.action.PVR_BROWSER";//ok
 
+    public static final String ACTION_PVR_ENTER_FULL_BROWSER = "com.mstar.tv.tvplayer.ui.intent.action.PVR_ENTER_FULL_BROWSER";
+
+    public static final String ACTION_PVR_LEAVE_FULL_BROWSER = "com.mstar.tv.tvplayer.ui.intent.action.PVR_LEAVE_FULL_BROWSER";
+
     public static final String ACTION_SETUP_LOCATION_WIZARD = "com.mstar.tv.tvplayer.ui.intent.action.SETUP_LOCATION_WIZARD";
 
     public static final String ACTION_SETUP_LOCATION_WIZARD_DONE = "com.mstar.tv.tvplayer.ui.intent.action.SETUP_LOCATION_WIZARD_DONE";
@@ -152,4 +156,8 @@ public class TvIntent {
     public static final String ACTION_FORCE_REVEAL_PASSWORD_PROMPT = "com.mstar.tv.tvplayer.ui.intent.action.FORCE_REVEAL_PASSWORD_PROMPT";
 
     public static final String ACTION_INPUT_SOURCE_BLOCK = "com.mstar.tv.tvplayer.ui.intent.action.INPUT_SOURCE_LOCK";
+
+    public static final String ACTION_EWS_ACTIVITY = "com.mstar.tv.tvplayer.ui.intent.action.EWS_ACTIVITY";
+
+    public static final String ACTION_EWS_FINISH_ACTIVITY = "com.mstar.tv.tvplayer.ui.intent.action.EWS_FINISH_ACTIVITY";
 }

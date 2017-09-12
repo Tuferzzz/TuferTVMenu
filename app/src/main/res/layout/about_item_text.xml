@@ -6,8 +6,8 @@
     <TextView
         android:id="@+id/aboutItem"
         android:layout_width="wrap_content"
-        android:layout_height="53dip"
-        android:layout_marginLeft="40dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
         android:gravity="center_vertical"
         android:textColor="#CCCCCCCC"
         android:textSize="20sp" />
@@ -15,9 +15,9 @@
     <TextView
         android:id="@+id/content"
         android:layout_width="450dip"
-        android:layout_height="53dip"
+        android:layout_height="50dip"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="40dip"
+        android:layout_marginRight="20dip"
         android:ellipsize="marquee"
         android:gravity="center|right"
         android:marqueeRepeatLimit="marquee_forever"

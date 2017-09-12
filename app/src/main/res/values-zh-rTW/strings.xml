@@ -26,14 +26,14 @@
     <string name="source_changing">正在切換!</string>
     <string name="menu_cannot_use">本項目僅在電視通道下有效!</string>
     <string name="input_cannot_use">本項目僅在電視通道下有效!</string>
-    <string name="str_mainmenu_general">通用</string>
-    <string name="str_mainmenu_picture">圖像</string>
-    <string name="str_mainmenu_sound">聲道</string>
-    <string name="str_mainmenu_channel">頻道</string>
-    <string name="str_mainmenu_network">網絡</string>
-    <string name="str_mainmenu_intelligence">智能</string>
-    <string name="str_mainmenu_system">系統</string>
-    <string name="str_mainmenu_about">關於</string>
+    <string name="str_mainmenu_general">通    用</string>
+    <string name="str_mainmenu_picture">圖    像</string>
+    <string name="str_mainmenu_sound">聲    道</string>
+    <string name="str_mainmenu_channel">頻    道</string>
+    <string name="str_mainmenu_network">網    絡</string>
+    <string name="str_mainmenu_intelligence">智    能</string>
+    <string name="str_mainmenu_system">系    統</string>
+    <string name="str_mainmenu_about">關    於</string>
     <string name="str_mainmenu_content">image</string>
     <string name="str_mainmenu_no_text" />
     <string name="str_mainmenu_default_val0">0</string>
@@ -1832,4 +1832,7 @@
     <string name="rename_null">修改名不能為空，修改失敗！</string>
     <string name="str_only_usermode_available">只在用戶模式下可用!</string>
     <string name="str_function_not_open">該功能暫時未開放！</string>
+
+    <string name="kernelVersion">内核版本</string>
+    <string name="buildVersion">版本号</string>
 </resources>

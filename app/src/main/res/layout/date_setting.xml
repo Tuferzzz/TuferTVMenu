@@ -5,14 +5,6 @@
     android:minHeight="50dip"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/date_setting"
-        android:textColor="#FFFFFFFF"
-        android:textSize="24sp" />
-
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -22,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="80dip"
+            android:layout_marginLeft="50dip"
             android:text="@string/year"
             android:textColor="#FFFFFFFF"
             android:textSize="22sp" />
@@ -33,7 +25,7 @@
             android:layout_height="40dip"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="80dip"
+            android:layout_marginRight="50dip"
             android:background="@drawable/edit_text_large"
             android:gravity="center"
             android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
@@ -52,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="80dip"
+            android:layout_marginLeft="50dip"
             android:text="@string/month"
             android:textColor="#FFFFFFFF"
             android:textSize="22sp" />
@@ -63,7 +55,7 @@
             android:layout_height="40dip"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="80dip"
+            android:layout_marginRight="50dip"
             android:background="@drawable/edit_text_large"
             android:gravity="center"
             android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
@@ -82,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="80dip"
+            android:layout_marginLeft="50dip"
             android:text="@string/day"
             android:textColor="#FFFFFFFF"
             android:textSize="22sp" />
@@ -93,7 +85,7 @@
             android:layout_height="40dip"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="80dip"
+            android:layout_marginRight="50dip"
             android:background="@drawable/edit_text_large"
             android:gravity="center"
             android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
@@ -110,26 +102,26 @@
 
         <Button
             android:id="@+id/setting_date_ok"
-            android:layout_width="150dip"
+            android:layout_width="120dip"
             android:layout_height="70dip"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="80dip"
+            android:layout_marginLeft="50dip"
             android:background="@drawable/button_change"
             android:text="@string/setting"
             android:textColor="#FFFFFFFF"
-            android:textSize="28sp" />
+            android:textSize="22sp" />
 
         <Button
             android:id="@+id/cannel_date_setting"
-            android:layout_width="150dip"
-            android:layout_height="60dip"
+            android:layout_width="120dip"
+            android:layout_height="70dip"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="80dip"
+            android:layout_marginRight="50dip"
             android:background="@drawable/button_change"
             android:text="@string/cancle"
             android:textColor="#FFFFFFFF"
-            android:textSize="28sp" />
+            android:textSize="22sp" />
     </RelativeLayout>
 
 </LinearLayout>

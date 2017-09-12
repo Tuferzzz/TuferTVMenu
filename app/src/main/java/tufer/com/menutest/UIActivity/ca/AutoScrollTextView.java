@@ -1,5 +1,5 @@
 
-package com.mstar.tv.tvplayer.ui.ca;
+package tufer.com.menutest.UIActivity.ca;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -99,19 +99,12 @@ import com.mstar.android.tv.TvChannelManager;
 import com.mstar.android.tv.TvDvbChannelManager;
 import com.mstar.android.tv.TvChannelManager.DvbcScanParam;
 import com.mstar.android.tv.TvCountry;
-
 import tufer.com.menutest.R;
-import tufer.com.menutest.UIActivity.MstarBaseActivity;
 import tufer.com.menutest.UIActivity.component.ComboButton;
 import tufer.com.menutest.UIActivity.component.MyButton;
-import tufer.com.menutest.Util.Constant;
 import tufer.com.menutest.Util.TvIntent;
-//import com.mstar.tv.tvplayer.ui.R;
-//import com.mstar.tv.tvplayer.ui.component.ComboButton;
-//import com.mstar.tv.tvplayer.ui.component.MyButton;
-//import com.mstar.tv.tvplayer.ui.TvIntent;
-//import com.mstar.tvframework.MstarBaseActivity;
-//import com.mstar.util.Constant;
+import tufer.com.menutest.UIActivity.MstarBaseActivity;
+import tufer.com.menutest.Util.Constant;
 
 public class DTVAutoTuneOptionActivity extends MstarBaseActivity {
 

@@ -1,7 +1,7 @@
 //<MStar Software>
 //******************************************************************************
 // MStar Software
-// Copyright (c) 2010 - 2014 MStar Semiconductor, Inc. All rights reserved.
+// Copyright (c) 2010 - 2012 MStar Semiconductor, Inc. All rights reserved.
 // All software, firmware and related documentation herein ("MStar Software") are
 // intellectual property of MStar Semiconductor, Inc. ("MStar") and protected by
 // law, including, but not limited to, copyright law and international treaties.
@@ -76,108 +76,58 @@
 //******************************************************************************
 //<MStar Software>
 
-package tufer.com.menutest.Util;
+package tufer.com.menutest.UIActivity.about;
 
-public class TvEvent {
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
-    public static final int DTV_CHANNELNAME_READY = 0;
+import tufer.com.menutest.R;
 
-    public static final int ATV_AUTO_TUNING_SCAN_INFO = 1;
 
-    public static final int ATV_MANUAL_TUNING_SCAN_INFO = 2;
+public class AboutAdapter extends BaseAdapter {
 
-    public static final int DTV_AUTO_TUNING_SCAN_INFO = 3;
+    private Context context;
 
-    public static final int DTV_PROGRAM_INFO_READY = 4;
+    private String[] _items;
 
-    public static final int SIGNAL_LOCK = 5;
+    private String[] _content;
 
-    public static final int SIGNAL_UNLOCK = 6;
+    public AboutAdapter(Context context, String[] _items, String[] content) {
+        this.context = context;
+        this._items = _items;
+        this._content = content;
+    }
 
-    public static final int POPUP_DIALOG = 7;
+    @Override
+    public int getCount() {
+        return _items.length;
+    }
 
-    public static final int SCREEN_SAVER_MODE = 8;
+    @Override
+    public Object getItem(int position) {
+        return _items[position];
+    }
 
-    public static final int CI_LOAD_CREDENTIAL_FAIL = 9;
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
 
-    public static final int EPGTIMER_SIMULCAST = 10;
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater factory = LayoutInflater.from(context);
+        View v = null;
+        v = (View) factory.inflate(R.layout.about_item_text, null);
+        TextView title = (TextView) v.findViewById(R.id.aboutItem);
+        TextView content = (TextView) v.findViewById(R.id.content);
+        title.setText(_items[position]);
+        content.setText(_content[position]);
 
-    public static final int HBBTV_STATUS_MODE = 11;
-
-    public static final int MHEG5_STATUS_MODE = 12;
-
-    public static final int MHEG5_RETURN_KEY = 13;
-
-    public static final int OAD_HANDLER = 14;
-
-    public static final int OAD_DOWNLOAD = 15;
-
-    public static final int PVR_NOTIFY_PLAYBACK_TIME = 16;
-
-    public static final int PVR_NOTIFY_PLAYBACK_SPEED_CHANGE = 17;
-
-    public static final int PVR_NOTIFY_RECORD_TIME = 18;
-
-    public static final int PVR_NOTIFY_RECORD_SIZE = 19;
-
-    public static final int PVR_NOTIFY_RECORD_STOP = 20;
-
-    public static final int PVR_NOTIFY_PLAYBACK_STOP = 21;
-
-    public static final int PVR_NOTIFY_PLAYBACK_BEGIN = 22;
-
-    public static final int PVR_NOTIFY_TIMESHIFT_OVERWRITES_BEFORE = 23;
-
-    public static final int PVR_NOTIFY_TIMESHIFT_OVERWRITES_AFTER = 24;
-
-    public static final int PVR_NOTIFY_OVER_RUN = 25;
-
-    public static final int PVR_NOTIFY_USB_REMOVED = 26;
-
-    public static final int PVR_NOTIFY_CI_PLUS_PROTECTION = 27;
-
-    public static final int PVR_NOTIFY_PARENTAL_CONTROL = 28;
-
-    public static final int PVR_NOTIFY_ALWAYS_TIMESHIFT_PROGRAM_READY = 29;
-
-    public static final int PVR_NOTIFY_ALWAYS_TIMESHIFT_PROGRAM_NOTREADY = 30;
-
-    public static final int PVR_NOTIFY_CI_PLUS_RETENTION_LIMIT_UPDATE = 31;
-
-    public static final int DTV_AUTO_UPDATE_SCAN = 32;
-
-    public static final int TS_CHANGE = 33;
-
-    public static final int POPUP_SCAN_DIALOGE_LOSS_SIGNAL = 34;
-
-    public static final int POPUP_SCAN_DIALOGE_NEW_MULTIPLEX = 35;
-
-    public static final int POPUP_SCAN_DIALOGE_FREQUENCY_CHANGE = 36;
-
-    public static final int RCT_PRESENCE = 37;
-
-    public static final int CHANGE_TTX_STATUS = 38;
-
-    public static final int DTV_PRI_COMPONENT_MISSING = 39;
-
-    public static final int AUDIO_MODE_CHANGE = 40;
-
-    public static final int MHEG5_EVENT_HANDLER = 41;
-
-    public static final int OAD_TIMEOUT = 42;
-
-    public static final int GINGA_STATUS_MODE = 43;
-
-    public static final int HBBTV_UI_EVENT = 44;
-
-    public static final int ATV_PROGRAM_INFO_READY = 45;
-
-    public static final int CI_OP_REFRESH_QUERY = 46;
-
-    public static final int CI_OP_SERVICE_LIST = 47;
-
-    public static final int CI_OP_EXIT_SERVICE_LIST = 48;
-
-    public static final int SIGNAL_UNSTABLE = 49;
+        return v;
+    }
 
 }

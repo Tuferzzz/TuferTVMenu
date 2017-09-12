@@ -2,14 +2,14 @@
 <LinearLayout android:id="@+id/MainMenu" style="@style/mainmenu_layout_style"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:id="@+id/mainmenu_buttons" style="@style/mainmenu_buttons_layout">
-        <Button android:id="@+id/generalButton" android:text="@string/str_mainmenu_general" android:background="@drawable/mainmenu_button1_focus" style="@style/first_normal_button" />
-        <Button android:id="@+id/pictureButton" android:layout_marginTop="1.0dip" android:text="@string/str_mainmenu_picture" style="@style/first_normal_button" />
-        <Button android:id="@+id/soundButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_sound" style="@style/first_normal_button" />
-        <Button android:id="@+id/channelButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_channel" style="@style/first_normal_button" />
-        <Button android:id="@+id/networkButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_network" style="@style/first_normal_button" />
-        <Button android:id="@+id/intelligenceButton" android:layout_marginTop="1.0dip" android:text="@string/str_mainmenu_intelligence" style="@style/first_normal_button" />
-        <Button android:id="@+id/systemButton" android:layout_marginTop="2.0dip" android:text="@string/str_mainmenu_system" style="@style/first_normal_button" />
-        <Button android:id="@+id/aboutButton" android:layout_marginTop="1.0dip" android:text="@string/str_mainmenu_about" style="@style/first_normal_button" />
+        <Button android:id="@+id/generalButton" android:layout_marginTop="2dp" android:text="@string/str_mainmenu_general" android:background="@drawable/mainmenu_button1_focus" style="@style/first_normal_button" />
+        <Button android:id="@+id/pictureButton" android:layout_marginTop="5dp" android:text="@string/str_mainmenu_picture" style="@style/first_normal_button" />
+        <Button android:id="@+id/soundButton" android:layout_marginTop="7dp" android:text="@string/str_mainmenu_sound" style="@style/first_normal_button" />
+        <Button android:id="@+id/channelButton" android:layout_marginTop="6dp" android:text="@string/str_mainmenu_channel" style="@style/first_normal_button" />
+        <Button android:id="@+id/networkButton" android:layout_marginTop="7dp" android:text="@string/str_mainmenu_network" style="@style/first_normal_button" />
+        <Button android:id="@+id/intelligenceButton" android:layout_marginTop="8dp" android:text="@string/str_mainmenu_intelligence" style="@style/first_normal_button" />
+        <Button android:id="@+id/systemButton" android:layout_marginTop="7dp" android:text="@string/str_mainmenu_system" style="@style/first_normal_button" />
+        <Button android:id="@+id/aboutButton" android:layout_marginTop="8dp" android:text="@string/str_mainmenu_about" style="@style/first_normal_button" />
     </LinearLayout>
 
     <ViewFlipper

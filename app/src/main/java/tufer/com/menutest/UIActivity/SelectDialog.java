@@ -37,7 +37,6 @@ import tufer.com.menutest.R;
 import tufer.com.menutest.UIActivity.general.powerinput.GetTvSource;
 import tufer.com.menutest.UIActivity.general.powerinput.InputSourceItem;
 
-
 /**
  * Created by Administrator on 2017/8/4 0004.
  */
@@ -94,7 +93,7 @@ public class SelectDialog extends Activity {
         Display display = w.getWindowManager().getDefaultDisplay();
         display.getSize(point);
         int width = (int) (point.x * 0.3);
-        int height = (int) (point.y * 0.5);
+        int height = (int) (point.y * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();
@@ -509,14 +508,14 @@ public class SelectDialog extends Activity {
 
     public boolean getIdentifyDetectionStatus()
     {
-//        return Settings.Global.getInt(activity.getContentResolver(),
+//        return Settings.Global.getInt(getContentResolver(),
 //                        Settings.Global.ON_INTELLIGENT_IDENTIFICATION, 0) == 0;
-
         return true;
+
     }
     public void setIdentifyDetectionStatus(boolean param)
     {
-//        Settings.Global.putInt(activity.getContentResolver(),
+//        Settings.Global.putInt(getContentResolver(),
 //                Settings.Global.ON_INTELLIGENT_IDENTIFICATION, param?0:1) ;
 
 
@@ -586,14 +585,14 @@ public class SelectDialog extends Activity {
     }
     private boolean getNoSignalStandbyMode()
     {
-//        return Settings.Global.getInt(activity.getContentResolver(),
+//        return Settings.Global.getInt(getContentResolver(),
 //                Settings.Global.ON_SIGNAL_TV_STANBY, 0) == 0;
         return true;
     }
     private void setNoSignalStandbyMode(boolean b)
     {
-//        Settings.Global.putInt(activity.getContentResolver(),
-//                        Settings.Global.ON_SIGNAL_TV_STANBY, b?0:1) ;
+//        Settings.Global.putInt(getContentResolver(),
+//                       Settings.Global.ON_SIGNAL_TV_STANBY, b?0:1) ;
 
     }
     private void setPowerOnMusicMode(int paramInt)

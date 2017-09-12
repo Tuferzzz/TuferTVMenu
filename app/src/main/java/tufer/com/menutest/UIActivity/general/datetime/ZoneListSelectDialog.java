@@ -165,13 +165,13 @@ public class ZoneListSelectDialog extends Dialog {
         DisplayMetrics outMetrics = new DisplayMetrics();
         w.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
         Resources resources = mDateTimeSettingActivity.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-        w.setTitle("                                          "
+        w.setTitle("                                 "
                 + mDateTimeSettingActivity.getResources().getString(R.string.timezone_select));
 
-        int width = (int) (outMetrics.widthPixels * 0.5);
-        int height = (int) (outMetrics.heightPixels * 0.6);
+        int width = (int) (outMetrics.widthPixels * 0.4);
+        int height = (int) (outMetrics.heightPixels * 0.5);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();

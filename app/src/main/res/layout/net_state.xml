@@ -10,11 +10,11 @@
         android:id="@+id/connect_format_rl"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x40dp"
+            android:layout_height="@dimen/x32dp"
             android:layout_centerVertical="true"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/connect_format"
@@ -57,7 +57,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x20dp"
+        android:layout_marginTop="@dimen/x10dp"
         android:paddingLeft="@dimen/x30dp"
         android:text="@string/net_state"
         android:textColor="#CCCCCC"
@@ -65,14 +65,13 @@
 
     <LinearLayout
         android:id="@+id/net_state_layout"
-        android:layout_width="@dimen/x700dp"
-        android:layout_height="@dimen/x320dp"
+        android:layout_width="@dimen/x600dp"
+        android:layout_height="@dimen/x256dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/x20dp"
+        android:layout_marginTop="@dimen/x10dp"
         android:layout_marginLeft="30dp"
         android:gravity="left"
         android:padding="1dp"
-        android:background="@drawable/net_state_bg"
         android:orientation="vertical" >
 
         <TextView

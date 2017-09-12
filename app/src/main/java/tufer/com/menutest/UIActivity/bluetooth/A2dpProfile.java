@@ -16,10 +16,6 @@
 
 package tufer.com.menutest.UIActivity.bluetooth;
 
-import java.util.List;
-
-
-
 import android.bluetooth.BluetoothA2dp;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothClass;
@@ -29,6 +25,8 @@ import android.bluetooth.BluetoothUuid;
 import android.content.Context;
 import android.os.ParcelUuid;
 import android.util.Log;
+
+import java.util.List;
 
 import tufer.com.menutest.R;
 

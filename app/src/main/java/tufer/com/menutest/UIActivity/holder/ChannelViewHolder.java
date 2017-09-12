@@ -839,6 +839,7 @@ public class ChannelViewHolder {
                         linear_cha_softwareupdateoad.getChildAt(3).setVisibility(View.VISIBLE);
                         ChannelActivity.selectedstatusforChannel = 0x00000010;
                         focusedid = R.id.linearlayout_cha_software_update_oad;
+                        onKeyDown(KeyEvent.KEYCODE_DPAD_RIGHT, null);
                         break;
                     case R.id.linearlayout_cha_oadtime:
                         linear_cha_oadtime.getChildAt(0).setVisibility(View.VISIBLE);

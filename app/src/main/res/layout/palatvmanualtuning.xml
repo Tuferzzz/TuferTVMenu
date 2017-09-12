@@ -91,17 +91,25 @@
     <TextView
         android:id="@+id/textview_cha_palatvmanualtuning"
         android:layout_width="267dp"
-        android:layout_height="67dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:text="@string/str_cha_atvmanualtuning"
         android:textColor="#ffffff"
         android:textSize="13dp" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line" >
+    </ImageView>
+
     <!-- For Store Channel Number -->
     <LinearLayout
         android:id="@+id/linearlayout_cha_palatvmanualtuning_store_channelnum"
         style="@style/menu_vchip_sty_combo_btn"
-        android:visibility="visible" >
+        android:visibility="visible"
+        android:layout_marginTop="5dp">
 
         <ImageView style="@style/menu_vchip_sty_leftarrow" >
         </ImageView>

@@ -4,6 +4,7 @@
     <LinearLayout style="@style/third_layout2_title_style">
         <TextView android:id="@+id/title_textview" style="@style/third_layout_title_text_style" />
     </LinearLayout>
+    <LinearLayout android:layout_marginTop="2dp" style="@style/system_info_layout_segmentation_style" />
     <LinearLayout style="@style/third_layout2_items_style1">
         <LinearLayout style="@style/third_layout2_item_style" android:id="@+id/set_light">
             <TextView android:id="@+id/name" style="@style/third_layout2_text_style" />

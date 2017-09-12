@@ -44,7 +44,7 @@ public class weather implements Serializable{
 			R.drawable.zhongyu,R.drawable.zhongyuzhuandayu};
 
 
-	public  JSONObject myJson(String responseString) {
+	public  JSONObject myJson2(String responseString) {
 		if(responseString!=null){
 			try {
 				json = new JSONObject(responseString);
@@ -72,6 +72,50 @@ public class weather implements Serializable{
 							weatherInfo.setType(forecast.getString("type"));
 							weatherInfo.setFengxiang(forecast.getString("fx"));
 							weatherInfo.setNotice(forecast.getString("notice"));
+						}
+						WeatherInfoList.add(weatherInfo);
+					}
+				}else{
+					return null;
+				}
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return json;
+	}
+
+
+	public  JSONObject myJson1(String responseString) {
+		if(responseString!=null){
+			try {
+				json = new JSONObject(responseString);
+				String isdescok = json.getString("desc");
+				if(isdescok.equals("OK")){
+					if(WeatherInfoList.size()>0){
+						WeatherInfoList=new ArrayList<ForecastWeatherInfo>();
+					}
+					JSONObject reson =json.getJSONObject("data");
+					city=reson.getString("city");
+					tmp=reson.getString("wendu");
+					ganmao=reson.getString("ganmao");
+//					pm25=reson.getDouble("pm25");
+//					pm10=reson.getDouble("pm10");
+//					quality=reson.getString("quality");
+					JSONObject forecast;
+					for(int i=0;i<5;i++){
+						ForecastWeatherInfo weatherInfo=new ForecastWeatherInfo();
+						forecast= reson.getJSONArray("forecast").getJSONObject(i);
+						if(forecast .getString("high")!=null){
+							weatherInfo.setDate(forecast.getString("date"));
+							weatherInfo.setHigh(forecast.getString("high"));
+							String str=forecast.getString("fengli");
+							weatherInfo.setFengli(str.substring(9,str.length()-3));
+							weatherInfo.setLow(forecast.getString("low"));
+							weatherInfo.setType(forecast.getString("type"));
+							weatherInfo.setFengxiang(forecast.getString("fengxiang"));
+//							weatherInfo.setNotice(forecast.getString("notice"));
 						}
 						WeatherInfoList.add(weatherInfo);
 					}

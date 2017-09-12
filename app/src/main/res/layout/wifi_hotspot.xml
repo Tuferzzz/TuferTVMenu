@@ -10,12 +10,12 @@
         android:id="@+id/wifi_hotspot_switch"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:minHeight="@dimen/x40dp"
+        android:minHeight="@dimen/x32dp"
         android:orientation="horizontal" >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x40dp"
+            android:layout_height="@dimen/x32dp"
             android:layout_centerVertical="true"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/wifi_hotspot"
@@ -24,7 +24,7 @@
 
         <CheckBox
             android:id="@+id/wifi_hotspot_checkbox"
-            android:layout_width="@dimen/x120dp"
+            android:layout_width="@dimen/x96dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
@@ -35,10 +35,10 @@
 
     <TextView
         android:id="@+id/wifi_hotspot_info"
-        android:layout_width="@dimen/x700dp"
-        android:layout_height="@dimen/x60dp"
+        android:layout_width="@dimen/x600dp"
+        android:layout_height="@dimen/x48dp"
         android:layout_marginLeft="@dimen/x30dp"
-        android:layout_marginTop="@dimen/x5dp"
+        android:layout_marginTop="@dimen/x4dp"
         android:background="@drawable/net_state_bg"
         android:paddingLeft="@dimen/x10dp"
         android:textColor="#CCCCCC"
@@ -48,13 +48,13 @@
         android:id="@+id/wifi_ap_config_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10dp"
-        android:minHeight="@dimen/x40dp"
+        android:layout_marginTop="@dimen/x8dp"
+        android:minHeight="@dimen/x32dp"
         android:orientation="horizontal" >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x40dp"
+            android:layout_height="@dimen/x32dp"
             android:layout_centerVertical="true"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/config_wifi_hotspot"
@@ -63,11 +63,11 @@
 
         <Button
             android:id="@+id/wifi_hotspot_config"
-            android:layout_width="@dimen/x80dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x70dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/x70dp"
+            android:layout_marginRight="@dimen/x60dp"
             android:background="@drawable/edit_text"
             android:nextFocusDown="@+id/wifi_hotspot_ssid"
             android:nextFocusUp="@+id/wifi_hotspot_checkbox"
@@ -80,13 +80,13 @@
         android:id="@+id/wifi_hotspot_config_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x10dp"
+        android:layout_marginTop="@dimen/x8dp"
         android:orientation="vertical"
         android:visibility="gone" >
 
         <RelativeLayout
-            android:layout_width="@dimen/x430dp"
-            android:layout_height="@dimen/x40dp"
+            android:layout_width="@dimen/x360dp"
+            android:layout_height="@dimen/x32dp"
             android:orientation="horizontal" >
 
             <TextView
@@ -100,8 +100,8 @@
 
             <EditText
                 android:id="@+id/wifi_hotspot_ssid"
-                android:layout_width="@dimen/x230dp"
-                android:layout_height="@dimen/x30dp"
+                android:layout_width="@dimen/x190dp"
+                android:layout_height="@dimen/x24dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="@dimen/x10dp"
@@ -117,10 +117,10 @@
 
         <RelativeLayout
             android:id="@+id/wifiap_secure_root"
-            android:layout_width="@dimen/x430dp"
-            android:layout_height="@dimen/x40dp"
-            android:layout_marginTop="@dimen/x10dp"
-            android:minHeight="@dimen/x40dp"
+            android:layout_width="@dimen/x360dp"
+            android:layout_height="@dimen/x32dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:minHeight="@dimen/x32dp"
             android:orientation="horizontal" >
 
             <TextView
@@ -134,12 +134,12 @@
 
             <RelativeLayout
                 android:id="@+id/wifi_hotspot_secure_ly"
-                android:layout_width="@dimen/x230dp"
-                android:layout_height="@dimen/x40dp"
+                android:layout_width="@dimen/x190dp"
+                android:layout_height="@dimen/x32dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/x10dp"
-                android:minHeight="@dimen/x40dp"
+                android:layout_marginRight="@dimen/x8dp"
+                android:minHeight="@dimen/x32dp"
                 android:nextFocusDown="@+id/wifi_hotspot_pwd"
                 android:nextFocusUp="@+id/wifi_hotspot_ssid" >
 
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/x10dp"
+                    android:layout_marginLeft="@dimen/x8dp"
                     android:background="@drawable/desktop_right"
                     android:visibility="invisible" />
 
@@ -185,10 +185,10 @@
 
             <RelativeLayout
                 android:id="@+id/wifiap_password_rl"
-                android:layout_width="@dimen/x430dp"
-                android:layout_height="@dimen/x40dp"
-                android:layout_marginTop="@dimen/x10dp"
-                android:minHeight="@dimen/x40dp"
+                android:layout_width="@dimen/x360dp"
+                android:layout_height="@dimen/x32dp"
+                android:layout_marginTop="@dimen/x8dp"
+                android:minHeight="@dimen/x32dp"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -203,11 +203,11 @@
 
                 <EditText
                     android:id="@+id/wifi_hotspot_pwd"
-                    android:layout_width="@dimen/x230dp"
-                    android:layout_height="@dimen/x30dp"
+                    android:layout_width="@dimen/x190dp"
+                    android:layout_height="@dimen/x24dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/x10dp"
+                    android:layout_marginRight="@dimen/x8dp"
                     android:background="@drawable/edit_text_large"
                     android:gravity="center"
                     android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
@@ -221,9 +221,9 @@
 
             <RelativeLayout
                 android:id="@+id/wifiap_show_password_rl"
-                android:layout_width="@dimen/x430dp"
-                android:layout_height="@dimen/x40dp"
-                android:layout_marginTop="@dimen/x10dp"
+                android:layout_width="@dimen/x360dp"
+                android:layout_height="@dimen/x32dp"
+                android:layout_marginTop="@dimen/x8dp"
                 android:gravity="center_vertical"
                 android:minHeight="@dimen/x40dp" >
 
@@ -239,7 +239,7 @@
 
                 <CheckBox
                     android:id="@+id/hotspot_show_password"
-                    android:layout_width="@dimen/x100dp"
+                    android:layout_width="@dimen/x85dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
@@ -252,16 +252,16 @@
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/x10dp"
+            android:layout_marginTop="@dimen/x8dp"
             android:orientation="horizontal" >
 
             <Button
                 android:id="@+id/hotspot_save_btn"
-                android:layout_width="@dimen/x80dp"
-                android:layout_height="@dimen/x35dp"
+                android:layout_width="@dimen/x70dp"
+                android:layout_height="@dimen/x28dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="@dimen/x70dp"
-                android:layout_marginTop="@dimen/x5dp"
+                android:layout_marginTop="@dimen/x4dp"
                 android:background="@drawable/edit_text"
                 android:nextFocusUp="@+id/hotspot_show_password"
                 android:text="@string/save"

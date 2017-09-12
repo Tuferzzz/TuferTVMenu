@@ -81,7 +81,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mts_audio_info"
-    android:layout_width="280dp"
+    android:layout_width="300dp"
     android:layout_height="35dp"
     android:gravity="center" >
 

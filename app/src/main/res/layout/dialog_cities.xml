@@ -2,13 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/city_setting"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/line" >
+    </ImageView>
 
     <ListView
         android:id="@+id/cities_lv"
         android:layout_width="fill_parent"
-        android:layout_height="410dip"
-        android:layout_marginTop="60dip"
+        android:layout_height="240dip"
+        android:layout_marginTop="10dip"
         android:listSelector="@drawable/select_item"
         android:minHeight="50dip" >
     </ListView>

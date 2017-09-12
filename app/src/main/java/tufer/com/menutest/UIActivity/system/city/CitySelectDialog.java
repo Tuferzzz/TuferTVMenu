@@ -88,13 +88,12 @@ public class CitySelectDialog extends Dialog {
         Display display = w.getWindowManager().getDefaultDisplay();
 
         Resources resources = mCitySettingActivity.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-
         Point point = new Point();
         display.getSize(point);
-        int width = (int) (point.x * 0.4);
-        int height = (int) (point.y * 0.75);
+        int width = (int) (point.x * 0.3);
+        int height = (int) (point.y * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();

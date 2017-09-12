@@ -63,8 +63,6 @@ public class WeaterActivity extends Activity  {
             switch (msg.what){
                 case 0:
                     Toast.makeText(WeaterActivity.this,getString(R.string.get_weather_data_shibai),Toast.LENGTH_SHORT).show();
-                    //finish();
-                    //mWeather=null;
                     break;
                 case 1:
 
@@ -75,7 +73,6 @@ public class WeaterActivity extends Activity  {
                     break;
                 case 2:
                     Toast.makeText(WeaterActivity.this,getString(R.string.query_cityname_shibai),Toast.LENGTH_SHORT).show();
-                    //getWeather(city);
                     break;
             }
 
@@ -94,22 +91,8 @@ public class WeaterActivity extends Activity  {
             public void run() {
                 super.run();
                 allNetworkRequest();
-
-//                try {
-//                    Thread.sleep(500);
-//                    if(mWeather.getCity()!=null){
-//                        Tools.closeLoadingDialog();
-//                    }
-//
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
             }
         }.start();
-
-
-
-
     }
 
 
@@ -129,15 +112,31 @@ public class WeaterActivity extends Activity  {
         seeCityWeather= (Button) findViewById(R.id.see_detail_weather);
         queryCityWeather.requestFocus();
         queryCityWeather.requestFocusFromTouch();
+        queryCityWeather.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    queryCityWeather.setBackgroundResource(R.drawable.left_bg);
+                    seeCityWeather.setBackgroundResource(0);
+                }else{
+                    seeCityWeather.setBackgroundResource(R.drawable.left_bg);
+                    queryCityWeather.setBackgroundResource(0);
+                }
+            }
+        });
         queryCityWeather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                queryCityWeather.setBackgroundResource(R.drawable.left_bg);
+                seeCityWeather.setBackgroundResource(0);
                 inputTitleDialog();
             }
         });
         seeCityWeather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                seeCityWeather.setBackgroundResource(R.drawable.left_bg);
+                queryCityWeather.setBackgroundResource(0);
                 if(mWeather.getWeatherInfoList()!=null&&mWeather.getWeatherInfoList().size()>0){
                     Intent intent=new Intent(WeaterActivity.this,WeatherCityActivity.class);
 //                Bundle bundle=new Bundle();
@@ -148,10 +147,22 @@ public class WeaterActivity extends Activity  {
                 else{
                     Toast.makeText(WeaterActivity.this,getString(R.string.get_weather_data_shibai),Toast.LENGTH_SHORT).show();
                 }
-
+            }
+        });
+        seeCityWeather.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    seeCityWeather.setBackgroundResource(R.drawable.left_bg);
+                    queryCityWeather.setBackgroundResource(0);
+                }else{
+                    queryCityWeather.setBackgroundResource(R.drawable.left_bg);
+                    seeCityWeather.setBackgroundResource(0);
+                }
             }
         });
     }
+
     private void inputTitleDialog() {
 
         final EditText inputServer = new EditText(this);
@@ -229,7 +240,7 @@ public class WeaterActivity extends Activity  {
 
     private void getWeather(final String strCity) {
         httpUtils.send(HttpRequest.HttpMethod.GET,
-                url.weatherUrl+ strCity,
+                url.worldWeatherUrlw+ strCity,
                 new RequestCallBack<String>() {
                     @Override
                     public void onFailure(HttpException arg0, String arg1) {
@@ -240,33 +251,36 @@ public class WeaterActivity extends Activity  {
                     public void onSuccess(ResponseInfo<String> arg0) {
                         String result = arg0.result;
                         Log.d("yesuo","result___________"+result);
-                        JSONObject isgetweter = mWeather.myJson(result);
+                        JSONObject isgetweter = mWeather.myJson1(result);
                         isxztrue=false;
                         if(isgetweter!=null){
                             city=strCity;
                             setwehter();
                             handler.sendEmptyMessage(1);
-                            //Tools.closeLoadingDialog();
-
-
                         }else{
-                            handler.sendEmptyMessage(2);
-//                            httpUtils.send(HttpRequest.HttpMethod.GET,
-//                                    url.worldWeatherUrlz+ city,
-//                                    new RequestCallBack<String>() {
-//                                        @Override
-//                                        public void onFailure(HttpException arg0, String arg1) {
-//                                            //ToastUtils.showShort(WeaterActivity.this, "network error ! ");
-//                                            handler.sendEmptyMessage(2);
-//                                        }
-//                                        @Override
-//                                        public void onSuccess(ResponseInfo<String> arg0) {
-//                                            String result = arg0.result;
-//                                            mWeather.myJsonxz(result);
-//                                            isxztrue = true;
-//                                            setwehter();
-//                                        }
-//                                    });
+                            httpUtils.send(HttpRequest.HttpMethod.GET,
+                                    url.weatherUrl+ city,
+                                    new RequestCallBack<String>() {
+                                        @Override
+                                        public void onFailure(HttpException arg0, String arg1) {
+                                            //ToastUtils.showShort(WeaterActivity.this, "network error ! ");
+                                            handler.sendEmptyMessage(0);
+                                        }
+                                        @Override
+                                        public void onSuccess(ResponseInfo<String> arg0) {
+                                            String result = arg0.result;
+                                            Log.d("yesuo","result___________"+result);
+                                            JSONObject isgetweter = mWeather.myJson2(result);
+                                            isxztrue=false;
+                                            if(isgetweter!=null){
+                                                city=strCity;
+                                                setwehter();
+                                                handler.sendEmptyMessage(1);
+                                            }else {
+                                                handler.sendEmptyMessage(2);
+                                            }
+                                        }
+                                    });
                         }
                     }
                 });

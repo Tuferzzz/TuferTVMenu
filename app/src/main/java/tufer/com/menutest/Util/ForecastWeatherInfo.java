@@ -15,7 +15,7 @@ public class ForecastWeatherInfo implements Serializable{
     private String notice;
 
     public String getNotice() {
-        return notice;
+        return notice==null?"":notice;
     }
 
     public void setNotice(String notice) {

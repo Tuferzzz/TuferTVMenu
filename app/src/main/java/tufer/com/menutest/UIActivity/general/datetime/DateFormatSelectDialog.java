@@ -93,6 +93,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
@@ -140,18 +141,16 @@ public class DateFormatSelectDialog extends Dialog {
         setContentView(R.layout.date_format_list);
 
         Window w = getWindow();
-
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        w.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
         Resources resources = mDateTimeSettingActivity.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-        w.setTitle(mDateTimeSettingActivity.getResources().getString(R.string.choose_date_format));
+        w.setTitle("                     "
+                + mDateTimeSettingActivity.getResources().getString(R.string.choose_date_format));
 
-        Display display = w.getWindowManager().getDefaultDisplay();
-        Point point = new Point();
-        display.getSize(point);
-        int width = (int) (point.x * 0.5);
-        int height = (int) (point.y * 0.6);
-
+        int width = (int) (outMetrics.widthPixels * 0.3);
+        int height = (int) (outMetrics.heightPixels * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();
@@ -171,7 +170,7 @@ public class DateFormatSelectDialog extends Dialog {
         HashMap<String, Object> map1 = new HashMap<String, Object>();
         map1.put("txtItem", items[0]);
         if (mDateFormatIndex == 0) {
-            map1.put("imgItem", R.drawable.selected);
+            map1.put("imgItem", R.drawable.selected_language);
         } else {
             map1.put("imgItem", R.drawable.unselected);
         }
@@ -180,7 +179,7 @@ public class DateFormatSelectDialog extends Dialog {
         HashMap<String, Object> map2 = new HashMap<String, Object>();
         map2.put("txtItem", items[1]);
         if (mDateFormatIndex == 1) {
-            map2.put("imgItem", R.drawable.selected);
+            map2.put("imgItem", R.drawable.selected_language);
         } else {
             map2.put("imgItem", R.drawable.unselected);
         }
@@ -189,7 +188,7 @@ public class DateFormatSelectDialog extends Dialog {
         HashMap<String, Object> map3 = new HashMap<String, Object>();
         map3.put("txtItem", items[2]);
         if (mDateFormatIndex == 2) {
-            map3.put("imgItem", R.drawable.selected);
+            map3.put("imgItem", R.drawable.selected_language);
         } else {
             map3.put("imgItem", R.drawable.unselected);
         }
@@ -229,7 +228,7 @@ public class DateFormatSelectDialog extends Dialog {
         SimpleAdapter la = dateFormatAdapter;
         HashMap<String, Object> map = (HashMap<String, Object>) la.getItem(selectedItem);
         if (b) {
-            map.put("imgItem", R.drawable.selected);
+            map.put("imgItem", R.drawable.selected_language);
         } else {
             map.put("imgItem", R.drawable.unselected);
         }

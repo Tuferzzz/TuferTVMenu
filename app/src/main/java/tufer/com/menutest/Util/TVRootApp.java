@@ -78,6 +78,13 @@
 
 package tufer.com.menutest.Util;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Locale;
+
 import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -97,12 +104,6 @@ import com.mstar.android.tv.TvCommonManager;
 import com.mstar.android.tv.TvLanguage;
 import com.mstar.android.tv.TvTimerManager;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Locale;
 
 public class TVRootApp extends Application {
     private final static String TAG = "TVRootApp";

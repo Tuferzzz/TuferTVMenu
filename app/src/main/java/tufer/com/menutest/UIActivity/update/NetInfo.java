@@ -82,7 +82,7 @@ public class NetInfo {
 	}
 
 
-//	private String getEthernetMAC() {
+	//	private String getEthernetMAC() {
 //		 EthernetManager mEthernetManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
 //
 //		return  mEthernetManager.getMacAddress();
@@ -101,7 +101,7 @@ public class NetInfo {
 	}
 
 	private boolean getEthernetInfo() {
-		  //EthernetManager mEthernetManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
+		//EthernetManager mEthernetManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
 
 		mIpAddr = SystemProperties.get("dhcp.eth0.ipaddress");
 		mNetName = SystemProperties.get("dhcp.eth0.gateway");

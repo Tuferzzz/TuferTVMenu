@@ -84,7 +84,7 @@
     android:orientation="vertical"
     android:layout_width="285dp"
     android:layout_height="401dp"
-    android:background="@drawable/picture_mode_img_bg"
+    android:background="@drawable/set_bg"
     android:layout_gravity="center_horizontal"
     android:layout_marginTop="28dp" >
     <TextView
@@ -94,12 +94,22 @@
     android:gravity="center"
     android:text="@string/str_cha_channeltuning"
     android:textColor="#ffffff"
-    android:textSize="13dp" />
+    android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line" >
+    </ImageView>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="280dp"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
 
         <!-- For TV -->
         <LinearLayout

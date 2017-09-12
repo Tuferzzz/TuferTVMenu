@@ -7,7 +7,7 @@
     android:gravity="center">
     <LinearLayout style="@style/time_sty_menu">
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
@@ -15,15 +15,21 @@
                 android:text="@string/str_time_set_time_off_title"
                 android:layout_width="107dip"
                 android:layout_height="wrap_content"
-                android:textSize="13dip"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:textColor="#FFFFFF"></TextView>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/line" >
+            </ImageView>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="251dip"
-            android:layout_marginTop="15dip">
+            android:layout_marginTop="25dip">
             <!-- For Yes or No -->
             <LinearLayout
                 android:id="@+id/linearlayout_time_power_off_switch"

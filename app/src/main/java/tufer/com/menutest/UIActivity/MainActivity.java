@@ -55,6 +55,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.about.DeviceInfoSettings;
 import tufer.com.menutest.UIActivity.about.SystemInfoActivity;
 import tufer.com.menutest.UIActivity.about.SystemRestoreFactoryActivity;
 import tufer.com.menutest.UIActivity.bluetooth.BluetoothActivity;
@@ -1198,7 +1199,7 @@ public class MainActivity extends Activity  {
                 case 7:
                     switch (flag) {
                         case 0:
-                            intent=new Intent(MainActivity.this, SystemInfoActivity.class);
+                            intent=new Intent(MainActivity.this, DeviceInfoSettings.class);
                             startActivity(intent);
                             break;
                         case 1:

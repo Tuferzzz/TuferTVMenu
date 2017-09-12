@@ -4,13 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/one_px"
-    android:minHeight="60dip" >
+    android:minHeight="50dip" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dip"
         android:layout_centerVertical="true"
-        android:paddingLeft="60dip"
+        android:paddingLeft="30dip"
         android:text="@string/date"
         android:textColor="#CCCCCCCC"
         android:textSize="22sp" />
@@ -21,7 +21,7 @@
         android:layout_height="40dip"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="60dip"
+        android:layout_marginRight="30dip"
         android:background="@drawable/one_px"
         android:textColor="#CCCCCCCC"
         android:textSize="20sp" />

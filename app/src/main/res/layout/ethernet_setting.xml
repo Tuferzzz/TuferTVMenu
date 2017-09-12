@@ -12,12 +12,12 @@
         android:id="@+id/ethernet_dev_switch_rl"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/x40dp"
+        android:minHeight="@dimen/x32dp"
         android:orientation="horizontal" >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x35dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_centerVertical="true"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/ethernet_dev_switch"
@@ -26,7 +26,7 @@
 
         <CheckBox
             android:id="@+id/ethernet_dev_switch_checkbox"
-            android:layout_width="@dimen/x120dp"
+            android:layout_width="@dimen/x96dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
@@ -39,21 +39,21 @@
         android:id="@+id/ethernet_switch_rl"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="@dimen/x40dp"
+        android:minHeight="@dimen/x32dp"
         android:orientation="horizontal" >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/x35dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_centerVertical="true"
-            android:paddingLeft="@dimen/x30dp"
+            android:paddingLeft="@dimen/x15dp"
             android:text="@string/ethernet_switch"
             android:textColor="#CCCCCC"
             android:textSize="@dimen/sp22" />
 
         <CheckBox
             android:id="@+id/ethernet_switch_checkbox"
-            android:layout_width="@dimen/x120dp"
+            android:layout_width="@dimen/x96dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
@@ -72,21 +72,21 @@
             android:id="@+id/ethernet_auto_ip_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:minHeight="@dimen/x40dp"
+            android:minHeight="@dimen/x32dp"
             android:orientation="horizontal" >
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/x35dp"
+                android:layout_height="@dimen/x28dp"
                 android:layout_centerVertical="true"
-                android:paddingLeft="@dimen/x30dp"
+                android:paddingLeft="@dimen/x15dp"
                 android:text="@string/auto_ip"
                 android:textColor="#CCCCCC"
                 android:textSize="@dimen/sp22" />
 
             <CheckBox
                 android:id="@+id/ethernet_auto_ip"
-                android:layout_width="@dimen/x120dp"
+                android:layout_width="@dimen/x96dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -98,22 +98,22 @@
             android:id="@+id/ethernet_ipv6_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:minHeight="@dimen/x40dp"
+            android:minHeight="@dimen/x32dp"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/x35dp"
+                android:layout_height="@dimen/x28dp"
                 android:layout_centerVertical="true"
-                android:paddingLeft="@dimen/x30dp"
+                android:paddingLeft="@dimen/x15dp"
                 android:text="@string/ethernet_ipv6"
                 android:textColor="#CCCCCC"
                 android:textSize="@dimen/sp22" />
 
             <CheckBox
                 android:id="@+id/ethernet_ipv6"
-                android:layout_width="@dimen/x120dp"
+                android:layout_width="@dimen/x96dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -136,15 +136,15 @@
             android:id="@+id/save_cancel_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/x10dp"
+            android:layout_marginTop="@dimen/x8dp"
             android:gravity="center"
             android:orientation="horizontal" >
 
             <Button
                 android:id="@+id/ethernet_ip_save_btn"
-                android:layout_width="@dimen/x80dp"
-                android:layout_height="@dimen/x35dp"
-                android:layout_marginRight="@dimen/x200dp"
+                android:layout_width="@dimen/x70dp"
+                android:layout_height="@dimen/x28dp"
+                android:layout_marginRight="@dimen/x170dp"
                android:background="@drawable/edit_text" 
                 android:textColor="#ffffffff"
                 android:text="@string/save"
@@ -152,8 +152,8 @@
 
             <Button
                 android:id="@+id/ethernet_ip_cancel_btn"
-                android:layout_width="@dimen/x80dp"
-                android:layout_height="@dimen/x35dp"
+                android:layout_width="@dimen/x70dp"
+                android:layout_height="@dimen/x28dp"
                 android:background="@drawable/edit_text" 
                 android:textColor="#ffffffff"
                 android:text="@string/cancle"

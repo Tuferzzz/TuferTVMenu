@@ -83,7 +83,7 @@
     android:orientation="vertical"
     android:layout_width="285dp"
     android:layout_height="110dp"
-    android:background="@drawable/picture_mode_img_bg"
+    android:background="@drawable/set_bg"
     android:layout_gravity="center_horizontal"
     android:layout_marginTop="28dp" >
 
@@ -95,6 +95,13 @@
         android:text="@string/str_cha_oadscan"
         android:textColor="#ffffff"
         android:textSize="13dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line" >
+    </ImageView>
 
     <!-- For ProgressBar -->
     <LinearLayout
@@ -144,7 +151,7 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:max="100"
             android:progress="0"
-            android:layout_width="220dp"
+            android:layout_width="270dp"
             android:layout_height="5dp"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="7dp"

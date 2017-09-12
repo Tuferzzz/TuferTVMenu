@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/mainlinear_general_appmanager" android:background="@drawable/programme_img_info_bg" android:layout_width="500.0dip" android:layout_height="345.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/appTitleLinearLayout" android:layout_width="489.0dip" android:layout_height="47.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/appTitleLinearLayout" android:layout_width="489.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip">
             <TextView android:text="@string/str_mainmenu_general_appmanager" style="@style/third_layout_title_text_style" />
         </LinearLayout>
-        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="489.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="489.0dip" android:layout_height="35.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="3.0dip">
             <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/str_mainmenu_general_appmanager_name" />
             <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginLeft="112.0dip" android:text="@string/str_mainmenu_general_appmanager_version" />
             <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="112.0dip" android:text="@string/str_mainmenu_general_appmanager_size" />

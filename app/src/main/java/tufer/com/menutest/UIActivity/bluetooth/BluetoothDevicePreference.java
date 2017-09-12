@@ -16,10 +16,6 @@
 
 package tufer.com.menutest.UIActivity.bluetooth;
 
-import java.util.List;
-
-
-
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
@@ -35,6 +31,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnKeyListener;
+
+import java.util.List;
 
 import tufer.com.menutest.R;
 

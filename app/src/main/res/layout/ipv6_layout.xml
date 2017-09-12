@@ -11,11 +11,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
-            android:layout_width="@dimen/x200dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x170dp"
+            android:layout_height="@dimen/x28dp"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/ip_address"
             android:textColor="#CCCCCC"
@@ -23,8 +23,8 @@
 
         <EditText
             android:id="@+id/ethernet_v6_ip"
-            android:layout_width="@dimen/x300dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x260dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/x40dp"
             android:background="@drawable/edit_text_large"
@@ -40,11 +40,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
-            android:layout_width="@dimen/x200dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x170dp"
+            android:layout_height="@dimen/x28dp"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/ipv6_netmask"
             android:textColor="#CCCCCC"
@@ -52,8 +52,8 @@
 
         <EditText
             android:id="@+id/ethernet_v6_subnet"
-            android:layout_width="@dimen/x300dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x260dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/x40dp"
             android:background="@drawable/edit_text_large"
@@ -70,11 +70,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
-            android:layout_width="@dimen/x200dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x170dp"
+            android:layout_height="@dimen/x28dp"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/default_geteway"
             android:textColor="#CCCCCC"
@@ -82,8 +82,8 @@
 
         <EditText
             android:id="@+id/ethernet_v6_gateway"
-            android:layout_width="@dimen/x300dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x260dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/x40dp"
             android:background="@drawable/edit_text_large"
@@ -99,11 +99,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
-            android:layout_width="@dimen/x200dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x170dp"
+            android:layout_height="@dimen/x28dp"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/first_dns"
             android:textColor="#CCCCCC"
@@ -111,8 +111,8 @@
 
         <EditText
             android:id="@+id/ethernet_v6_first"
-            android:layout_width="@dimen/x300dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x260dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/x40dp"
             android:background="@drawable/edit_text_large"
@@ -128,11 +128,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="@dimen/x40dp" >
+        android:minHeight="@dimen/x32dp" >
 
         <TextView
-            android:layout_width="@dimen/x200dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x170dp"
+            android:layout_height="@dimen/x28dp"
             android:paddingLeft="@dimen/x30dp"
             android:text="@string/second_dns"
             android:textColor="#CCCCCC"
@@ -140,8 +140,8 @@
 
         <EditText
             android:id="@+id/ethernet_v6_second"
-            android:layout_width="@dimen/x300dp"
-            android:layout_height="@dimen/x35dp"
+            android:layout_width="@dimen/x260dp"
+            android:layout_height="@dimen/x28dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/x40dp"
             android:background="@drawable/edit_text_large"

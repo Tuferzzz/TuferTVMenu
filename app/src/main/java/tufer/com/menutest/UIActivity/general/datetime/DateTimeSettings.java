@@ -77,10 +77,10 @@
 //<MStar Software>
 
 package tufer.com.menutest.UIActivity.general.datetime;
-
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
+import java.text.SimpleDateFormat;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -96,10 +96,8 @@ import android.text.format.DateFormat;
 import android.text.format.Time;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 
 
 import com.mstar.android.MIntent;
@@ -109,7 +107,6 @@ import com.mstar.android.tvapi.factory.FactoryManager;
 import com.mstar.android.tvapi.common.exception.TvCommonException;
 
 import tufer.com.menutest.R;
-import tufer.com.menutest.UIActivity.MainActivity;
 
 public class DateTimeSettings extends Activity {
 
@@ -128,27 +125,29 @@ public class DateTimeSettings extends Activity {
     private boolean is24Hour;
 
     private TimerManager timerMgr = TvManager.getInstance().getTimerManager();
-		short[] readAddress1 = { 0x00 };
-	short[] readAddress2 = { 0x10 };
-	short[] readAddress3 = { 0x20 };
-	short[] readAddress4 = { 0x40 };
-	short[] readAddress5 = { 0x50 };
-	short[] readAddress6 = { 0x60 };
-	short[] buffer1={ 0 };
-	short[] buffer2={ 0 };
-	short[] buffer3={ 0 };
-	short[] buffer4={ 0 };
-	short[] buffer5={ 0 };
-	short[] buffer6={ 0 };
+	  
+	 static short[] readAddress1 = { 0x00 };
+	 static short[] readAddress2 = { 0x10 };
+	 static short[] readAddress3 = { 0x20 };
+	 static short[] readAddress4 = { 0x40 };
+	 static short[] readAddress5 = { 0x50 };
+	 static short[] readAddress6 = { 0x60 };
+	 static short[] buffer1={ 0 };
+	 static short[] buffer2={ 0 };
+	 static short[] buffer3={ 0 };
+	 static short[] buffer4={ 0 };
+	 static short[] buffer5={ 0 };
+	 static short[] buffer6={ 0 };
 
     private String dateFormat;
-	protected FactoryManager fm = TvManager.getInstance().getFactoryManager();
+	  
+	  private static FactoryManager fm;
 
     private Handler updateDateAndTimeHandler = new Handler() {
 
         public void handleMessage(android.os.Message msg) {
             super.handleMessage(msg);
-
+            
             Bundle data = msg.getData();
             dateFormat = data.getString("dateFormat");
             Settings.System
@@ -161,7 +160,7 @@ public class DateTimeSettings extends Activity {
 
         public void handleMessage(android.os.Message msg) {
             super.handleMessage(msg);
-
+            
             Bundle data = msg.getData();
             String year = data.getString("year");
             String month = data.getString("month");
@@ -174,7 +173,7 @@ public class DateTimeSettings extends Activity {
 
         public void handleMessage(android.os.Message msg) {
             super.handleMessage(msg);
-
+            
             Bundle data = msg.getData();
             String hour = data.getString("hour");
             String minute = data.getString("minute");
@@ -187,8 +186,9 @@ public class DateTimeSettings extends Activity {
         public void handleMessage(android.os.Message msg) {
             super.handleMessage(msg);
 
-            if (msg.what == 1) {
+            if (msg.what == 1) {                
                 updateTimeAndDateDisplay();
+                changeTimeZoneUpdataRTCTime();
             }
         }
     };
@@ -196,46 +196,33 @@ public class DateTimeSettings extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
         setContentView(R.layout.date_time_setting);
-
+        fm = TvManager.getInstance().getFactoryManager();
         findViews();
         registerListeners();
-        //DateTimeSettings.this.setFinishOnTouchOutside(true);
     }
-
-
-
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        // If we've received a touch notification that the user has touched
-//        // outside the app, finish the activity.
-//        if (MotionEvent.ACTION_OUTSIDE == event.getAction()) {
-//            finish();
-//            return true;
-//        }
-//
-//        // Delegate everything else to Activity.
-//        return super.onTouchEvent(event);
-//    }
+    
 
     private void findViews() {
         mDateTimeViewHolder = new DateTimeViewHolder(this);
         isAutoDateTime = getAutoState();
         Log.d(TAG, "isAutoDateTime, " + isAutoDateTime);
-        if (isAutoDateTime) {
-            mDateTimeViewHolder.mAutoTimeDateCheckBox.setChecked(true);
-        } else {
-            mDateTimeViewHolder.mAutoTimeDateCheckBox.setChecked(false);
-        }
+        mDateTimeViewHolder.mAutoTimeDateCheckBox.setChecked(isAutoDateTime);
+        //if (isAutoDateTime) {
+        //    mDateTimeViewHolder.mAutoTimeDateCheckBox.setChecked(true);
+        //} else {
+        //    mDateTimeViewHolder.mAutoTimeDateCheckBox.setChecked(false);
+        //}
 
         is24Hour = is24Hour();
         Log.d(TAG, "is24Hour, " + is24Hour);
-        if (is24Hour) {
-            mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(true);
-        } else {
-            mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(false);
-        }
+        mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(is24Hour);
+        //if (is24Hour) {
+        //    mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(true);
+       // } else {
+        //    mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(false);
+        //}
 
         updateTimeAndDateDisplay();
     }
@@ -318,13 +305,7 @@ public class DateTimeSettings extends Activity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT || keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
             return true;
-        }
-
-        return super.onKeyDown(keyCode, event);
-    }
-
-    @Override
-    public boolean onKeyUp(int keyCode, KeyEvent event) {
+		}
         if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
             dropDown();
         } else if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
@@ -336,20 +317,27 @@ public class DateTimeSettings extends Activity {
             showSettingDialog();
         }
 
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+
+
         return super.onKeyUp(keyCode, event);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
+        //Log.i("tianky", "<<<<-----------------onResume--------------->>>>>");
         IntentFilter timeFilter = new IntentFilter();
         timeFilter.addAction(Intent.ACTION_TIME_TICK);
         timeFilter.addAction(Intent.ACTION_TIME_CHANGED);
         timeFilter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
         registerReceiver(mTimeChangeReceiver, timeFilter, null, null);
     }
-
+   
     @Override
     protected void onPause() {
         super.onPause();
@@ -372,11 +360,7 @@ public class DateTimeSettings extends Activity {
     private void setTVTime(long millitime) {
         Time time = new Time();
         time.set(millitime);
-        
-        millitime -= (time.gmtoff*1000 - 8*3600*1000); //minus offset to timezone(+8)
-        time.set(millitime);
         time.month += 1;
-        Log.d(TAG, "setTVTime:" + time);
         try {
             timerMgr.setClkTime(time, true);
         } catch (TvCommonException e) {
@@ -385,96 +369,23 @@ public class DateTimeSettings extends Activity {
     }
 
     private void onDateSet(int year, int month, int day) {
-		int temp=0;
-        Calendar c = Calendar.getInstance();
-        Log.d(TAG, "getTimeInMillis, " + c.getTimeInMillis());
-	readAddress1[0] = 0x40;
-	 	readAddress2[0] =0x50;
-		readAddress3[0] = 0x60;
-		temp=(day/10)*16+(day%10);
-		buffer1[0]=(short) temp;
-		temp=((month+1)/10)*16+((month+1)%10);
-		buffer2[0]=(short) temp;
-		temp=((year%100)/10)*16+((year%100)%10);
-		buffer3[0]=(short) temp;
-		try {
-			fm.writeBytesToI2C(0x82, readAddress1, buffer1);
-			fm.writeBytesToI2C(0x82, readAddress2, buffer2);
-			fm.writeBytesToI2C(0x82, readAddress3, buffer3);
-		} catch (TvCommonException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-			try {
-				
-			buffer1 = fm.readBytesFromI2C(0x82, readAddress1, (short) 1);
-			buffer2 = fm.readBytesFromI2C(0x82, readAddress2, (short) 1);
-			buffer3 = fm.readBytesFromI2C(0x82, readAddress3, (short) 1);
+		     Calendar c = Calendar.getInstance();
+         int temp=0;
+		     temp=(day/10)*16+(day%10);
+		     buffer1[0]=(short) temp;
+		     temp=((month+1)/10)*16+((month+1)%10);
+		     buffer2[0]=(short) temp;
+		     temp=((year%100)/10)*16+((year%100)%10);
+		     buffer3[0]=(short) temp;
+		     try {
+			      fm.writeBytesToI2C(0x82, readAddress4, buffer1);
+			      fm.writeBytesToI2C(0x82, readAddress5, buffer2);
+			      fm.writeBytesToI2C(0x82, readAddress6, buffer3);
+		      } catch (TvCommonException e) {
+			   // TODO Auto-generated catch block
+			     e.printStackTrace();
+		     }
 
-			} catch (TvCommonException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		
-			
-			temp=(buffer1[0]/16)*10+(buffer1[0]%16);
-			System.out.println("DAY_OF_MONTH:"+temp);
-			
-			temp=(buffer2[0]/16)*10+(buffer2[0]%16)-1;
-			System.out.println("MONTH:"+temp);
-			
-			temp=(buffer3[0]/16)*10+(buffer3[0]%16)+2000;
-			System.out.println("YEAR:"+temp);
-
-
-			try {
-					readAddress1[0] = 0x80;
-	 				readAddress2[0] =0x90;
-					readAddress3[0] = 0xa0;
-						
-					buffer1 = fm.readBytesFromI2C(0x82, readAddress1, (short) 1);
-					buffer2 = fm.readBytesFromI2C(0x82, readAddress2, (short) 1);
-					buffer3 = fm.readBytesFromI2C(0x82, readAddress3, (short) 1);
-		
-					} catch (TvCommonException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				
-					
-					temp=(buffer1[0]/16)*10+(buffer1[0]%16);
-					System.out.println("on second:"+temp);
-					
-					temp=(buffer2[0]/16)*10+(buffer2[0]%16);
-					System.out.println("on minute:"+temp);
-					
-					temp=(buffer3[0]/16)*10+(buffer3[0]%16);
-					System.out.println("on hour:"+temp);
-
-
-				try {
-						readAddress1[0] = 0x00;
-						readAddress2[0] =0x10;
-						readAddress3[0] = 0x20;
-							
-						buffer1 = fm.readBytesFromI2C(0x82, readAddress1, (short) 1);
-						buffer2 = fm.readBytesFromI2C(0x82, readAddress2, (short) 1);
-						buffer3 = fm.readBytesFromI2C(0x82, readAddress3, (short) 1);
-			
-			 			} catch (TvCommonException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						
-						 	
-							temp=(buffer1[0]/16)*10+(buffer1[0]%16);
-							System.out.println("second:"+temp);
-							
-							temp=(buffer2[0]/16)*10+(buffer2[0]%16);
-							System.out.println("minute:"+temp);
-							
-							temp=(buffer3[0]/16)*10+(buffer3[0]%16);
-							System.out.println("hour:"+temp);
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH, month);
         c.set(Calendar.DAY_OF_MONTH, day);
@@ -482,50 +393,74 @@ public class DateTimeSettings extends Activity {
         long when = c.getTimeInMillis();
         if (when / 1000 < Integer.MAX_VALUE) {
             SystemClock.setCurrentTimeMillis(when);
+            setTVTime(when);
         }
         Log.d(TAG, "getTimeInMillis, " + c.getTimeInMillis());
 
-        setTVTime(when);
         updateTimeAndDateDisplay();
     }
 
     public void onTimeSet(int hourOfDay, int minute) {
-		int temp=0;
-        Calendar c = Calendar.getInstance();
-		
-		try {
-		readAddress1[0] =  0x70 ;
-		readAddress2[0] =  0xe0 ;
-		readAddress3[0] =  0xf0 ;
-		buffer1[0]=0;
-		buffer2[0]=0;
-		buffer3[0]= 0x20 ;
-		fm.writeBytesToI2C(0x82, readAddress1, buffer1);
-		fm.writeBytesToI2C(0x82, readAddress2, buffer2);
-		fm.writeBytesToI2C(0x82, readAddress3, buffer3);
-		
-		readAddress1[0] = 0x10;
-		readAddress2[0] =0x20;
-		temp=(minute/10)*16+(minute%10);
-		buffer1[0]=(short) temp;
-		temp=(hourOfDay/10)*16+(hourOfDay%10);
-		buffer2[0]=(short) temp;
-		fm.writeBytesToI2C(0x82, readAddress1, buffer1);
-		fm.writeBytesToI2C(0x82, readAddress2, buffer2);
-		} catch (TvCommonException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		    Calendar c = Calendar.getInstance();
+        
+        int temp=0;
+		    try {		
+		         temp=(minute/10)*16+(minute%10);
+		         buffer1[0]=(short) temp;
+		         temp=(hourOfDay/10)*16+(hourOfDay%10);
+		         buffer2[0]=(short) temp;
+		         fm.writeBytesToI2C(0x82, readAddress2, buffer1);
+		         fm.writeBytesToI2C(0x82, readAddress3, buffer2);
+		    } catch (TvCommonException e) {
+			  // TODO Auto-generated catch block
+			    e.printStackTrace();
+		    }
         c.set(Calendar.HOUR_OF_DAY, hourOfDay);
         c.set(Calendar.MINUTE, minute);
+        c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
 
         long when = c.getTimeInMillis();
         if (when / 1000 < Integer.MAX_VALUE) {
             SystemClock.setCurrentTimeMillis(when);
+            setTVTime(when);
         }
-
-        setTVTime(when);
         updateTimeAndDateDisplay();
+    }
+    
+    private void changeTimeZoneUpdataRTCTime() {
+    	  final Calendar time = Calendar.getInstance();
+    	  int temp=0;
+    	  
+    	  temp=(time.get(Calendar.SECOND)/10)*16+(time.get(Calendar.SECOND)%10);
+    	  buffer1[0]=(short) temp;
+    	  
+    	  temp=(time.get(Calendar.MINUTE)/10)*16+(time.get(Calendar.MINUTE)%10);
+    	  buffer2[0]=(short) temp;
+    	 
+    	  temp=(time.get(Calendar.HOUR_OF_DAY)/10)*16+(time.get(Calendar.HOUR_OF_DAY)%10);
+    	  buffer3[0]=(short) temp;
+    	  
+    	  temp=(time.get(Calendar.DAY_OF_MONTH)/10)*16+(time.get(Calendar.DAY_OF_MONTH)%10);
+    	  buffer4[0]=(short) temp;
+    	 
+    	  temp=((time.get(Calendar.MONTH)+1)/10)*16+((time.get(Calendar.MONTH)+1)%10);
+        buffer5[0]=(short) temp;
+       
+        temp=((time.get(Calendar.YEAR)%100)/10)*16+((time.get(Calendar.YEAR)%100)%10);
+        buffer6[0]=(short) temp;
+        //System.out.println("tianky YEAR:" + time.get(Calendar.YEAR));
+        try {
+			      fm.writeBytesToI2C(0x82, readAddress1, buffer1);
+			      fm.writeBytesToI2C(0x82, readAddress2, buffer2);
+			      fm.writeBytesToI2C(0x82, readAddress3, buffer3);
+			      fm.writeBytesToI2C(0x82, readAddress4, buffer4);
+			      fm.writeBytesToI2C(0x82, readAddress5, buffer5);
+			      fm.writeBytesToI2C(0x82, readAddress6, buffer6);
+		      } catch (TvCommonException e) {
+			   // TODO Auto-generated catch block
+			     e.printStackTrace();
+		     }
     }
 
     private void dropDown() {
@@ -537,13 +472,15 @@ public class DateTimeSettings extends Activity {
                             .setBackgroundResource(R.drawable.one_px);
                     mDateTimeViewHolder.mTimeFormatSettingsLayout
                             .setBackgroundResource(R.drawable.set_button);
-                    mDateTimeViewHolder.mTimeFormatCheckBox.requestFocus();
+                    mDateTimeViewHolder.mTimeFormatSettingsLayout.requestFocus();
+//                    mDateTimeViewHolder.mTimeFormatCheckBox.requestFocus();
                 } else {
                     mCurrentPosition = 1;
                     mDateTimeViewHolder.mAutoTimeDateLayout
                             .setBackgroundResource(R.drawable.one_px);
                     mDateTimeViewHolder.mDateSettingsLayout
                             .setBackgroundResource(R.drawable.set_button);
+                    mDateTimeViewHolder.mDateSettingsLayout.requestFocus();
                 }
                 break;
             case 1:
@@ -551,12 +488,14 @@ public class DateTimeSettings extends Activity {
                 mDateTimeViewHolder.mDateSettingsLayout.setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mTimeSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mTimeSettingsLayout.requestFocus();
                 break;
             case 2:
                 mCurrentPosition = 3;
                 mDateTimeViewHolder.mTimeSettingsLayout.setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mTimeZoneSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mTimeZoneSettingsLayout.requestFocus();
                 break;
             case 3:
                 mCurrentPosition = 4;
@@ -564,6 +503,7 @@ public class DateTimeSettings extends Activity {
                         .setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mTimeFormatSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mTimeFormatSettingsLayout.requestFocus();
                 break;
             case 4:
                 mCurrentPosition = 5;
@@ -571,6 +511,7 @@ public class DateTimeSettings extends Activity {
                         .setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mDateFormatSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mDateFormatSettingsLayout.requestFocus();
                 break;
             default:
                 break;
@@ -584,12 +525,14 @@ public class DateTimeSettings extends Activity {
                 mDateTimeViewHolder.mDateSettingsLayout.setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mAutoTimeDateLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mAutoTimeDateLayout.requestFocus();
                 break;
             case 2:
                 mCurrentPosition = 1;
                 mDateTimeViewHolder.mTimeSettingsLayout.setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mDateSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mDateSettingsLayout.requestFocus();
                 break;
             case 3:
                 mCurrentPosition = 2;
@@ -597,6 +540,7 @@ public class DateTimeSettings extends Activity {
                         .setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mTimeSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mTimeSettingsLayout.requestFocus();
                 break;
             case 4:
                 if (isAutoDateTime) {
@@ -605,7 +549,8 @@ public class DateTimeSettings extends Activity {
                             .setBackgroundResource(R.drawable.one_px);
                     mDateTimeViewHolder.mAutoTimeDateLayout
                             .setBackgroundResource(R.drawable.set_button);
-                    mDateTimeViewHolder.mAutoTimeDateCheckBox.requestFocus();
+                    mDateTimeViewHolder.mAutoTimeDateLayout.requestFocus();
+//                    mDateTimeViewHolder.mAutoTimeDateCheckBox.requestFocus();
                 } else {
                     mCurrentPosition = 3;
                     mDateTimeViewHolder.mTimeZoneButton.requestFocus();
@@ -613,6 +558,7 @@ public class DateTimeSettings extends Activity {
                             .setBackgroundResource(R.drawable.one_px);
                     mDateTimeViewHolder.mTimeZoneSettingsLayout
                             .setBackgroundResource(R.drawable.set_button);
+                    mDateTimeViewHolder.mTimeZoneSettingsLayout.requestFocus();
                 }
                 break;
             case 5:
@@ -622,6 +568,7 @@ public class DateTimeSettings extends Activity {
                         .setBackgroundResource(R.drawable.one_px);
                 mDateTimeViewHolder.mTimeFormatSettingsLayout
                         .setBackgroundResource(R.drawable.set_button);
+                mDateTimeViewHolder.mTimeFormatSettingsLayout.requestFocus();
                 break;
             default:
                 break;
@@ -658,15 +605,31 @@ public class DateTimeSettings extends Activity {
     }
 
     private String getTimeZoneText() {
-        TimeZone tz = Calendar.getInstance().getTimeZone();
+        TimeZone tz = java.util.Calendar.getInstance().getTimeZone();    
+        //SimpleDateFormat sdf = new SimpleDateFormat("ZZZZ, zzzz");
+        //sdf.setTimeZone(tz);
+
         boolean daylight = tz.inDaylightTime(new Date());
+        if (daylight) {
+            try {
+                timerMgr.setDaylightSavingState(true);
+            } catch (TvCommonException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                timerMgr.setDaylightSavingState(false);
+            } catch (TvCommonException e) {
+                e.printStackTrace();
+            }
+        }
+         
         StringBuilder sb = new StringBuilder();
         sb.append(formatOffset(tz.getRawOffset())).append(", ")
-                .append(tz.getDisplayName(daylight, TimeZone.LONG));
-
+                .append(tz.getDisplayName(daylight, TimeZone.LONG));        
         return sb.toString();
     }
-
+   
     private char[] formatOffset(int off) {
         off = off / 1000 / 60;
 
@@ -700,7 +663,7 @@ public class DateTimeSettings extends Activity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            updateTimeAndDateDisplay();
+            updateTimeAndDateDisplay();       
         }
     };
 
@@ -753,10 +716,5 @@ public class DateTimeSettings extends Activity {
             mDateTimeViewHolder.mTimeFormatCheckBox.setChecked(is24Hour);
             saveTimeFormatValue();
         }
-    }
-    @Override
-    protected void onStop() {
-        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_GENERAL);
-        super.onStop();
     }
 }

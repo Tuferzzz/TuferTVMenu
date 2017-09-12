@@ -44,6 +44,7 @@ public class SystemInfoActivity extends Activity {
         system_info_system_version= (TextView) findViewById(R.id.system_info_system_version);
         system_info_memory_info= (TextView) findViewById(R.id.system_info_memory_info);
     }
+
     public static String getAppVersionName(Context context) {
         String versionName = "";
         try {
@@ -88,9 +89,4 @@ public class SystemInfoActivity extends Activity {
         return Formatter.formatFileSize(SystemInfoActivity.this, blockSize * availableBlocks);
     }
 
-    @Override
-    protected void onStop() {
-        MainActivity.myMainActivity.handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
-        super.onStop();
-    }
 }

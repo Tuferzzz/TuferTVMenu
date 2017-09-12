@@ -101,6 +101,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.provider.Settings;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
@@ -159,16 +160,16 @@ public class LanguageSelectDialog extends Dialog {
         setContentView(R.layout.language_setting);
 
         Window w = getWindow();
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        w.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
         Resources resources = mLanguageSettingActivity.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-        w.setTitle(null);
+        w.setTitle("                      "
+                + mLanguageSettingActivity.getResources().getString(R.string.language_setting));
 
-        Point point = new Point();
-        Display display = w.getWindowManager().getDefaultDisplay();
-        display.getSize(point);
-        int width = (int) (point.x * 0.3);
-        int height = (int) (point.y * 0.5);
+        int width = (int) (outMetrics.widthPixels * 0.3);
+        int height = (int) (outMetrics.heightPixels * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();

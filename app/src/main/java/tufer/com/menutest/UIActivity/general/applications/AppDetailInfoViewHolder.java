@@ -187,19 +187,19 @@ public class AppDetailInfoViewHolder {
     protected void setBackground(int index) {
         switch (index) {
             case 0:
-                open_app.setBackgroundResource(R.drawable.set_button);
+                open_app.setBackgroundResource(R.drawable.left_bg);
                 break;
             case 1:
-                force_stop_btn.setBackgroundResource(R.drawable.set_button);
+                force_stop_btn.setBackgroundResource(R.drawable.left_bg);
                 break;
             case 2:
-                uninstall_btn.setBackgroundResource(R.drawable.set_button);
+                uninstall_btn.setBackgroundResource(R.drawable.left_bg);
                 break;
             case 3:
-                clear_data_btn.setBackgroundResource(R.drawable.set_button);
+                clear_data_btn.setBackgroundResource(R.drawable.left_bg);
                 break;
             case 4:
-                mMoveApp.setBackgroundResource(R.drawable.set_button);
+                mMoveApp.setBackgroundResource(R.drawable.left_bg);
                 break;
             default:
                 break;

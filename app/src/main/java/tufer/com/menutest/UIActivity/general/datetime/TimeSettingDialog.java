@@ -89,6 +89,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
@@ -129,18 +130,17 @@ public class TimeSettingDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.time_setting);
 
-        Resources resources = mDateTimeSettings.getResources();
-        Drawable drawable = resources.getDrawable(R.drawable.dialog_bg);
         Window w = getWindow();
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        w.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
+        Resources resources = mDateTimeSettings.getResources();
+        Drawable drawable = resources.getDrawable(R.drawable.set_bg);
         w.setBackgroundDrawable(drawable);
-        w.setTitle(null);
+        w.setTitle("                        "
+                + mDateTimeSettings.getResources().getString(R.string.time_setting));
 
-        Display display = w.getWindowManager().getDefaultDisplay();
-        Point point = new Point();
-        display.getSize(point);
-        int width = (int) (point.x * 0.5);
-        int height = (int) (point.y * 0.6);
-
+        int width = (int) (outMetrics.widthPixels * 0.3);
+        int height = (int) (outMetrics.heightPixels * 0.4);
         w.setLayout(width, height);
         w.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams wl = w.getAttributes();

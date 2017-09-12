@@ -1,41 +1,19 @@
 package tufer.com.menutest.UIActivity;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.media.AudioManager;
 import android.provider.Settings;
-import android.text.format.Time;
-import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.mstar.android.tv.TvAudioManager;
-import com.mstar.android.tv.TvCommonManager;
+
+
 import com.mstar.android.tv.TvFactoryManager;
-import com.mstar.android.tv.TvPictureManager;
-import com.mstar.android.tv.TvTimerManager;
+
 
 import tufer.com.menutest.R;
-import tufer.com.menutest.UIActivity.about.SystemInfoActivity;
-import tufer.com.menutest.UIActivity.about.SystemRestoreFactoryActivity;
-import tufer.com.menutest.UIActivity.bluetooth.BluetoothActivity;
-import tufer.com.menutest.UIActivity.channel.ChannelActivity;
-import tufer.com.menutest.UIActivity.channel.ProgramListViewActivity;
-import tufer.com.menutest.UIActivity.general.appinfo.AppManagerActivity;
-import tufer.com.menutest.UIActivity.general.datetime.DateTimeSettings;
-import tufer.com.menutest.UIActivity.general.weather.WeaterActivity;
-import tufer.com.menutest.UIActivity.intelligence.SetTimeOffDialogActivity;
-import tufer.com.menutest.UIActivity.intelligence.SetTimeOnDialogActivity;
-import tufer.com.menutest.UIActivity.network.NetworkSettingsActivity;
-import tufer.com.menutest.UIActivity.pictrue.SetLightActivity;
-import tufer.com.menutest.UIActivity.sound.EqualizerActivity;
-import tufer.com.menutest.UIActivity.system.InputMethodAndLanguageSettingsActivity;
 import tufer.com.menutest.UIActivity.system.city.CitySettingActivity;
-import tufer.com.menutest.UIActivity.update.SystemLocalUpdateActivity;
-import tufer.com.menutest.UIActivity.update.SystemNetUpdateActivity;
+
 
 
 /**

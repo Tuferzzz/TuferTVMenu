@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
+    android:process="system"
+    android:sharedUserId="android.uid.system"
     package="tufer.com.menutest">
     <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -147,18 +148,19 @@
 			
         </activity>
 
-        <activity android:name=".UIActivity.SelectDialog"></activity>
+        <activity android:name=".UIActivity.SelectDialog"
+            android:launchMode="singleTask"/>
 
         <activity android:name=".UIActivity.general.appinfo.AppManagerActivity"
-            />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.general.applications.AppDetailInfoActivity"
-            />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.general.weather.WeaterActivity"
-            />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.general.weather.WeatherCityActivity"
-            />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.general.datetime.DateTimeSettings"
-            >
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.settings.DATE_SETTINGS" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
@@ -167,27 +169,29 @@
         </activity>
 
         <activity android:name=".UIActivity.pictrue.SetLightActivity"
-           />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.sound.EqualizerActivity"
-        />
+            android:launchMode="singleTask"/>
 
         <activity android:name=".UIActivity.intelligence.SetTimeOffDialogActivity"
-            />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.intelligence.SetTimeOnDialogActivity"
-           />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.system.InputMethodAndLanguageSettingsActivity"
-         />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.system.city.CitySettingActivity"
-      />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.about.SystemInfoActivity"
-           />
+            android:launchMode="singleTask"/>
+        <activity android:name=".UIActivity.about.DeviceInfoSettings"
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.about.SystemRestoreFactoryActivity"
-          />
+            android:launchMode="singleTask"/>
         <activity android:name=".UIActivity.update.SystemLocalUpdateActivity"
-          >
+            android:launchMode="singleTask">
         </activity>
         <activity android:name=".UIActivity.update.SystemNetUpdateActivity"
-          >
+            android:launchMode="singleTask">
         </activity>
 
 
@@ -203,8 +207,7 @@
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.DvbsDTVAutoTuneOptionActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.DVBSDTV_AUTOTUNING_OPTION" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -222,7 +225,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.DTVManualTuning"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.DTV_MANUAL_TUNING" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -231,7 +234,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.NTSCATVManualTuning"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.NTSC_ATV_MANUAL_TUNING" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -240,7 +243,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.PALATVManualTuning"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.PAL_ATV_MANUAL_TUNING" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -249,90 +252,88 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.ChooseCityForAutoTuneActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.DTVAutoTuneOptionActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            android:launchMode="singleTask" />
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.OadScan"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            />
         <activity
             android:name="tufer.com.menutest.UIActivity.tuning.SignalInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
 
         <!--ca-->
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaCardInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.ippv.IppvProgramInfo"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaCardFeedActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaInformationActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaManagementActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaInfoModifyPinActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaWorkTimeActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaWatchLevelActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaOperatorListActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaVersionInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaEntitleInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaDetitleInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.ca.CaPurseInfoActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            android:launchMode="singleTask">
         </activity>
 
         <!--channel-->
@@ -346,12 +347,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="tufer.com.menutest.UIActivity.channel.ChannelControlActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_CONTROL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ChannelControlActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="tufer.com.menutest.UIActivity.channel.ProgramListViewActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+            android:launchMode="singleTask"/>
         <activity
             android:name="tufer.com.menutest.UIActivity.channel.SourceInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.SOURCE_INFO" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -367,8 +383,7 @@
         </activity>
         <activity
             android:name="tufer.com.menutest.UIActivity.channel.ChannelListActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_LIST" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -381,7 +396,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.channel.AdaChannelListActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            >
             <intent-filter>
                 <action android:name="com.mstar.tvsetting.ui.intent.action.AdaChannelListActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -390,22 +405,9 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.channel.LNBSettingActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbSetting" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="tufer.com.menutest.UIActivity.channel.ChannelControlActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-            <intent-filter>
-                <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_CONTROL" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="ChannelControlActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -414,19 +416,19 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.AtscEPGActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.AudioLanguageActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.CimmiActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.EPGActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.EPG_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -435,7 +437,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.LnbMotorEditorActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbMotorEditor" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -444,7 +446,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.LnbOptionActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbOption" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -453,7 +455,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.LnbOptionEditorActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.LnbOptionEditor" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -462,15 +464,15 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.MTSInfoActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.RecordActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.ReminderActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.EPG_REMINDER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -479,15 +481,15 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.ScheduleListActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.SubtitleLanguageActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.TeletextActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+             />
 
         <!--pvr-->
         <activity
@@ -512,12 +514,15 @@
         <service
             android:name=".UIActivity.update.UpdateService"
             android:enabled="true" />
-        <activity android:name=".UIActivity.bluetooth.BluetoothActivity"></activity>
-        <activity android:name=".UIActivity.bluetooth.DevicePickerActivity"></activity>
+        <activity android:name=".UIActivity.bluetooth.BluetoothActivity"
+	    android:launchMode="singleTask"/>
+        <activity android:name=".UIActivity.bluetooth.DevicePickerActivity"
+	    android:launchMode="singleTask"/>
 
         <activity
             android:name=".UIActivity.network.NetworkSettingsActivity"
-            android:windowSoftInputMode="adjustResize" >
+	    android:launchMode="singleTask"
+            >
             <intent-filter>
                 <action android:name="android.settings.WIFI_SETTINGS" />
                 <action android:name="android.net.wifi.PICK_WIFI_NETWORK" />

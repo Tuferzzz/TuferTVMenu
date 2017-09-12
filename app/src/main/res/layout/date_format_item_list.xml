@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:paddingLeft="30dip"
+        android:paddingLeft="10dip"
         android:textColor="#ffffff"
-        android:textSize="22sp" />
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/date_format_item_iv"
@@ -21,6 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:paddingRight="30dip" />
+        android:paddingRight="10dip" />
 
 </RelativeLayout>
