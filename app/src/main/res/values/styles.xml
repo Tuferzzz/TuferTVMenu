@@ -730,7 +730,7 @@
     </style>
     <!-- dialog -->
     <style name="Dialog" parent="android:style/Theme.Dialog">
-        <!--<item name="android:windowBackground">@drawable/picture_mode_img_bg</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>

@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="700dip"
-        android:layout_height="385dip"
+        android:layout_height="410dip"
         android:background="@drawable/set_bg"
         android:orientation="vertical" >
 
@@ -57,7 +57,7 @@
                         android:paddingLeft="@dimen/x30dp"
                         android:text="@string/bluetooth"
                         android:textColor="#cccccccc"
-                        android:textSize="@dimen/sp22" />
+                        android:textSize="@dimen/sp18" />
 
                     <ImageView
                         android:id="@+id/bluetooth_button_image"
@@ -95,20 +95,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:gravity="center_vertical"
-                        android:paddingLeft="@dimen/x30dp"
+                        android:paddingLeft="@dimen/x20dp"
                         android:layout_centerVertical="true"
                         android:text="@string/bluetooth_devicename"
                         android:textColor="#cccccccc"
-                        android:textSize="@dimen/sp22" />
+                        android:textSize="@dimen/sp16" />
 
                     <TextView
                         android:id="@+id/bluetooth_devicename_text"
-                        android:layout_width="wrap_content"
+                        android:layout_width="140dp"
                         android:layout_height="28dp"
                         android:gravity="center_vertical"
+                        android:textSize="16sp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:paddingRight="28dp" />
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -124,11 +130,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_centerVertical="true"
-                        android:paddingLeft="@dimen/x30dp"
+                        android:paddingLeft="@dimen/x20dp"
                         android:gravity="center_vertical"
                         android:text="@string/bluetooth_discoverable_timeout"
                         android:textColor="#cccccccc"
-                        android:textSize="@dimen/sp22" />
+                        android:textSize="@dimen/sp16" />
 
                     <TextView
                         android:id="@+id/bluetooth_discoverable_timeout_text"
@@ -137,8 +143,8 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:gravity="center_vertical"
-                        android:layout_marginRight="@dimen/x20dp"
-                        android:textSize="@dimen/sp15" />
+                        android:textSize="@dimen/sp16"
+                        android:layout_marginRight="3dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -155,10 +161,10 @@
                         android:layout_height="28dp"
                         android:layout_centerVertical="true"
                         android:gravity="center_vertical"
-                        android:paddingLeft="@dimen/x30dp"
+                        android:paddingLeft="@dimen/x20dp"
                         android:text="@string/bluetooth_scan_for_devices"
                         android:textColor="#cccccccc"
-                        android:textSize="@dimen/sp22" />
+                        android:textSize="@dimen/sp16" />
                 </RelativeLayout>
             </LinearLayout>
 

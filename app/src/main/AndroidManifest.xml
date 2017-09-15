@@ -121,31 +121,30 @@
 
         <activity
             android:name=".UIActivity.MainActivity"
-            android:icon="@drawable/app_icon_your_company"
+            android:icon="@drawable/tv_menu_logo"
             android:label="@string/app_name"
 			android:hardwareAccelerated="true"
             android:launchMode="singleTask"
-            android:logo="@drawable/app_icon_your_company"
+            android:logo="@drawable/tv_menu_logo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.MAINMENU" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 			<intent-filter>
                 <action android:name="com.mstar.tv.tvplayer.ui.intent.action.MAINMENU" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-			
+            <intent-filter>
+                <action android:name="mstar.tvsetting.ui.intent.action.mainmenuActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".UIActivity.SelectDialog"
@@ -352,12 +351,14 @@
             >
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_CONTROL" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="ChannelControlActivity" />
-
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mstar.tv.tvplayer.ui.intent.action.CHANNEL_CONTROL" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -384,6 +385,10 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.channel.ChannelListActivity"
             android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.mstar.tv.tvplayer.ui.intent.action.CHANNEL_LIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="tufer.com.menutest.UIActivity.intent.action.CHANNEL_LIST" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -489,7 +494,7 @@
         <activity
             android:name="tufer.com.menutest.UIActivity.dtv.TeletextActivity"
             android:launchMode="singleTask"
-             />
+            />
 
         <!--pvr-->
         <activity

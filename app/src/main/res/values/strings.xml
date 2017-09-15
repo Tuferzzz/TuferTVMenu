@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">TuferTVMenu</string>
+    <string name="app_name">ADATVMenu</string>
 
     <string name="related_movies">Related Videos</string>
     <string name="degree">&#176;</string>
@@ -3017,4 +3017,6 @@
 
     <string name="kernelVersion">Kernel Version</string>
     <string name="buildVersion">Build Number</string>
+
+   <string name="set_local_name">Modify local name successfully!</string>
 </resources>

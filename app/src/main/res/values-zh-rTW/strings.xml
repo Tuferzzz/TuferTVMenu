@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">TuferTVMenu</string>
+    <string name="app_name">ADATVMenu</string>
     <string name="degree">&#176;</string>
     <string name="whtertji">級</string>
     <string name="str_touchbar_back">返回</string>
@@ -881,7 +881,7 @@
         <string name="start_download_update_package">開始下載升級包......</string>
         <string name="bluetooth_devicename">設備名稱</string>
         <string name="bluetooth_discoverable">可檢測性</string>
-        <string name="bluetooth_discoverable_timeout">可檢測到設備的時間超時</string>
+        <string name="bluetooth_discoverable_timeout">可檢測到設備的時間</string>
         <string name="bluetooth_scan_for_devices">掃描查找設備</string>
         <string name="open_bluetooth_first">請開啟藍牙</string>
         <string name="bluetooth_setting">藍牙設置</string>
@@ -1835,4 +1835,6 @@
 
     <string name="kernelVersion">内核版本</string>
     <string name="buildVersion">版本号</string>
+
+    <string name="set_local_name">修改本地名稱成功!</string>
 </resources>

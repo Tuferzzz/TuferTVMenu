@@ -12,6 +12,7 @@ import com.mstar.android.tv.TvFactoryManager;
 
 
 import tufer.com.menutest.R;
+import tufer.com.menutest.UIActivity.about.DeviceManager;
 import tufer.com.menutest.UIActivity.system.city.CitySettingActivity;
 
 
@@ -312,9 +313,7 @@ public class MainMenuViewHolder {
             }
         }
         local_name= (TextView) activity.findViewById(R.id.textview_local_name);
-        local_name.setText(activity.getSharedPreferences("MyTvSetting",0).getString(
-                "LocalName",android.os.Build.MODEL
-        ));
+        local_name.setText(DeviceManager.getDeviceName(activity));
     }
 
     public void setNoneBackground(int position,int flag){

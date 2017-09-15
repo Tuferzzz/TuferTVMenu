@@ -17,6 +17,7 @@ package tufer.com.menutest.UIActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -56,6 +57,7 @@ import java.util.regex.Pattern;
 
 import tufer.com.menutest.R;
 import tufer.com.menutest.UIActivity.about.DeviceInfoSettings;
+import tufer.com.menutest.UIActivity.about.DeviceManager;
 import tufer.com.menutest.UIActivity.about.SystemInfoActivity;
 import tufer.com.menutest.UIActivity.about.SystemRestoreFactoryActivity;
 import tufer.com.menutest.UIActivity.bluetooth.BluetoothActivity;
@@ -717,9 +719,7 @@ public class MainActivity extends Activity  {
     }
 
     private void initAboutCallback(){
-        mainMenuViewHolder.local_name.setText(getSharedPreferences("MyTvSetting",0).getString(
-                "LocalName",android.os.Build.MODEL
-        ));
+        mainMenuViewHolder.local_name.setText(DeviceManager.getDeviceName(this));
     }
 
     private void initSoundCallback() {
@@ -834,16 +834,27 @@ public class MainActivity extends Activity  {
                             }
                             setLocalName(inputName);
                         }
-//                        setFocusCallback();
                     }
                 });
         builder.show();
     }
 
+    private void setNameAndResetUi(String name) {
+        // if the name gets set, consider it success
+        setResult(RESULT_OK);
+        setDeviceName(name);
+        // TODO delay reset until name update propagates
+        getFragmentManager().popBackStack("initial", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+    }
+
+    private void setDeviceName(String name) {
+        //if (DEBUG) Log.v(TAG, String.format("Setting device name to %s", name));
+        DeviceManager.setDeviceName(getApplicationContext(), name);
+        Toast.makeText(this,getResources().getString(R.string.set_local_name),Toast.LENGTH_SHORT).show();
+    }
+
     public void setLocalName(String localName) {
-        SharedPreferences.Editor localEditor = getSharedPreferences("MyTvSetting", 0).edit();
-        localEditor.putString("LocalName",localName );
-        localEditor.apply();
+        setNameAndResetUi(localName);
         handler.sendEmptyMessage(MainActivity.UPDATE_ABOUT);
     }
 
@@ -897,7 +908,7 @@ public class MainActivity extends Activity  {
             if(i==-4){
                 return flag;
             }else if(i==4){
-                return flag;
+                return len;
             }
         }else if(flag-4>=0&&flag+4>len){
             if(i==-4){
